@@ -1,0 +1,4 @@
+cd C:\Users\amin\Desktop\data-science-group.github.io\
+git add *
+git commit -m "m"
+git push origin master
