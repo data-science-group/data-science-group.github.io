@@ -1,8 +1,0 @@
-username: data-science-group
-amin.beheshti@gmail.com
-
-https://data-science-group.github.io
-
-
-remove git credential (change user):
-panel > user accounts > credential manager > Windows credentials > Generic credentials
