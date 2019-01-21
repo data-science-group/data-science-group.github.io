@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Internship Email Template</title>
+<script type="text/javascript">
+    var myYear = "global";
+
+    function getDate() {
+        var d = new Date()
+        var weekday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
+            "Friday", "Saturday")
+        var monthname = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
+            "Sep", "Oct", "Nov", "Dec")
+        // document.write(weekday[d.getDay()] + " ")
+        // document.write(d.getDate() + ". ")
+        // document.write(monthname[d.getMonth()] + " ")
+        // document.write(d.getFullYear())
+        // document.getElementById("demo").innerHTML = "12";
+        document.getElementById("txtDate").value = d.getDate() + " " + monthname[d.getMonth()] + " " + d.getFullYear();
+        myYear = d.getFullYear();
+    }
+
+    function myFunction() {
+        document.getElementById("myDate").innerHTML = "<b>" + document.getElementById("txtDate").value + "</b>";
+
+        document.getElementById("mySupervisorName1").innerHTML = "<b>" + document.getElementById("txtSupervisorName").value + "</b>";
+        document.getElementById("mySupervisorName2").innerHTML = "<b>" + document.getElementById("txtSupervisorName").value + "</b>";
+
+        document.getElementById("mySupervisorRole").innerHTML =  document.getElementById("txtSupervisorRole").value;    
+
+        document.getElementById("myCompanyName1").innerHTML = "<b>" +  document.getElementById("txtCompanyName").value + "</b>";   
+        document.getElementById("myCompanyName2").innerHTML = "<b>" +  document.getElementById("txtCompanyName").value + "</b>";   
+        document.getElementById("myCompanyName3").innerHTML = "<b>" +  document.getElementById("txtCompanyName").value + "</b>";   
+
+        document.getElementById("myCompanyAddress1").innerHTML =  document.getElementById("txtCompanyAddress").value;    
+        document.getElementById("myCompanyAddress2").innerHTML =  document.getElementById("txtCompanyAddress").value;    
+        
+        document.getElementById("myStudentName1").innerHTML = "<b>" +  document.getElementById("txtStudentName").value + "</b>";   
+        document.getElementById("myStudentName2").innerHTML = "<b>" +  document.getElementById("txtStudentName").value + "</b>";   
+        document.getElementById("myStudentName3").innerHTML = "<b>" +  document.getElementById("txtStudentName").value + "</b>";   
+        document.getElementById("myStudentName4").innerHTML = "<b>" +  document.getElementById("txtStudentName").value + "</b>";   
+        document.getElementById("myStudentName5").innerHTML = "<b>" +  document.getElementById("txtStudentName").value + "</b>";   
+        document.getElementById("myStudentName6").innerHTML = "<b>" +  document.getElementById("txtStudentName").value + "</b>";   
+
+        document.getElementById("myStudentEmail").innerHTML = "<b>" +  document.getElementById("txtStudentEmail").value + "</b>";   
+
+        document.getElementById("mySemester").innerHTML = "<b>" +  document.getElementById("txtSemester").value + "-" + myYear + " " + document.getElementById("txtInternshipType").value + "</b>";
+        
+  if (document.getElementById("txtInternshipType").value == "full-time") {
+    document.getElementById("myITEC").innerHTML = "<b>" + "ITEC897" + "</b>";
+  }        
+  if (document.getElementById("txtInternshipType").value == "part-time") {
+    document.getElementById("myITEC").innerHTML = "<b>" + "ITEC898" + "</b>";
+  }        
+        
+  if (document.getElementById("txtSemester").value == "s1") {
+    document.getElementById("myStartDate").innerHTML = "<b>" + "25 February " + myYear + "</b>";
+    document.getElementById("myEndDate1").innerHTML = "<b>" + "7 June " + myYear + "</b>";
+    document.getElementById("myEndDate2").innerHTML = "<b>" + "7 June " + myYear + "</b>";
+  }        
+  if (document.getElementById("txtSemester").value == "s2") {
+    document.getElementById("myStartDate").innerHTML = "<b>" + "29 July " + myYear + "</b>";
+    document.getElementById("myEndDate1").innerHTML = "<b>" + "8 November " + myYear + "</b>";
+    document.getElementById("myEndDate2").innerHTML = "<b>" + "8 November " + myYear + "</b>";
+  }        
+  if (document.getElementById("txtSemester").value == "s3") {
+    document.getElementById("myStartDate").innerHTML = "<b>" + "2 December " + myYear + "</b>";
+    document.getElementById("myEndDate1").innerHTML = "<b>" + "21 February " + myYear + "</b>";
+    document.getElementById("myEndDate2").innerHTML = "<b>" + "21 February " + myYear + "</b>";
+  }        
+
+}
+
+</script>
+</head>
+
+<body onload="getDate()">
+
+Date: <input type="text" id="txtDate" value="">
+<br />
+Semester: 
+  <select id="txtSemester">
+    <option value="s1">s1</option>
+    <option value="s2">s2</option>
+    <option value="s3">s3</option>
+  </select>
+  <select id="txtInternshipType">
+    <option value="full-time">full-time</option>
+    <option value="part-time">part-time</option>
+  </select>
+
+<br />
+Supervisor Name: <input type="text" id="txtSupervisorName" value="" size="50">
+<br />
+Supervisor Role: <input type="text" id="txtSupervisorRole" value="" size="50">
+<br />
+Company Name: <input type="text" id="txtCompanyName" value="" size="50">
+<br />
+Company Address: <input type="text" id="txtCompanyAddress" value="" size="70">
+<br />
+Student Name: <input type="text" id="txtStudentName" value="" size="50">
+<br />
+Student eMail: <input type="text" id="txtStudentEmail" value="" size="50">
+
+
+<br /><br />
+<button onclick="myFunction()">Generate</button>
+
+<p>------------------------------</p>
+
+
+<div id="myDate"><b>Date</b></div>
+<br />
+<div id="mySupervisorName1"><b>SupervisorName</b></div>
+<div id="mySupervisorRole">SupervisorRole</div>
+<div id="myCompanyName1"><b>CompanyName</b></div>
+<div id="myCompanyAddress1"><b>CompanyAddress</b></div>
+<br /><br />
+
+<span id="myITEC"><b>ITEC-CODE</b></span> - Work experience placement - <span id="myStudentName5"><b>StudentName</b></span> <br />
+<a href="mailto:"><div id="myStudentEmail">StudentEmail</div></a>
+<br />
+
+
+Dear <span id="mySupervisorName2"><b>SupervisorName</b></span>, 
+
+<p>
+Thank you for supporting our internship program at Macquarie University and accepting 
+<span id="myStudentName1"><b>StudentName</b></span>
+for <span id="mySemester"><b>Semester</b></span> internship.
+</p>
+
+<p>
+<span id="myStudentName2"><b>StudentName</b></span> will be undertaking work experience with <span id="myCompanyName2"><b>CompanyName</b></span> from <span id="myStartDate"><b>StartDate</b></span> for 13 weeks to <span id="myEndDate1"><b>EndDate</b></span> based at your premises at 
+<span id="myCompanyAddress2"><b>CompanyAddress</b></span>.
+</p>
+
+<p>
+Please note that <span id="myStudentName3"><b>StudentName</b></span>’s final internship mark should be send to us by no later than <span id="myEndDate2"><b>EndDate</b></span>. 
+The <i>marking criteria</i> and <i>report templates</i> can be found <a href="https://data-science-group.github.io/people/aminbeheshti/internship/MQ-MIT-Internship.html" target="_blank">HERE</a>.
+</p>
+
+<p>
+Thanks for accommodating <span id="myStudentName6"><b>StudentName</b></span> doing work experience in your company during this time. However, in order for a student to do work experience with us, we first require:
+
+<ul>
+ <li>Confirmation from the company that the work experience placement is approved;</li>
+ <li>Evidence that the student will be partly covered by our institution and partly by your company's public liability and accident insurance policy during the work experience placement; and</li>
+ <li>The <b>attached</b> schedule of <i>Work Experience Placement Details</i> to be completed and signed on behalf of the company. Please fill the form, sign and send back to me.</li>
+</ul>
+
+<p>
+
+<p>
+Upon receipt of the documents, we will be able to finalise the specific arrangements for the <span id="myStudentName4"><b>StudentName</b></span> work experience with <span id="myCompanyName3"><b>CompanyName</b></span>. 
+We will also send you a copy of our insurer’s certificate of currency for our institution's public liability policy, noting that the cover extends to students while participating in work experience.
+</p>
+
+<p>
+-- <br />
+Yours Sincerely,<br />
+<a href="https://data-science-group.github.io/people/aminbeheshti/" target="_blank">Dr. Amin Beheshti </a>
+
+
+</p>
+
+</body>
+</html>
