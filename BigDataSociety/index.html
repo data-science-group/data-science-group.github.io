@@ -1,262 +1,426 @@
 <!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Big Data Society</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Data Science Research Lab">
+    <meta name="author" content="Amin Beheshti">
+    <meta name="keywords" content="Data Science, Data Analytics, Big Data, Predictive Analytics, Data Engineering, Amin Beheshti">
+
+    <title>Intelligence-led Policing Hackathon, Big Data Society, Macquarie University, Australia</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <style>
+        div.gallery {
+            margin: 2px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+            min-height: 210px;
+        }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+        div.desc {
+            padding: 1px;
+            text-align: center;
+        }
+        .auto-style1 {
+            color: #FF0000;
+        }
+        .auto-style2 {
+            color: #FFFF00;
+        }
+        .auto-style3 {
+            font-weight: bold;
+        }
+        .auto-style4 {
+            color: #0033CC;
+        }
+        .auto-style5 {
+            color: #009933;
+        }
+        .auto-style6 {
+            color: #FF0000;
+            font-size: large;
+        }
+        .auto-style10 {
+            font-size: medium;
+            font-weight: bold;
+            color: #000066;
+        }
+    </style>
 
 
 </head>
 
-<body style="background-color: #ebebe0;">
+<body id="page-top">
 
-  <table border="0" style="width: 100%">
-    <tr>
-      <td style="background-color: #ebebe0" class="auto-style1">&nbsp;</td>
-      <td style="width: 70%; background-color: #ebebe0">&nbsp;</td>
-      <td style="width: 15%; background-color: #ebebe0">&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="background-color: #ebebe0" class="auto-style1">&nbsp;</td>
-      <td style="width: 70%; background-color: #ffffff">
-
-
-
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container-fluid">
-            <ul class="nav navbar-nav">
-              <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Members<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="members.html">BigDataSoc Members</a></li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Hackathon 2019-07</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+         
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+<!--                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Photos">Photos</a>
+                    </li>-->
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Sponsors">Sponsors</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Challenges">Challenges</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Program">Program</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#register">Register</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Venue</a>
+                    </li>
                 </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Seminars<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="disabled"><a href="#">Seminar</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Workshops<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="disabled"><a href="#">Workshop</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hackathons<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="Hackathon/2019-07/index.html">Hackathon - July 2019</a></li>
-                  <li><a href="Hackathon/2018-09/index.html">Hackathon - September 2018</a></li>
-                  <li><a href="Hackathon/2018-07/index.html">Hackathon - July 2018</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="disabled"><a href="#">Contact</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-
-            <div class="item active">
-              <img src="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-07/photos/050.JPG" alt="Hackathon 2018" />
             </div>
-
-            <div class="item">
-              <img src="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-07/photos/001.JPG" alt="Hackathon 2018" />
-            </div>
-
-            <div class="item">
-              <img src="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-07/photos/003.JPG" alt="Hackathon 2018" />
-            </div>
-
-            <div class="item">
-              <img src="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-07/photos/005.JPG" alt="Hackathon 2018" />
-            </div>
-
-            <div class="item">
-              <img src="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-07/photos/009.JPG" alt="Hackathon 2018" />
-            </div>
-
-            <div class="item">
-              <img src="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-07/photos/026.JPG" alt="Hackathon 2018" />
-            </div>
-
-            <div class="item">
-              <img src="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-09/photos/005.jpg" alt="Hackathon 2018" />
-            </div>
-
-            <div class="item">
-              <img src="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-09/photos/051.jpeg" alt="Hackathon 2018" />
-            </div>
-
-            <div class="item">
-              <img src="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-09/photos/027.jpg" alt="Hackathon 2018" />
-            </div>
-          </div>
-
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container">
+            <!--        <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">-->
+            
+            <h3 style="color:cornflowerblue" class="text-uppercase mb-0">Intelligence-led Policing Hackathon</h3> <br />
+            <h3 class="text-uppercase mb-0"><a style="color:khaki" href="https://data-science-group.github.io/BigDataSociety/" target="_blank">Big Data Society</a></h3>
+            <h3 class="text-uppercase mb-0"><a style="color:orange" href="https://data-science-group.github.io/" target="_blank">Data Analytics Research Lab</a></h3>
+            <h3 class="text-uppercase mb-0">Macquarie University, Sydney, Australia</h3>
+            <h3>July 24-27, 2019</h3>
+<!--            <hr />
+            <h2 class="font-weight-light mb-0">Our mission is to significantly improve people's lives through our work in <br /> Data Science, Predictive Analytics and Big Data!</h2>-->
         </div>
+    </header>
+
+
+<!--    <section class="Sponsors" id="Photos" style="background-color:aliceblue">
+        <div class="container" style="text-align:center">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Photos</h2>
+            <hr />
+
+            <a href="photos/index.html" target="_blank"><h1>Click Here to See the Hackathon Photos</h1></a>
+            
+        </div>
+    </section>-->
 
 
 
-        <table border="0">
-          <tr>
-            <td>&nbsp;&nbsp;&nbsp;</td>
-            <td style="width: 60%; text-align: justify;">
-              <h1>Welcome to BigDataSoc</h1>
-              <br />
-              <p>The Big Data Society (BigDataSoc) at <a href="https://www.mq.edu.au/" target="_blank">Macquarie University</a> is a student society affiliated with the <a href="https://protect-au.mimecast.com/s/pPW5Czvkmpf82073I4V5bK?domain=data-science-group.github.io" target="_blank">Data Analytics
-                  Research Lab</a>, Department of Computing. We are Australia’s FIRST Student Big Data Society!</p>
-              <p>Big Data Society aims to provide all students, researchers and academics, an inspiring, cohesive and creative environment, where we all can learn more about the big data problem and its real world applications. This will make
-                university experience even more fun and fulfilling, whilst maximizing students employment opportunity.</p>
-              <h3>BigDataSoc Executives:</h3>
-              <p>
-                <b>Founder and Academic Sponsor:</b> <a href="https://protect-au.mimecast.com/s/b-LFCANpnDCrWv8gt8Lc3A?domain=data-science-group.github.io" target="_blank">Dr. Amin Beheshti</a>
-                <br /><br />
-                <b>*2019 Executives*</b><br />
-                                <b>President:</b> <a href="https://protect-au.mimecast.com/s/0hu8CQnM1WfN38XNcPZ7fJ?domain=linkedin.com" target="_blank">Hedieh Ranjbartabar 
-                                </a>
-                                <br />
-                                <b>Vice President (Undergraduate):</b> <a href="https://protect-au.mimecast.com/s/_faKCRONg6sgRJGgiPyYfi?domain=linkedin.com" target="_blank">Satwik Chodisetti
-                                </a>
-                                <br />
-                                <b>Vice President (Postgraduate):</b> <a href="https://protect-au.mimecast.com/s/OpjLCVARmOHP572PiJ4iGh?domain=linkedin.com" target="_blank">Setareh Pourmostafa Fard Tabriz</a><br />
-                                <b>Vice President (HDR):</b> <a href="https://protect-au.mimecast.com/s/S-VmCWLVn6iyP26yimPn7o?domain=linkedin.com" target="_blank">Fred Amouzgar
-                                </a>
-                                <br />
-                                <b>Treasurer:</b>  Nabi Rezvani
-                                <br />
-                                <b>Secretary:</b> <a href="https://protect-au.mimecast.com/s/uPR9CXLW6DiMq14Mf9Ejso?domain=linkedin.com" target="_blank">Maryam Shahpasand</a>
-                                <br />
-                                <b>Female Ambassador:</b> Ava Assadi Abolvardi
-                                </a>
-                                <br />
-                                <b>Events Director:</b> <a href="https://protect-au.mimecast.com/s/ImY0CYW86Es6NQD6C3-Pcw?domain=linkedin.com" target="_blank">Milad Mosharraf Ghahfarokhi</a>
-                                <br />
-                                <b>IT Director:</b> <a href="https://protect-au.mimecast.com/s/E2kQCZY146soDE7oSNeAJF?domain=linkedin.com" target="_blank">Seyed Mohssen Ghafari</a>
-                                <br />
-                                <b>Web and Social Media Director:</b> <a href="https://protect-au.mimecast.com/s/NEZdC1WLjwsEk16ESmx-nx?domain=linkedin.com" target="_blank">Shahpar Yakhchi</a>
-                                <br />
-                                <b>Industry and External Relations Director:</b> <a href="https://protect-au.mimecast.com/s/E3C-C2xMRkUERvVESvncPM?domain=linkedin.com" target="_blank">Samira Ghodratnama</a><br />
-
-              </p>
-
-              <h3>BigDataSoc Contacts:</h3>
-              <p>
-                Website: <a href="https://data-science-group.github.io/BigDataSociety/" target="_blank">https://data-science-group.github.io/BigDataSociety/</a>
-                <br />
-                Twitter:&nbsp;&nbsp;
-                <a href="https://twitter.com/search?q=BigDataSocAU%20&src=typd&lang=en">@BigDataSocAU</a> <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://twitter.com/search?q=%23BigDataSocietyAustralia&src=typd&lang=en">#BigDataSocietyAustralia</a>
-                <br />
-                Email:&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:mq.bigdata.society@gmail.com" target="_blank">mq.bigdata.society@gmail.com</a>
-                <br />
+        <!-- People Grid Section -->
+    <section class="Sponsors" id="Sponsors" style="background-color:aliceblue">
+        <div class="container" style="text-align:center">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Sponsors</h2>
+            <hr />
 
 
-              </p>
-              <br />
-              <hr />
-              <b>NEWS:</b>
-              <br />
-              21-08-2018: Second Hackathon (Sep 2018) Announced <a href="https://protect-au.mimecast.com/s/Gc5KC4QO8xSY1pqysPzoBj?domain=data-science-group.github.io" target="_blank">LINK</a>
-              <br />
-              22-04-2018: First Hackathon (July 2018) Announced <a href="https://protect-au.mimecast.com/s/G2zAC5QP8ySgGV2ohWugZz?domain=data-science-group.github.io" target="_blank">LINK</a>
-              <br />
-              17-04-2018: First Group Meeting, Executives 2018 Selected! Over 100 membership requests!
-              <br />
-              11-04-2018: BigDataSoc Birthday<br />
-              <br />
+            <a href="http://www.itic.com.au/" target="_blank"><img src="image\Diamond.png" width="200" /></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.tcs.com/" target="_blank"><img src="image\Platinum.png" width="200" /></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.sas.com/students" target="_blank"><img src="image\Gold.png" width="200" /></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://aws.amazon.com/" target="_blank"><img src="image\Silver.png" width="200" /></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.engenesis.com/" target="_blank"><img src="image\Bronze.png" width="200" /></a> 
 
-            </td>
-            <td style="width: 10%; text-align: justify;">&nbsp;</td>
-            <td style="width: 30%">
-              <div class="twocol_one last">
-                <a class="twitter-timeline" href="https://protect-au.mimecast.com/s/P6vgC6XQ68fVKnqEsgqsEB?domain=twitter.com" data-widget-id="983610950174498816">#BigData Tweets</a>
-                <script>
-                  ! function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0],
-                      p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if (!d.getElementById(id)) {
-                      js = d.createElement(s);
-                      js.id = id;
-                      js.src = p + ":https://protect-au.mimecast.com/s/3zNbC71R63CEkOwvu6Qvqc";
-                      fjs.parentNode.insertBefore(js, fjs);
-                    }
-                  }(document, "script", "twitter-wjs");
-                </script>
-              </div>
-            </td>
+            
+        </div>
+    </section>
 
 
+        <!-- People Grid Section -->
+    <section class="Challenges" id="Challenges" style="background-color:white">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Challenges</h2>
+            <hr />
 
-            <td>&nbsp;&nbsp;&nbsp;</td>
-          </tr>
-        </table>
+            <h1>Intelligence-led Policing</h1>
 
-        <hr />
+            <p>
+                Policing across the world has undergone a critical transformation in the last decades. There is little
+                resemblance between the 1970s policing and the current policing. In the last few years, with the
+                advancement in the technology, policing has adopted the use of new technological tools, such as the
+                computer, in-car computing, and mobile phone to ease its operations. Today, the advancement in
+                Artificial Intelligence (AI) and Data Science has the potential to transform the Policing ecosystem in fundamental ways.
+            </p>
 
-        <!--                <img src="sponsers.png" width="100%" />-->
-        <!--                    <a href="https://protect-au.mimecast.com/s/FqbeC81Vq2COR7ElhG5U6v?domain=data61.csiro.au" target="_blank"><img src="sponsors\DATA61.jpg" width="200" /></a>
-                    <a href="https://protect-au.mimecast.com/s/HBt-C91W8rCRB5DvCAtrmg?domain=signavio.com" target="_blank"><img src="sponsors\Signavio.png" width="200" /></a>
-                    <a href="https://protect-au.mimecast.com/s/BwejC0YKgRsJ3RpKfM_oFg?domain=celonis.com" target="_blank"><img src="sponsors\Celonis.png" width="200" /></a>
-                    <a href="https://protect-au.mimecast.com/s/-tseCgZ05JfP2LDrH9vI66?domain=ibm.com" target="_blank"><img src="sponsors\IBM.png" width="200" /></a>
-                    <a href="https://protect-au.mimecast.com/s/Fp-zCjZ12Rflq7V2ivsXhl?domain=bizagi.com" target="_blank"><img src="sponsors\bizagi.png" width="200" /></a>
-                    <br />-->
+            <p>
+                The challenges in this hackathon will focus on novel applications of intelligence-led policing from
+                data analytics and automation to cognitive assistants and humanized Artificial Intelligence.
+            </p>
+
+
+            <h3>&nbsp;</h3>
+            <h3>Challenges include:</h3>
+
+            <p>
+                <span class="auto-style6"><strong>Algorithm</strong></span>: <b>Data and Predictive Analytics (Competition to design the best Algorithm):</b> Policing processes deals with large amount of related data
+                islands (i.e., big data) from private, open, social and IoT data. For example, analyse social
+                networks to predict and identify Cyber-/online-bullying and Extremist and criminal behaviour.
+            </p>
+
+
+            <p>
+                <span class="auto-style6"><strong>Prototype</strong></span>: <b>Cognitive Assistants Competition to design the best prototype solution:</b> Using cognitive technology to help police investigators in decision
+                making. Please see iCOP (<a href="iCOP.pdf" target="_blank">LINK</a>) as an example.
+            </p>
+            
+            <p>
+                <span class="auto-style6"><strong>Mockup</strong></span>: <b>Enabling IoT in Policing (Competition to design the best Mockup solution):</b> Recently, the Internet of Things (IoT: the network of physical
+                objects augmented with Internet-enabled computing devices to enable those objects sense the
+                real world), has been widely adopted for the implementation and integration of data-driven
+                processes within and across enterprises. Applications include design and innovations for Smart Entities such as:
+                smart airports, police cars, police uniforms, watches, mobile, drone, etc.
+            </p>
         <br />
 
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand">Copyright © 2018 by BigDataSoc. All rights reserved</a>
+            <h3>Who can attend ?</h3>
+            Teams (between 2 to 5 people): students and professional. <br />
+            <b>Steps:</b>
+            <ol>
+                <li>Each group member should register individually online. Please check the Registration link in the next Section.</li>
+                <li>Register your group on the first day of the hackathon (25th July), in the venue.</li>
+            </ol>
+
+            <br /><br /><br />
+
+            <h3>Prizes</h3>
+
+            <p>-Up to $700 AUD prize for each challenge: Cash and AWS Gift Cards.</p>
+            <p>-Certificate of achievement for top 3 performing teams, for each challenge.</p>
+            <p>-Give away gifts from the sponsors.</p>
+            <p>-Certificate of attendance for the Hackathon.</p>
+            <p>-Certificate of attendance for the Workshops.</p>
+
+
+
+
+            <br /><br />
+
+            <h3>Organizer: </h3>
+                <h5><a style="color:dodgerblue" href="https://data-science-group.github.io/" target="_blank">Data Analytics Research Lab</a>, 
+                <a style="color:darkgreen" href="https://data-science-group.github.io/BigDataSociety/" target="_blank">Big Data Society</a></h5>
+            <br /><br />
+            <h3>Our Previous Hackathons: </h3>
+                <h5>- <a style="color:darkslateblue" href="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-07/index.html" target="_blank">Data Analytics Hackathon (July 18)</a> </h5>
+                <h5>- <a style="color:darkslateblue"  href="https://data-science-group.github.io/BigDataSociety/Hackathon/2018-09/index.html" target="_blank">Blockchain Hackathon (Sep 18)</a></h5>
+
+
+    </section>
+
+
+
+
+
+    <!-- Program Grid Section -->
+    <section class="Program" id="Program" style="background-color:white">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Program</h2>
+            <br /><br />
+            
+
+<br /> <br />
+<hr />
+            <h3>24th July 2019: Workshop 1</h3>
+<b>
+            (AWS: Platform capabilities and Certifications, EY/ AISA: Cyber Security)<br />
+            </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Workshop 1 <span class="auto-style1"><strong>Venue</strong></span>: 14SCO T2 (<a href="https://timetables.mq.edu.au/scientia/web/14SCOT2.html">LINK</a>)<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Workshop 1 <span class="auto-style1"><strong>Registration</strong></span>: <a href="https://www.eventbrite.com.au/e/bigdatasociety-workshop-aws-platform-capabilities-and-certifications-tickets-64216009814" target="_blank">LINK</a> <br />
+<b>Speakers:</b> 
+<br />&nbsp;&nbsp;&nbsp; 10:00-11:00 - <a href="https://www.linkedin.com/in/jkernot/" target="_blank">Jacqui Kernot</a> (Partner, EY) -  Cyber Security as well as diversity and Women in tech 
+<br />&nbsp;&nbsp;&nbsp; 11:00-13:00 - <a href="https://www.linkedin.com/in/nblsi/" target="_blank">Mohamad Nabulsi</a> (Solution Architect, AWS) - AWS certification paths and platform capabilities
+<br />&nbsp;&nbsp;&nbsp; 13:00-14:00 - Lunch/ Networking
+<br />&nbsp;&nbsp;&nbsp; 14:00-15:00 - <a href="https://www.linkedin.com/in/branko-ninkovic-4527891/" target="_blank">Branko Ninkovic</a> (Chair, AISA) - Cyber Security
+
+<!--<br /> &nbsp;&nbsp;&nbsp; - <a href="https://www.linkedin.com/in/chatz/" target="_blank">David Chatterton</a> (Technical Program Manager, AWS)
+<br /> &nbsp;&nbsp;&nbsp; - <a href="https://www.linkedin.com/in/jkernot/" target="_blank">Jacqui Kernot</a> (Partner, EY)
+<br /> &nbsp;&nbsp;&nbsp; - <a href="https://www.linkedin.com/in/branko-ninkovic-4527891/" target="_blank">Branko Ninkovic</a> (Chair, AISA)-->
+            <br />
+<hr />
+            <br /> 
+
+<h3>25th July 2019: <span style="color:red">Hackathon Day 1</span></h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hackathon (Day1 and Day 2) <span class="auto-style1"><strong>Venue</strong></span>: 10HA T1 Theatre (<a href="https://timetables.mq.edu.au/scientia/web/10HAT1.html" target="_blank">LINK</a>) 
+<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hackathon (Day1 and Day 2)<span class="auto-style1"><strong> Registration</strong></span>: <a href="https://www.eventbrite.com.au/e/bigdatasociety-hackathon-intelligence-led-policing-tickets-64214946634" target="_blank">LINK</a> </p>
+08:30-09:00: Registration
+<br /> 09:00-10:00: <span class="auto-style10">Keynote</span>, <a href="https://data-science-group.github.io/people/aminbeheshti/" target="_blank">Dr. Amin Beheshti</a>, "<span class="auto-style10">Intelligence-led policing in the age of AI and Big Data</span>" <strong>+</strong> <span class="auto-style5"><strong>Hackathon Challenges and Discussions</strong></span>.
+<br /> 10:00-11:00: Industry Talk, <a href="https://www.linkedin.com/in/lpuang/" target="_blank">Lawrence Puang</a> (Executive, Quantium)
+<br /> 11:00-12:00: Industry Talk, <a href="https://www.linkedin.com/in/srini-goluguri-3a763018/" target="_blank">Srini Goluguri</a> (Senior Account Director, TCS)
+<br /> 12:00-13:00: Lunch and networking
+<br /> 13:00-14:00: Panel Discussion (<strong>AI-enabled Policing</strong>)<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<b>Panel Chair:</b> <a href="https://data-science-group.github.io/people/aminbeheshti/" target="_blank">Dr. Amin Beheshti</a> (Director, Data Analytics Research Lab, Macquarie University) <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<b>Panel Members:</b><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://www.linkedin.com/in/frank-schiliro-macs-snr-cp-33433b33/" target="_blank">Frank Schiliro</a> (Superintendent, National Coordinator Aviation Operations, Australia Federal Police) <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="" target="_blank">Kenneth Chai</a> (Intelligence & Investigation Management manager, SAS) <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://www.linkedin.com/in/chatz/" target="_blank">David Chatterton</a> (Technical Program Manager, AWS)<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://www.linkedin.com/in/stephenelbourn/" target="_blank">Stephen Elbourn</a> (Director, ITIC)<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://www.linkedin.com/in/srini-goluguri-3a763018/" target="_blank">Srini Goluguri</a> (Senior Account Director, TCS)<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="http://web.science.mq.edu.au/~jian/" target="_blank">Jian Yang</a> (Professor and Research Director, Macquarie University) 
+
+<br /> 14:00-15:00: Industry Talk, <a href="" target="_blank">Kenneth Chai</a> (Intelligence & Investigation Management manager, SAS)
+<br /> 15:00-17:00: Workshops (SAS Workshop: SAS Viya for Learners, <a href="https://www.linkedin.com/in/sharon-wu/" target="_blank">Sharon Wu</a>)
+<br />                    
+<br /> <br /> <br /> 
+
+<h3>26th July 2019: <span style="color:red">Hackathon Day 2 and Prizes</span></h3>
+09:00-09:30: Hackathon Challenges Q&A
+<br /> 09:30-15:00: Hackathon
+<br /> 12:00-13:00: Lunch
+<br /> 13:00-13:45: Engenesis: How to pitch an idea!
+<br /> 14:00-16:00: Hackathon Demo and Presentation
+<br /> &nbsp;&nbsp;<strong>Hackathon Judges</strong>:
+<br /> &nbsp;&nbsp;&nbsp;&nbsp;- TBA
+<br /> 16:00-17:00: Prizes
+<br /> <br /> <hr /> <br /> 
+
+<h3>27th July 2019:&nbsp; Workshop 2</h3>
+            <p>
+<b>(Network and Cyber Security)</b> </p>
+&nbsp;&nbsp;&nbsp;&nbsp;Workshop 2 <span class="auto-style1"><strong>Venue</strong></span>: 10HA T1 Theatre (<a href="https://timetables.mq.edu.au/scientia/web/10HAT1.html" target="_blank">LINK</a>) 
+<br /> &nbsp;&nbsp;&nbsp; Workshop 2 <span class="auto-style1"><strong>Registration</strong></span>: <b><a href="https://www.eventbrite.com.au/e/bigdatasociety-workshop-network-and-cyber-security-tickets-64216231477" target="_blank">LINK</a></b> <br />
+<b>Speakers:</b> 
+<br /> &nbsp;&nbsp;&nbsp; 10:00-12:00 <a href="https://www.linkedin.com/in/jamesjoyceccie/" target="_blank">James Joyce</a> (Senior Network Consultant, Telstra)
+<br /> &nbsp;&nbsp;&nbsp; 12:00-13:00 - Lunch/ Networking
+<br /> &nbsp;&nbsp;&nbsp; 13:00-15:00 <a href="https://www.linkedin.com/in/stephenelbourn/" target="_blank">Stephen Elbourn</a> (Director, ITIC)
+            <br />
+<br /> 
+ <hr />
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="register">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Register for the Hackathon</h2>
+            <div class="row">
+                <div class="col-lg-12 mx-auto" style="text-align:center">
+                    <br /><br />
+                    &nbsp;&nbsp;&nbsp; <span class="auto-style1"><strong>Hackathon</strong></span> (25 and 26 July)<span class="auto-style1"><strong> </strong></span>: 
+                    <span class="auto-style5"><br /><strong> Registration</strong></span>: <b><a href="https://www.eventbrite.com.au/e/bigdatasociety-hackathon-intelligence-led-policing-tickets-64214946634" target="_blank">LINK</a></b><br />
+                    <hr />
+                    &nbsp;&nbsp;&nbsp; <span class="auto-style1"><strong>Workshop 1</strong></span> (24 July)<span class="auto-style1"><strong> </strong></span>: 
+                    <span class="auto-style5"><br /><strong> Registration</strong></span>: <b><a href="https://www.eventbrite.com.au/e/bigdatasociety-workshop-aws-platform-capabilities-and-certifications-tickets-64216009814" target="_blank">LINK</a></b><br />
+                    <hr />
+                    &nbsp;&nbsp;&nbsp; <span class="auto-style1"><strong>Workshop 2</strong></span> (27 July)<span class="auto-style1"><strong> </strong></span>: 
+                    <span class="auto-style5"><br /><strong> Registration</strong></span>: <b><a href="https://www.eventbrite.com.au/e/bigdatasociety-workshop-network-and-cyber-security-tickets-64216231477" target="_blank">LINK</a></b><br />
+                    
+
+                </div>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Sponsors and Supporters</a></li>
-            </ul>
-          </div>
-        </nav>
+        </div>
+    </section>
+ 
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Hackathon Venue</h2>
+            <div class="row">
+                <div class="col-lg-12 mx-auto" style="text-align:center">
+                   <br /><br />
+                    &nbsp;&nbsp;&nbsp; <span class="auto-style1"><strong>Hackathon</strong></span> (25 and 26 July)<span class="auto-style1"><strong> </strong></span><br />
+                    <span class="auto-style4"><strong> Venue</strong></span>: 
+                    10HA T1 Theatre (<a href="https://timetables.mq.edu.au/scientia/web/10HAT1.html" target="_blank">LINK</a>),
+                        Macquarie University NSW 2109,
+                        Sydney, Australia
+                    <hr />
+                    &nbsp;&nbsp;&nbsp; <span class="auto-style1"><strong>Workshop 1</strong></span> (24 July)<span class="auto-style1"><strong> </strong></span><br />
+                    <span class="auto-style4"><strong> Venue</strong></span>: 14SCO T2 (<a href="https://timetables.mq.edu.au/scientia/web/14SCOT2.html">LINK</a>), Macquarie University NSW 2109, Sydney, Australia<br />
+                    <hr />
+                    &nbsp;&nbsp;&nbsp; <span class="auto-style1"><strong>Workshop 2</strong></span> (27 July)<span class="auto-style1"><strong> </strong></span><br />
+                    <span class="auto-style4"><strong> Venue</strong></span>: 
+                    10HA T1 Theatre (<a href="https://timetables.mq.edu.au/scientia/web/10HAT1.html" target="_blank">LINK</a>),
+                        Macquarie University NSW 2109,
+                        Sydney, Australia
+ 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-12 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Contact</h4>
+                    <p class="lead mb-0">                        
+                    If you're looking to partner or volunteer with us, contact us at:<br />
+                        <span class="auto-style2">
+                        <strong class="auto-style3">mq.bigdata.society@gmail.com</strong></span>
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small>Copyright &copy; DataAnalyticsLab 2019</small>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
 
 
-      </td>
-      <td style="width: 15%; background-color: #ebebe0">&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="background-color: #ebebe0" class="auto-style1">&nbsp;</td>
-      <td style="width: 70%; background-color: #ebebe0">&nbsp;</td>
-      <td style="width: 15%; background-color: #ebebe0">&nbsp;</td>
-    </tr>
-  </table>
+    
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
 
 </body>
 
 </html>
-
