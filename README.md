@@ -1,3 +1,3 @@
 # data-science-group.github.io
 
-Data Science Research Group, Macquarie University, Sydney, Australia
+Data Science Research Lab, Macquarie University, Sydney, Australia
