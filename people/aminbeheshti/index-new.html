@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dr. Amin Beheshti - Director, AI-enabled Processes (AIP) Research Centre</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="vis.js"></script>
+  <link href="vis.css" rel="stylesheet" type="text/css" />
+
+  <style type="text/css">
+      #mynetwork {
+          width: 500px;
+          height: 400px;
+          border: 1px solid lightgray;
+      }
+
+      p {
+          max-width: 600px;
+      }
+  </style>	
+</head>
+<body>
+
+<div class="container-fluid">
+	<p></p>
+	
+  <div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-4" style="text-align:right;">
+          <img src="amin1.jpg" width="163" /><br />
+            <a href="https://au.linkedin.com/in/amin-beheshti-07118919" target="_blank"><img src="linkedin.jpg" width="20" /></a>
+            <a href="https://twitter.com/amin_beheshti" target="_blank"><img src="twitter.png" width="20" /></a>
+            <a href="https://scholar.google.com.au/citations?user=Uw1OLAgAAAAJ" target="_blank"><img src="scholar.png" width="20" /></a>
+            <a href="http://orcid.org/0000-0002-5988-5494" target="_blank"><img src="ORCID.png" width="20" /></a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=50361038600" target="_blank"><img src="scopus.jpg" width="20" /></a>
+            <a href="https://dblp.org/pers/hd/b/Beheshti:Amin" target="_blank"><img src="dblp.png" width="20" /></a>
+            <a href="https://researchers.mq.edu.au/en/persons/amin-beheshti" target="_blank"><img src="MQ.png" width="20" /></a>
+    </div>
+    <div class="col-sm-8 col-md-8 col-lg-8" style="text-align:left;">
+                    <b>Dr. Amin Beheshti</b>
+                    <br />
+                    &nbsp;&nbsp;-<a href="https://en.wikipedia.org/wiki/Senior_lecturer" target="_blank">Senior Lecturer</a> in Data Science, <br />
+                    &nbsp;&nbsp;-Director, <a href="https://aip-research-center.github.io/" target="_blank">AI-enabled Processes (AIP) Research Centre</a>, <br />
+                    &nbsp;&nbsp;-Head, <a href="https://data-science-group.github.io/" target="_blank">Data Analytics Research Lab</a>, <br />
+                    &nbsp;&nbsp;-Founder, <a href="https://data-science-group.github.io/BigDataSociety/" target="_blank">Big Data Society</a>, <br />
+                    &nbsp;&nbsp;-Deputy Director, Industry &amp; External Relation 
+                    &nbsp; <br />
+                    &nbsp;&nbsp;<a href="https://www.mq.edu.au/" target="_blank">@Macquarie University</a>, Sydney, Australia <br />
+                    <i>AND</i> <br />
+                    &nbsp;&nbsp;-Adjunct Academic in Computer Science,  <br />
+                    &nbsp;&nbsp;<a href="https://www.unsw.edu.au/" target="_blank">@University of New South Wales</a>, Sydney, Australia <br />
+                    
+
+                    <br />
+                    <b>email:</b> amin.beheshti@mq.edu.au <br />
+                    <b>phone:</b> +61 (2) 9850 6344 &nbsp;|&nbsp;
+                    <b>fax:</b> +61 (2) 9850 9551 <br />
+                    <b>Address:</b> Office 365, Becton-Dickinson (BD) Building, Level 3, 4 Research Park Drive, Macquarie University, Sydney, Australia.     </div>
+  </div>
+
+	<hr />
+
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align:justify;">
+            Dr. Amin Beheshti is the Director of <a href="https://aip-research-center.github.io/" target="_blank">AI-enabled Processes (AIP) Research Centre</a> and the head of the <a href="https://data-science-group.github.io" target="_blank">Data Analytics Research Lab</a>, Department of Computing, Macquarie University. 
+            He is also Senior Lecturer (equivalent to Associate Professor in the USA) in Data Science at <a href="https://www.mq.edu.au/">Macquarie University</a> and Adjunct Academic in Computer Science at <a href="https://www.unsw.edu.au/">UNSW Sydney</a>. Amin completed his Ph.D. and Postdoc in Computer Science and Engineering in UNSW Sydney and holds a Master and Bachelor in Computer Science both with First Class Honours. In addition to his contribution to teaching activities, Amin extensively contributed to research projects; where he was the R&amp;D Team Lead and Key Researcher in the 'Case Walls &amp; Data Curation Foundry' and 'Big Data for Intelligence' projects. Amin has been recognized as a high-quality researcher in Big-Data/Data/Process Analytics and has been invited to serve and served as <a href="#C4">Keynote Speaker, General-Chair, PC-Chair, Organisation-Chair and program committee member</a> of top international conferences. He is the leading author of the book entitled "<a href="http://www.cse.unsw.edu.au/~soc/process-analytics/" target="_blank">Process Analytics</a>", co-authored with other high-profile researchers in UNSW and IBM research, recently published by Springer.
+            Amin was able to secure over $3.1 million research grants for AI-Enabled and Intelligence-Led projects in Banking and Education.
+    </div>
+  </div>
+	
+	<hr />
+	
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6" style="text-align:left;">
+                A brief <a href="iStory.pdf" target="_blank">Story</a> about me: <br /><br />
+                <div id="mynetwork"></div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6" style="text-align:left;">
+                <pre>
+//  Are *YOU* interested in a Research Degree (PhD/Master)?
+
+
+var myFieldOfResearch = {'Big-Data/Data/Process Analytics', 
+                         'Service/Social/Cognitive Computing',
+                         'Case/Business-Process Management'};
+
+if ((yourInterest in myFieldOfResearch) &&
+    (yourGPA > 85%) &&
+    (yourPublications.count > 1)) {
+  me.contact();
+}
+
+
+
+/* Contact Information
+
+{"myContact":[
+    { "eMail" : "amin.beheshti@mq.edu.au" },
+    { "Web"   : "https://data-science-group.github.io/" },
+    { "Address": "Data Analytics Research Lab, Department of Computing, 
+                  Macquarie University, Sydney, Australia" }
+]}
+
+*/
+                </pre>
+    </div>	  
+  </div>
+	
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6" style="text-align:right;">
+
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6" style="text-align:left;">
+
+    </div>	  
+  </div>
+	
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6" style="text-align:right;">
+
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6" style="text-align:left;">
+
+    </div>	  
+  </div>
+	
+ </div>    
+</body>
+</html>
