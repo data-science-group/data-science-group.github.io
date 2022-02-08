@@ -1,0 +1,75 @@
+"Timestamp","Company Name","Company Website","WAM/GPA Required for this Position","Company Supervisor Name","Company Supervisor Role","Company Supervisor Email","Project 1 - Title","Project 1 - Description","Project 2 - Title","Project 2 - Description","Project 3 - Title","Project 3 - Description"
+"2022/01/30 6:15:06 pm GMT+11","BG Unified Solutions Australia and India Pty Ltd","https://www.bgunifiedsolutions.net","4.0","Saurabh Sareen","Managing Director","ssareen@bgunifiedsolutions.net","Building up a POP in India ","A brand new POP will be setup in India and will be linked with POP's in Australia. A full deployment of Cisco UCS Infrastructure with ALLFLASH Storage, PaloAlto Firewalls, Fortigate Firewalls, F5 WAF, UCaaS using Cisco Communications Manager, Forcepoint SWG, Email SWG, DNS using BIND, InfoBlox and more.","Design and Implementation of FWaaS - Defense Customer","Design and Implementation of a ForcePoint NGFW including multiple layers of PaloAlto and Cisco ASA 10G Firewalls. Migration/Cutover of the primary ISP to the DC and migration of all VPN Sites to the DC.","Design and Implementation of SIPaaS","A newly provisioned SIPaaS using Vocus with Inter and Intra DC load balancing for the Inbound and Outbound calls. Migration of thousands of the number blocks from AAPT to Vocus and perform UAT with the end customers. "
+"2022/02/04 4:58:28 pm GMT+11","ITIC","www.itic.com.au","75","Anant Chitale","Head Of Service Delivery","anant.chitale@itic.com.au","Smart Students Attendance System ","Background
+
+Face recognition is a subdivision problem of visual pattern recognition. We recognize visual patterns all the time, and we obtain them through our eyes. The brain recognizes this information as a meaningful concept. 
+
+For a machine, whether it is a picture or a video, it is a matrix of many pixels. The computer should find out what concept a specific part of the data represents in the data. This is a rough classification problem in visual model recognition.
+
+For face recognition, it is necessary to distinguish who the face belongs to in the part of the data that all machines think of the face. This subdivision problem could be solved with the power of AI (Li, L et al. 2020).
+
+Motivation
+Artificial Intelligence assist Education helps to track student class attendance as well as  identify student in online exams. 
+
+Smart Students Attendance System can
+-Facilitate use of AI technology in online learning 
+-Support teaching team in online classes
+-Improve class management (Carter et al. 2020)
+
+","Cyber Incident Response Manager ","As organizations continue to rely on expanding infrastructure in an increasingly hostile threat landscape, the escalation of incidents involving malicious actors poses critical risks to information systems and networks. The ability to identify threats, respond to incidents, restore systems, and enhance security postures is vital to the survival of the operation.
+
+This program brings Incident Response core competencies to advanced levels by presenting students with 16 detailed learning objectives. Students will be provided with the knowledge and the practical skills needed to investigate and respond to network and system incidents. With a specific focus on the identification and remediation of incidents involving host and network devices, students will cover topics such as Threat Intelligence Collection, Investigative Techniques, Creating Playbooks, and Malware Triage. Work experience utilize the Project Ares® Cyber Range and Wireshark network protocol analyzer software.
+
+The Certified Cyber Incident Response Manager program is a component of the career progression track that supports the required Categories, Specialty Areas and Work Roles as defined by the National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework.  It provides a common language to speak about cyber roles and jobs and can be referenced to define professional requirements in cybersecurity. 
+
+Upon successful completion of the program, participants will be able to:
+
+-Define the characteristics of a computer security incident, list the stages of the incident response life cycle, recognize the stages of the attack life cycle, and identify methods to reduce the likelihood of security incidents.
+
+-Explain the components of the current threat landscape, the capabilities of nation-state and non-nation-state threat actors, threats posed by digital computer crimes, legal challenges common to digital investigations, and the legal principles of investigating and prosecuting cybercrime.
+
+-Prepare a security strategy using labs and industry tools to create an effective incident response capability, define the response mission, prepare for incident response investigations, list potential signs of compromise, and verify indicators of compromise (IOC’s).
+
+-Compare the processes of performing forensic analysis, selection of analysis methods, host and network data collection practices, selection of live response tools and strategies, the location of potential data sources, and the challenges of live data acquisition from a network.
+
+-Propose a malware policy based on industry best practices which addresses the identification of malicious files, initial triage, handling procedures, documentation and distribution guidelines, static and dynamic analysis methods, and the use of sandboxes for automated analysis.
+
+-Recommend an incident response implementation that includes creating a remediation team, posturing actions, incident containment strategies, eradication plan development, plan timing and execution, developing strategic recommendations, and documenting lessons learned.","Junior Software Developer Intern","We have a number of projects in flight at present for large Australian telecoms companies, including provisioning automation and test automation. The ITIC WIL (Work Integrated Learning) Internship program provides opportunities to join project meetings, training, and systems review sessions, working on real-world, large scale projects.
+
+The tasks associated with this internship are as follows:
+•	Write clean, maintainable code
+•	Contribute to system design and architecture discussions
+•	Review team members and audit code
+•	Learn new languages, libraries and apply programming skills to real-world projects
+•	Learn relevant protocols and specifications
+•	Contribute and clearly communicate in team meetings
+•	Design and build software for current business project
+•	Work in an agile team environment to complete projects
+
+Requirements: 
+•	Excellent verbal and written communication skills
+•	Great attention to detail and problem-solving skills
+•	Strong technical aptitude with desire for continuous improvement
+•	a good knowledge of any of the following programming languages and technologies; C#, C++, C, Java
+•	Knowledge of Data Structures, Algorithms, Design patterns
+•	Good analytical and problem-solving skills"
+"2022/02/04 5:16:49 pm GMT+11","ITIC","www.itic.com.au","75","Anant Chitale","Head Of Service Delivery","anant.chitale@itic.com.au","IT Help Desk Intern","We are looking for 1-2 help desk interns with customer centric focus to join our expanding team. The IT Help Desk Intern provides Tier 1 helpdesk assistance to support clients with various IT needs. 
+
+Responsibilities: 
+• IT Service and Help Desk support
+• Support research teams
+• Contribute to IT projects as required
+• Ensure appropriate documentation is created and maintained regarding services and systems
+
+Requirements: 
+• University degree in Information Technology/Telecommunication or TAFE diploma in IT Networking 
+• IT support experience highly desirable
+• Strong technical knowledge in Microsoft Windows 10 OS, Microsoft Office Suite
+• Good understanding Windows Server environment
+• Working knowledge in Office 365 Tools
+• Knowledge in LAN & WAN networking
+• Strong communication skills, with ability to liaise with stakeholders at all levels","","","",""
+"2022/02/04 6:27:46 pm GMT+11","AI Ventures","www.aiventures.com.au","NA","Callum Bir","CEO ","callum@aiventures.com.au","AI driven Pitch App ","AI driven platform that enables startups to pitch and receive automatic feedback on the pitch. There is an existing trained model that needs to enhanced, in addition to adding new features. This project entails Data & Machine Learning, NLP and use of Microsoft Azure and AWS microservices, including NodeJS and Typescript ","AI Driven CV Enhancer ","CVs are still the largest determinants for younger graduates for getting jobs. Our HR teams have embarked on a new AI project that is designed to automate many of the existing knowledge into an AI-based model, that leverages a combination of tools such as OpenAI/GTP-3, various transformers, and NLP techniques.  ","Voice Based HR automation ","There are a number of highly sensitive augmented AI systems in place that needs to be enhanced. Interns will be using a combination of language and tools such as Python, Google Brain, Twilio, and other AI systems to enhance an existing system. "
+"2022/02/07 11:37:13 am GMT+11","Vertex Cyber Security","https://www.vertexcybersecurity.com.au/","68","Martin Boyd","Cyber Security Director","Martin@VertexCyberSecurity.com.au","Cyber Security Defense","Review a company and their current Cyber Security Defenses and controls. Then generate a report on the effective controls and what can be improved.","Cyber Security Offense","Thinking like a ""hacker"" try and identify vulnerabilities with a company's network and/or website.","Cyber Security Solution","Work with the Vertex team to understand and identify features, code, improvement opportunities for an existing or new Vertex product to improve the Cyber Security of the users of the Vertex product."
+"2022/02/07 1:53:09 pm GMT+11","Fishead","https://www.fishead.com.au","75-80","Andrew Fisher","Owner","andrew@fishead.com.au","Zimble.io","ZImble is a company owned SAAS integration and application suite","MST Sandstone","Sandstone is a project we have just won. It is a financial research subscription platform.","Bioceuticals","Bioceuticals is a new client we are just on boarding. This is a Magento e-Commerce project."
+"2022/02/08 12:40:13 pm GMT+11","cochlear","cochlear at Macquarie University","70+","Brendan Mathias","leader","bmathias@cochlear.com","Market Insight and Analytics","Market Insight and Analytics","","","",""
