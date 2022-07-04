@@ -1,0 +1,74 @@
+Company Name,Company Website,WAM/GPA Required for this Position,Company Supervisor Name,Company Supervisor Role,Company Supervisor Email,Project 1 - Title,Project 1 - Description,Project 2 - Title,Project 2 - Description,Project 3 - Title,Project 3 - Description
+ITIC,www.itic.com.au,75+,Anant Chitale,Head of Service Delivery ,jobs@itic.com.au,Smart Students Attendance System (Data Science) ,"Background
+
+Face recognition is a subdivision problem of visual pattern recognition. We recognize visual patterns all the time, and we obtain them through our eyes. The brain recognizes this information as a meaningful concept. 
+
+For a machine, whether it is a picture or a video, it is a matrix of many pixels. The computer should find out what concept a specific part of the data represents in the data. This is a rough classification problem in visual model recognition.
+
+For face recognition, it is necessary to distinguish who the face belongs to in the part of the data that all machines think of the face. This subdivision problem could be solved with the power of AI (Li, L et al. 2020).
+
+Motivation
+Artificial Intelligence assist Education helps to track student class attendance as well as  identify student in online exams. 
+
+Smart Students Attendance System can
+-Facilitate use of AI technology in online learning 
+-Support teaching team in online classes
+-Improve class management (Carter et al. 2020)
+
+",Cyber Incident Response (Cyber Security),"As organizations continue to rely on expanding infrastructure in an increasingly hostile threat landscape, the escalation of incidents involving malicious actors poses critical risks to information systems and networks. The ability to identify threats, respond to incidents, restore systems, and enhance security postures is vital to the survival of the operation.
+
+This program brings Incident Response core competencies to advanced levels by presenting students with 16 detailed learning objectives. Students will be provided with the knowledge and the practical skills needed to investigate and respond to network and system incidents. With a specific focus on the identification and remediation of incidents involving host and network devices, students will cover topics such as Threat Intelligence Collection, Investigative Techniques, Creating Playbooks, and Malware Triage. Work experience utilize the Project AresÂ® Cyber Range and Wireshark network protocol analyzer software.
+
+The Certified Cyber Incident Response Manager program is a component of the career progression track that supports the required Categories, Specialty Areas and Work Roles as defined by the National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework.  It provides a common language to speak about cyber roles and jobs and can be referenced to define professional requirements in cybersecurity. 
+
+Upon successful completion of the program, participants will be able to:
+
+-Define the characteristics of a computer security incident, list the stages of the incident response life cycle, recognize the stages of the attack life cycle, and identify methods to reduce the likelihood of security incidents.
+
+-Explain the components of the current threat landscape, the capabilities of nation-state and non-nation-state threat actors, threats posed by digital computer crimes, legal challenges common to digital investigations, and the legal principles of investigating and prosecuting cybercrime.
+
+-Prepare a security strategy using labs and industry tools to create an effective incident response capability, define the response mission, prepare for incident response investigations, list potential signs of compromise, and verify indicators of compromise 
+
+-Compare the processes of performing forensic analysis, selection of analysis methods, host and network data collection practices, selection of live response tools and strategies, the location of potential data sources, and the challenges of live data acquisition from a network.
+
+-Propose a malware policy based on industry best practices which addresses the identification of malicious files, initial triage, handling procedures, documentation and distribution guidelines, static and dynamic analysis methods, and the use of sandboxes for automated analysis.
+
+-Recommend an incident response implementation that includes creating a remediation team, posturing actions, incident containment strategies, eradication plan development, plan timing and execution, developing strategic recommendations, and documenting lessons learned.",IT Helpdesk ,"We have a number of projects in flight at present for large Australian telecoms companies, including provisioning automation and test automation. The ITIC WIL (Work Integrated Learning) Internship program provides opportunities to join project meetings, training, and systems review sessions, working on real-world, large scale projects.
+
+The tasks associated with this internship are as follows:
+-Write clean, maintainable code
+-Contribute to system design and architecture discussions
+-Review team members and audit code
+-Learn new languages, libraries and apply programming skills to real-world projects
+-Learn relevant protocols and specifications
+-Contribute and clearly communicate in team meetings
+-Design and build software for current business project
+-Work in an agile team environment to complete projects
+
+Requirements: 
+-Excellent verbal and written communication skills
+-Great attention to detail and problem-solving skills
+-Strong technical aptitude with desire for continuous improvement
+-A good knowledge of any of the following programming languages and technologies; C#, C++, C, Java
+-Knowledge of Data Structures, Algorithms, Design patterns
+-Good analytical and problem-solving skills"
+truuth,www.truuth.id,75+,Mike Simpson,CEO,mike.simpson@truuth.id,Machine Learning applied to 'User Liveness',"Successful applicants will work with our R&D team to improve our AI/ML models that test the ‘liveness’ of users during online interactions through an active test.  You will help us to develop and refine AI/ML models for face liveness tests such as face complexion, pulse detection, and depth detection that we can add to our liveness product to avoid a range of presentation attacks including photo, video, deep fake, and mask attacks.
+",Machine Learning models applied to document classification and authentication,"Successful applicants will help truuth to extend our capabilities for Identity document classification to global ID documents using computer vision and AI/ML techniques.  You will help our R&D team to develop new tests of document falsification using AI/ML, including testing for the presence of photo substitution and text alteration.  And you will assist truuth to enhance document data extraction accuracy through design and build of pre-processing transformations of images and post extraction logic checks.
+",Computer vision and machine learning applied to invoice parsing,"Successful applicants will work with our large Australian Insurance client to automate the processing of invoices from 3rd party service providers.  You will assist our R&D team to enhance our in-market solution models to reduce errors, and test the application of invoice parser service to additional document categories.
+"
+BG Unified Solutions P/L,https://www.bgunifiedsolutions.net,85,Saurabh Sareen,Managing Director,ssareen@bgunifiedsolutions.net,GPU Enabled WorkstationaaS / VDIaaS / RDSaaS,"This project is under POC mode. POC is successful from three different locations including India, UAE and Singapore. The project will require: 
+1. Setting up of the hosted AD environment.
+2. Setting up of the Azure AD Connect.
+3. Setting up of the Megaport Connectivity to Azure Cloud.
+4. Setting up of the Storage and Compute in GK2 DC in India, Vocus SYD2 in AU and ATSYD in Australia.
+5. Setting up of the VM Templates for gVDI and gRDS. Windows 2019DC, Windows 2022 DC and Windows 10 21H2 Version of OS.
+6. Syncing AD with the Customer AD Environment.
+7. Setting up F5 for RAS Connectivity.
+8. Setting up the Firewalls in all DC locations.
+9. Setting up Parallel RAS Servers with redundancy of each component.
+10. Provide users access as per location and company policies.
+
+The student must be aware of Cyber Security Fundamentals, Active Directory, some knowledge of VMWARE, DNS, Switching and Routing.",,,,
+cochlear,cochlear at Macquarie University,70+,Brendan Mathias,leader,bmathias@cochlear.com,Market Insight and Analytics,Market Insight and Analytics,,,,
+Fishead,https://www.fishead.com.au,75-80,Andrew Fisher,Owner,andrew@fishead.com.au,,,,,,
+Domain,domain.com.au,85+,Ashley Aubeelaus,Internship Manager,ashley.aubeelaus@domain.com.au,,,,,,
