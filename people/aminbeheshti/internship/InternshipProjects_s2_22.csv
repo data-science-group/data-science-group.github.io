@@ -1,5 +1,5 @@
 Company Name,Company Website,WAM/GPA Required for this Position,Company Supervisor Name,Company Supervisor Role,Company Supervisor Email,Project 1 - Title,Project 1 - Description,Project 2 - Title,Project 2 - Description,Project 3 - Title,Project 3 - Description
-ITIC,www.itic.com.au,75+,Anant Chitale,Head of Service Delivery ,jobs@itic.com.au,Smart Students Attendance System (Data Science) ,"Background
+ITIC,www.itic.com.au,75+ WAM,Anant Chitale,Head of Service Delivery ,jobs@itic.com.au,Smart Students Attendance System (Data Science) ,"Background
 
 Face recognition is a subdivision problem of visual pattern recognition. We recognize visual patterns all the time, and we obtain them through our eyes. The brain recognizes this information as a meaningful concept. 
 
@@ -56,7 +56,7 @@ truuth,www.truuth.id,75+,Mike Simpson,CEO,mike.simpson@truuth.id,Machine Learnin
 ",Machine Learning models applied to document classification and authentication,"Successful applicants will help truuth to extend our capabilities for Identity document classification to global ID documents using computer vision and AI/ML techniques.  You will help our R&D team to develop new tests of document falsification using AI/ML, including testing for the presence of photo substitution and text alteration.  And you will assist truuth to enhance document data extraction accuracy through design and build of pre-processing transformations of images and post extraction logic checks.
 ",Computer vision and machine learning applied to invoice parsing,"Successful applicants will work with our large Australian Insurance client to automate the processing of invoices from 3rd party service providers.  You will assist our R&D team to enhance our in-market solution models to reduce errors, and test the application of invoice parser service to additional document categories.
 "
-BG Unified Solutions P/L,https://www.bgunifiedsolutions.net,85,Saurabh Sareen,Managing Director,ssareen@bgunifiedsolutions.net,GPU Enabled WorkstationaaS / VDIaaS / RDSaaS,"This project is under POC mode. POC is successful from three different locations including India, UAE and Singapore. The project will require: 
+BG Unified Solutions P/L,https://www.bgunifiedsolutions.net,4,Saurabh Sareen,Managing Director,ssareen@bgunifiedsolutions.net,GPU Enabled WorkstationaaS / VDIaaS / RDSaaS,"This project is under POC mode. POC is successful from three different locations including India, UAE and Singapore. The project will require: 
 1. Setting up of the hosted AD environment.
 2. Setting up of the Azure AD Connect.
 3. Setting up of the Megaport Connectivity to Azure Cloud.
@@ -69,6 +69,53 @@ BG Unified Solutions P/L,https://www.bgunifiedsolutions.net,85,Saurabh Sareen,Ma
 10. Provide users access as per location and company policies.
 
 The student must be aware of Cyber Security Fundamentals, Active Directory, some knowledge of VMWARE, DNS, Switching and Routing.",,,,
-cochlear,cochlear at Macquarie University,70+,Brendan Mathias,leader,bmathias@cochlear.com,Market Insight and Analytics,Market Insight and Analytics,,,,
+Zimble Pty Ltd,https://zimble.io,80,Andrew Fisher,Managing Director,andy@zimble.io,Zimble.io - Implementations,We need business analyst / development team to help with implementing Zimble for our clients.,Fishead to Think Lab re-brand,Project management and business development work on re-branding Fishead.com.au to Thinklab,Fishead client projects,Project management work on varoius e-commerce and custom software client projects that Fishead.com.au are untertaking
+CarClarity,https://www.carclarity.com.au/,70,Sam Khadivizand,Data Scientist ,sam.khadivizand@carclarity.com.au,Data Entry and Analyst,"CarClarity is Australia’s first true car loan platform with an easy online application process.
+Our mission is to save clients time and money, changing the way clients experience car buying, with a hassle free, safe and smarter way.
+
+We are seeking a Full Time Data Entry and Analyst to provide support to our Data and Risk team!
+
+The duties of Data Entry and Analyst include collecting information, troubleshooting processing errors and achieving of the organisations product data file by completing the necessary tasks. You will need to enter information into a database and ensure that our data collection sources are accurate.
+
+We are currently in the process of improving our matching AI and this data would later on feed as a feature to our  models. 
+
+Key Responsibilities
+
+Entering customer and account data from source documents within time limits
+Compiling, verifying accuracy and sorting information to prepare source data for computer entry
+Reviewing data for deficiencies or errors, correcting any incompatibilities and checking output
+
+Requirements
+
+Excellent organisational and time management skills
+Advanced computer skills and Excel skills
+Ability to resolve issues
+Attention to detail and a high level of accuracy
+Able to work independently and as a part of cohesive team
+Ability to analyse data & generate insights
+Good SQL skills
+Experience with Python is highly advantageous",Data Analyst,"CarClarity is Australia’s first true car loan platform with an easy online application process.
+Our mission is to save clients time and money, changing the way clients experience car buying, with a hassle free, safe and smarter way.
+
+We are seeking a Full Time Data Analyst to provide support to our Data and Risk team!
+
+The duties of Data Entry and Analyst include collecting information, troubleshooting processing errors and achieving of the organisations product data file by completing the necessary tasks. You will need to enter information into a database and ensure that our data collection sources are accurate.
+
+We are currently in the process of improving our matching AI and this data would later on feed as a feature to our  models. 
+
+Key Responsibilities
+
+Support the business with proactive data discovery, building data assets to answer complex problems and identify opportunities for growth
+Extend and develop data models that enrich our single view of customer and other data assets
+
+Requirements
+
+Excellent organisational and time management skills
+Advanced computer skills and Excel skills
+Attention to detail and a high level of accuracy
+Experience working with commercial data and applying analytics methodologies to projects that have delivered high strategic impact
+Experience applying visualisation theory by building dashboards that communicate arguments for change (Tableau is preferred)
+Experience wrangling and modelling data using SQL and Python
+Strong written and verbal communication skills – gathering requirements and presenting ",,
 Fishead,https://www.fishead.com.au,75-80,Andrew Fisher,Owner,andrew@fishead.com.au,,,,,,
 Domain,domain.com.au,85+,Ashley Aubeelaus,Internship Manager,ashley.aubeelaus@domain.com.au,,,,,,
