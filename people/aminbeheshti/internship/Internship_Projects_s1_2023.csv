@@ -1,0 +1,160 @@
+,Internship (Comp8851) - S1 2023,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,Company Name,Company Website,WAM/GPA Required for this Position,Company Supervisor Name,Company Supervisor Role,Company Supervisor Email,Project 1 - Title,Project 1 - Description,Project 2 - Title,Project 2 - Description,Project 3 - Title,Project 3 - Description,
+1,Systemethix Pty Ltd,https://www.systemethix.com.au,65,Alexis Giral,Senior Senior Technical Consultant & Founding Director,alexis.giral@systemethix.com.au,AI framework for storage infrastructure,Building from scratch an AI framework to proactively monitor disk storage infrastructure in relation to ransomware attacks,Monitoring and reporting framework for large bigdata lakes,Improving and evolving an existing bespoke application framework to monitor bigdata lakes. Introducing reporting. Improving dashboards. Extending the support to more global name spaces and products.,Managed Services Automation,Help our managed services team to automate day to day monitoring and administration tasks. Convert existing scripts and application to more modern programing languages.,
+2,Domain,https://www.domain.com.au/group/,70,Suyash Masurkar ,Head of BI ,suyash.masurkar@domain.com.au,omain Right Start Program - Implementation of Alation Data Catalogue,"This program is led by the Alation Customer Success Team through all implementation and rollout phases including inception, go-live, and continuing adoption.",SVP - Single view of property,"Builds key property data products with latest technology to empower multiple domain’s products and key external clients including government, state office and research entity.
+",Business Unit Reporting (Agent Solutions),"Work with internal stakeholders to gather requirements, enhance and develop reports and data sets to service the business.",
+3,Domain ,https://www.domain.com.au/group/,70,Suyash Masurkar,Head of BI,suyash.masurkar@domain.com.au,New Development  vs. Established,"Purpose: help the business understand how many new development properties on the market
+Deliverables: build a natural language classification pipeline to identify newDev listing
+Outcome: understand how to develop/deploy ML models in best engineering practices. ",MetaDescriptor,Project Description (purpose/deliverables/outcome): Creating a tool for auto generating metadata for snowflake tables and columns,Data Analysis and Validation for single view of customer (SCV) project,"Project Description (purpose/deliverables/outcome): Create pipelines to identify data anomalies, for data validation and monitor data quality",
+4,ITIC,www.iticlive.com,75,Anant Chitale,Head of Service Delivery ,jobs@itic.com.au,Cyber Incident Response (Cyber Security),"As organizations continue to rely on expanding infrastructure in an increasingly hostile threat landscape, the escalation of incidents involving malicious actors poses critical risks to information systems and networks. The ability to identify threats, respond to incidents, restore systems, and enhance security postures is vital to the survival of the operation.
+
+This program brings Incident Response core competencies to advanced levels by presenting students with 16 detailed learning objectives. Students will be provided with the knowledge and the practical skills needed to investigate and respond to network and system incidents. With a specific focus on the identification and remediation of incidents involving host and network devices, students will cover topics such as Threat Intelligence Collection, Investigative Techniques, Creating Playbooks, and Malware Triage. Work experience utilize the Project Ares Cyber Range and Wireshark network protocol analyzer software.
+
+The Certified Cyber Incident Response Manager program is a component of the career progression track that supports the required Categories, Specialty Areas and Work Roles as defined by the National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework.  It provides a common language to speak about cyber roles and jobs and can be referenced to define professional requirements in cybersecurity. 
+
+Upon successful completion of the program, participants will be able to:
+
+-Define the characteristics of a computer security incident, list the stages of the incident response life cycle, recognize the stages of the attack life cycle, and identify methods to reduce the likelihood of security incidents.
+
+-Explain the components of the current threat landscape, the capabilities of nation-state and non-nation-state threat actors, threats posed by digital computer crimes, legal challenges common to digital investigations, and the legal principles of investigating and prosecuting cybercrime.
+
+-Prepare a security strategy using labs and industry tools to create an effective incident response capability, define the response mission, prepare for incident response investigations, list potential signs of compromise, and verify indicators of compromise 
+
+-Compare the processes of performing forensic analysis, selection of analysis methods, host and network data collection practices, selection of live response tools and strategies, the location of potential data sources, and the challenges of live data acquisition from a network.
+
+-Propose a malware policy based on industry best practices which addresses the identification of malicious files, initial triage, handling procedures, documentation and distribution guidelines, static and dynamic analysis methods, and the use of sandboxes for automated analysis.
+
+-Recommend an incident response implementation that includes creating a remediation team, posturing actions, incident containment strategies, eradication plan development, plan timing and execution, developing strategic recommendations, and documenting lessons learned.",IT Helpdesk,"We are seeking a talented and self-motivated IT Helpdesk Support Intern to join our busy IT Helpdesk team. Successful applicants will be working within the IT helpdesk team, and will have the opportunity to work onsite at our clients office.
+
+Responsibilities: 
+• Diagnose and resolve incident tickets 
+• Troubleshoots network issues by analysing network symptoms 
+• Conducts research to resolve issues • Implements workaround, updates, and changes to network systems 
+• Review, assess, and complete customer service requests for technical support 
+• Monitor network status and provide support for issues related to the network infrastructure, hardware, and applications 
+• Perform network maintenance by updating network configuration to meet best practices, upgrade software versions, and correct security vulnerabilities 
+• Perform new site hardware installations at remote sites 
+• Assist in designing networks by analysing network requirements and develop various network designs by consulting superiors as needed 
+Requirements: 
+• Excellent verbal and written communication skills 
+• Great attention to detail and problem-solving skills 
+• Strong technical aptitude with desire for continuous improvement 
+• University degree in Information Technology/Telecommunication or TAFE diploma in IT Networking 
+• CCNA certification or experience in working with configuring & troubleshooting Cisco Routers and Switches are highly desirable
+",,,
+5,Truuth,www.truuth.id,75,Mike Simpson,CEO,mike.simpson@truuth.id,User Liveness Detection,"Preventing deepfakes and other presentation attacks requires verifying the 'liveness' of online users.  This means that the user is live and present during an authentication event, and there is no risk of imposters presenting themselves as the true account owner.  We have developed many tests of user liveness, but we always need to be thinking about the next wave of attacks and develop AI and ML techniques to mitigate the risk. This project will focus on new machine learning tests of user liveness such as pulse detection and face complexion. ",Identity Document Authenticity,Identity fraud is a massive and growing problem for enterprises in Australia and across the globe.  To mitigate the risk of identity fraud it's crucial to verify the authenticity of identity documents supplied by online users to open accounts.  Most organizations have primitive approaches to this problem.  Truuth's mission is to deliver world-leading assurance in user identity.  This requires us to build a wide range of machine learning tests of ID document authenticity. This project will focus on adding machine learning tests of font substitution and photo substitution.,Global Identity Database,"In a global economy, enterprises need to onboard customers from a wide range of countries.  Each country has a suite of identity documents that have unique text, visual, and security features.  Truuth specializes in streamlining the onboarding process regardless of jurisdiction.  We catalog identity documents from across the globe and define metadata for each document to deliver assurance to our clients that the document is valid.  This project will focus on extending this database in terms of country coverage and metadata details. ",
+6,DataEco Lab,www.dataecolab.com,75,Dr Perry Chen,supervision students in research and development,perry.chen@dataecolab.com,Investigating and Prototyping a graph database-based data knowledge management tool,"Two students (full-time) involved in this project will work together with the supervisor. The students will learn a range of concepts in data engineering, data governance, and data practice modelling, and are expected to quickly learn how to use a graph database (i.e. Neo4j, if it is available in School of Computing at Macquarie University)  and investigate its potential as a basis for development of a modelling and knowledge management system. Students who previously studied or used a graph database will have an advantage.",Designing and prototyping a concept demon for a dashboard to manage enterprise data practice.  ,"Two students (full-time) involved in this project will work together with the supervisor. The students will learn a range of concepts in data engineering, data management and governance, and modelling and management of data practice, and will conduct investigation into how a dashboard can be designed to monitor, control and manage enterprise data practice, with a rang of potential functionality. The students are expected to participate in prototyping such a dashboard as a concept demon.",,,
+7,Macquarie University Cybersecurity Hub,https://www.mq.edu.au,75,Muhammad Ikram,Lecturer and Project Lead,muhammad.ikram@mq.edu.au,Verifiable credentials for decentralize identity assurance via OpenID Connect,"Identification and authentication are two of four principles (IAAA) of designing a secure solution. The oldest and simplest approach (also known as identity silo) to achieve that is to implement an authentication mechanism and identity model inside the application. Even though initially the idea seems to be a perfect solution, it has a few hidden drawbacks. Firstly, the delivery of a bulletproof authentication system is a costly and difficult task. Moreover, this approach does not scale and for each application the development process needs to be repeated. 
+
+This project aims to implement the issuing of verifiable credentials via OpenID Connect. The implementation will contribute to the extension of an existing open-source framework. Currently, the framework allows to gather identity claims and federate them according to the OpenID Connect for Identity Assurance specification. The project implementation will connect the process of identity claims gathering with the issuance of verified credentials in the standardized way.",Are QR codes trustworthy? Analyzing QR codes for security issues in the wild.,"By removing the burden of manually typing a URL or contact information, dynamic QR codes are a form of 2D barcodes that allow easy interaction among multiple devices such as mobile devices and websites. Due to the recent popularity of QR codes, especially in the era of COVID19 pandemic,  it is highly-likely to be adopted by malware authors and cyber-criminals. In fact, while a link can look suspicious, malicious and benign QR codes cannot be distinguished by simply looking at them. However, despite public discussions about increasing use of QR codes for malicious purposes, the prevalence of malicious QR codes and the kinds of threats they pose are still unclear. In this project, we aim to collect and analyse QR codes in the wild for potential attack vectors. The study will help illuminate the trustworthiness of QR codes.
+",,,
+8,Vertex Cyber Security,https://VertexCyberSecurity.com.au,65,Martin Boyd,CEO,ceo444@VertexCyberSecurity.com.au,Penetration Testing,Learn how to think like a hacker and apply those to a variety of technologies including websites and servers. ,Cyber Audit,Learn how to assess a company's Cyber Security and create a report on it.,Cyber Consulting,"Learn how to understand the current situation of businesses and help the improve their cyber security from securing the devices, to network, to software.",
+9,Reesby,www.reesby.com.au,65,Neha Deverapalli,HR Manager,hr@reesby.com.au,Digital Shopping Platform (AI),"Students Considered: Backend/front end/fullstack engineer, cloud engineer, network engineer, datascientists, business analyst, cybersecurity, web development/design, marketing, finance, business and project management. Virtual reality/3d game design
+
+This project aims to create a smart shopping experience for customers by leveraging the power of computer vision and machine learning. The application will use computer vision.
+
+Machine learning algorithms will be used to personalize the shopping experience for each user based on their browsing and purchase history, as well as their preferences and interests. The app will also use natural language processing to understand customer queries and provide relevant recommendations.
+
+The project will also include a backend system for managing the product data, pricing, and coupon information, as well as a database for storing customer information and purchase history. The system will be scalable and able to handle a large number of users and products.
+
+The combination of computer vision, machine learning, virtual reality and natural language processing will allow this project to create an innovative and experience that will be both time and cost-effective for the user.",AI Matching,"Students Considered: Backend/front end/fullstack engineer, cloud engineer, network engineer, datascientists, business analyst, cybersecurity, web development/design, marketing, finance, business and project management.
+
+The project aims to develop a platform that utilizes natural language processing, computer vision, and machine learning to match and organize documents. The platform will be able to analyze and understand the content of the documents, and make suggestions for organization and categorization based on user preferences.
+
+The natural language processing component will be used to extract key information from the documents and understand their context. Computer vision will be employed to analyze any images or charts in the documents and extract relevant data. Machine learning algorithms will be implemented to learn from user interactions and preferences, and make personalized suggestions for document organization and categorization.
+
+The platform will also include a user-friendly interface for uploading, viewing, and managing documents. Users will be able to search, sort and filter their documents, as well as collaborate and share them with others.
+
+A backend system will be developed to handle the document processing and storage, as well as the user management and collaboration features. The system will be scalable and able to handle a large number of users and documents.
+
+Overall, the project aims to create a platform that streamlines the process of managing and organizing documents using advanced technology such as natural language processing, computer vision, and machine learning. The platform will provide users with more efficient and personalized document management.",CRM and Cloud Database System,"Students Considered: Backend/front end/fullstack engineer, cloud engineer, network engineer, datascientists, business analyst, cybersecurity, web development/design, marketing, finance, business and project management.
+
+This project aims to develop a fully managed,  CRM cloud-based database and calling/texting service that utilizes advanced technology to ensure data security and performance. The service will provide automatic, real-time backup and disaster recovery, as well as automatic scaling and performance optimization.
+
+The service will be built on a cloud infrastructure, allowing users to access their data from anywhere with an internet connection. The database component will be designed to handle large amounts of data and support various types of data structures. The calling and texting service will provide real-time communication for users.
+
+The service will include advanced security features to protect user data, such as encryption, authentication, and access control. The disaster recovery component will ensure that user data is always available, even in the event of an outage or other unforeseen incident.
+
+The service will also incorporate automatic scaling and performance optimization capabilities, ensuring that the service can handle a high number of users and transactions without compromising performance. The service will also be fully managed, which means that the user will not be required to handle maintenance tasks such as updates and backups.
+
+Overall, the project aims to create a robust and secure cloud-based database and calling/texting service that utilizes advanced technology to provide automatic real-time backups, disaster recovery and performance optimization. ",
+10,Zimble Pty Ltd,https://zimble.io,80,Andrew Fisher,Managing Director,andy@zimble.io,Zimble.io - Implementations,We need business analyst / development team to help with implementing Zimble for our clients.,Fishead to Think Lab re-brand,Project management and business development work on re-branding Fishead.com.au to Thinklab,Fishead client projects,Project management work on varoius e-commerce and custom software client projects that Fishead.com.au are untertaking,
+11,CarClarity,https://www.carclarity.com.au/,70,Sam Khadivizand,Data Scientist ,sam.khadivizand@carclarity.com.au,Data Entry and Analyst,"CarClarity is Australia’s first true car loan platform with an easy online application process.
+Our mission is to save clients time and money, changing the way clients experience car buying, with a hassle free, safe and smarter way.
+
+We are seeking a Full Time Data Entry and Analyst to provide support to our Data and Risk team!
+
+The duties of Data Entry and Analyst include collecting information, troubleshooting processing errors and achieving of the organisations product data file by completing the necessary tasks. You will need to enter information into a database and ensure that our data collection sources are accurate.
+
+We are currently in the process of improving our matching AI and this data would later on feed as a feature to our  models. 
+
+Key Responsibilities
+
+Entering customer and account data from source documents within time limits
+Compiling, verifying accuracy and sorting information to prepare source data for computer entry
+Reviewing data for deficiencies or errors, correcting any incompatibilities and checking output
+
+Requirements
+
+Excellent organisational and time management skills
+Advanced computer skills and Excel skills
+Ability to resolve issues
+Attention to detail and a high level of accuracy
+Able to work independently and as a part of cohesive team
+Ability to analyse data & generate insights
+Good SQL skills
+Experience with Python is highly advantageous",Data Analyst,"CarClarity is Australia’s first true car loan platform with an easy online application process.
+Our mission is to save clients time and money, changing the way clients experience car buying, with a hassle free, safe and smarter way.
+
+We are seeking a Full Time Data Analyst to provide support to our Data and Risk team!
+
+The duties of Data Entry and Analyst include collecting information, troubleshooting processing errors and achieving of the organisations product data file by completing the necessary tasks. You will need to enter information into a database and ensure that our data collection sources are accurate.
+
+We are currently in the process of improving our matching AI and this data would later on feed as a feature to our  models. 
+
+Key Responsibilities
+
+Support the business with proactive data discovery, building data assets to answer complex problems and identify opportunities for growth
+Extend and develop data models that enrich our single view of customer and other data assets
+
+Requirements
+
+Excellent organisational and time management skills
+Advanced computer skills and Excel skills
+Attention to detail and a high level of accuracy
+Experience working with commercial data and applying analytics methodologies to projects that have delivered high strategic impact
+Experience applying visualisation theory by building dashboards that communicate arguments for change (Tableau is preferred)
+Experience wrangling and modelling data using SQL and Python
+Strong written and verbal communication skills – gathering requirements and presenting ",,,
+12,Tiny Technologies,tiny.cloud,85,Michael Hideo Smith,VP Engineering,mike.hideo@tiny.cloud,Conceptualise and implement a new plugin,"Project 1 Title
+
+Conceptualise and implement a new plugin
+
+Project 1 Description
+
+Work with developers and designers to design plugin
+Produce clean, efficient code base and design document on specifications
+Produce MVP based on the final design
+Troubleshoot, debug and upgrade MVP plugin
+Gather and evaluate user feedback
+Create technical documentation for reference and reporting",Build a performance benchmarking framework for TinyMCE services using Jmeter or a similar tool,"Liaise with developers and supervisor on the basic environment set up of Jmeter
+Produce clean, efficient code base
+Produce functional prototype
+Troubleshoot, debug and upgrade functional prototype
+Gather and evaluate internal feedback
+Create technical documentation for reference and reporting",,,
+13,CME,www.composite.com.au,85,Ben Hughes,GM,ben.hughes@composite.com.au,E-Market,Data analysis and content intern,,,,,
+14,BG Unified Solutions P/L,https://www.bgunifiedsolutions.net,85,Saurabh Sareen,Managing Director,ssareen@bgunifiedsolutions.net,GPU Enabled WorkstationaaS / VDIaaS / RDSaaS,"This project is under POC mode. POC is successful from three different locations including India, UAE and Singapore. The project will require: 
+1. Setting up of the hosted AD environment.
+2. Setting up of the Azure AD Connect.
+3. Setting up of the Megaport Connectivity to Azure Cloud.
+4. Setting up of the Storage and Compute in GK2 DC in India, Vocus SYD2 in AU and ATSYD in Australia.
+5. Setting up of the VM Templates for gVDI and gRDS. Windows 2019DC, Windows 2022 DC and Windows 10 21H2 Version of OS.
+6. Syncing AD with the Customer AD Environment.
+7. Setting up F5 for RAS Connectivity.
+8. Setting up the Firewalls in all DC locations.
+9. Setting up Parallel RAS Servers with redundancy of each component.
+10. Provide users access as per location and company policies.
+
+The student must be aware of Cyber Security Fundamentals, Active Directory, some knowledge of VMWARE, DNS, Switching and Routing.",,,,,
