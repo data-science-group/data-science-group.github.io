@@ -1,58 +1,199 @@
-"Timestamp","Full Name","Student Number","WAM","MQ Email Address","Master Program"
-"2023/06/14 1:09:44 am GMT+10","Syeda Ramisa Masum","46734902","77.875","syeda.masum@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/06/14 1:15:02 am GMT+10","Aakash Ali","46305491","74.85","aakash.ali@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/06/14 1:28:25 am GMT+10","Sowmya Sripathi","46742794","77.6 (For 2 semesters ) ","sowmya.sripathi@students.mq.edu.au ","Master of Information Technology in Cyber Security"
-"2023/06/14 3:16:29 pm GMT+10","Xavier Comabig","46277951","77","xavier.comabig@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/06/14 10:09:51 pm GMT+10","Dhwani Mayank Dalal","46162712","74.625","dhwanimayank.dalal@students.mq.edu.au","Master of Information Systems Management"
-"2023/06/14 10:14:41 pm GMT+10","Dhwani Mayank Dalal","46162712","74.625","dhwanimayank.dalal@students.mq.edu.au","Master of Information Systems Management"
-"2023/06/14 10:46:47 pm GMT+10","Srivatsa Gundlupet Harish","46854843","70.5","srivatsa.gundlupetharish@students.mq.edu.au","Master of Information Systems Management"
-"2023/06/15 10:24:30 am GMT+10","Huu Thang Tran","44483732","65","huu-thang.tran@students.mq.edu.au","Master of Information Systems Management"
-"2023/06/16 1:03:57 pm GMT+10","Cristobal Morano Ayllon","46774882","84","cristobalcristobal.moranoayllon@students.mq.edu.au","Master of Data Science"
-"2023/06/16 8:55:27 pm GMT+10","Ashane Manendra Fernando","46257098","93.250","ashanemanendra.fernando@students.mq.edu.au","Master of Information Technology in Networking"
-"2023/06/19 4:51:11 pm GMT+10","Proteek Sanyal","46312625","71","proteekkumar.sanyal@students.mq.edu.au","Master of Data Science"
-"2023/06/20 11:27:45 am GMT+10","Ashish kumar","46788042","73.75","ashish.kumar2@students.mq.edu.au ","Master of Data Science"
-"2023/06/21 11:05:00 pm GMT+10","Solongo Guraranz","46725024","57","solongo.guraranz@students.mq.edu.au","Master of Information Systems Management"
-"2023/06/22 10:34:27 am GMT+10","Nottachat Kaewgard","47369833","78.5","nottachat.kaewgard@students.my.edu.au","Master of Data Science"
-"2023/06/22 10:44:25 am GMT+10","sowmya sripathi ","46742794","77.6 ( Until 2 nd semester)","sowmya.sripathi@students.mq.edu.au ","Master of Information Technology in Cyber Security"
-"2023/06/22 1:35:36 pm GMT+10","SHRUTHI LAKSHMI ","46344675","74.375","shruthilakshmi.shanmugaolivu@students.mq.edu.au","Master of Data Science"
-"2023/06/22 2:16:58 pm GMT+10","Matthew Talem Foning Lepcha","46312803","69.25","matthewtalemfoning.lepcha@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/06/22 2:32:05 pm GMT+10","Archana Sankaran","46290907","66.33","archana.sankaran@students.mq.edu.au","Master of Information Systems Management"
-"2023/06/22 9:55:17 pm GMT+10","Mounika Upparapallr","46823387","75.8","mounika.upparapalle@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/06/23 10:19:29 am GMT+10","GARV SHARMA","46238050","77.625","garv.sharma@students.mq.edu.au","Master of Data Science"
-"2023/06/23 10:12:12 pm GMT+10","Faisal Rahman","46261745","76","faisal.rahman1@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/06/24 10:25:46 pm GMT+10","Kalb Haider","46213384","62 (2 semesters) 3rd is yet to announce","kalb.haider@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/06/25 11:28:35 am GMT+10","Rohan Eapen George","45664609","78.67","rohan.george@students.mq.edu.au","Master of Information Technology in Networking"
-"2023/06/25 10:06:51 pm GMT+10","Youssef Abboud","47333758","74.5","Youssef.abboud@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/06/29 5:04:37 pm GMT+10","Chirag Singh Sikarwar","46240055","63","chiragsingh.sikarwar@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/07/06 9:14:13 am GMT+10","Xavier Comabig","46277951","77.83","xavier.comabig@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/07/06 9:49:37 am GMT+10","John Daniel Palad","46812067","74","johndaniel.palad@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/07/06 9:52:57 am GMT+10","Anon Thuravatikul","46310533","66","anon.thuravatikul@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/06 9:59:20 am GMT+10","Bibek Shrestha","46865381","83","bibek.shrestha@students.mq.edu.au ","Master of Information Technology in Cyber Security"
-"2023/07/06 12:19:33 pm GMT+10","Nishant Udapurkar","46816046","71.833","nishant.udapurkar@students.mq.edu.au","Master of Data Science"
-"2023/07/06 12:35:54 pm GMT+10","Elie Aoun","46213066","71","elie.aoun@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/06 12:37:05 pm GMT+10","Ashane Manendra Fernando","46257098","91.667","ashanemanendra.fernando@students.mq.edu.au","Master of Information Technology in Networking"
-"2023/07/06 12:47:40 pm GMT+10","Sowmya Sripathi","46742794","77.16","sowmya.sripathi@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/07/06 1:01:15 pm GMT+10","Syeda Ramisa Masum ","46734902 ","77.68","syeda.masum@students.mq.edu.au ","Master of Information Technology in Cyber Security"
-"2023/07/06 1:04:07 pm GMT+10","Huu Thang TRAN","44483732","68","huu-thang.tran@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/06 1:52:23 pm GMT+10","advaith kalkulli ramesh","46206698","67.083","advaithkalkulli.ramesh@students.mq.edu.au","Master of Data Science"
-"2023/07/06 1:57:44 pm GMT+10","Nottachat Kaewgard","47369833","79.75","nottachat.kaewgard@students.mq.edu.au","Master of Data Science"
-"2023/07/06 7:11:01 pm GMT+10","Varsha Sridhar","47483288","68.25","varsha.sridhar@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/06 7:41:54 pm GMT+10","Dhanya Marikkumar","46318712","70.643","dhanya.marikkumar@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/07 12:23:39 am GMT+10","Ashish kumar ","46788042","72%","Ashish.kumar2@students.mq.edu.au ","Master of Data Science"
-"2023/07/07 6:34:36 am GMT+10","Srivatsa Gundlupet Harish ","46854843","70","srivatsa.gundlupetharish@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/07 11:37:32 am GMT+10","Sharon Raju Mamootil","46744819","74.750 ≈ 75","sharonraju.mamootil@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/07 12:30:36 pm GMT+10","Pervaje Bhagyashree Bhat","46859136","78.667","pervajebhagyashree.bhat@students.mq.edu.au","Master of Information Technology in Networking"
-"2023/07/07 12:59:56 pm GMT+10","Mwangi Leon Murugah","46723307","68.917","leonmurugah.mwangi@students.mq.edu.au","Master of Information Technology in Networking"
-"2023/07/07 1:46:56 pm GMT+10","Archana Sankaran","46290907","67.07","archana.sankaran@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/07 4:28:30 pm GMT+10","Wilbert Dwiputra Indra","45548382","70.417","wilbert-dwiputra.indra@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/07/07 8:08:35 pm GMT+10","Rahul Gaur","46744827","69","rahul.gaur@students.mq.edu.au","Master of Data Science"
-"2023/07/08 11:47:01 am GMT+10","SHRUTHI LAKSHMI SHANMUGA OLIVU","46344675","74.16","shruthilakshmi.shanmugaolivu@students.mq.edu.au","Master of Data Science"
-"2023/07/08 2:38:18 pm GMT+10","Aakash Ali ","46305491","74.65","aakash.ali@students.mq.edu.au ","Master of Information Technology in Cyber Security"
-"2023/07/08 2:49:50 pm GMT+10","Vishal Kirankumar Gawai","46848916","61.57","vishalkirankumar.gawai@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/08 10:24:07 pm GMT+10","SASIDAR SUBBU PALIVELA","47532823","48.286","sasidarsubbu.palivela@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/09 10:33:01 pm GMT+10","Momna Azhar","45759596","74.7","momna.azhar@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/10 2:43:00 pm GMT+10","Suresh Ghatani","46864512","69","suresh.ghatani@students.mq.edu.au","Master of Data Science"
-"2023/07/10 4:15:14 pm GMT+10","Milli Shrestha ","46744711","68.750","milli.shrestha@students.mq.edu.au","Master of Information Systems Management"
-"2023/07/10 4:46:03 pm GMT+10","Paras Yadav","46318658","61.41","paras.yadav@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/07/10 5:55:18 pm GMT+10","Kalb Haider ","46213384","60","kalb.haider@students.mq.edu.au","Master of Information Technology in Cyber Security"
-"2023/07/11 3:58:03 pm GMT+10","Vinay Attapuram ","46330674","62","vinaykumar.attapuram@students.mq.edu.au","Master of Information Technology in Cyber Security"
+"Timestamp","Company Name","Company Website","WAM/GPA Required for this Position","Company Supervisor Name","Company Supervisor Role","Company Supervisor Email","Project 1 - Title","Project 1 - Description","Project 2 - Title","Project 2 - Description","Project 3 - Title","Project 3 - Description"
+"2023/06/30 11:56:16 am GMT+10","Yirigaa ","www.yirigaa.com.au","75","Steve Elbourn ","Director ","academy@yirigaa.com.au","Data Networking and Automation","For this Data Networking and Automation project, we are building a new network environment from the ground up and onboarding the customer into the operational team. The internship program provides a pathway opportunity to be selected as Helpdesk Analyst within the Telstra teams.
+
+Responsibilities include:
+Designing and documenting infrastructure
+Analysing capacity requirements
+Building core configurations for template-based deployment
+Configuring monitoring and logging
+Configuring and utilising automation tools and developing scripts
+This project will provide hands-on experience with IP networking and dev-ops
+
+Key Learning Tasks:
+IP Addressing and Subnetting
+Routing and Switching
+Network Security and Access Control
+Network Monitoring and Management
+Network Virtualization and SDN
+Emerging Trends in Networking Infrastructure
+Python and Ansible
+Dev-Ops and Scripting","Cyber Security","For this Cyber Security project, we are building an environment from a Cloud Security perspective in Microsoft Azure and working on Incident Response and Computer Forensics related tasks. You will gain work experience in tasks that directly relate to pathway opportunities available in Incident Response and Security Operations Centre (SOC) Analyst roles with Telstra.
+
+Responsibilities include:
+Identity Access Management
+Network Security
+Platform Protection 
+Security Operations
+Computer Forensics
+Incident Response
+
+Key Learning Tasks:
+Role-based Access Control
+Web Application Firewall
+Azure Monitor
+Autopsy
+Orphcrack
+Registry Explorer 
+Linux commands
+Vulnerability Scanning
+Penetration Testing","Data Science","For this data science project, we are developing a model that can assist teachers in marking multiple choice exams. We are also developing a model to be used in our machine learning engine to determine Academic Integrity and identify contract cheating and AI generated content. The internship program provides a pathway opportunity to be selected as Data Analyst and Data Consultant within the Telstra teams.
+
+Responsibilities include:
+Collecting and pre-processing a dataset of exam questions and answers
+Training a machine learning model to predict the correct answer
+Implementing the model in a user-friendly application
+This project will provide hands-on experience with natural language processing, machine learning, and the opportunity to apply their skills to an education use case
+
+Key Learning Tasks:
+BERT Model
+Data cleaning and curation
+Using Generative AI to develop scale training dataset
+Python
+SQL
+PowerBI
+Tableau
+Node JS (optional)
+Mongo DB (optional)
+UI/ UX Design (optional)
+Machine Learning/ Deep Learning"
+"2023/06/30 12:42:03 pm GMT+10","Customedia","https://customedia.com.au/","80","Santiago Moscatelli","Head of Analytics","santiago@customedia.com.au","Segmentation and Economic Profiling of Australian Regions","Marketing intelligence relies heavily on the strategic segmentation of target audiences into distinct groups, each meticulously tailored to meet the unique demands of individual engagement campaigns. In executing this essential segmentation process, Customedia taps into three primary information sources: survey data, proprietary client-provided information, and publicly available data. The focus of this project is to exploit the potential of public information to supplement and refine the first two data sources, thereby enhancing the effectiveness and precision of our targeted marketing efforts.
+
+The 'Segmentation and Economic Profiling of Australian Regions' project predominantly uses data from the Australian Bureau of Statistics and the Australian Taxation Office. It aims to categorize various Australian regions at the postal code level based on their financial and economic conditions, while remaining open to alternative clustering methodologies. The output of this undertaking will form a foundational layer that will subsequently be augmented and enriched with specialized data inputs, including those provided by clients. The integration of these sources will bolster the accuracy of our segmentation strategy, thereby ensuring that we remain aligned with the roadmap set out in the initial stages of our strategic marketing intelligence plan.
+
+While the scope of the project is vast, it can be systematically broken down into a series of carefully planned steps for easier execution:
+
+1.	Data Acquisition: Begin by identifying the relevant datasets for segmentation and economic profiling. Primarily, this will include data from the Australian Bureau of Statistics and the Australian Taxation Office. Download this data for further processing and analysis (week 1 and 2).
+
+2.	Data Preprocessing: Clean and preprocess the acquired data. This may involve handling missing values, removing duplicates, dealing with outliers, and possibly transforming some variables. The goal of this step is to ensure the data's integrity and usability for subsequent project stages (weeks 2, 3 and 4).
+
+3.	Exploratory Analysis and Clustering: Apply various clustering algorithms to the data. These might include K-Means, Hierarchical Clustering, and Expectation-Maximization (EM), among others. Compare the results from these different methods to find the best performing model (weeks 4, 5, 6 and 7).
+
+4.	Data Sufficiency Assessment: Assess the initial results and decide if the public data provides enough meaningful insights. If not, may need to revisit the data acquisition and preprocessing steps to either find additional datasets or clean the data differently (weeks 7 and 8).
+
+5.	Result Compilation and Presentation: Prepare a clear and comprehensive presentation detailing the methods used, their results, and the comparison between them, allowing non-technical stakeholders to understand the findings (week 9).
+
+6.	Geospatial Analysis: Map the clustering results using GIS software to visualize the geographical distribution of the different economic categories across Australian postal codes to detect additional insights into the spatial patterns of the data (week 10).
+
+7.	Data Enrichment: Augment the foundational layer of public data with the proprietary client-provided information and survey data. The enriched data layer will help provide a more detailed and accurate segmentation of the Australian regions (week 11).
+
+8.	Predictive Modeling: Finally, develop machine learning models to predict the potential effectiveness of various marketing campaigns based on the insights derived from the clustering analysis. These models will help align marketing strategies with the roadmap set out in the initial stages of Customedia's strategic marketing intelligence plan (weeks 12 and 13).","","","",""
+"2023/07/05 3:31:08 pm GMT+10","Truuth","www.truuth.id","75","Mike Simpson","CEO ","mike.simpson@truuth.id","ML models for user liveness","Consumers are increasingly using biometrics for authentication.  Biometrics offer significant security and user experience benefits over traditional authentication methods such as passwords and one-time passcodes.  However, it's important that biometric authentication can prevent fraudulent actors impersonating the real user.  To prevent these types of fraud we are building machine learning (ML) tests of user 'liveness' that can detect when a fake face is presented during the authentication session.","ML models for ID document authenticity","In the US alone, ID fraud cost businesses more than US$50b in 2021 and impacted more than 40 million consumers.  And the problem is getting worse.  ID fraud is becoming increasingly elaborate as AI models are harnessed by fraudulent actors.  We mitigate this risk by building ML models that detect a wide range of fraudulent alterations to ID documents including photo substitution, font alteration, and creation of new synthetic IDs.","Repeat user fraud checks","Synthetic ID fraud occurs when fraudulent actors buy (or steal) ID credentials on the dark web and then create new false identities.  When successful, these synthetic IDs can be used to acquire credit cards and other goods and services on credit.  And the fraudsters have an incentive to perpetrate mass attacks if they're successful with their first attempt.  We solve for this threat by performing biometric matching of known fraudulent actors and we do this with a privacy compliant solution that does not require storing sensitive personal identifiable information (PII)."
+"2023/07/06 9:59:19 am GMT+10","Cancer Institute NSW","https://www.cancer.nsw.gov.au/","WAM > 80","Zahra Shahabi Kargar","Manager, Reporting and Intelligence","zahra.shahabikargar@health.nsw.gov.au","Predictive Modelling of Cancer Incidence and demand for cancer services","The main objective of this project is to develop predictive models using Machine Learning to estimate future demand for cancer services across NSW. The goal is to support the Cancer Institute NSW and Local Health Districts in making informed decisions and improving cancer-related policies and initiatives and insights for resource allocation.","","","",""
+"2023/07/11 12:44:55 pm GMT+10","CarClarity","https://www.carclarity.com.au/","70","Sam Khadivi Zand","Data Manager","sam.khadivizand@carclarity.com.au","Integrating XERO API to Store Financial Data in datawarehouse","Project Overview:
+This internship project aims to leverage the XERO API and AWS Glue to build an efficient and scalable solution for storing financial data in a SQL Server database. By integrating these technologies, the project will enable seamless extraction, transformation, and loading (ETL) of financial data from XERO into SQL Server, providing a centralized repository for analysis and reporting.
+
+Project Objectives:
+
+Understanding XERO API: Gain a comprehensive understanding of the XERO API, its functionalities, and the data it provides access to. Explore the available endpoints, authentication methods, and data retrieval mechanisms.
+
+Setup AWS Glue Environment: Set up and configure an AWS Glue environment, including the necessary AWS services such as AWS Glue Data Catalog, AWS Glue Jobs, and AWS Glue Crawler. Ensure proper connectivity to the SQL Server database where the financial data will be stored.
+
+Data Extraction: Develop code to extract financial data from XERO using the XERO API. Define the data entities and attributes required for analysis and reporting, considering factors such as transactions, invoices, payments, and account balances.
+
+Data Transformation: Apply necessary transformations to the extracted data to ensure its compatibility with the SQL Server schema and desired data model. Handle data validation, data cleansing, and any required data enrichment or normalization processes.
+
+Data Loading: Design and implement the data loading process using AWS Glue Jobs. Develop an efficient ETL workflow to load the transformed financial data from XERO into the SQL Server database. Ensure proper error handling, data integrity, and data consistency throughout the loading process.
+
+Schedule and Automation: Implement scheduling and automation capabilities within the AWS Glue environment. Set up periodic or event-driven jobs to regularly fetch and update the financial data from XERO into the SQL Server database, ensuring that the data remains up-to-date and synchronized.
+
+Performance Optimization: Optimize the ETL process to enhance its performance, taking advantage of AWS Glue's distributed processing capabilities. Fine-tune the process to minimize the time required for data extraction, transformation, and loading, ensuring efficient resource utilization.
+
+Documentation and Reporting: Document the project implementation, including the architectural design, data flow diagrams, and technical specifications. Create a comprehensive user guide to facilitate future maintenance and enhancements. Generate sample reports and visualizations to demonstrate the stored financial data's potential for analysis and reporting.
+
+Skills and Technologies Required:
+
+-- Strong knowledge of SQL and experience with SQL Server
+-- Familiarity with AWS services, particularly AWS Glue, AWS Glue Jobs, and AWS Glue Crawler
+-- Understanding of RESTful APIs and experience with XERO API
+-- Familiarity with programming languages such as Python, Java, or Scala
+-- Data extraction, transformation, and loading (ETL) concepts and best practices
+-- Experience with cloud platforms, preferably Amazon Web Services (AWS)
+-- Knowledge of database design, data modeling, and schema management
+
+This project will provide valuable hands-on experience in integrating APIs, working with cloud-based ETL tools, and building scalable data pipelines. Through this internship, you will gain a deeper understanding of financial data management and contribute to the development of an efficient solution for storing and analyzing financial information using XERO API and AWS Glue.","Building and Implementing a Lead Scoring Model","Project Overview:
+This internship project focuses on building a lead scoring model to effectively prioritize and assess the quality of leads for a company. The aim is to develop a data-driven approach that assigns scores to leads based on various attributes and behaviors, enabling the sales and marketing teams to focus their efforts on leads with the highest potential for conversion.
+
+Project Objectives:
+
+Data Collection and Analysis: Collaborate with stakeholders to identify the relevant data sources for lead scoring. Gather and analyze data on leads, including demographic information, website interactions, engagement with marketing campaigns, social media activity, and any other available data points. Identify the key indicators that contribute to lead quality and conversion potential.
+
+Feature Engineering: Conduct feature engineering to transform the collected data into meaningful features that can be used in the lead scoring model. Select and create features that are indicative of lead quality, such as lead source, engagement level, past interactions, industry, job title, and any other relevant variables.
+
+Model Development: Build a lead scoring model using machine learning algorithms or statistical techniques. Select an appropriate model based on the available data and the project requirements. Train the model using historical data on leads that have converted or failed to convert, aiming to identify patterns and correlations that can predict lead quality accurately.
+
+Model Evaluation and Optimization: Evaluate the performance of the lead scoring model using appropriate evaluation metrics such as accuracy, precision, recall, and F1-score. Fine-tune the model by adjusting hyperparameters, applying feature selection techniques, or employing ensemble methods to enhance its predictive power. Aim to optimize the model's performance in identifying high-quality leads.
+
+Implementation and Integration: Integrate the lead scoring model into the company's lead management system or CRM platform. Develop a pipeline or workflow that automates the lead scoring process, ensuring seamless integration with the existing sales and marketing processes. Implement mechanisms to update and retrain the model periodically as new data becomes available.
+
+Collaboration with Sales and Marketing Teams: Collaborate with the sales and marketing teams to understand their requirements and incorporate their domain expertise into the lead scoring model. Seek feedback from stakeholders to refine and improve the model's effectiveness in supporting lead management and conversion efforts.
+
+Documentation and Reporting: Document the entire process of building and implementing the lead scoring model, including the data sources, feature engineering techniques, model selection, evaluation results, and implementation details. Create clear and concise documentation to facilitate knowledge transfer and ensure the model's maintainability in the future.
+
+Skills and Technologies Required:
+
+Proficiency in data analysis and feature engineering techniques
+Knowledge of machine learning algorithms and statistical modeling
+Experience with programming languages such as Python or R
+Familiarity with data manipulation and transformation libraries (e.g., pandas)
+Understanding of evaluation metrics and model performance assessment
+Strong problem-solving skills and analytical thinking
+Effective communication and collaboration abilities
+Knowledge of CRM systems and lead management processes is a plus
+Through this internship project, you will gain practical experience in developing a lead scoring model, working with real-world data, and collaborating with sales and marketing teams. You will contribute to enhancing the lead management process and supporting decision-making by identifying and prioritizing high-quality leads.","Building an Analytical Solution for Data-Driven Decision Making","Project Overview:
+This internship project focuses on developing an analytical solution that empowers the business to make data-driven decisions. The aim is to leverage data analysis, visualization, and predictive modeling techniques to provide actionable insights and enable informed decision making across various aspects of the organization.
+
+Project Objectives:
+
+Data Discovery and Understanding: Collaborate with stakeholders to identify the available data sources within the organization. Explore and understand the structure, quality, and relevance of the data. Gain insights into the key business challenges and decision-making needs that can be addressed through data analysis.
+
+Data Integration and Cleaning: Integrate and clean the data from multiple sources, ensuring consistency and accuracy. Address any data quality issues, handle missing values, and perform necessary data transformations to prepare the data for analysis.
+
+Exploratory Data Analysis (EDA): Conduct exploratory data analysis to uncover patterns, relationships, and trends within the data. Use descriptive statistics, data visualizations, and other EDA techniques to gain a deeper understanding of the data and identify potential areas for further analysis.
+
+Data Visualization: Develop interactive and visually appealing data visualizations to effectively communicate insights and trends to stakeholders. Use tools such as Tableau, Power BI, or Python libraries like Matplotlib and Seaborn to create informative charts, graphs, and dashboards.
+
+Predictive Modeling: Build predictive models to address specific business challenges or make data-driven forecasts. Utilize techniques such as regression, classification, time series analysis, or machine learning algorithms, depending on the nature of the problem. Train and evaluate the models using appropriate metrics to ensure their accuracy and reliability.
+
+Decision Support System: Develop a decision support system that incorporates the analytical findings and models. Create a user-friendly interface or dashboard that allows stakeholders to interact with the data, explore different scenarios, and receive real-time insights to support decision making.
+
+Recommendations and Reporting: Translate the analytical findings and predictions into actionable recommendations for the business. Generate reports or presentations summarizing the key insights, trends, and suggested actions. Communicate the results effectively to stakeholders, tailoring the information to their needs and level of understanding.
+
+Documentation and Knowledge Transfer: Document the entire analytical solution, including data sources, data integration processes, analysis techniques, modeling approaches, and system architecture. Create comprehensive documentation and user guides to facilitate knowledge transfer and ensure the maintainability of the solution.
+
+Skills and Technologies Required:
+
+Strong analytical and problem-solving skills
+Proficiency in data analysis, data visualization, and predictive modeling techniques
+Knowledge of statistical analysis and relevant tools (e.g., Python, R, SQL)
+Familiarity with data visualization tools (e.g., Tableau, Power BI)
+Understanding of database systems and data manipulation
+Effective communication and presentation skills
+Ability to work with stakeholders from various departments and understand their requirements
+Through this internship project, you will gain practical experience in building an analytical solution, working with real-world data, and providing data-driven insights to support decision making. You will contribute to enhancing the organization's ability to make informed decisions, optimize processes, and drive business growth."
+"2023/07/11 3:37:22 pm GMT+10","Domain","https://www.domain.com.au/","75+ WAM","Kieran Goldsworthy","Talent Acquisition Partner ","Kieran.goldsworthy@domain.com.au","Conversational BI Bot Development - with local LLM","Purpose: Alleviate Business Intelligence (BI) issues and improve report creation efficiency
+Deliverables: Intern will identify a suitable Language Model from Huggingface and fine-tune it to generate the desired analytical results
+Outcome: The intern will develop expertise in working with Pytorch and Transformer models and understand how to fine-tune Language Models for specific applications.
+
+Learning Goals
+Gain technical proficiency using PyTorch and Transformer models; enhancing programming skills while applying AI for business automation purposes.
+Develop business acumen through problem-solving Business Intelligence issues, combined with the ability to effectively collaborate with IT and business teams towards successful project completion.
+Learn to manage project timelines, implement feedback, and meet deliverable standards in a professional setting to ensure improvements in operational efficiency.
+","Domain x Alation Data Catalogue","This program is led by the Alation Customer Success Team through all implementation and rollout phases including inception, go-live, and continuing adoption.
+
+Learning Goals
+Developing business acumen, learning how to partner with senior leaders; take direction and use constructive feedback to deliver results
+Understanding of the Domain Group Data Team
+Understanding of new systems (Practical experience)
+","",""
+"2023/07/12 3:02:11 pm GMT+10","Domain ","https://www.domain.com.au/","75+ WAM.","Kieran ","Talent Acquisition Partner ","Kieran.goldsworthy@domain.com.au","Validation for single view of customer (SCV) project","Create pipelines to identify data anomalies, for data validation and monitor data quality
+
+This is a great opportunity for an intern to learn more about the Domain Group business and gain experience by 
+Data Analysis 
+Data Visualisation
+Developing SQL skills
+Creating dags in Airflow 
+Monitor dags in Airflow
+Create new data validations in DBT 
+Learn about data pipelines to process consumer data
+Learn about consumer data from raw to transformed
+","","","",""
