@@ -74,3 +74,28 @@ Project Details:
 
 The simulated microgrid will consist of a solar array, a community battery, a load consisting of a community of households that represents a region in Australia, and it will be connected to the main grid network. The main goal is to create an AI that can make optimal decisions about when to supply or take power from the grid based on electrical energy market price predictions from the AEMO (Energy Australia Market Operator) to minimise the costs of the microgrid. To make these decisions the AI will consider the future energy usage of the households (load forecasting), the energy generation forecast of the solar array and the capacity of the battery. The AI’s success will be measured by how it uses this data to know when to charge up the battery, when to use the solar array or battery to power the households and when to draw or supply power to the grid to optimize the monetary costs of the microgrid.   
 ","NA","","",""
+"2024/07/01 10:40:25 pm GMT+10","TIMindtree Australia ","https://www.ltimindtree.com/","75+","srini goluguri","Country Head","srini.goluguri@ltimindtree.com","Business and Data Analytics","**About LTIMindtree:**
+LTIMindtree is a leading IT services company known for delivering innovative solutions and transformative digital experiences. We are excited to offer an exceptional opportunity for university graduates to join our team as part of our graduation program.
+
+**Position: Student Intern - Governance, Risk, and Compliance (GRC) with Generative AI**
+
+**Role Overview:**
+We are seeking enthusiastic university graduates to join our dynamic team as student interns. This role focuses on developing a compelling business case for an investment proposal aimed at addressing critical Governance, Risk, and Compliance (GRC) issues using Generative AI. As an intern, you will have the unique opportunity to explore the rapidly evolving world of AI and its application in managing risk and ensuring compliance within large organizations.
+
+**Key Responsibilities:**
+- Conduct market research and analyze business processes to identify GRC challenges.
+- Develop comprehensive investment proposals to address GRC issues using Generative AI.
+- Collaborate with experienced professionals across IT, compliance, risk management, and finance departments.
+- Present findings and recommendations to senior stakeholders, enhancing your analytical and communication skills.
+
+**What We Offer:**
+- Hands-on experience in GRC frameworks and AI technologies.
+- Mentorship from industry experts and exposure to real-world projects.
+- Opportunities to contribute to meaningful projects that drive innovation and improve organizational efficiency.
+- A supportive and collaborative work environment that fosters learning and growth.
+
+**Why Join Us:**
+This internship is perfect for students looking to apply their academic knowledge in a real-world setting. You will gain invaluable experience, enhance your skills, and be at the forefront of integrating Generative AI into business solutions. This is a unique chance to set the stage for a successful career in the tech industry.
+
+**How to Apply:**
+If you are passionate about AI, eager to learn, and ready to make a difference, we invite you to apply for this exciting internship opportunity. Join us at LTIMindtree and be part of a team that is shaping the future of technology.","","","",""
