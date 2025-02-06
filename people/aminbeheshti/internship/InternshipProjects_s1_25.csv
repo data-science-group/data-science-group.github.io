@@ -121,3 +121,50 @@ This role is ideal for a problem-solver with strong analytical skills, an intere
  
 We are seeking two students interested in developing such an application that would be first piloted then implemented in a Western Sydney Hospital ED waiting room. The working hours are flexible. The students would need to come to the AIHI office as needed. The MyED team is part of the Human Factors and Resilience stream at the Australian Institute of Health Innovation in the Faculty of Medicine, Health and Human Sciences. The members of the supervisory team have a multidisciplinary background including engineering. 
 ","","","",""
+"2025/02/05 9:29:19 am GMT+11","The University of Sydney","https://kollinginstitute.org.au/","85","Professor Jose Antonio Lopez-Escamez","Professor of Meniere disease Neuroscience ","jose.lopezescamez@sydney.edu.au","Variant Search by cDNA Number, REF, ALT, and SYMBOL","We are looking for a motivated data science student to develop a robust search function for our genetic variant database. The goal is to enable users to query specific genetic variants using the cDNA notation (HGVSc), reference allele (REF), alternative allele (ALT), and gene symbol (SYMBOL).
+This project is suitable for students with a background in bioinformatics, computational biology, or data science. You will be working with structured genomic data and designing efficient queries to retrieve meaningful results.
+What You Will Work On:
+•	Developing an efficient search function that allows users to query variants based on the following input format:
+SYMBOL/cDNA/REF/ALT (Example: BRCA1/c.123A>T/A/T)
+Skills Required:
+•	MongoDB for database management
+•	Data retrieval and processing
+•	Experience with genomic databases is a plus
+•	Python (Pandas, NumPy, BioPython, or similar libraries)
+•	Understanding of variant annotation and genomic data
+"," Data Query and Website Visualization","Description:
+We are seeking a data science student who can develop an interactive visualization tool for our genomic database. This project involves writing queries to extract key genetic data and creating a visualization similar to the one on the gnomAD website (https://gnomad.broadinstitute.org/gene/ENSG00000188162?dataset=gnomad_r4).
+What You Will Work On:
+•	Writing optimized queries to extract key data points from our dataset
+•	Creating data visualizations for variant frequencies, gene impact, and population statistics
+•	Ensuring the visualization interface is user-friendly and intuitive
+Skills Required:
+•	MongoDB for database management
+•	Data visualization using libraries such as D3.js, Plotly, Matplotlib, or Seaborn
+•	Understanding of genomic data visualization is a bonus
+","Data Portal Development using WordPress","Description:
+We are looking for an experienced WordPress developer to help us build a web portal for our genetic database. This portal will serve as the central hub for researchers, clinicians, and users to access genetic data and insights.
+What You Will Work On:
+•	Designing and implementing a WordPress-based web portal
+•	Ensuring the website is responsive, fast, and user-friendly
+•	Integrating dynamic content and search functionality
+•	Implementing a secure login and user authentication system
+
+Technology Stack:
+•	CMS: WordPress
+•	Backend: PHP & JavaScript
+•	Database: MongoDB
+
+Skills Required:
+•	Proficiency in WordPress development (themes, plugins, and customization)
+•	Experience with PHP, HTML, CSS, and JavaScript
+•	Knowledge of database integration
+•	Experience with security best practices for web applications
+"
+"2025/02/05 12:52:46 pm GMT+11","Macquarie University","https://www.mq.edu.au/","NA","Connie Iong","IT Enterprise Architect","connie.iong@mq.edu.au","Enterprise Architecture Reference Framework Update","•	Review and assist with architecture artefacts updates
+•	Alignment of application artefacts in ServiceNow to iServer
+•	Mapping applications to CAUDIT capabilities
+•	Artifact creation and generation depending on project requirements
+•	Analysis, research, problem solving and recommendation on architecture assignments
+•	Tool utilisation and optimisation (iServer, Visio, Confluence)
+","","","",""
