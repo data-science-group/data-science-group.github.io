@@ -1,0 +1,54 @@
+Timestamp,Company Name,Company Website,WAM/GPA Required for this Position,Company Supervisor Name,Company Supervisor Role,Company Supervisor Email,Project 1 - Title,Project 1 - Description,Project 2 - Title,Project 2 - Description,Project 3 - Title,Project 3 - Description
+2025/05/12 7:20:04 pm GMT+10,Zimble Pty Ltd,https://zimble.io,85,Andrew Fisher,Managing Director,andy@zimble.io,Develop AI Model for Brand personality,"We are looking to develop and AI model that can consume and analyse text content from a specific brands website and oher sources to develop a brand personality. This will be used to auto generate product descriptions and potentially other copy required for the brands website. The AI may also be used to consume text from competitors and used to write copy in a similar way.
+
+The model will then be used in conjunction with another model to analyse product attributes including name, categories, tags etc as well as product images to create on brand descriptions of the products. ",Business analyst,We are looking for a business analyst to work with our team to document requirements for new product features that we want to develop. The candidate may also be tasked with designing and documenting processes for the rollout of the software. ,,
+2025/05/12 7:23:27 pm GMT+10,ThinkLab,https://thinklab.com.au,80,Andrew Fisher,Managing Director,andrew@thinklab.com.au,Project manager / Business analyst,"We are looking for a candidate to work with us on various client projects.
+The role will include all aspects of project delivery from discovery to delivery of the final product. The projects will be ecommerce related projects.",,,,
+2025/05/16 11:31:45 pm GMT+10,Cochlear Ltd,https://www.cochlear.com/au/en/home,75,Gary Lau,Data Scientist,glau@cochlear.com,Referral Customer lifetime value & segmentation,"From new Cochlear recipients survey, provide analysis on the positive turning points in candidate journey towards getting a CI, specifically around awareness, referrals, decision to proceed and brand choice",B2C Sales Funnel Value estimation,The direct-to-consumer (DTC) team has been capturing sales leads and nurture these leads through our marketing activities. The project aim to provide an estimation of likelihood of an in-funnel patient to convert into an actual surgery before a certain time (End of Financial Year),Abnormally detection on Manufacturing Plant,Create a machine learning model to detect abnormally from the test system in the production line to prevent production waste. 
+2025/05/20 9:42:32 pm GMT+10,Truuth,www.truuth.id,75,Mike Simpson,CEO,mike.simpson@truuth.id,Deepfake image detection,"Fraudsters are using AI tools to create hyper-realistic images of ID documents, invoices, bank statements, pay slips, and academic transcripts.  Legacy fraud detection solutions do not detect these deepfake images.  This project is focused on building and updating a suite of deepfake detection models to assist our clients to mitigate the risk of document fraud.",Repeat user fraud checks,Truuth's Repeat User Fraud Check compares face vectors and hashes of Personal Identifiable Information (PII) fields to detect cases of identity takeover.  This service is critical to protect our clients from identity attacks created with AI tools. This project is focused on testing a wide range of repeat user fraud scenarios and extending the capabilities of Truuth's fraud graph.,"Image classification, segmentation and data extraction","Truuth needs to verify the identity of new users from across the globe.  This requires Truuth to be able to detect, classify, authenticate, and extract data from global identity documents.  This project is focused on extending the reach and accuracy of our ID document detection, classification, authentication, and data extraction features.  Interns will have the opportunity to build AI models to improve the accuracy and global reach of each of these features."
+2025/05/21 12:44:32 pm GMT+10,Vertex Cyber Security,www.vertexcybersecurity.com.au,68+,"Martin Boyd
+",CEO,vertex_internship@vertexcybersecurity.com.au,Penetration Testing,"Learn from expert Ethical Hackers (Penetration Testers) with real world attacks and real systems. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.
+","Cyber Security Consulting
+","Learn from expert Cyber Security Consultants with real world defenses and real systems. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.
+", Cyber Security Auditing,"Learn from expert Cyber Security Auditors with real world systems and real Cyber reports. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.
+"
+2025/05/28 10:57:51 am GMT+10,Macquarie University - Cyber Security,mq.edu.au,70,Johnson Chan,Vulnerability and Threat Manager,johnson.chan@mq.edu.au,Prometheus - Macquarie Security uplift and enhancement,"Cyber Playbook development and enhancement, Security Awareness, Cybersecurity Operations",,,,
+2025/05/28 11:53:43 am GMT+10,Macquarie University - Cyber Security,mq.edu.au,65,Johnson Chan,Vulnerability and Threat Manager,johnson.chan@mq.edu.au,Risky Business,"Improve Macquarie University's Cybersecurity Governance, Risk and Compliance (GRC) by improving the classification of assets and data in the university. You will also assist with identifying, classifying and ameliorating cyber risks facing the organisation.",,,,
+2025/05/28 12:01:20 pm GMT+10,Macquarie University - Cyber Security,mq.edu.au,75,Johnson Chan,Vulnerability and Threat Manager,johnson.chan@mq.edu.au,Valkyrie - Cyber Security Assessment / Penetration Testing,"You will conduct Cyber Security Assessments, Penetration Testing and reporting and assist with Attack Surface management in the Macquarie University environment",,,,
+2025/05/28 3:00:47 pm GMT+10,Macquarie University,mq.edu.au,70,Johnson Chan,Vulnerability and Threat Manager,johnson.chan@mq.edu.au,CyberRiskCalc,Quantitative Risk Management for Cyber Risk - Create a model to quantify the cybersecurity risks faced by the university,,,,
+2025/05/28 6:25:37 pm GMT+10,The University of Sydney ,https://kollinginstitute.org.au/menieres-disease-neuroscience-group,85,Professor Jose Antonio Lopez-Escamez,"Professor of Meniere disease Neuroscience 
+Faculty of Medicine and Health, School of Medical Sciences 
+The Kolling Institute, University of Sydney",jose.lopezescamez@sydney.edu.au and kiana.bagheri@sydney.edu.au,Big Data Visualization Platform with LLM Integration,"We're looking for a Software Engineer to enhance our Big Data portal with a new feature that allows researchers to upload datasets for automated comparison and insights.
+
+The system will analyze uploaded data against curated datasets, generate clear comparison reports, and provide visualizations powered by Large Language Models (LLMs). The stack includes React.js (frontend) and Node.js (backend).
+
+Key Responsibilities:
+Build secure, scalable file upload functionality for large datasets
+
+Implement automated data comparison and generate insightful reports
+
+Integrate LLMs for report summarization and data visualizations
+
+Design an intuitive UI for uploading data and viewing results
+
+Ensure data privacy, integrity, and security throughout the process","
+VCF Variant Comparison and Ranking Tool
+","
+This project focuses on developing a machine learning-powered tool that enables researchers to compare individual VCF (Variant Call Format) files against multiple reference variant datasets. The system will:
+
+Analyse and compare single VCF files with curated variant databases.
+Rank variants based on allelic frequencies and pathogenicity scores using state-of-the-art ML algorithms.
+Generate comprehensive, user-friendly reports that highlight clinically or biologically relevant variants.
+This tool will help genetic researchers efficiently identify and prioritise important variants, streamlining data interpretation and reporting.",,
+2025/05/29 8:57:04 am GMT+10,Macquarie University - Cyber Security,mq.edu.au,70,Johnson Chan,Vulnerability and Threat Manager,johnson.chan@mq.edu.au,ThreatMonitor - Threat Intelligence,Improve the cyber threat intelligence capabilities of the organisation,,,,
+2025/05/29 5:15:01 pm GMT+10,Macquarie University,https://www.mq.edu.au/,Please include transcript for consideration,Connie Iong,Enterprise Architect,gerard.frez@mq.edu.au,MQIT Enterprise Architecture - APM Update,"Review and assist with updates of application profiles in ServiceNow Application Portfolio Management (APM Module)
+Interns will deliver the following activities: (a) Alignment of application artefacts from ServiceNow to iServer365; (b) Artifact and/or Report creation and generation depending on project requirements (c) Analysis, research, problem solving and recommendation on architecture assignments (d) Tool utilisation and optimisation (iServer365, Visio, Power BI, Sharepoint)
+
+Benefits to intern and training provided:
+Overview of enterprise architecture of MQ 
+Enterprise architecture framework and purpose
+iServer365 standards and templates used
+Exposure to organisational process and technology impact
+Deep dive into Application profiles, EA reporting, business process modeling & team collaboration & facilitation skills
+Mentoring by Enterprise Architect  and shadowing them to get hand-ons EA experience
+",,,,
