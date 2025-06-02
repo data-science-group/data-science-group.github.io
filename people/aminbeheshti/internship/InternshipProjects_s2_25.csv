@@ -53,3 +53,34 @@ Deep dive into Application profiles, EA reporting, business process modeling & t
 Mentoring by Enterprise Architect  and shadowing them to get hand-ons EA experience
 ","","","",""
 "2025/06/01 9:33:43 pm GMT+10","Cancer Institute NSW","https://www.cancer.nsw.gov.au/","75+","Parvin Ataie-Kachoie","Research Manager","Parvin.AtaieKachoie@health.nsw.gov.au","Automation of Grants Analysis Applications","Project Details will be presented during the workshop in 2 June","Trusted Enterprise Knowledge Model","Project Details will be presented during the workshop in 2 June","",""
+"2025/06/02 9:41:41 am GMT+10","Domain Group","www.domain.com.au","3.6","Milad Mosharraf","Head of Data Decision Science","milad.mosharraf@domain.com.au","Observatory 2.0 — Revenue Alert","Interface for colleagues to explore the market trends including personalised insights. ","Agentic AI Workflow: Data Onboarding","Project Goal:
+Design and implement an intelligent, automated workflow using Agentic AI principles to streamline and accelerate the process of onboarding new data sources. The primary objectives are to significantly reduce operational time, enhance the accuracy of data integration code, and improve overall efficiency in data ingestion.
+
+Key Responsibilities:
+
+Research and analyze current data onboarding processes to identify bottlenecks and areas for automation.
+
+Design and conceptualize an agentic AI workflow, defining the roles and interactions of different AI agents.
+
+Implement the workflow using orchestration tools like n8n, integrating with Large Language Model (LLM) APIs for intelligent decision-making and code generation.
+
+Develop and integrate ""tools"" (e.g., scripts, API calls) that the AI agents can utilize to perform tasks such as schema inference, data validation, and initial data transformation.
+
+Test and refine the automated workflow to ensure robustness, accuracy, and efficiency.
+
+Document the design, implementation, and operational procedures of the new system.
+
+Technologies Involved:
+
+Workflow Automation: n8n (or similar tools like Apache Airflow, Prefect)
+
+AI/ML: Large Language Model (LLM) APIs (e.g., Gemini API, OpenAI API), prompt engineering
+
+Programming Languages: Python (for scripting, API interactions)
+
+Data Technologies: SQL, NoSQL databases, various data formats (CSV, JSON, Parquet)
+
+Version Control: Git
+
+Learning Outcomes:
+Interns will gain hands-on experience in designing and building advanced automation solutions with AI, working with LLMs, and understanding the complexities of data integration. They will develop skills in workflow orchestration, prompt engineering, and practical application of AI to solve real-world business challenges, significantly boosting their profile in the rapidly evolving field of AI and data engineering.","",""
