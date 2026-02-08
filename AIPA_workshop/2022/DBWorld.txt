@@ -1,0 +1,52 @@
+[Apologies for multiple cross-posting]
+
+The 2nd International Workshop on AI-enabled Process Automation
+(AI-PA - ICSOC 2021)
+November 22nd to 25th, Dubai, UAE
+
+Website: https://aip-research-center.github.io/AIPA_workshop/2021/
+Submission site: https://easychair.org/conferences/?conf=aipa2021
+
+
+Award and Support Program
+-------------------------
+* Best Paper Award: $500AUD
+* Workshop Registration Fee Waiver: We will waive the Workshop Registration Fee for the accepted papers, thanks to our sponsors.
+
+Sponsors:
+---------
+ITIC: https://www.iticlive.com/
+dAIta: https://www.daita.com.au/
+Yirigaa: https://yirigaa.com.au/
+AIP Research Centre: https://aip-research-center.github.io/
+
+
+*CALL FOR PAPERS* 
+
+Business processes are central to the operation of public and private enterprises. Today, the advancement in Service Oriented Computing, Artificial Intelligence (AI) and Data Science has the potential to transform business processes in fundamental ways; by assisting knowledge workers in communicating analysis findings, supporting pieces of evidence and to make decisions.
+
+The 2nd International Workshop on AI-enabled Process Automation (AI-PA) will be held as one of the workshops of the 19th International Conference on Service Oriented Computing (ICSOC 2021). The AI-PA workshop aims at providing a forum for researchers and professionals interested in Artificial Intelligence (AI) enabled Business Processes and Services; and in understanding, envisioning and discussing the opportunities and challenges of intelligent Process Automation, Process Data Analytics and providing Cognitive Assistants for knowledge workers. Recognizing the broad scope of the potential areas of interest, the workshop is organized into FOUR themes, as follows:
+
+Call For Papers
+---------------
+Theme 1: Artificial Intelligence (AI), Services and Processes
+Theme 2: BigData, Services and Processes
+Theme 3: Smart Entities, Services and Processes
+Theme 4: Industry Applications
+
+Important dates
+---------------
+Paper Abstract Deadline: September 1, 2021
+Paper Submission Deadline: September 30, 2021
+Paper Notification Deadline: October 15, 2021
+Camera-ready (and Early Registration) Deadline: October 22, 2021
+Workshop: November 22nd to 25th
+
+Notice: Considering the current COVID situation and uncertainty, ICSOC 2021 and the AI-PA Workshop will happen online.
+
+
+Website 
+-------
+https://aip-research-center.github.io/AIPA_workshop/2021/
+
+
