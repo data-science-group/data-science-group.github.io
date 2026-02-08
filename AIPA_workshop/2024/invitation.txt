@@ -1,0 +1,59 @@
+Schahram Dustdar <dustdar@dsg.tuwien.ac.at>
+Fabio Casati <fabio.casati@unitn.it>
+Michael Sheng <michael.sheng@mq.edu.au>
+Jian Yang <jian.yang@mq.edu.au>
+Azadeh Ghari-Neiat <azadeh.gharineiat@deakin.edu.au>
+Marcos Baez <mbaezpy@gmail.com>
+Anup Kalia <Anup.Kalia@ibm.com>
+Mehdi Elahi <mehdi.elahi@uib.no>
+ENAYAT RAJABI <rajabi@dal.ca>
+Rama Akkiraju <akkiraju@us.ibm.com>
+Fabrizio Messina <messina@dmi.unict.it>
+Abdul Sattar <a.sattar@griffith.edu.au>
+Samira Ghodratnama <samira.ghodratnama@hdr.mq.edu.au>
+Shayan Zamani <shayane.zamani@gmail.com>
+Gelareh Mohammadi <g.mohammadi@unsw.edu.au>
+Salil Kanhere <salil.kanhere@unsw.edu.au>
+Mohammad Allahbakhsh <allahbakhsh@gmail.com>
+Qiang Qu <qiang.qu@siat.ac.cn>
+Hakim Hacid <hakim.hacid@zu.ac.ae>
+Hamid Rabiee <rabiee@sharif.edu>
+Daniela Grigori <daniela.grigori@dauphine.fr>
+Rao Mikkilineni <rao@c3dna.com>
+Adrian Mos <adrian.mos@naverlabs.com>
+Gordana Dodig-Crnkovic <dodig@chalmers.se>
+Mark Burgin <mburgin@math.ucla.edu>
+Nour Moustafa <nour.moustafa@unsw.edu.au>
+Imran Razzak <imran.razzak@deakin.edu.au>
+Ashkan Sami <ashkan.sami@gmail.com>
+Morteza Saberi <morteza.saberi@uts.edu.au>
+Bahareh Nakisa <bahar.nakisa@deakin.edu.au>
+Helia Farhood <helia.farhood@mq.edu.au>
+Samuel Muller <samuel.muller@mq.edu.au>
+Wathiq Mansoor <wmansoor@ud.ac.ae>
+Mohammad Daradkeh <mdaradkehc@ud.ac.ae>
+Boualem Benatallah <boualem.benatallah@dcu.ie>
+Hamid Motahari <hamidreza.motaharinezhad@mq.edu.au>
+Wil van der Aalst <wvdaalst@pads.rwth-aachen.de>
+Hakim Hacid <hakim.hacid@gmail.com>
+
+
+
+------------
+
+Dear [*FIRST-NAME*],
+
+Based on your strong expertise in the area, we would like to sincerely invite you to serve on the Program Committee of the 3rd International Workshop on AI-enabled Process Automation, which will be held as one of the workshops of the 20th International Conference on Service-Oriented Computing (ICSOC 2022). 
+
+Workshop Website:
+https://aip-research-center.github.io/AIPA_workshop/2022/
+
+The AI-PA workshop aims at providing a forum for researchers and professionals interested in Artificial Intelligence (AI) enabled Business Processes and Services; and in understanding, envisioning and discussing the opportunities and challenges of intelligent Process Automation, Process Data Analytics and providing Cognitive Assistants for knowledge workers.
+
+We look forward to working with you to make the AI-PA workshop a pivotal event.
+
+Best Regards,
+Prof. Amin Beheshti, Macquarie University, Australia
+Prof. Boualem Benatallah, Dublin City University, Ireland
+Prof. Hamid Motahari, UpBrains AI, Inc., USA
+
