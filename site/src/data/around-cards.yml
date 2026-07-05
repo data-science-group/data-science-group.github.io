@@ -14,17 +14,6 @@ cards:
     external: false
     assignee: null
     visible: true
-    title: AI-PA Workshop Series
-    link: AIPA_workshop/2025/
-    id: aipa-series
-    image: img/aroundthelab/sign-aipa.png
-    description: International Workshop on AI-enabled Process Automation — six
-      editions (2020–2025) co-located with ICSOC, with sponsors including
-      Google, Microsoft, AWS, Fujitsu and IBM.
-  - badge: null
-    external: false
-    assignee: null
-    visible: true
     title: Big Data Society
     link: BigDataSociety/
     id: big-data-society
@@ -35,29 +24,10 @@ cards:
     external: false
     assignee: null
     visible: true
-    title: AI-PLE 2021
-    link: AIPLE_Workshop/2021/
-    id: aiple-2021
-    image: img/aroundthelab/sign-aiple.png
-    description: International Workshop on AI-enabled Policing and Law Enforcement —
-      IEEE EDOC 2021, co-chaired with the Australian Federal Police.
-  - badge: null
-    external: false
-    assignee: null
-    visible: true
-    title: BioFM'25
-    link: BioFM/2025/
-    id: biofm-2025
-    image: img/aroundthelab/sign-biofm25.png
-    description: 1st International Workshop on Foundation Models for Biology and
-      Bioinnovation — IEEE ICDM 2025, Washington DC.
-  - badge: null
-    external: true
-    assignee: null
-    visible: true
-    title: AIP Research Centre
-    link: https://aip-research-center.github.io/
-    id: aip-research-centre
-    image: img/aroundthelab/sign-aip.png
-    description: The AI-enabled Processes Research Centre — a partner research
-      centre led from Macquarie University.
+    title: AI-PA Workshop Series
+    link: AIPA_workshop/2025/
+    id: aipa-series
+    image: img/aroundthelab/sign-aipa.png
+    description: International Workshop on AI-enabled Process Automation — six
+      editions (2020–2025) co-located with ICSOC, with sponsors including
+      Google, Microsoft, AWS, Fujitsu and IBM.
