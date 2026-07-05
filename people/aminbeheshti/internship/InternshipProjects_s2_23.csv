@@ -1,0 +1,225 @@
+"Timestamp","Company Name","Company Website","WAM/GPA Required for this Position","Company Supervisor Name","Company Supervisor Role","Company Supervisor Email","Project 1 - Title","Project 1 - Description","Project 2 - Title","Project 2 - Description","Project 3 - Title","Project 3 - Description"
+"2023/06/30 11:56:16 am GMT+10","Yirigaa ","www.yirigaa.com.au","75","Steve Elbourn ","Director ","academy@yirigaa.com.au","Data Networking and Automation","For this Data Networking and Automation project, we are building a new network environment from the ground up and onboarding the customer into the operational team. The internship program provides a pathway opportunity to be selected as Helpdesk Analyst within the Telstra teams.
+
+Responsibilities include:
+Designing and documenting infrastructure
+Analysing capacity requirements
+Building core configurations for template-based deployment
+Configuring monitoring and logging
+Configuring and utilising automation tools and developing scripts
+This project will provide hands-on experience with IP networking and dev-ops
+
+Key Learning Tasks:
+IP Addressing and Subnetting
+Routing and Switching
+Network Security and Access Control
+Network Monitoring and Management
+Network Virtualization and SDN
+Emerging Trends in Networking Infrastructure
+Python and Ansible
+Dev-Ops and Scripting","Cyber Security","For this Cyber Security project, we are building an environment from a Cloud Security perspective in Microsoft Azure and working on Incident Response and Computer Forensics related tasks. You will gain work experience in tasks that directly relate to pathway opportunities available in Incident Response and Security Operations Centre (SOC) Analyst roles with Telstra.
+
+Responsibilities include:
+Identity Access Management
+Network Security
+Platform Protection 
+Security Operations
+Computer Forensics
+Incident Response
+
+Key Learning Tasks:
+Role-based Access Control
+Web Application Firewall
+Azure Monitor
+Autopsy
+Orphcrack
+Registry Explorer 
+Linux commands
+Vulnerability Scanning
+Penetration Testing","Data Science","For this data science project, we are developing a model that can assist teachers in marking multiple choice exams. We are also developing a model to be used in our machine learning engine to determine Academic Integrity and identify contract cheating and AI generated content. The internship program provides a pathway opportunity to be selected as Data Analyst and Data Consultant within the Telstra teams.
+
+Responsibilities include:
+Collecting and pre-processing a dataset of exam questions and answers
+Training a machine learning model to predict the correct answer
+Implementing the model in a user-friendly application
+This project will provide hands-on experience with natural language processing, machine learning, and the opportunity to apply their skills to an education use case
+
+Key Learning Tasks:
+BERT Model
+Data cleaning and curation
+Using Generative AI to develop scale training dataset
+Python
+SQL
+PowerBI
+Tableau
+Node JS (optional)
+Mongo DB (optional)
+UI/ UX Design (optional)
+Machine Learning/ Deep Learning"
+"2023/06/30 12:42:03 pm GMT+10","Customedia","https://customedia.com.au/","80","Santiago Moscatelli","Head of Analytics","santiago@customedia.com.au","Segmentation and Economic Profiling of Australian Regions","Marketing intelligence relies heavily on the strategic segmentation of target audiences into distinct groups, each meticulously tailored to meet the unique demands of individual engagement campaigns. In executing this essential segmentation process, Customedia taps into three primary information sources: survey data, proprietary client-provided information, and publicly available data. The focus of this project is to exploit the potential of public information to supplement and refine the first two data sources, thereby enhancing the effectiveness and precision of our targeted marketing efforts.
+
+The 'Segmentation and Economic Profiling of Australian Regions' project predominantly uses data from the Australian Bureau of Statistics and the Australian Taxation Office. It aims to categorize various Australian regions at the postal code level based on their financial and economic conditions, while remaining open to alternative clustering methodologies. The output of this undertaking will form a foundational layer that will subsequently be augmented and enriched with specialized data inputs, including those provided by clients. The integration of these sources will bolster the accuracy of our segmentation strategy, thereby ensuring that we remain aligned with the roadmap set out in the initial stages of our strategic marketing intelligence plan.
+
+While the scope of the project is vast, it can be systematically broken down into a series of carefully planned steps for easier execution:
+
+1.	Data Acquisition: Begin by identifying the relevant datasets for segmentation and economic profiling. Primarily, this will include data from the Australian Bureau of Statistics and the Australian Taxation Office. Download this data for further processing and analysis (week 1 and 2).
+
+2.	Data Preprocessing: Clean and preprocess the acquired data. This may involve handling missing values, removing duplicates, dealing with outliers, and possibly transforming some variables. The goal of this step is to ensure the data's integrity and usability for subsequent project stages (weeks 2, 3 and 4).
+
+3.	Exploratory Analysis and Clustering: Apply various clustering algorithms to the data. These might include K-Means, Hierarchical Clustering, and Expectation-Maximization (EM), among others. Compare the results from these different methods to find the best performing model (weeks 4, 5, 6 and 7).
+
+4.	Data Sufficiency Assessment: Assess the initial results and decide if the public data provides enough meaningful insights. If not, may need to revisit the data acquisition and preprocessing steps to either find additional datasets or clean the data differently (weeks 7 and 8).
+
+5.	Result Compilation and Presentation: Prepare a clear and comprehensive presentation detailing the methods used, their results, and the comparison between them, allowing non-technical stakeholders to understand the findings (week 9).
+
+6.	Geospatial Analysis: Map the clustering results using GIS software to visualize the geographical distribution of the different economic categories across Australian postal codes to detect additional insights into the spatial patterns of the data (week 10).
+
+7.	Data Enrichment: Augment the foundational layer of public data with the proprietary client-provided information and survey data. The enriched data layer will help provide a more detailed and accurate segmentation of the Australian regions (week 11).
+
+8.	Predictive Modeling: Finally, develop machine learning models to predict the potential effectiveness of various marketing campaigns based on the insights derived from the clustering analysis. These models will help align marketing strategies with the roadmap set out in the initial stages of Customedia's strategic marketing intelligence plan (weeks 12 and 13).","","","",""
+"2023/07/05 3:31:08 pm GMT+10","Truuth","www.truuth.id","75","Mike Simpson","CEO ","mike.simpson@truuth.id","ML models for user liveness","Consumers are increasingly using biometrics for authentication.  Biometrics offer significant security and user experience benefits over traditional authentication methods such as passwords and one-time passcodes.  However, it's important that biometric authentication can prevent fraudulent actors impersonating the real user.  To prevent these types of fraud we are building machine learning (ML) tests of user 'liveness' that can detect when a fake face is presented during the authentication session.","ML models for ID document authenticity","In the US alone, ID fraud cost businesses more than US$50b in 2021 and impacted more than 40 million consumers.  And the problem is getting worse.  ID fraud is becoming increasingly elaborate as AI models are harnessed by fraudulent actors.  We mitigate this risk by building ML models that detect a wide range of fraudulent alterations to ID documents including photo substitution, font alteration, and creation of new synthetic IDs.","Repeat user fraud checks","Synthetic ID fraud occurs when fraudulent actors buy (or steal) ID credentials on the dark web and then create new false identities.  When successful, these synthetic IDs can be used to acquire credit cards and other goods and services on credit.  And the fraudsters have an incentive to perpetrate mass attacks if they're successful with their first attempt.  We solve for this threat by performing biometric matching of known fraudulent actors and we do this with a privacy compliant solution that does not require storing sensitive personal identifiable information (PII)."
+"2023/07/06 9:59:19 am GMT+10","Cancer Institute NSW","https://www.cancer.nsw.gov.au/","WAM > 80","Zahra Shahabi Kargar","Manager, Reporting and Intelligence","zahra.shahabikargar@health.nsw.gov.au","Predictive Modelling of Cancer Incidence and demand for cancer services","The main objective of this project is to develop predictive models using Machine Learning to estimate future demand for cancer services across NSW. The goal is to support the Cancer Institute NSW and Local Health Districts in making informed decisions and improving cancer-related policies and initiatives and insights for resource allocation.","","","",""
+"2023/07/11 12:44:55 pm GMT+10","CarClarity","https://www.carclarity.com.au/","70","Sam Khadivi Zand","Data Manager","sam.khadivizand@carclarity.com.au","Integrating XERO API to Store Financial Data in datawarehouse","Project Overview:
+This internship project aims to leverage the XERO API and AWS Glue to build an efficient and scalable solution for storing financial data in a SQL Server database. By integrating these technologies, the project will enable seamless extraction, transformation, and loading (ETL) of financial data from XERO into SQL Server, providing a centralized repository for analysis and reporting.
+
+Project Objectives:
+
+Understanding XERO API: Gain a comprehensive understanding of the XERO API, its functionalities, and the data it provides access to. Explore the available endpoints, authentication methods, and data retrieval mechanisms.
+
+Setup AWS Glue Environment: Set up and configure an AWS Glue environment, including the necessary AWS services such as AWS Glue Data Catalog, AWS Glue Jobs, and AWS Glue Crawler. Ensure proper connectivity to the SQL Server database where the financial data will be stored.
+
+Data Extraction: Develop code to extract financial data from XERO using the XERO API. Define the data entities and attributes required for analysis and reporting, considering factors such as transactions, invoices, payments, and account balances.
+
+Data Transformation: Apply necessary transformations to the extracted data to ensure its compatibility with the SQL Server schema and desired data model. Handle data validation, data cleansing, and any required data enrichment or normalization processes.
+
+Data Loading: Design and implement the data loading process using AWS Glue Jobs. Develop an efficient ETL workflow to load the transformed financial data from XERO into the SQL Server database. Ensure proper error handling, data integrity, and data consistency throughout the loading process.
+
+Schedule and Automation: Implement scheduling and automation capabilities within the AWS Glue environment. Set up periodic or event-driven jobs to regularly fetch and update the financial data from XERO into the SQL Server database, ensuring that the data remains up-to-date and synchronized.
+
+Performance Optimization: Optimize the ETL process to enhance its performance, taking advantage of AWS Glue's distributed processing capabilities. Fine-tune the process to minimize the time required for data extraction, transformation, and loading, ensuring efficient resource utilization.
+
+Documentation and Reporting: Document the project implementation, including the architectural design, data flow diagrams, and technical specifications. Create a comprehensive user guide to facilitate future maintenance and enhancements. Generate sample reports and visualizations to demonstrate the stored financial data's potential for analysis and reporting.
+
+Skills and Technologies Required:
+
+-- Strong knowledge of SQL and experience with SQL Server
+-- Familiarity with AWS services, particularly AWS Glue, AWS Glue Jobs, and AWS Glue Crawler
+-- Understanding of RESTful APIs and experience with XERO API
+-- Familiarity with programming languages such as Python, Java, or Scala
+-- Data extraction, transformation, and loading (ETL) concepts and best practices
+-- Experience with cloud platforms, preferably Amazon Web Services (AWS)
+-- Knowledge of database design, data modeling, and schema management
+
+This project will provide valuable hands-on experience in integrating APIs, working with cloud-based ETL tools, and building scalable data pipelines. Through this internship, you will gain a deeper understanding of financial data management and contribute to the development of an efficient solution for storing and analyzing financial information using XERO API and AWS Glue.","Building and Implementing a Lead Scoring Model","Project Overview:
+This internship project focuses on building a lead scoring model to effectively prioritize and assess the quality of leads for a company. The aim is to develop a data-driven approach that assigns scores to leads based on various attributes and behaviors, enabling the sales and marketing teams to focus their efforts on leads with the highest potential for conversion.
+
+Project Objectives:
+
+Data Collection and Analysis: Collaborate with stakeholders to identify the relevant data sources for lead scoring. Gather and analyze data on leads, including demographic information, website interactions, engagement with marketing campaigns, social media activity, and any other available data points. Identify the key indicators that contribute to lead quality and conversion potential.
+
+Feature Engineering: Conduct feature engineering to transform the collected data into meaningful features that can be used in the lead scoring model. Select and create features that are indicative of lead quality, such as lead source, engagement level, past interactions, industry, job title, and any other relevant variables.
+
+Model Development: Build a lead scoring model using machine learning algorithms or statistical techniques. Select an appropriate model based on the available data and the project requirements. Train the model using historical data on leads that have converted or failed to convert, aiming to identify patterns and correlations that can predict lead quality accurately.
+
+Model Evaluation and Optimization: Evaluate the performance of the lead scoring model using appropriate evaluation metrics such as accuracy, precision, recall, and F1-score. Fine-tune the model by adjusting hyperparameters, applying feature selection techniques, or employing ensemble methods to enhance its predictive power. Aim to optimize the model's performance in identifying high-quality leads.
+
+Implementation and Integration: Integrate the lead scoring model into the company's lead management system or CRM platform. Develop a pipeline or workflow that automates the lead scoring process, ensuring seamless integration with the existing sales and marketing processes. Implement mechanisms to update and retrain the model periodically as new data becomes available.
+
+Collaboration with Sales and Marketing Teams: Collaborate with the sales and marketing teams to understand their requirements and incorporate their domain expertise into the lead scoring model. Seek feedback from stakeholders to refine and improve the model's effectiveness in supporting lead management and conversion efforts.
+
+Documentation and Reporting: Document the entire process of building and implementing the lead scoring model, including the data sources, feature engineering techniques, model selection, evaluation results, and implementation details. Create clear and concise documentation to facilitate knowledge transfer and ensure the model's maintainability in the future.
+
+Skills and Technologies Required:
+
+Proficiency in data analysis and feature engineering techniques
+Knowledge of machine learning algorithms and statistical modeling
+Experience with programming languages such as Python or R
+Familiarity with data manipulation and transformation libraries (e.g., pandas)
+Understanding of evaluation metrics and model performance assessment
+Strong problem-solving skills and analytical thinking
+Effective communication and collaboration abilities
+Knowledge of CRM systems and lead management processes is a plus
+Through this internship project, you will gain practical experience in developing a lead scoring model, working with real-world data, and collaborating with sales and marketing teams. You will contribute to enhancing the lead management process and supporting decision-making by identifying and prioritizing high-quality leads.","Building an Analytical Solution for Data-Driven Decision Making","Project Overview:
+This internship project focuses on developing an analytical solution that empowers the business to make data-driven decisions. The aim is to leverage data analysis, visualization, and predictive modeling techniques to provide actionable insights and enable informed decision making across various aspects of the organization.
+
+Project Objectives:
+
+Data Discovery and Understanding: Collaborate with stakeholders to identify the available data sources within the organization. Explore and understand the structure, quality, and relevance of the data. Gain insights into the key business challenges and decision-making needs that can be addressed through data analysis.
+
+Data Integration and Cleaning: Integrate and clean the data from multiple sources, ensuring consistency and accuracy. Address any data quality issues, handle missing values, and perform necessary data transformations to prepare the data for analysis.
+
+Exploratory Data Analysis (EDA): Conduct exploratory data analysis to uncover patterns, relationships, and trends within the data. Use descriptive statistics, data visualizations, and other EDA techniques to gain a deeper understanding of the data and identify potential areas for further analysis.
+
+Data Visualization: Develop interactive and visually appealing data visualizations to effectively communicate insights and trends to stakeholders. Use tools such as Tableau, Power BI, or Python libraries like Matplotlib and Seaborn to create informative charts, graphs, and dashboards.
+
+Predictive Modeling: Build predictive models to address specific business challenges or make data-driven forecasts. Utilize techniques such as regression, classification, time series analysis, or machine learning algorithms, depending on the nature of the problem. Train and evaluate the models using appropriate metrics to ensure their accuracy and reliability.
+
+Decision Support System: Develop a decision support system that incorporates the analytical findings and models. Create a user-friendly interface or dashboard that allows stakeholders to interact with the data, explore different scenarios, and receive real-time insights to support decision making.
+
+Recommendations and Reporting: Translate the analytical findings and predictions into actionable recommendations for the business. Generate reports or presentations summarizing the key insights, trends, and suggested actions. Communicate the results effectively to stakeholders, tailoring the information to their needs and level of understanding.
+
+Documentation and Knowledge Transfer: Document the entire analytical solution, including data sources, data integration processes, analysis techniques, modeling approaches, and system architecture. Create comprehensive documentation and user guides to facilitate knowledge transfer and ensure the maintainability of the solution.
+
+Skills and Technologies Required:
+
+Strong analytical and problem-solving skills
+Proficiency in data analysis, data visualization, and predictive modeling techniques
+Knowledge of statistical analysis and relevant tools (e.g., Python, R, SQL)
+Familiarity with data visualization tools (e.g., Tableau, Power BI)
+Understanding of database systems and data manipulation
+Effective communication and presentation skills
+Ability to work with stakeholders from various departments and understand their requirements
+Through this internship project, you will gain practical experience in building an analytical solution, working with real-world data, and providing data-driven insights to support decision making. You will contribute to enhancing the organization's ability to make informed decisions, optimize processes, and drive business growth."
+"2023/07/11 3:37:22 pm GMT+10","Domain","https://www.domain.com.au/","75+ WAM","Kieran Goldsworthy","Talent Acquisition Partner ","Kieran.goldsworthy@domain.com.au","Conversational BI Bot Development - with local LLM","Purpose: Alleviate Business Intelligence (BI) issues and improve report creation efficiency
+Deliverables: Intern will identify a suitable Language Model from Huggingface and fine-tune it to generate the desired analytical results
+Outcome: The intern will develop expertise in working with Pytorch and Transformer models and understand how to fine-tune Language Models for specific applications.
+
+Learning Goals
+Gain technical proficiency using PyTorch and Transformer models; enhancing programming skills while applying AI for business automation purposes.
+Develop business acumen through problem-solving Business Intelligence issues, combined with the ability to effectively collaborate with IT and business teams towards successful project completion.
+Learn to manage project timelines, implement feedback, and meet deliverable standards in a professional setting to ensure improvements in operational efficiency.
+","Domain x Alation Data Catalogue","This program is led by the Alation Customer Success Team through all implementation and rollout phases including inception, go-live, and continuing adoption.
+
+Learning Goals
+Developing business acumen, learning how to partner with senior leaders; take direction and use constructive feedback to deliver results
+Understanding of the Domain Group Data Team
+Understanding of new systems (Practical experience)
+","",""
+"2023/07/12 3:02:11 pm GMT+10","Domain ","https://www.domain.com.au/","75+ WAM.","Kieran ","Talent Acquisition Partner ","Kieran.goldsworthy@domain.com.au","Validation for single view of customer (SCV) project","Create pipelines to identify data anomalies, for data validation and monitor data quality
+
+This is a great opportunity for an intern to learn more about the Domain Group business and gain experience by 
+Data Analysis 
+Data Visualisation
+Developing SQL skills
+Creating dags in Airflow 
+Monitor dags in Airflow
+Create new data validations in DBT 
+Learn about data pipelines to process consumer data
+Learn about consumer data from raw to transformed
+","","","",""
+"2023/07/12 9:51:39 pm GMT+10","Vertex Cyber Security","www.vertexcybersecurity.com.au","68","Martin Boyd","CEO","ceo444@vertexcybersecurity.com.au","Penetration Testing","Learn from expert Ethical hackers (Penetration Testers) with real world attacks and real systems. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.","Cyber Security Consulting","Learn from expert Cyber Security Consultants with real world defenses and real systems. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.","Cyber Security Auditing","Learn from expert Cyber Security Auditors with real world systems and real Cyber reports. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia."
+"2023/07/13 11:35:23 am GMT+10","Domain ","https://www.domain.com.au/","75+ WAM.","Kieran Goldsworthy","Talent Acquisition Partner ","Kieran.goldsworthy@domain.com.au","Metrics that Matter","Work with internal stakeholders to gather requirements, and develop reports and data sets to service the business.
+
+This is an excellent opportunity for an intern to learn more about the Domain Group business and gain access to the activities and workload of our data team.
+Data Extraction
+Data Analysis & Report Compilation
+Data Visualisation
+Learning/developing SQL skills
+Capturing & collating access controls across various data environments
+Learn to use Airflow
+Monitor jobs in Airflow
+Create new data transformations in DBT (enhancement and ‘bug’ fix)
+Learn about data consumer data from raw to transformed
+Develop a data pipeline to process consumer data
+","","","",""
+"2023/07/13 1:30:33 pm GMT+10","Centropy Services & Solutions Pty. Ltd.","centropy.com.au","n/a","Varun Batra","Executive Director","varun.batra@centropy.com.au","Cyber Security Governance support","Centropy is keen to look at engaging atleast one more intern to support our Cyber Security Governance team.  The role will involve the intern to work with and support some of our senior consultants with research and drafting ISMS related artefacts etc.  ","","","",""
+"2023/07/13 7:28:22 pm GMT+10","DataMesh Group","https://www.datameshgroup.com/","70","Devesh Maheshwari","Chief Technology Officer","devesh.maheshwari@datameshgroup.com","Implementation of Payment Switch","Payment switches are transaction-based software programs that dynamically transport payment transactions between several acquirers and Payment Service Providers (PSPs) end-points based on merchant-driven rules. Ahmed will build a Payment Switch for the DataMesh group using Node.JS technology and create the database to save the record.
+
+This is how Payment Switch works
+
+- It accepts the validated transaction request from the payment gateway
+- Complies with the merchant’s guidelines to begin the transaction
+- Identifies the Payment Service Provider (PSP) for that particular transaction
+- Based on a BIN allotment for the certain PSP linked with that payment request, it then proceeds to route (switch) the transaction
+- Finally, it completes the transaction based on its success or failure","","","",""
+"2023/07/14 11:12:40 am GMT+10","Vertex Cyber Security","www.vertexcybersecurity.com.au","68+","Martin Boyd","CEO","martin@vertexcybersecurity.com.au","Penetration Testing","Learn from expert Ethical hackers (Penetration Testers) with real world attacks and real systems. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.","Cyber Security Consulting","Learn from expert Cyber Security Consultants with real world defenses and real systems. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.","Cyber Security Auditing","Learn from expert Cyber Security Auditors with real world systems and real Cyber reports. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia."

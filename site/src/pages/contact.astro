@@ -1,0 +1,38 @@
+---
+// Contact — public lab contact details only (no personal phone numbers).
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+const withBase = (p: string) => base.replace(/\/$/, "") + p;
+---
+<Base
+  title="Contact — Data Science Research Lab, Macquarie University"
+  description="Contact the Data Science Research Lab at Macquarie University: email, location, and partnership enquiries."
+>
+  <h1>Contact</h1>
+  <p class="lede">
+    If you're looking to partner or volunteer with us, contact us at&#32;<a href="mailto:ai@mq.edu.au">ai@mq.edu.au</a>.
+  </p>
+
+  <section aria-labelledby="location">
+    <h2 id="location">Where we are</h2>
+    <address>
+      Data Science Research Lab<br />
+      Becton-Dickinson (BD) Building<br />
+      4 Research Park Drive<br />
+      Macquarie University NSW 2109<br />
+      Sydney, Australia
+    </address>
+  </section>
+
+  <section aria-labelledby="students">
+    <h2 id="students">Prospective students</h2>
+    <p>
+      Application information, forms and templates are on the&#32;<a href={withBase("/join/")}>Join the lab</a> page.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .lede { font-size: 1.08rem; }
+  address { font-style: normal; line-height: 1.7; }
+</style>

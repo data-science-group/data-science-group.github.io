@@ -1,0 +1,88 @@
+---
+// Join us — audience-segmented per the reference conventions (OATML pattern).
+// All values text is verbatim from the lab's existing Prospective Students
+// section; process links are the lab's existing recruitment materials.
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+const withBase = (p: string) => base.replace(/\/$/, "") + p;
+---
+<Base
+  title="Join the lab — Data Science Research Lab, Macquarie University"
+  description="How to join the Data Science Research Lab at Macquarie University as a PhD or MRes student, intern or visitor: what we look for and how to apply."
+>
+  <h1>Join the lab</h1>
+  <p class="lede">
+    We welcome strong PhD and MRes applicants, internship and capstone students,
+    and visiting researchers. Formal admission, scholarships, deadlines and
+    eligibility are governed by Macquarie University; the materials below do not
+    guarantee supervision, admission or funding.
+  </p>
+
+  <section aria-labelledby="values">
+    <h2 id="values">What we look for</h2>
+    <dl class="values">
+      <dt>Skills</dt>
+      <dd>You should have either a strong software engineering background or a strong ML/AI background.</dd>
+      <dt>Hard work</dt>
+      <dd>We expect you to have a strong work ethic.</dd>
+      <dt>Flexibility</dt>
+      <dd>You should be willing to dive into different facets of a project.</dd>
+      <dt>Learning</dt>
+      <dd>You should have a strong growth mindset, and want to learn continuously.</dd>
+      <dt>Teamwork</dt>
+      <dd>You are expected to support and collaborate with others.</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="phd">
+    <h2 id="phd">PhD applicants</h2>
+    <p>
+      The lab works on data science, predictive analytics and big data —
+      including AI-enabled process automation, and applied AI in health,
+      education, banking and policing. Start with&#32;<a href={withBase("/people/aminbeheshti/")}>Prof. Amin Beheshti's profile</a>&#32;to see current research and supervision, then:
+    </p>
+    <ol>
+      <li>Read <a href="https://www.mq.edu.au/research/phd-and-research-degrees/how-to-apply">how to apply for a research degree at Macquarie University</a>.</li>
+      <li>Complete the <a href={withBase("/MQ_Assessment_Form.docx")}>self-assessment form</a> (Word, ~23&nbsp;KB).</li>
+      <li>Draft your proposal with the <a href={withBase("/PhdProposalMQ.pdf")}>research proposal template</a> (PDF, ~0.6&nbsp;MB).</li>
+      <li>Email your CV, transcript, form and draft proposal to <a href="mailto:ai@mq.edu.au">ai@mq.edu.au</a>.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="mres">
+    <h2 id="mres">MRes applicants</h2>
+    <p>
+      Macquarie's Master of Research is the standard pathway into the lab's PhD
+      program. The same values, materials and contact route as PhD applicants
+      apply; see the&#32;<a href="https://www.mq.edu.au/research/phd-and-research-degrees/how-to-apply">university's how-to-apply page</a>&#32;for MRes admission.
+    </p>
+  </section>
+
+  <section aria-labelledby="internships">
+    <h2 id="internships">Internships and capstone projects</h2>
+    <p>
+      The lab convenes Macquarie's Computing internship and data science capstone
+      programs, which also serve as a pathway into research for coursework students:
+    </p>
+    <ul>
+      <li><a href={withBase("/people/aminbeheshti/internship/MQ-MIT-Internship.html")}>Master's internship program (COMP8851/COMP8860)</a> — current intake information, projects and enrolment steps.</li>
+      <li><a href={withBase("/people/aminbeheshti/DataScienceProject/MQ-DS-Project.html")}>Data science capstone (ITEC877)</a> — project structure and assessment for industry supervisors.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="visitors">
+    <h2 id="visitors">Visiting researchers</h2>
+    <p>
+      The lab regularly hosts visiting PhD students and academics. Contact&#32;<a href="mailto:ai@mq.edu.au">ai@mq.edu.au</a>&#32;with your CV, research
+      interests and proposed visit dates.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .lede { font-size: 1.08rem; }
+  .values { max-width: var(--measure); }
+  .values dt { font-weight: 600; margin-top: var(--space-3); }
+  .values dd { margin: 0.15em 0 0; color: var(--ink-2); }
+  ol li, ul li { margin: 0.45em 0; max-width: var(--measure); }
+</style>

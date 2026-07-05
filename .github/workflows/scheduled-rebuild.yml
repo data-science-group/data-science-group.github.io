@@ -1,0 +1,21 @@
+# Weekly rebuild so build-time statuses (conference deadlines, workshop
+# Next/Passed badges) stay fresh even when no content changes land.
+# Runs Mondays 06:00 Sydney (Sun 20:00 UTC). Reuses the deploy workflow.
+name: Scheduled rebuild
+
+on:
+  schedule:
+    - cron: "0 20 * * 0"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-run the deploy workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run build-deploy.yml -R "${{ github.repository }}"

@@ -1,0 +1,324 @@
+---
+// BioFM'26 — the lab's upcoming flagship workshop, rebuilt in the new design
+// system (founder-ordered). All content is verbatim from the previous page
+// (docs: scratchpad/biofm26-content.md extraction) apart from repaired
+// truncation typos. Statuses are computed at BUILD time — no client JS.
+import Workshop from "../../../layouts/Workshop.astro";
+const base = import.meta.env.BASE_URL;
+const withBase = (p: string) => base.replace(/\/$/, "") + p;
+
+const BUILD_DATE = new Date();
+const fmt = new Intl.DateTimeFormat("en-AU", { day: "numeric", month: "long", year: "numeric" });
+
+type Milestone = { label: string; date?: Date; display: string };
+const MILESTONES: Milestone[] = [
+  { label: "Paper submission deadline", date: new Date("2026-08-20"), display: "20 August 2026" },
+  { label: "Paper notification", date: new Date("2026-09-18"), display: "18 September 2026" },
+  { label: "Camera-ready deadline", date: new Date("2026-10-05"), display: "5 October 2026" },
+  { label: "Early-bird registration deadline", display: "TBC" },
+  { label: "Workshop day", date: new Date("2026-11-12"), display: "Tentatively 12 November 2026" },
+];
+const GRACE_MS = 36 * 3600 * 1000; // deadline times TBC — count a date as passed only 36h after it (covers AoE)
+const passed = (d: Date) => d.getTime() + GRACE_MS < BUILD_DATE.getTime();
+const nextIdx = MILESTONES.findIndex((m) => m.date && !passed(m.date));
+const statusOf = (m: Milestone, i: number) =>
+  !m.date ? "TBC" : passed(m.date) ? "Passed" : i === nextIdx ? "Next" : "Upcoming";
+
+const GENERAL_CHAIRS = [
+  { name: "Prof. Amin Beheshti", aff: "Macquarie University, Australia", url: withBase("/people/aminbeheshti/") },
+  { name: "Prof. Jian Yang", aff: "Beijing Normal-Hong Kong Baptist University (BNBU), China", url: "https://www.bnbu.edu.cn/en/info/1481/14008.htm" },
+  { name: "Prof. Michael Sheng", aff: "Macquarie University, Australia", url: "https://researchers.mq.edu.au/en/persons/michael-sheng" },
+  { name: "Prof. Jose Antonio Lopez Escamez", aff: "University of Sydney, Australia", url: "https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/jose-lopezescamez.html" },
+];
+const CHAIRS = [
+  { name: "Dr Usman Naseem", aff: "Macquarie University, Australia", url: "https://researchers.mq.edu.au/en/persons/usman-naseem" },
+  { name: "Dr Hamid Alinejad Rokny", aff: "UNSW Sydney, Australia", url: "https://research.unsw.edu.au/people/dr-hamid-alinejad-rokny" },
+  { name: "A/Prof. Xuyun Zhang", aff: "Macquarie University, Australia", url: "https://researchers.mq.edu.au/en/persons/xuyun-zhang" },
+  { name: "Dr. Yuankai Qi", aff: "Macquarie University, Australia", url: "https://researchers.mq.edu.au/en/persons/yuankai-qi" },
+];
+const INDUSTRY_CHAIRS = [
+  { name: "Dr Emma Xue", aff: "Macquarie University, Australia", url: "https://researchers.mq.edu.au/en/persons/emma-xue" },
+  { name: "Mohammadhossein Ahmadi", aff: "Macquarie University, Australia", url: "https://scholar.google.com/citations?user=FRADYgoAAAAJ&hl=en" },
+  { name: "Marjan BaghGolshani", aff: "Macquarie University, Australia", url: "https://www.linkedin.com/in/marjan-baghgolshani-0462a2125/" },
+];
+const PC = [
+  "Faseela Abdullakutty — Qatar University, Qatar",
+  "Iman Dehzangi — Rutgers University, USA",
+  "Nona Farbehi — UNSW Sydney, Australia",
+  "Ying Feng — University of Technology Sydney, Australia",
+  "Farshid Hajati — University of New England, Australia",
+  "Chunlei Liu — Children's Medical Research Institute, Australia",
+  "Julian Lechuga Lopez — New York University Abu Dhabi, UAE",
+  "Haohui Lu — University of Sydney, Australia",
+  "Yongpei Ma — University of Sydney, Australia",
+  "Alejandro Guerra Manzanares — University of Nottingham Ningbo, China",
+  "Mohammad Ali Moni — Charles Sturt University, Australia",
+  "Junaid Rashid — Sejong University, Korea",
+  "Morteza Saberi — University of Technology Sydney, Australia",
+  "Yanchao Tan — Fuzhou University, China",
+  "Surendrabikram Thapa — Virginia Tech, USA",
+  "Hu Wang — MBZUAI, UAE",
+  "Carl Yang — Emory University, USA",
+  "Shuchang Ye — University of Sydney, Australia",
+  "Roxana Zahedi — UNSW Sydney, Australia",
+  "Xuejiao Zhao — Nanyang Technological University, Singapore",
+  "Kaiyi Zheng — Jiangsu University, China",
+];
+const THEMES: { title: string; items: (string | { text: string; url: string })[] }[] = [
+  { title: "Foundation Models in Life Sciences", items: [
+    "Pretrained models for genomics, proteomics, single-cell, and spatial omics",
+    "AI-driven analysis of molecular structures and interactions",
+    "Multi-omics data integration at scale",
+    { text: "ProcessGPT", url: "https://arxiv.org/abs/2306.01771" },
+    { text: "Intelligent Knowledge Lakes", url: "https://link.springer.com/chapter/10.1007/978-981-15-3281-8_3" },
+  ]},
+  { title: "AI in Drug Discovery and Personalized Medicine", items: [
+    "Generative models for novel protein and small-molecule design",
+    "Clinical trial optimisation and digital twinning",
+    "Biomarker discovery and computational phenotyping",
+    "Precision medicine using large-scale biological models",
+  ]},
+  { title: "Large Language Models (LLMs) for Biology", items: [
+    "LLMs for literature mining and knowledge extraction",
+    "Foundation models for diagnostic reasoning and treatment development",
+    "Applications of large-scale pretrained models to support clinical decision-making",
+    "Automated hypothesis generation for novel therapeutic pathways",
+    "Automated hypothesis generation using LLMs",
+    "Enhancing scientific discovery with natural language processing",
+  ]},
+  { title: "Big Data in Biology", items: [
+    "Scalable data management for biological datasets",
+    "AI-driven insights from high-throughput screening and sequencing",
+    "Real-time analytics for epidemiological modelling, population genetics",
+    "Managing large-scale biological datasets efficiently",
+  ]},
+  { title: "Ethics, Trustworthiness, and Regulatory Challenges", items: [
+    "Explainability and interpretability in AI-driven biology",
+    "Ethical considerations and regulatory challenges in AI for healthcare",
+    "Privacy-preserving foundation models for bioinformatics and digital medicine",
+    "Fairness and bias in AI-driven healthcare",
+  ]},
+  { title: "Multimodal Learning and Knowledge Integration", items: [
+    "Integration of text, images, genomics data, and clinical records",
+    "Knowledge graphs and AI for biomedical reasoning",
+    "Foundation models for epidemiology and public health",
+  ]},
+  { title: "Industry Applications of AI in Biology", items: [
+    "AI-driven diagnostics and decision support systems",
+    "AI-powered laboratory automation and high-throughput screening",
+    "Real-world case studies from biotech and pharmaceutical industry",
+    "AI in agricultural biotechnology and food security",
+  ]},
+];
+
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "EducationEvent",
+  name: "BioFM 2026 — The 2nd International Workshop on Foundation Models for Biology and Bioinnovation",
+  description: "Workshop on foundation models in biology and bioinnovation, co-located with the IEEE International Conference on Data Mining (ICDM'26).",
+  startDate: "2026-11-12",
+  endDate: "2026-11-15",
+  eventStatus: "https://schema.org/EventScheduled",
+  location: { "@type": "Place", name: "Shenyang, China", address: { "@type": "PostalAddress", addressLocality: "Shenyang", addressCountry: "CN" } },
+  organizer: { "@type": "ResearchOrganization", name: "Data Science Research Lab, Macquarie University", url: "https://data-science-group.github.io/" },
+  sponsor: [
+    { "@type": "Organization", name: "Centre for Applied AI at Macquarie University", url: "https://www.mq.edu.au/research/research-centres-institutes-and-initiatives/applied-ai" },
+    { "@type": "Organization", name: "Collective Learning AI", url: "https://collectivelearning.ai/" },
+  ],
+  url: "https://data-science-group.github.io/BioFM/2026/",
+});
+---
+<Workshop
+  title="BioFM'26 — Foundation Models for Biology and Bioinnovation | IEEE ICDM 2026 workshop"
+  description="Call for papers: the 2nd International Workshop on Foundation Models for Biology and Bioinnovation (BioFM'26), co-located with IEEE ICDM 2026, 12–15 November 2026, Shenyang, China. Submissions due 20 August 2026."
+>
+  <script type="application/ld+json" set:html={jsonLd} />
+
+  <p class="eyebrow">Workshop · co-located with <a href="http://icdm2026.neu.edu.cn/">IEEE ICDM 2026</a></p>
+  <h1>BioFM 2026 — The 2<sup>nd</sup> International Workshop on Foundation Models for Biology and Bioinnovation</h1>
+  <p class="lede">12&ndash;15 November 2026 · Shenyang, China</p>
+
+  <nav class="anchor-nav" aria-label="On this page">
+    <a href="#dates">Dates</a>
+    <a href="#about">Call for papers</a>
+    <a href="#submission">Submission</a>
+    <a href="#organisation">Organisation</a>
+    <a href="#program">Program</a>
+    <a href="#supported">Sponsors</a>
+  </nav>
+
+  <aside class="action-strip" aria-label="Submission status">
+    <p><strong>Call for papers open.</strong> Paper submission deadline: <strong>20 August 2026</strong>.</p>
+    <p>Submission system: <strong>TBA</strong> — the ICDM 2026 workshop submission portal will be linked here when announced. Questions: <a href="mailto:amin.beheshti@mq.edu.au">amin.beheshti@mq.edu.au</a></p>
+  </aside>
+
+  <section aria-labelledby="dates">
+    <h2 id="dates">Important dates</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Milestone</th><th>Date</th><th>Status</th></tr></thead>
+        <tbody>
+          {MILESTONES.map((m, i) => {
+            const s = statusOf(m, i);
+            return (
+              <tr>
+                <td>{m.label}</td>
+                <td>{m.display}</td>
+                <td><span class={`status status-${s.toLowerCase()}`}>{s}</span></td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+    <p class="meta">Times to be confirmed by the organisers. Statuses reflect the latest site update ({fmt.format(BUILD_DATE)}).</p>
+  </section>
+
+  <section aria-labelledby="about">
+    <h2 id="about">Call for papers</h2>
+    <p>
+      The rapid advancement of AI and machine learning has led to the emergence of
+      foundation models; large-scale pre-trained models that can be adapted for various
+      tasks. In the biological sciences, foundation models are transforming genomics,
+      drug discovery, and personalized medicine by leveraging vast datasets and
+      improving predictive accuracy. The BioFM 2026 workshop will explore how foundation
+      models can drive bioinnovation, enhance biomedical research, and contribute to
+      breakthroughs in healthcare. This workshop will serve as a platform to discuss
+      recent advancements, challenges, and applications of foundation models in biology.
+      We aim to bring together experts from academia, industry, and government
+      institutions to share insights and foster collaborations that advance AI-driven
+      bioinnovation.
+    </p>
+    <p>We invite researchers and practitioners to submit high-quality contributions on topics including but not limited to:</p>
+    <div class="themes">
+      {THEMES.map((t, i) => (
+        <div class="theme">
+          <h3>{i + 1}. {t.title}</h3>
+          <ul>
+            {t.items.map((item) =>
+              typeof item === "string" ? <li>{item}</li> : <li><a href={item.url}>{item.text}</a></li>
+            )}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <p>
+      We welcome original research papers, case studies, and visionary position papers
+      that explore the role of foundation models in advancing biological sciences and
+      healthcare.
+    </p>
+  </section>
+
+  <section aria-labelledby="submission">
+    <h2 id="submission">Submission instructions</h2>
+    <p>
+      Authors are invited to submit original papers that have not been published
+      elsewhere and are not currently under consideration for another journal,
+      conference, or workshop. Please note the following:
+    </p>
+    <ul>
+      <li>A paid registration is required for every accepted workshop paper, regardless
+        of whether the author presents in person or via video.</li>
+      <li>All accepted papers (main conference and workshops) must have at least one
+        registered author.</li>
+      <li>Non-archival submissions for workshops are not allowed, i.e., all accepted
+        papers will be included and published in the proceedings.</li>
+      <li>Paper should be limited to a maximum of ten (10) pages, in the&#32;<a href="https://www.ieee.org/conferences/publishing/templates.html">IEEE 2-column format</a>,
+        including the references and any possible appendices. Submissions longer than
+        10 pages will be rejected without review.</li>
+      <li>All submissions will be triple-blind reviewed by the Program Committee on the
+        basis of technical quality, relevance to scope of the conference, originality,
+        significance, and clarity.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="organisation">
+    <h2 id="organisation">Organisation</h2>
+    <h3>General chairs</h3>
+    <ul class="people-list">
+      {GENERAL_CHAIRS.map((p) => <li><a href={p.url}>{p.name}</a> — {p.aff}</li>)}
+    </ul>
+    <h3>Chairs</h3>
+    <ul class="people-list">
+      {CHAIRS.map((p) => <li><a href={p.url}>{p.name}</a> — {p.aff}</li>)}
+    </ul>
+    <h3>Industry chairs</h3>
+    <ul class="people-list">
+      {INDUSTRY_CHAIRS.map((p) => <li><a href={p.url}>{p.name}</a> — {p.aff}</li>)}
+    </ul>
+  </section>
+
+  <section aria-labelledby="program">
+    <h2 id="program">Program</h2>
+    <p>Program to be confirmed. Accepted papers and the schedule will be posted after notifications (18 September 2026).</p>
+  </section>
+
+  <section aria-labelledby="pc">
+    <h2 id="pc">Program committee <span class="meta">(to be confirmed)</span></h2>
+    <ul class="pc-list">
+      {PC.map((m) => <li>{m}</li>)}
+    </ul>
+  </section>
+
+  <section aria-labelledby="supported">
+    <h2 id="supported">Supported by</h2>
+    <ul class="sponsors">
+      <li>
+        <a href="https://www.mq.edu.au/research/research-centres-institutes-and-initiatives/applied-ai">
+          <img src={withBase("/BioFM/2026/logo_aai.png")} alt="Centre for Applied AI at Macquarie University" width="160" />
+        </a>
+      </li>
+      <li>
+        <a href="https://collectivelearning.ai/">
+          <img src={withBase("/BioFM/2026/logo_CLAI.jpg")} alt="Collective Learning AI" width="120" />
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="previous">
+    <h2 id="previous">Previous edition</h2>
+    <p>
+      <a href={withBase("/BioFM/2025/")}>BioFM'25 — The 1st International Workshop on Foundation Models for Biology and Bioinnovation</a>,
+      12&ndash;15 November 2025, Washington DC, USA (IEEE ICDM 2025).
+    </p>
+  </section>
+</Workshop>
+
+<style>
+  .eyebrow { font: var(--text-meta); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); margin-bottom: var(--space-2); }
+  .lede { font-size: 1.15rem; color: var(--ink-2); }
+  sup { font-size: 0.6em; }
+  .anchor-nav { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); padding: var(--space-2) 0; border-block: 1px solid var(--line); margin: var(--space-3) 0; }
+  .anchor-nav a { font: var(--text-nav); color: var(--ink); text-decoration: none; }
+  .anchor-nav a:hover { color: var(--accent); }
+  .action-strip {
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--flag);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: var(--space-3) var(--space-4);
+    max-width: var(--measure);
+    margin: var(--space-4) 0;
+  }
+  .action-strip p { margin: 0 0 var(--space-2); }
+  .action-strip p:last-child { margin-bottom: 0; }
+  .tablewrap { overflow-x: auto; max-width: var(--measure); }
+  table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+  th { font: var(--text-meta); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2); text-align: left; padding: var(--space-2); border-bottom: 1px solid var(--line); }
+  td { padding: var(--space-2); border-bottom: 1px solid var(--line); }
+  .status { font: var(--text-meta); font-weight: 600; padding: 0.1em 0.6em; border-radius: 99px; background: var(--sand); color: var(--ink-2); white-space: nowrap; }
+  .status-next { background: var(--flag); color: #fff; }
+  .meta { font: var(--text-meta); color: var(--ink-2); }
+  .themes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-3) var(--space-5); max-width: 60rem; }
+  .theme h3 { margin: var(--space-3) 0 var(--space-1); font-size: 1rem; }
+  .theme ul { margin: 0; padding-left: 1.2em; }
+  .theme li { margin: 0.25em 0; }
+  .people-list, .pc-list { padding-left: 1.2em; max-width: var(--measure); }
+  .people-list li, .pc-list li { margin: 0.35em 0; }
+  .pc-list { columns: 2; column-gap: var(--space-5); }
+  .pc-list li { break-inside: avoid; }
+  @media (max-width: 640px) { .pc-list { columns: 1; } }
+  .sponsors { display: flex; gap: var(--space-5); align-items: center; list-style: none; padding: 0; flex-wrap: wrap; }
+  .sponsors img { display: block; }
+</style>

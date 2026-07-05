@@ -1,0 +1,167 @@
+---
+// Publications — generated from the curated DBLP-seeded dataset (D3).
+// Honest scope: director record only, labelled as such. Unlinked from the
+// legacy home until the founder approves a nav change.
+import Base from "../../layouts/Base.astro";
+import pubs from "../../data/publications.json";
+
+const CURATED_ON = "5 July 2026";
+const TYPES = ["Journal", "Conference", "Workshop", "Book/Chapter", "Thesis", "Other"];
+const years = [...new Set(pubs.map((p) => p.year))].sort((a, b) => b - a);
+const byYear = new Map(years.map((y) => [y, pubs.filter((p) => p.year === y)]));
+const selected = pubs.filter((p) => p.selected);
+
+const linkOf = (p) => (p.doi ? `https://doi.org/${p.doi}` : p.url);
+---
+<Base
+  title="Publications — Data Science Research Lab, Macquarie University"
+  description="Publications of the Data Science Research Lab at Macquarie University — journals, conferences and workshops in data science and applied AI, seeded from the director's DBLP record."
+>
+  <h1>Publications</h1>
+  <p class="scope">
+    Initial bibliography seeded from Professor Amin Beheshti's DBLP author record.
+    Lab-wide publications will be added as verified member records are curated.
+  </p>
+  <p class="source">
+    Current scope: director record only · {pubs.length} publications ·
+    last curated from <a href="https://dblp.org/pid/90/10041.html">DBLP pid 90/10041</a> on {CURATED_ON}.
+  </p>
+
+  {selected.length > 0 && (
+    <section aria-labelledby="selected">
+      <h2 id="selected">Selected publications</h2>
+      {/* founder-curated via the admin panel */}
+    </section>
+  )}
+
+  <div class="toolbar" id="pub-toolbar" hidden>
+    <label>Search <input type="search" id="pub-q" placeholder="title, author, venue…" /></label>
+    <label>Type
+      <select id="pub-type">
+        <option value="">All</option>
+        {TYPES.map((t) => <option value={t}>{t}</option>)}
+      </select>
+    </label>
+    <span class="count" id="pub-count" aria-live="polite"></span>
+  </div>
+
+  <nav class="yearbar" aria-label="Years">
+    {years.map((y) => <a href={`#y${y}`}>{y} <small>({byYear.get(y).length})</small></a>)}
+  </nav>
+
+  {years.map((y) => (
+    <section class="yeargroup" aria-labelledby={`y${y}`} data-year={y}>
+      <h2 id={`y${y}`}>{y}</h2>
+      <ol class="publist">
+        {byYear.get(y).map((p) => {
+          const href = linkOf(p);
+          const many = p.authors.length > 8;
+          const shown = many ? [...p.authors.slice(0, 6), p.authors[p.authors.length - 1]] : p.authors;
+          const authorsText = p.authors.map((a) => `${a.given} ${a.family}`).join(", ");
+          return (
+            <li class="pub" data-type={p.type}>
+              <div class="title">{href ? <a href={href}>{p.title}</a> : p.title}</div>
+              <div class="authors">
+                {shown.map((a, i) => (
+                  <>
+                    {i > 0 && ", "}
+                    {i === 6 && many && <em> … </em>}
+                    {a.lab ? <span class="lab-author">{a.given} {a.family}</span> : `${a.given} ${a.family}`}
+                  </>
+                ))}
+                {many && (
+                  <details class="all-authors">
+                    <summary>all {p.authors.length} authors</summary>
+                    {authorsText}
+                  </details>
+                )}
+              </div>
+              <div class="meta">
+                <span class={`badge badge-${p.type.replace("/", "-").toLowerCase()}`}>{p.type}</span>
+                <span class="venue">{p.venue}</span>
+                {p.volume && <span>vol. {p.volume}{p.number ? `(${p.number})` : ""}</span>}
+                {p.pages && <span>pp. {p.pages}</span>}
+              </div>
+              <div class="actions">
+                {p.doi && <a class="chip" href={`https://doi.org/${p.doi}`}>DOI</a>}
+                {p.bibtex && (
+                  <details class="bib">
+                    <summary class="chip">BibTeX</summary>
+                    <pre>{p.bibtex}</pre>
+                  </details>
+                )}
+              </div>
+            </li>
+          );
+        })}
+      </ol>
+    </section>
+  ))}
+
+  <p class="attribution">
+    Bibliographic metadata seeded from the
+    <a href="https://dblp.org/"> dblp computer science bibliography</a>,
+    released under the CC0 1.0 Public Domain Dedication; ODC-BY 1.0 is available
+    as a secondary license.
+  </p>
+
+  <script>
+    // The page's single JS island: text + type filtering. No-JS = full list.
+    const toolbar = document.getElementById("pub-toolbar");
+    const q = document.getElementById("pub-q");
+    const type = document.getElementById("pub-type");
+    const count = document.getElementById("pub-count");
+    const items = [...document.querySelectorAll(".pub")].map((el) => ({ el, text: el.textContent.toLowerCase() }));
+    const groups = [...document.querySelectorAll(".yeargroup")];
+    toolbar.hidden = false;
+    function apply() {
+      const text = q.value.trim().toLowerCase();
+      const t = type.value;
+      let visible = 0;
+      for (const { el, text: hay } of items) {
+        const ok = (!t || el.dataset.type === t) && (!text || hay.includes(text));
+        el.hidden = !ok;
+        if (ok) visible++;
+      }
+      for (const g of groups) g.hidden = ![...g.querySelectorAll(".pub")].some((el) => !el.hidden);
+      count.textContent = text || t ? `${visible} shown` : "";
+    }
+    q.addEventListener("input", apply);
+    type.addEventListener("change", apply);
+  </script>
+</Base>
+
+<style is:global>
+  .scope { font-size: 1.05rem; max-width: 70ch; }
+  .source { font: var(--text-meta); color: var(--ink-2); }
+  .toolbar { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-4); align-items: end; margin: var(--space-4) 0; padding: var(--space-3); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+  .toolbar label { display: flex; flex-direction: column; gap: 4px; font: var(--text-meta); color: var(--ink-2); }
+  .toolbar input, .toolbar select { font: var(--text-body); padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ground); color: var(--ink); min-width: 220px; }
+  .toolbar select { min-width: 140px; }
+  .count { font: var(--text-meta); color: var(--ink-2); }
+  .yearbar { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-3); margin: var(--space-3) 0 var(--space-4); font: var(--text-nav); }
+  .yearbar a { text-decoration: none; color: var(--accent); }
+  .yearbar small { color: var(--ink-2); font-weight: 400; }
+  .yeargroup h2 { text-align: left; border-bottom: 3px solid var(--teal); display: inline-block; padding-bottom: 4px; }
+  .publist { list-style: none; padding: 0; margin: 0; }
+  .pub { padding: var(--space-3) 0; border-bottom: 1px solid var(--line); max-width: 100ch; }
+  .pub .title { font: var(--text-subhead); font-family: var(--font-sans); font-weight: 700; font-size: 1.06rem; }
+  .pub .title a { color: var(--ink); text-decoration: none; }
+  .pub .title a:hover { color: var(--teal-down); text-decoration: underline; }
+  .authors { margin-top: 4px; color: var(--ink-2); font-size: .98rem; }
+  .lab-author { color: var(--teal-down); font-weight: 700; }
+  .all-authors { display: inline-block; margin-left: 8px; font-size: .9rem; }
+  .all-authors summary { cursor: pointer; color: var(--accent); }
+  .meta { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-3); margin-top: 6px; font: var(--text-meta); color: var(--ink-2); align-items: center; }
+  .badge { font: var(--text-nav); font-size: .68rem; letter-spacing: .05em; text-transform: uppercase; padding: 2px 10px; border-radius: 99px; background: var(--sand); color: var(--ink); }
+  .badge-journal { background: var(--teal); color: #fff; }
+  .badge-conference { background: var(--slate); color: #fff; }
+  .badge-workshop { background: var(--teal-down); color: #fff; }
+  .actions { margin-top: 8px; display: flex; gap: var(--space-2); align-items: start; flex-wrap: wrap; }
+  .chip { font: var(--text-nav); font-size: .72rem; letter-spacing: .04em; padding: 4px 12px; border: 1.5px solid var(--teal-down); border-radius: 99px; color: var(--teal-down); text-decoration: none; cursor: pointer; display: inline-block; }
+  .chip:hover { background: var(--teal); border-color: var(--teal); color: #fff; }
+  .bib summary { list-style: none; }
+  .bib summary::-webkit-details-marker { display: none; }
+  .bib pre { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: var(--space-3); overflow-x: auto; font: var(--text-data); max-width: 90ch; }
+  .attribution { font: var(--text-meta); color: var(--ink-2); margin-top: var(--space-6); border-top: 1px solid var(--line); padding-top: var(--space-3); }
+</style>
