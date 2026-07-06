@@ -55,9 +55,11 @@ cards:
     external: true
     assignee: null
     visible: true
-    title: AIP Research Centre
-    link: https://aip-research-center.github.io/
+    title: Centre for Applied Artificial Intelligence
+    link: https://www.mq.edu.au/research/research-centres-institutes-and-initiatives/applied-ai
     id: aip-research-centre
-    image: img/aroundthelab/sign-aip.png
-    description: The AI-enabled Processes Research Centre — a partner research
-      centre led from Macquarie University.
+    image: img/aroundthelab/picture-1.jpg
+    description: Macquarie University Applied Artificial Intelligence Research
+      Centre connects academic excellence with industry needs for organisations
+      across healthcare, education, finance, law enforcement, sustainability and
+      more.
