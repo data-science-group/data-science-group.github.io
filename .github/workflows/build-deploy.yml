@@ -1,0 +1,91 @@
+# Builds the Astro site, layers the legacy archives on top, runs hygiene gates,
+# and deploys to GitHub Pages.
+#
+# Repo-aware: on the production repo it builds for the root domain; on any other
+# repo (e.g. the staging fork) it builds for https://<owner>.github.io/<repo>/
+# with BASE_PATH set and robots noindex.
+#
+# DORMANT on production until the founder pushes and switches Pages source to
+# "GitHub Actions". Active on the staging repo from day one.
+name: Build and deploy site
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute environment (production vs staging)
+        id: cfg
+        run: |
+          if [ "${{ github.repository }}" = "data-science-group/data-science-group.github.io" ]; then
+            echo "site=https://data-science-group.github.io" >> "$GITHUB_OUTPUT"
+            echo "base=/" >> "$GITHUB_OUTPUT"
+            echo "staging=0" >> "$GITHUB_OUTPUT"
+          else
+            owner="${{ github.repository_owner }}"
+            repo="${GITHUB_REPOSITORY#*/}"
+            echo "site=https://${owner}.github.io/${repo}" >> "$GITHUB_OUTPUT"
+            echo "base=/${repo}" >> "$GITHUB_OUTPUT"
+            echo "staging=1" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install
+        working-directory: site
+        run: npm ci
+
+      - name: Build (full — media diet keeps the artifact well under the 1GB Pages limit)
+        env:
+          SITE_URL: ${{ steps.cfg.outputs.site }}
+          BASE_PATH: ${{ steps.cfg.outputs.base }}
+          PUBLIC_STAGING: ${{ steps.cfg.outputs.staging }}
+          STAGING: ${{ steps.cfg.outputs.staging }}
+        run: node scripts/build-site.mjs --full
+
+      - name: Content hygiene gate (source)
+        run: python3 scripts/check-content.py --quiet
+        continue-on-error: true # flip to hard-fail once legacy link-rot burn-down completes (W6)
+
+      - name: Internal link check — HARD gate on Astro-generated pages
+        # Deterministic filesystem checker (case-sensitive, base-aware); scope =
+        # pages the new site generates, auto-expanding as waves land. Fails on
+        # zero files scanned — a silent no-op gate is itself a failure.
+        run: python3 scripts/check-links.py site/dist --scope astro --base "${{ steps.cfg.outputs.base }}"
+
+      - name: Internal link check — soft full-tree scan (legacy burn-down visibility)
+        continue-on-error: true # flips to hard-fail when the W6 burn-down completes
+        run: python3 scripts/check-links.py site/dist --scope all --base "${{ steps.cfg.outputs.base }}"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

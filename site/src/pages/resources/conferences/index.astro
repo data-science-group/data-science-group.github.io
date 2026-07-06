@@ -1,0 +1,146 @@
+---
+// Target conferences — the member-built cs-conferences tool, consolidated
+// into the lab site (founder-ordered). Data: src/data/conferences.yml,
+// maintained by Afrooz Sheikholeslami (admin section owner when panel lands).
+import Base from "../../../layouts/Base.astro";
+import fs from "node:fs";
+import path from "node:path";
+import { createRequire } from "node:module";
+const yaml = createRequire(import.meta.url)("js-yaml");
+
+// Build runs with cwd = site/ (both dev and astro build); bundled chunks
+// relocate, so import.meta.url-relative paths are NOT safe here.
+const doc = yaml.load(fs.readFileSync(path.join(process.cwd(), "src", "data", "conferences.yml"), "utf8"))
+  ?? { conferences: [] };
+const BUILD = new Date();
+const parseD = (s) => { const d = s ? new Date(s) : null; return d && !isNaN(d) ? d : null; };
+const DAY = 86400000;
+
+const rows = (doc.conferences || []).filter((c) => c.visible !== false).map((c) => {
+  const dl = parseD(c.paperDeadline);
+  let status = "TBD";
+  if (dl) {
+    const delta = dl.getTime() + 1.5 * DAY - BUILD.getTime(); // AoE-safe grace
+    status = delta < 0 ? "Closed" : delta < 14 * DAY ? "Closing soon" : "Open";
+  }
+  return { ...c, status };
+});
+// deadline-sorted: open/closing first by nearest deadline, then TBD, then closed
+const orderKey = (r) => (r.status === "Closed" ? 2 : r.status === "TBD" ? 1 : 0);
+rows.sort((a, b) => orderKey(a) - orderKey(b) ||
+  (parseD(a.paperDeadline)?.getTime() ?? Infinity) - (parseD(b.paperDeadline)?.getTime() ?? Infinity));
+const TOPICS = [...new Set(rows.map((r) => r.topic))].sort();
+const RANKS = ["A*", "A", "B", "C"];
+const fmt = new Intl.DateTimeFormat("en-AU", { day: "numeric", month: "short", year: "numeric" });
+---
+<Base
+  title="Target conferences — Data Science Research Lab"
+  description="Curated list of target conferences for the Data Science Research Lab: dates, CORE ranks and paper deadlines across machine learning, data mining, NLP and applied AI."
+>
+  <h1>Target conferences</h1>
+  <p class="scope">
+    Deadline tracker for the lab's target venues — {rows.length} conferences across&#32;{TOPICS.length} areas. Statuses reflect the latest site update ({fmt.format(BUILD)}).
+  </p>
+
+  <div class="toolbar" id="cf-toolbar" hidden>
+    <label>Search <input type="search" id="cf-q" placeholder="venue, location…" /></label>
+    <label>Topic
+      <select id="cf-topic"><option value="">All</option>{TOPICS.map((t) => <option value={t}>{t}</option>)}</select>
+    </label>
+    <label>Rank
+      <select id="cf-rank"><option value="">All</option>{RANKS.map((r) => <option value={r}>{r}</option>)}</select>
+    </label>
+    <label class="chk"><input type="checkbox" id="cf-open" /> Hide closed</label>
+    <span class="count" id="cf-count" aria-live="polite"></span>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Conference</th><th>Topic</th><th>Rank</th><th>Event</th><th>Paper deadline</th><th>Notification</th><th>Camera-ready</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr class="cf" data-topic={r.topic} data-rank={r.rank || ""} data-status={r.status}>
+            <td data-l="Conference"><a href={r.url}>{r.title}</a></td>
+            <td data-l="Topic">{r.topic}</td>
+            <td data-l="Rank">{r.rank ? <span class={`rank rank-${r.rank.replace("*", "s")}`}>{r.rank}</span> : "—"}</td>
+            <td data-l="Event">{r.startDate ? fmt.format(parseD(r.startDate)) : "TBD"} · {r.location}</td>
+            <td data-l="Deadline"><strong>{r.paperDeadline || "TBD"}</strong></td>
+            <td data-l="Notification">{r.notificationDate || "TBD"}</td>
+            <td data-l="Camera-ready">{r.cameraReady || "TBD"}</td>
+            <td data-l="Status"><span class={`status s-${r.status.toLowerCase().replace(" ", "-")}`}>{r.status}</span></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note">
+    CORE ranks are maintainer-curated for lab planning and may not reflect the
+    latest official listing. Always verify venue deadlines and rankings before
+    submitting.
+  </p>
+  <p class="attribution">
+    Curated and maintained by Afrooz Sheikholeslami. Originally developed as
+    <a href="https://afroozsheikh.github.io/cs-conferences/">CS Conference Alerts</a>;
+    adapted for the Data Science Research Lab resources section.
+  </p>
+
+  <script>
+    const q = document.getElementById("cf-q");
+    const topic = document.getElementById("cf-topic");
+    const rank = document.getElementById("cf-rank");
+    const open = document.getElementById("cf-open");
+    const count = document.getElementById("cf-count");
+    document.getElementById("cf-toolbar").hidden = false;
+    const rows = [...document.querySelectorAll(".cf")].map((el) => ({ el, text: el.textContent.toLowerCase() }));
+    function apply() {
+      const text = q.value.trim().toLowerCase();
+      let n = 0;
+      for (const { el, text: hay } of rows) {
+        const ok = (!text || hay.includes(text)) &&
+          (!topic.value || el.dataset.topic === topic.value) &&
+          (!rank.value || el.dataset.rank === rank.value) &&
+          (!open.checked || el.dataset.status !== "Closed");
+        el.hidden = !ok;
+        if (ok) n++;
+      }
+      count.textContent = text || topic.value || rank.value || open.checked ? `${n} shown` : "";
+    }
+    for (const el of [q, topic, rank]) el.addEventListener("input", apply);
+    open.addEventListener("change", apply);
+  </script>
+</Base>
+
+<style is:global>
+  .scope { font-size: 1.02rem; max-width: 72ch; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-4); align-items: end; margin: var(--space-4) 0; padding: var(--space-3); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+  .toolbar label { display: flex; flex-direction: column; gap: 4px; font: var(--text-meta); color: var(--ink-2); }
+  .toolbar label.chk { flex-direction: row; align-items: center; gap: 8px; }
+  .toolbar input[type="search"], .toolbar select { font: var(--text-body); padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ground); color: var(--ink); }
+  .count { font: var(--text-meta); color: var(--ink-2); }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; font-variant-numeric: tabular-nums; }
+  th { font: var(--text-nav); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--teal); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td a { color: var(--ink); font-weight: 700; text-decoration: none; }
+  td a:hover { color: var(--teal-down); text-decoration: underline; }
+  .rank { font-weight: 700; padding: 2px 9px; border-radius: 99px; font-size: .8rem; background: var(--sand); }
+  .rank-As { background: var(--teal); color: #fff; }
+  .rank-A { background: var(--slate); color: #fff; }
+  .status { font: var(--text-meta); font-weight: 700; padding: 2px 10px; border-radius: 99px; white-space: nowrap; background: var(--sand); color: var(--ink-2); }
+  .s-open { background: #D5F5E3; color: #14663F; }
+  .s-closing-soon { background: var(--flag); color: #fff; }
+  .s-closed { opacity: .75; }
+  .note, .attribution { font: var(--text-meta); color: var(--ink-2); max-width: 80ch; }
+  .attribution { border-top: 1px solid var(--line); padding-top: var(--space-3); margin-top: var(--space-4); }
+  @media (max-width: 760px) {
+    thead { display: none; }
+    table, tbody, tr, td { display: block; }
+    tr { border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: var(--space-3); padding: var(--space-2) var(--space-3); }
+    td { border: none; padding: 4px 0; }
+    td::before { content: attr(data-l) ": "; font: var(--text-meta); color: var(--ink-2); }
+    td:first-child::before { content: ""; }
+  }
+</style>

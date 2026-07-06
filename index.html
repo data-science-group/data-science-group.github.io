@@ -1,0 +1,2437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Data Science Research Lab" />
+    <meta name="author" content="Amin Beheshti" />
+    <meta
+      name="keywords"
+      content="Data Science, Data Analytics, Big Data, Predictive Analytics, Data Engineering, Amin Beheshti"
+    />
+
+    <title>
+      Data Science Research Lab, Macquarie University, Sydney, Australia
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Plugin CSS -->
+    <link
+      href="vendor/magnific-popup/magnific-popup.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet" />
+
+    <style>
+      div.gallery {
+        margin: 2px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+        min-height: 210px;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 1px;
+        text-align: center;
+      }
+      .auto-style1 {
+        font-size: small;
+        font-weight: bold;
+      }
+
+      /* Navbar fit: with 7 items the default sizes wrap links onto two
+         lines and push "Contact" past the container edge. Smaller brand
+         and nav font keep every link on one line at every desktop width
+         (Bootstrap caps the container at 960px / 1140px, so the budget
+         is fixed regardless of how wide the screen is). */
+      @media (min-width: 992px) {
+        #mainNav .navbar-brand,
+        #mainNav.navbar-shrink .navbar-brand {
+          font-size: 1.15em;
+        }
+        #mainNav .navbar-nav {
+          letter-spacing: 0.02rem;
+        }
+        #mainNav .navbar-nav li.nav-item {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        #mainNav .navbar-nav li.nav-item a.nav-link {
+          font-size: 0.75rem;
+          white-space: nowrap;
+          padding-left: 0.3rem !important;
+          padding-right: 0.3rem !important;
+        }
+      }
+      @media (min-width: 1200px) {
+        #mainNav .navbar-brand,
+        #mainNav.navbar-shrink .navbar-brand {
+          font-size: 1.25em;
+        }
+        #mainNav .navbar-nav {
+          letter-spacing: 0.03rem;
+        }
+        #mainNav .navbar-nav li.nav-item a.nav-link {
+          font-size: 0.9rem;
+          padding-left: 0.5rem !important;
+          padding-right: 0.5rem !important;
+        }
+      }
+
+      /* Single-line moving rows (Projects, Around the Lab): items sit on one
+         line and glide sideways in an endless loop — Projects to the left,
+         Around the Lab to the right. A script at the bottom duplicates each
+         track once, so sliding exactly half the track width loops seamlessly.
+         Hover pauses; reduced-motion users get a plain scrollable row. */
+      .dsl-marquee {
+        overflow: hidden;
+      }
+      .dsl-marquee-track {
+        display: flex;
+        align-items: stretch;
+        width: max-content;
+        animation: dsl-marq-left 60s linear infinite;
+        will-change: transform;
+      }
+      .dsl-marquee[data-direction="right"] .dsl-marquee-track {
+        animation-name: dsl-marq-right;
+      }
+      .dsl-marquee-track > [class*="col-"] {
+        flex: 0 0 330px;
+        width: 330px;
+        max-width: none;
+        margin-right: 24px;
+      }
+      .dsl-marquee:hover .dsl-marquee-track {
+        animation-play-state: paused;
+      }
+      @keyframes dsl-marq-left {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      @keyframes dsl-marq-right {
+        from { transform: translateX(-50%); }
+        to { transform: translateX(0); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .dsl-marquee {
+          overflow-x: auto;
+        }
+        .dsl-marquee-track {
+          animation: none !important;
+          width: auto;
+        }
+      }
+
+      /* Clean, uniform cards: titles and descriptions clamp to fixed blocks
+         so badges, text and dates always sit at the same level. */
+      .dsl-news-title,
+      .dsl-marquee-track [class*="col-"] h4 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.35;
+        min-height: 2.7em;
+      }
+      .dsl-news-title {
+        -webkit-line-clamp: 3;
+        min-height: 4.05em;
+        font-size: 1.05rem;
+      }
+      .dsl-marquee-track [class*="col-"] p.text-muted {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+          >Data Science Lab</a
+        >
+        <button
+          class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#Projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#AroundTheLab"
+                >Around the Lab</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="publications/"
+                >Publications</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#People"
+                >People</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#PastMembers"
+                >Alumni</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#about"
+                >Prospective Students</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <!--        <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">-->
+        <h3 class="text-uppercase mb-0">Data Science Lab</h3>
+        <h3 class="text-uppercase mb-0">
+          Macquarie University, Sydney, Australia
+        </h3>
+        <hr />
+        <h2 class="font-weight-light mb-0">
+          Our mission is to significantly improve people's lives through our
+          work in <br />
+          Data Science, Predictive Analytics and Big Data!
+        </h2>
+        <br />
+        Data Science Research Lab is funded by the
+        <a
+          style="color: maroon"
+          href="https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/centre-for-applied-artificial-intelligence"
+          target="_blank"
+          ><b>Centre for Applied Artificial Intelligence</b></a
+        >
+        at
+        <a
+          style="color: chocolate"
+          href="https://www.mq.edu.au/"
+          target="_blank"
+          ><b>Macquarie University</b></a
+        >. <br />
+      </div>
+    </header>
+
+    <!-- Projects Grid Section -->
+    <!-- News Section (added 2026-07: upcoming events and keynotes; full list at news/) -->
+    <section class="News" id="News">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">News</h2>
+        <br />
+        <!-- ADMIN:news-strip:start -->
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="news/#y2026" style="text-decoration: none; color: inherit">
+              <img class="img-fluid" src="uploads/news/ea4ai-2026.png" alt="" style="width: 100%; height: 170px; object-fit: contain; background: #fff; padding: 10px" />
+              <p class="mt-3 mb-0"><span style="background: #2c3e50; color: #fff; font-size: 0.7rem; padding: 3px 10px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.04em">keynote</span> <span style="background: #a6192e; color: #fff; font-size: 0.7rem; padding: 3px 10px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.04em">Upcoming</span></p>
+              <h4 class="dsl-news-title mt-2 mb-1">From Automation to Augmentation to Agency: Agentic Service-Oriented Computing as the Foundation of Human-Centric GenAI Ecosystems</h4>
+              <p class="text-muted mb-0">1 September 2026</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="news/#y2026" style="text-decoration: none; color: inherit">
+              <img class="img-fluid" src="uploads/news/wise-2026.jpg" alt="" style="width: 100%; height: 170px; object-fit: contain; background: #fff; padding: 10px" />
+              <p class="mt-3 mb-0"><span style="background: #2c3e50; color: #fff; font-size: 0.7rem; padding: 3px 10px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.04em">keynote</span> <span style="background: #a6192e; color: #fff; font-size: 0.7rem; padding: 3px 10px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.04em">Upcoming</span></p>
+              <h4 class="dsl-news-title mt-2 mb-1">Neural Processes: Toward a Knowledge-First Foundation for BPM in the Age of Generative and Agentic AI</h4>
+              <p class="text-muted mb-0">1 November 2026</p>
+            </a>
+          </div>
+        </div>
+        <div class="text-center mt-2">
+          <a class="btn btn-outline-secondary rounded-pill" href="news/">All news</a>
+        </div>
+        <!-- ADMIN:news-strip:end -->
+      </div>
+    </section>
+
+    <section class="Projects" id="Projects">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Projects</h2>
+        <hr />
+        <div class="dsl-marquee" data-direction="left">
+          <div class="dsl-marquee-track">
+          <div class="col-md-6 col-lg-4">
+            <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:6780986771585978368/"
+            >
+              <div
+                class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              >
+                <!--                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>-->
+              </div>
+              <div style="text-align: center">
+                <img
+                  class="img-fluid"
+                  src="img/icon/lawwnforcement.png"
+                  alt=""
+                  width="160"
+                />
+              </div>
+              <br />
+              <div style="text-align: center">
+                <b>iCop</b>
+                <br />
+                Cognitive Augmentation in Policing Processes
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a target="_blank" href="https://www.linkedin.com/posts/prof-amin-beheshti_it-is-my-great-pleasure-to-lead-a-strategic-activity-6643807285191720960-g18A?utm_source=share&utm_medium=member_desktop"
+            >
+              <div
+                class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              >
+                <!--                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>-->
+              </div>
+              <div style="text-align: center">
+                <img
+                  class="img-fluid"
+                  src="img/icon/bank.png"
+                  alt=""
+                  width="160"
+                />
+              </div>
+              <br />
+              <div style="text-align: center">
+                <b>iBank</b>
+                <br />
+                AI-enabled Banking
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:6726718268683427840/"
+            >
+              <div
+                class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              >
+                <!--                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>-->
+              </div>
+              <div style="text-align: center">
+                <img
+                  class="img-fluid"
+                  src="img/icon/job.png"
+                  alt=""
+                  width="160"
+                />
+              </div>
+              <br />
+              <div style="text-align: center">
+                <b>iJob</b>
+                <br />
+                Industry 4.0 - Predictions of Future Jobs
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a target="_blank" href="https://www.linkedin.com/posts/computing-macquarie-university_congratulations-to-dr-amin-beheshti-and-activity-6815761423688380416-BG2G/"
+            >
+              <div
+                class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              >
+                <!--                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>-->
+              </div>
+              <div style="text-align: center">
+                <img
+                  style="align-content: center"
+                  class="img-fluid"
+                  src="img/icon/risk.png"
+                  alt=""
+                  width="160"
+                />
+              </div>
+              <br />
+              <div style="text-align: center">
+                <b>iRisk</b>
+                <br />
+                Intelligent Risk Assessment for Financial Services
+              </div>
+              <br />
+              <br />
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a target="_blank" href="https://link.springer.com/article/10.1007/s10619-018-7245-1?error=cookies_not_supported&code=981cbc9d-b9f5-4483-a1a4-45a3d857bd34"
+            >
+              <div
+                class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              >
+                <!--                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>-->
+              </div>
+              <div style="text-align: center">
+                <img
+                  style="align-content: center"
+                  class="img-fluid"
+                  src="img/icon/life.png"
+                  alt=""
+                  width="160"
+                />
+              </div>
+              <br />
+              <div style="text-align: center">
+                <b>iLife</b>
+                <br />
+                Organizing, Curating and Analyzing Personal &amp; Social Data.
+              </div>
+              <br />
+              <br />
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-981-15-3281-8_3?error=cookies_not_supported&code=2e0d4218-e794-43c7-9b25-f7bfe069568e"
+            >
+              <div
+                class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              >
+                <!--                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>-->
+              </div>
+              <div style="text-align: center">
+                <img
+                  style="align-content: center"
+                  class="img-fluid"
+                  src="img/icon/business.png"
+                  alt=""
+                  width="160"
+                />
+              </div>
+              <br />
+              <div style="text-align: center">
+                <b>iBusiness</b>
+                <br />
+                Organizing, Curating and Analyzing Business Data.
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a target="_blank" href="https://dl.acm.org/doi/10.1145/3366424.3383553"
+            >
+              <div
+                class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              >
+                <!--                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>-->
+              </div>
+              <div style="text-align: center">
+                <img
+                  style="align-content: center"
+                  class="img-fluid"
+                  src="img/icon/story.png"
+                  alt=""
+                  width="160"
+                />
+              </div>
+              <br />
+              <div style="text-align: center">
+                <b>iStory</b>
+                <br />
+                Storytelling with Data: Intelligent Narrative Discovery.
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a target="_blank" href="https://dl.acm.org/doi/10.1145/3336191.3371865"
+            >
+              <div
+                class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              >
+                <!--                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>-->
+              </div>
+              <div style="text-align: center">
+                <img
+                  style="align-content: center"
+                  class="img-fluid"
+                  src="img/icon/mentalhealth.png"
+                  alt=""
+                  width="160"
+                />
+              </div>
+              <br />
+              <div style="text-align: center">
+                <b>iHealth</b>
+                <br />
+                Developing learning systems that perform automatic
+                mental-health-disorders detection from social networks.
+                Applications include Suicide Prevention and (School) Bullying
+                Detection.
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a target="_blank" href="https://www.linkedin.com/posts/computing-macquarie-university_congratulations-to-dr-amin-beheshti-and-the-activity-6739017438358233088-ldJB"
+            >
+              <div
+                class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              >
+                <!--                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>-->
+              </div>
+              <div style="text-align: center">
+                <img
+                  style="align-content: center"
+                  class="img-fluid"
+                  src="img/icon/education.png"
+                  alt=""
+                  width="160"
+                />
+              </div>
+              <br />
+              <div style="text-align: center">
+                <b>iLearn</b>
+                <br />
+                Cognitive Assistance to help students and teachers.
+              </div>
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Around the Lab Grid Section (added 2026-07: consolidation hub for the lab's organisations and workshops) -->
+    <section class="AroundTheLab" id="AroundTheLab">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Around the Lab</h2>
+        <br />
+        <!-- ADMIN:around-cards:start -->
+        <div class="dsl-marquee" data-direction="right">
+          <div class="dsl-marquee-track">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="BioFM/2026/" style="text-decoration: none; color: inherit">
+              <img class="img-fluid" src="img/aroundthelab/sign-biofm26.png" alt="" style="width: 100%; height: 170px; object-fit: cover" />
+              <h4 class="mt-3 mb-1">BioFM'26
+                <span style="background: #a6192e; color: #fff; font-size: 0.55em; vertical-align: middle; padding: 3px 10px; border-radius: 10px; text-transform: uppercase">Upcoming</span>
+              </h4>
+              <p class="text-muted mb-0">2nd International Workshop on Foundation Models for Biology and Bioinnovation &mdash; IEEE ICDM 2026, Shenyang, 12&ndash;15 November 2026. Call for papers open.</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="AIPA_workshop/2025/" style="text-decoration: none; color: inherit">
+              <img class="img-fluid" src="img/aroundthelab/sign-aipa.png" alt="" style="width: 100%; height: 170px; object-fit: cover" />
+              <h4 class="mt-3 mb-1">AI-PA Workshop Series</h4>
+              <p class="text-muted mb-0">International Workshop on AI-enabled Process Automation &mdash; six editions (2020&ndash;2025) co-located with ICSOC, with sponsors including Google, Microsoft, AWS, Fujitsu and IBM.</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="BigDataSociety/" style="text-decoration: none; color: inherit">
+              <img class="img-fluid" src="img/aroundthelab/sign-bds.png" alt="" style="width: 100%; height: 170px; object-fit: cover" />
+              <h4 class="mt-3 mb-1">Big Data Society</h4>
+              <p class="text-muted mb-0">The student society founded at the lab &mdash; hackathons, tutorials and industry events since 2018.</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="AIPLE_Workshop/2021/" style="text-decoration: none; color: inherit">
+              <img class="img-fluid" src="img/aroundthelab/sign-aiple.png" alt="" style="width: 100%; height: 170px; object-fit: cover" />
+              <h4 class="mt-3 mb-1">AI-PLE 2021</h4>
+              <p class="text-muted mb-0">International Workshop on AI-enabled Policing and Law Enforcement &mdash; IEEE EDOC 2021, co-chaired with the Australian Federal Police.</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="BioFM/2025/" style="text-decoration: none; color: inherit">
+              <img class="img-fluid" src="img/aroundthelab/sign-biofm25.png" alt="" style="width: 100%; height: 170px; object-fit: cover" />
+              <h4 class="mt-3 mb-1">BioFM'25</h4>
+              <p class="text-muted mb-0">1st International Workshop on Foundation Models for Biology and Bioinnovation &mdash; IEEE ICDM 2025, Washington DC.</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="https://aip-research-center.github.io/" target="_blank" style="text-decoration: none; color: inherit">
+              <img class="img-fluid" src="img/aroundthelab/sign-aip.png" alt="" style="width: 100%; height: 170px; object-fit: cover" />
+              <h4 class="mt-3 mb-1">AIP Research Centre</h4>
+              <p class="text-muted mb-0">The AI-enabled Processes Research Centre &mdash; a partner research centre led from Macquarie University.</p>
+            </a>
+          </div>
+          </div>
+        </div>
+        <!-- ADMIN:around-cards:end -->
+      </div>
+    </section>
+
+    <!-- People Grid Section -->
+    <section class="People" id="People">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">People</h2>
+        <hr />
+
+        <!-- ADMIN:people:start -->
+        <div class="row">
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://data-science-group.github.io/people/aminbeheshti/">
+                <img src="img/people/amin.jpg" alt="Amin Beheshti" width="50" />
+              </a>
+              <div class="desc">
+                Prof. Amin Beheshti<br />
+                (<b>Founder and Head</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/xuyun-zhang-93608740/">
+                <img src="img/people/xuyun.jpg" alt="Xuyun Zhang" width="50" />
+              </a>
+              <div class="desc">
+                A/Prof. Xuyun Zhang<br />
+                (<span class="auto-style1">Academic</span>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/jian-yang-1727945/">
+                <img src="img/people/Jian.jpg" alt="Jian Yang" width="50" />
+              </a>
+              <div class="desc">
+                Prof. Jian Yang<br />
+                (<span class="auto-style1">Academic</span>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/jia-wu-a3252337/">
+                <img src="img/people/jiawu.jpg" alt="Jia Wu" width="50" />
+              </a>
+              <div class="desc">
+                Prof. Jia Wu<br />
+                (<span class="auto-style1">Academic</span>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/shan-emma-xue-12509892/">
+                <img src="img/people/EmmaXue.jpg" alt="Emma Xue" width="50" />
+              </a>
+              <div class="desc">
+                Dr. Emma Xue<br />
+                (<span class="auto-style1">Academic</span>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/yuankai-qi-b97951155/">
+                <img src="img/people/yuankaiqi.jpg" alt="Yuankai Qi" width="50" />
+              </a>
+              <div class="desc">
+                Dr. Yuankai Qi<br />
+                (<span class="auto-style1">Academic</span>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Congbo Ma (Research Fellow).jpg" alt="Congbo Ma" width="50" />
+              </a>
+              <div class="desc">
+                Congbo Ma<br />
+                (<b>Research Fellow</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/jing-du-109901255/">
+                <img src="img/people/jingdu.jpg" alt="Jing Du" width="50" />
+              </a>
+              <div class="desc">
+                Dr. Jing Du<br />
+                (<span class="auto-style1">Postdoctoral Fellow</span>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/habibah/">
+                <img src="img/people/Habiba.jpg" alt="Habiba" width="50" />
+              </a>
+              <div class="desc">
+                Dr. Habiba Habiba<br />
+                (<span class="auto-style1">Senior Research Fellow</span>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="http://www.linkedin.com/in/mohammadlari97">
+                <img src="img/people/MohammadLari.jpg" alt="Armin Lari" width="50" />
+              </a>
+              <div class="desc">
+                Armin Lari<br />
+                (<b>MRes Y2 + PhD)</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/hamzaa-khaan/">
+                <img src="img/people/HamzaKhan.png" alt="Hamza Khan" width="50" />
+              </a>
+              <div class="desc">
+                Hamza Khan<br />
+                (<b>MRes Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/akramah-rashid-36360797">
+                <img src="img/people/AkramahRashid.jpg" alt="Akramah Rashid" width="50" />
+              </a>
+              <div class="desc">
+                Akramah Rashid<br />
+                (<b>MRes Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://au.linkedin.com/in/anousha-shariati-75836a214">
+                <img src="img/people/Anusha.jpeg" alt="Anusha Shariati" width="50" />
+              </a>
+              <div class="desc">
+                Anusha Shariati<br />
+                (<b>MRes Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/malihassan2800">
+                <img src="img/people/MuhammadAliHassan.jpg" alt="Muhammad Ali Hassan" width="50" />
+              </a>
+              <div class="desc">
+                Muhammad Ali Hassan<br />
+                (<b>MRes Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/hengyu-zhang-5807643b6/">
+                <img src="img/people/HengyuZhang.png" alt="Hengyu Zhang" width="50" />
+              </a>
+              <div class="desc">
+                Hengyu Zhang<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/alireza-yegane">
+                <img src="img/people/AlirezaYegane.jpeg" alt="Alireza Yegane" width="50" />
+              </a>
+              <div class="desc">
+                Alireza Yegane<br />
+                (<b>MRes Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/andy-yang-au/">
+                <img src="img/people/AndyYang.png" alt="Andy Yang" width="50" />
+              </a>
+              <div class="desc">
+                Andy Yang<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/laura-hardy-8a613b322/">
+                <img src="img/people/LauraH.jpeg" alt="Laura Hardy" width="50" />
+              </a>
+              <div class="desc">
+                Laura Hardy<br />
+                (<b>MRes Y2 + PhD</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/ali-mohseni-464953152/">
+                <img src="img/people/sali.jpg" alt="Ali Mohseni" width="50" />
+              </a>
+              <div class="desc">
+                SeyedAli Mohseni<br />
+                (<b>MRes Y2 + PhD</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/dexuan-ding-99ba27212/">
+                <img src="img/people/DexuanDing.jpg" alt="Dexuan Ding" width="50" />
+              </a>
+              <div class="desc">
+                Dexuan Ding<br />
+                (<b>MRes Y2 + PhD</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/hanfeng-liao-42497333a/">
+                <img src="img/people/HanfengLiao.jpg" alt="Hanfeng Liao" width="50" />
+              </a>
+              <div class="desc">
+                Hanfeng Liao<br />
+                (<b>MRes Y2 + PhD</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/melika-zare-552b60183/">
+                <img src="img/people/MelikaZare.jpeg" alt="Melika Zare" width="50" />
+              </a>
+              <div class="desc">
+                Melika Zare<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/alishahsvnd/">
+                <img src="img/people/AliS.jpg" alt="Ali Shahsavandi" width="50" />
+              </a>
+              <div class="desc">
+                Ali Shahsavandi<br />
+                (<b>MRes Y2 + PhD</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/kianabagheri/">
+                <img src="img/people/KianaB.jpg" alt="Kiana Bagheri" width="50" />
+              </a>
+              <div class="desc">
+                Kiana Bagheri<br />
+                (<b>MRes Y2 + PhD</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/marjan-baghgolshani-0462a2125/">
+                <img src="img/people/MarjanB.jpg" alt="Marjan BaghGolshani" width="50" />
+              </a>
+              <div class="desc">
+                Marjan BaghGolshani<br />
+                (<b>MRes Y2 + PhD</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/mohammad-ali-majidi-5569257a/">
+                <img src="img/people/AliMaj.jpg" alt="Ali Majidi" width="50" />
+              </a>
+              <div class="desc">
+                Ali Majidi<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/parimehr-morassafar-766a04195">
+                <img src="img/people/parimehr.jpg" alt="Parimehr Morassafar" width="50" />
+              </a>
+              <div class="desc">
+                Parimehr Morassafar<br />
+                (<b>MRes Y2 + PhD</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/kamyar-taeb-1739051a4/">
+                <img src="img/people/kamyarT.JPG" alt="Kamyar Taeb" width="50" />
+              </a>
+              <div class="desc">
+                Kamyar Taeb<br />
+                (<b>MRes Y2 + PhD</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people/Afrooz.jpg" alt="Afrooz Sheikholeslami" width="50" />
+              </a>
+              <div class="desc">
+                Afrooz Sheikholeslami<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/erfanmoshiri">
+                <img src="img/people/Erfan_Moshiri.jpg" alt="Erfan Moshiri" width="50" />
+              </a>
+              <div class="desc">
+                Erfan Moshiri<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/aliakbar-attari/">
+                <img src="img/people/Aliakbar.jpg" alt="Aliakbar Attari" width="50" />
+              </a>
+              <div class="desc">
+                Aliakbar Attari<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/mhahmadi/">
+                <img src="img/people/mohammadAhmadi.jpg" alt="Mohammad H. Ahmadi" width="50" />
+              </a>
+              <div class="desc">
+                Mohammad H. Ahmadi<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/matthew-warner-smith/">
+                <img src="img/people/MatthewWS.jpg" alt="Matthew Warner-Smith" width="50" />
+              </a>
+              <div class="desc">
+                Matthew Warner-Smith<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/alireza-shammasi-13b72824a/">
+                <img src="img/people/AlirezaSh.jpg" alt="Alireza Shammasi" width="50" />
+              </a>
+              <div class="desc">
+                Alireza Shammasi<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/hadi-m-abachi-99956a91/">
+                <img src="img/people/hadia.jpg" alt="Hadi Abachi" width="50" />
+              </a>
+              <div class="desc">
+                Hadi Abachi<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/anthonypshaw/">
+                <img src="img/people/AnthonyS.png" alt="Anthony Shaw" width="50" />
+              </a>
+              <div class="desc">
+                Anthony Shaw<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/eu-jin-foo">
+                <img src="img/people/Jin_Foo.jpg" alt="Jin Foo" width="50" />
+              </a>
+              <div class="desc">
+                Jin Foo<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/hongyi-lu-0b28b8233/">
+                <img src="img/people/Hongyi_Lu.jpg" alt="Hongyi Lu" width="50" />
+              </a>
+              <div class="desc">
+                Hongyi Lu<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/roopasree-chidurala-20959227a/">
+                <img src="img/people/Roopasree_chidurala.jpg" alt="Roopasree Chidurala" width="50" />
+              </a>
+              <div class="desc">
+                Roopasree Chidurala<br />
+                (<b>MRes Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/xiaoxiao-chi-51618a23b/">
+                <img src="img/people/Xiaoxiao_Chi.jpg" alt="Xiaoxiao Chi" width="50" />
+              </a>
+              <div class="desc">
+                Xiaoxiao Chi<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Bilal Khan (PhD Student).JPG" alt="Bilal khan" width="50" />
+              </a>
+              <div class="desc">
+                Bilal khan<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Bingbing Xie (PhD Student).png" alt="Bingbing Xie" width="50" />
+              </a>
+              <div class="desc">
+                Bingbing Xie<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/fanzhen-liu-16659b192">
+                <img src="img/people_jia/Fanzhen Liu (Research Fellow).png" alt="Fanzhen Liu" width="50" />
+              </a>
+              <div class="desc">
+                Fanzhen Liu<br />
+                (<b>Research Fellow</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Ge Zhang (PhD Student).png" alt="Ge Zhang" width="50" />
+              </a>
+              <div class="desc">
+                Ge Zhang<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Guangwei Dong (PhD Student).png" alt="Guangwei Dong" width="50" />
+              </a>
+              <div class="desc">
+                Guangwei Dong<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Hui Chun Chuen (PhD Student).png" alt="Hui Chun Chuen" width="50" />
+              </a>
+              <div class="desc">
+                Hui Chun Chuen<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Malik Khizar Hayat (PhD Student).jpg" alt="Malik Khizar Hayat" width="50" />
+              </a>
+              <div class="desc">
+                Malik Khizar Hayat<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Qihua Lyu (MRes Student).png" alt="Qihua Lyu" width="50" />
+              </a>
+              <div class="desc">
+                Qihua Lyu<br />
+                (<b>MRes Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Shichen Luo (PhD Student).png" alt="Shichen Luo" width="50" />
+              </a>
+              <div class="desc">
+                Shichen Luo<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Suxue Ma (PhD Student).png" alt="Suxue Ma" width="50" />
+              </a>
+              <div class="desc">
+                Suxue Ma<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Tseesuren Batsuuri (PhD student).png" alt="Tseesuren Batsuuri" width="50" />
+              </a>
+              <div class="desc">
+                Tseesuren Batsuuri<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Wenya Hu (Visiting PhD Student).png" alt="Wenya Hu" width="50" />
+              </a>
+              <div class="desc">
+                Wenya Hu<br />
+                (<b>Visiting PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Xiaoxiao Ma (PhD Student).png" alt="Xiaoxiao Ma" width="50" />
+              </a>
+              <div class="desc">
+                Xiaoxiao Ma<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Xin Cao (Visiting PhD Student).png" alt="Xin Cao" width="50" />
+              </a>
+              <div class="desc">
+                Xin Cao<br />
+                (<b>Visiting PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Xuexiong Luo (Research Fellow).png" alt="Xuexiong Luo" width="50" />
+              </a>
+              <div class="desc">
+                Xuexiong Luo<br />
+                (<b>Research Fellow</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Yifei Han (MRes Y2).png" alt="Yifei Han" width="50" />
+              </a>
+              <div class="desc">
+                Yifei Han<br />
+                (<b>MRes Y2</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Yongsheng Yu (PhD Student).png" alt="Yongsheng Yu" width="50" />
+              </a>
+              <div class="desc">
+                Yongsheng Yu<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Yuchen Zhang (PhD Student).png" alt="Yuchen Zhang" width="50" />
+              </a>
+              <div class="desc">
+                Yuchen Zhang<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Zhengjia Xu (PhD Student).png" alt="Zhengjia Xu" width="50" />
+              </a>
+              <div class="desc">
+                Zhengjia Xu<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Zhenyu Yang (PhD Student).png" alt="Zhenyu Yang" width="50" />
+              </a>
+              <div class="desc">
+                Zhenyu Yang<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Zhuozhu Liu (PhD Student).png" alt="Zhuozhu Liu" width="50" />
+              </a>
+              <div class="desc">
+                Zhuozhu Liu<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Zitai Qiu (PhD Student).png" alt="Zitai Qiu" width="50" />
+              </a>
+              <div class="desc">
+                Zitai Qiu<br />
+                (<b>PhD Student</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank">
+                <img src="img/people_jia/Bahram Mohammadi (Visiting PhD).jpg" alt="Bahram Mohammadi" width="50" />
+              </a>
+              <div class="desc">
+                Bahram Mohammadi<br />
+                (<b>Visiting PhD</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/sogol-hosseini-5172611a4">
+                <img src="img/people/Sogol.JPG" alt="Sogol Hosseini" width="50" />
+              </a>
+              <div class="desc">
+                Sogol Hosseini<br />
+                (<b>Research Internship</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/jasminehuynhinfo/">
+                <img src="img/people/JasmineT.jpg" alt="Jasmine Huynh" width="50" />
+              </a>
+              <div class="desc">
+                Jasmine Huynh<br />
+                (<b>Research Internship</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/ghazalkalhori/">
+                <img src="img/people/GhazalK.jpg" alt="Ghazal Kalhori" width="50" />
+              </a>
+              <div class="desc">
+                Ghazal Kalhori<br />
+                (<b>Research Internship</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/mobin-roohi-0a91b8216/">
+                <img src="img/people/MobinR.jpg" alt="Mobin Roohi" width="50" />
+              </a>
+              <div class="desc">
+                Mobin Roohi<br />
+                (<b>Research Internship</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/omidtarabavar/">
+                <img src="img/people/Tarabavar.jpg" alt="Omid Tarabavar" width="50" />
+              </a>
+              <div class="desc">
+                Omid Tarabavar<br />
+                (<b>Research Internship</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/sobhansalarian/">
+                <img src="img/people/SobhanS.jpg" alt="Sobhan Salarian" width="50" />
+              </a>
+              <div class="desc">
+                Sobhan Salarian<br />
+                (<b>Research Internship</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/mohammad-ali-pashanj/">
+                <img src="img/people/MohammadPas.jpg" alt="MohammadAli Pashanj" width="50" />
+              </a>
+              <div class="desc">
+                MohammadAli Pashanj<br />
+                (<b>Research Internship</b>)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/alireza-bahrololoom/">
+                <img src="img/people/ABahrololoom.jpg" alt="Alireza Bahrololoom" width="50" />
+              </a>
+              <div class="desc">
+                Alireza Bahrololoom<br />
+                (<b>Research Internship</b>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ADMIN:people:end -->
+        <!-- Retired entries below were commented out on the legacy page; preserved verbatim OUTSIDE the admin-managed region (comments render nothing). -->
+        <!--				
+				<div class="col-md-4 col-lg-2">
+                    <div class="gallery">
+                        <a target="_blank" href="https://www.linkedin.com/in/aaron-gaskell/">
+                            <img src="img/people/AaronG.jpg" alt="Aaron Gaskell" width="50" />
+                        </a>
+                        <div class="desc">
+                            Aaron Gaskell<br />
+                            (<b>MRes Y2 + PhD Student</b>)
+                        </div>
+                    </div>
+                </div>	
+-->
+        <!--			
+          <div class="col-md-4 col-lg-2">
+            <div class="gallery">
+              <a target="_blank" href="https://www.linkedin.com/in/enoch-chan-9090401b9"
+              >
+                <img src="img/people/Enoch.png" alt="Enoch Chan" width="50" />
+              </a>
+              <div class="desc">
+                Enoch Chan<br />
+                (<b>MRes Y2 + PhD Student</b>)
+              </div>
+            </div>
+          </div>
+-->
+        <!--                <div class="col-md-4 col-lg-2">
+                    <div class="gallery">
+                        <a target="_blank" href="https://www.linkedin.com/in/matinepoushide/">
+                            <img src="img/people/matine.jpg" alt="Matine Poushide" width="50" />
+                        </a>
+                        <div class="desc">
+                            Matine Poushide<br />
+                            (<b>PhD Student</b>)
+                        </div>
+                    </div>
+                </div>		
+-->
+        <!---Jia-->
+      </div>
+    </section>
+
+    <!-- Past Members Grid Section -->
+    <section class="People" id="PastMembers">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">
+          Past Members
+        </h2>
+        <hr />
+
+        <!-- ADMIN:alumni:start -->
+        <ol reversed>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/meiyan-teng-10b5b32b9">Dr. Meiyan Teng</a>, <b>Visiting PhD Student</b>, Graduated 2026, <b>Thesis Title</b>: "Resource Allocation for Sequential Task Offloading in Edge Computing", <b>Supervisor</b>: Xuyun Zhang<br />
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/junyan-li-4992a1255">Junyan Li</a>, <b>MRes Student</b>, Graduated 2026, <b>Thesis Title</b>: "Federated Anomaly Detection with Isolation Forest in the IoT Network", <b>Supervisors</b>: Xuyun Zhang, Amin Beheshti<br />
+          </li>
+
+          <li>
+            <a target="_blank">Dr. Adeem Ali Anwar</a>, <b>PhD Student</b>, Graduated 2026,<b>Thesis Title</b>: "Selection Hyper-Heuristics Based Optimization for Many-Objective Problems", <b>Supervisors</b>: Xuyun Zhang, Guanfeng Liu<br />
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/saleh-afzoon-88452721a/">Dr. Saleh Afzoon</a>, <b>PhD Student</b>, Graduated 2026, <b>Thesis Title</b>: "Benchmarking and Optimising Deep Learning Models for Personalised Response Classification and Generation", <b>Supervisor</b>: Amin Beheshti<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Applied AI Centre's 2025 Applied AI Impact Award;
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/masoud-safilian-85384b48/">Dr. Masoud Safilian</a>, <b>PhD Student</b>, Graduated 2026, <b>Thesis Title</b>: "Explainable and Scalable Rubric-Based Automated Scoring for Variable-Length Responses", <b>Supervisor</b>: Amin Beheshti<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Applied AI Centre's 2025 Excellence in Research and Innovation;
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/maryam-shahabikargar-206a4265/">Dr. Maryam Shahabikargar</a>, <b>PhD Student</b>, Graduated 2025, <b>Thesis Title</b>: "Learning Complex Customer Behaviours for Intelligent Recommendation and Customer Churn Prediction", <b>Supervisor</b>: Amin Beheshti<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Applied AI Centre's 2025 Excellence in Dedication &amp; Perseverance Award;
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/kexuan-xin-27130215a/">Dr. Kexuan Xin</a>, <b>Postdoctoral Research Fellow</b>, 2024-2025, <b>Project Title</b>: "
+            <a href="https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/centre-for-applied-artificial-intelligence" target="_blank">Enhancing Human Reasoning with Generative AI: Personalized Digital Coach for Effective Feedback:</a>", <b>Supervisor</b>: Shlomo Berkovsky and Amin Beheshti.<br />
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/usmanshahbaz/">Dr. Usman Shahbaz</a>, <b>PhD Student</b>, Graduated 2025, <b>Thesis Title</b>: "Transparency Through Tensions: An Integrated Multi-Method Framework for Advanced Interpretations and Robust Auditing of Artificial Intelligence Systems", <b>Supervisor</b>: Amin Beheshti<br />
+          </li>
+
+          <li>
+            <a target="_blank">Aaron Gaskell</a>, <b>MRes Student</b>, Graduated 2025, <b>Thesis Title</b>: "Towards Understanding the Ethical and Operational Implications of Large Language Models in a Law Enforcement Environment", <b>Supervisors</b>: Amin Beheshti.<br />
+            <span style="color: red; font-size: medium"></span>
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/nasrin-shabani-b5961b16a/">Dr. Nasrin Shabani</a>, <b>PhD Student</b>, Graduated 2025, <b>Thesis Title</b>: "Deep Generative Models for Graph Summarization", <b>Supervisors</b>: Amin Beheshti, Jia Wu.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Vice-Chancellor’s Commendation for PhD thesis (2025); Applied AI Centre's 2024 Excellence in Research and Innovation; Applied AI Centre's 2022 and 2024 Excelence in Service/Leadership.
+          </li>
+
+          <li>
+            <a target="_blank">Dr. Majid Namazi</a>, <b>Postdoctoral Research Fellow</b>, 2024-2025, <b>Project Title</b>: "
+            <a href="https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/centre-for-applied-artificial-intelligence" target="_blank">Dynamic Price Optimization Using Generative AI:</a>", <b>Supervisor</b>: Amin Beheshti.<br />
+          </li>
+
+          <li>
+            <a target="_blank">Graeme Thomas</a>, <b>MPhil Student</b>, Graduated 2025, <b>Thesis Title</b>: "Privacy-Preserving Natural Language Processing Techniques in Healthcare Chatbots", <b>Supervisors</b>: Alireza Jolfaei, Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank">Afrooz Sheikholeslami</a>, <b>Student</b>, Graduated 2024, <b>Thesis Title</b>: "Towards Unifying Knowledge Graphs and Large Language Models for Context-Aware Embeddings to Enhance Real Estate Analytics", <b>Supervisors</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank">Dr. Mehrdad Mansouri</a>, <b>Postdoctoral Research Fellow</b>, 2024-2025, <b>Project Title</b>: "
+            <a href="https://www.linkedin.com/in/mehrdad-mansouri-9ab961260/" target="_blank">Causal Discovery for Predicting Severe Adverse Drug Reactions in Cancer Therapy:</a>", <b>Supervisors</b>: Amin Beheshti.<br />
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/eu-jin-foo/">Jin Foo</a>, <b>MRes Student</b>, Graduated 2024, <b>Thesis Title</b>: "iTransact: Isolation Kernel-based Transaction Classification", <b>Supervisors</b>: Xuyun Xhang, Amin Beheshti.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Applied AI Centre's 2023 MRes Rising Star Award.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/enoch-chan-9090401b9/">Enoch Chan</a>, <b>MRes Student</b>, Graduated 2024, <b>Thesis Title</b>: "Towards Benchmarking Automated Machine Learning Frameworks in the Age of Generative AI", <b>Supervisors</b>: Yuankai Qi, Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/erfanmoshiri">Erfan Moshiri</a>, <b>MRes Student</b>, Graduated 2024, <b>Thesis Title</b>: "Towards Enhancing Data Imputation Techniques Through Graph Attention Autoencoder Models", <b>Supervisors</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/ambreen16">Dr. Ambreen Hanif</a>, <b>PhD Student</b>, Graduated 2024, <b>Thesis Title</b>: "Towards Linking Storytelling and Explainable Artificial Intelligence for Enhanced Interpretation, Explanation, and Visualization of Deep Learning", <b>Supervisor</b>: Amin Beheshti.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Applied AI Centre's 2023 and 2024 Excelence in Leadership.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/stephenelbourn">Stephen Elbourn</a>, <b>MRes Student</b>, Graduated 2024, <b>Thesis Title</b>: "The Impact of Generative AI on Student Churn and the Future of Formal Education", <b>Supervisors</b>: Amin Beheshti, Michael Sheng.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/nabi-rezvani">Dr. Nabi Rezvani</a>, <b>PhD Student</b>, Graduated 2024, <b>Thesis Title</b>: "Towards Contextualised Deep Learning Based Cyberbullying Detection", <b>Supervisors</b>: Amin Beheshti.<br />
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/fariba-lotfi-20960056/">Dr. Fariba Lotfi</a>, <b>PhD Student</b>, Graduated 2024, <b>Thesis Title</b>: "Enhancing Image Annotation Through Data Storytelling and Contextualization", <b>Supervisors</b>: Amin Beheshti, Mansour Jamzad, Hamid Beigy.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Vice-Chancellor’s Commendation for PhD thesis (2024), and Applied AI Centre's 2023 Excelence in Industry-Engaged Research.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/heidi-labani/">Dr. Mahdieh Labani</a>, <b>PhD Student</b>, Graduated 2024, <b>Thesis Title</b>: "Linking Artificial Intelligence and Medical Data to Revolutionize Targeted Therapy", <b>Supervisors</b>: Amin Beheshti, Tracey O'Brien.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Google PhD Fellowahip 2023; Applied AI Centre's 2023 PhD Rising Star Award; School of Computing's 2023 PhD Rising Star Award; Applied AI Centre's 2022 Excellence in Research and Innovation; and Vice-Chancellor’s Commendation for PhD thesis (2024).
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/helia-farhood-0473b316a/">Dr. Helia Farhood</a>, <b>Postdoctoral Research Fellow</b>, 2021-2023, <b>Project Title</b>: "
+            <a href="https://researchers.mq.edu.au/en/projects/intelligent-educational-knowledge-lake" target="_blank">Intelligent Educational Knowledge Lake</a>", <b>Supervisor</b>: Amin Beheshti.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:&nbsp;</b></span>Applied AI Centre's 2023 Excellence in Postgraduate Research Supervision.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/alireza-shammasi-13b72824a/">Alireza Shammasi</a>, <b>MRes Student</b>, Graduated 2023, <b>Thesis Title</b>: "Enhancing Data Imputation with Generative AI: Transforming Time Series through Image Processing", <b>Supervisor</b>: Amin Beheshti.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Executive Dean's Commendation for Academic Excellence 2023, Applied AI Centre's 2023 MRes Rising Star Award.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/haolong-xiang-a256b118b/">Dr. Haolong Xiang</a>, <b>PhD Student</b>, Graduated 2023, <b>Thesis Title</b>: "Isolation Forest Based Anomaly Detection with Learning to Hash", <b>Supervisor</b>: Xuyun Zhang.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:&nbsp;</b></span>Applied AI Centre's 2023 Excellence in Research and Innovation.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/anthonypshaw/">Anthony Shaw</a>, <b>MRes Student</b>, Graduated 2023, <b>Thesis Title</b>: "Towards Evaluating Python as a Suitable Data Science Programming Language for Modern Computing Architecture", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/kyohe">Kelley Yohe</a>, <b>MRes Student</b>, Graduated 2023, <b>Thesis Title</b>: "Towards Global, Socio-economic and Culturally Aware Recommender Systems", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/frank-schiliro-macs-snr-cp-33433b33/">Dr. Francesco Schiliro</a>, <b>PhD Student</b>, Graduated 2023, <b>Thesis Title</b>: "Privacy and Security of Cognitive Augmentation in Policing", <b>Supervisors</b>: Amin Beheshti, Nour Mustafa, Michael Sheng.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Applied AI Centre's 2019 Research and Innovation Award.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/matinepoushide">Matine Poushide</a>, <b>MRes Student</b>, Graduated 2023, <b>Thesis Title</b>: "A Novel Active Solution for Two Dimensional Face Presentation Attack Detection", <b>Supervisors</b>: Amin Beheshti, ?Helia Farhood.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:&nbsp;</b></span>Applied AI Centre's 2022 Excellence in Industry-Engaged Research.
+          </li>
+
+          <li>
+            <a target="_blank">Sahar Zeyveh</a>, <b>MRes Student</b>, Graduated 2022, <b>Thesis Title</b>: "Intent Recognition in Conversational Recommender Systems", <b>Supervisors</b>: Amin Beheshti, Mehrdad Zakershahrak.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/iman-bakhshayeshi/">Ivan Bakhshayeshi</a>, <b>MRes Student</b>, Graduated 2022, <b>Thesis Title</b>: "Artificial Intelligence-enabled Livestock Recognition in Transport", <b>Supervisors</b>: Mohsen Asadnia, Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/maryam-shahabikargar-206a4265/">Maryam Shahabikargar</a>, <b>MRes Student</b>, Graduated 2022, <b>Thesis Title</b>: "Towards Knowledge-based Mining of Mental Disorder Patterns from Textual Data", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="http://www.linkedin.com/in/cathyyihe">Cathy HE</a>, <b>MRes Student</b>, Graduated 2022, <b>Thesis Title</b>: "Protecting Vehicular and Ad Hoc Networks from Advanced Persistent Threats", <b>Supervisor</b>: Alireza Jolfaei.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/alireza-jolfaei-aa5851120/">Dr. Alireza Jolfaei</a>, <b>Academic</b>, Lab Member 2021-2022, Senior Lecturer.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/nasrin-shabani-b5961b16a">Nasrin Shabani</a>, <b>MRes Student</b>, Graduated 2022, <b>Thesis Title</b>: "Towards Mining Creative Thinking Patterns from Educational Data", <b>Supervisor</b>: Amin Beheshti; <b>Associate Supervisor</b>: Helia Farhood.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/ambreen16">Ambreen Hanif</a>, <b>MRes Student</b>, Graduated 2022, <b>Thesis Title</b>: "Towards Explainable Artificial Intelligence in Banking and Financial Services", <b>Supervisors</b>: <b>Supervisor</b>: Amin Beheshti; <b>Associate Supervisor</b>: Xuyun Zhang.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/fsobhanmanesh/">Dr. Fariborz Sobnmanesh</a>, <b>Research Data Scientist</b>, 2019-2021, <b>Project Title</b>: "<a href="https://researchers.mq.edu.au/en/projects/ai-enabled-industry-challenges-and-opportunity-study" target="_blank">AI-enabled Industry: Challenges and Opportunity Study</a>", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/shuang-wang-643535200/">Dr. Shuang Wang</a>, <b>Postdoctoral Research Fellow</b>, 2021, <b>Project Title</b>: "<a href="https://researchers.mq.edu.au/en/projects/linking-cognitive-technology-and-sensory-systems-to-support-perso" target="_blank">Linking Cognitive Technology and Sensory Systems to Support Personalized Learning</a>", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/samira-ghodratnama-46698977/">Dr. Samira Ghodratnama</a>, <b>Ph.D. Student</b>, Graduated 2021, <b>Thesis Title</b>: "Towards Personalised and Human-in-the-Loop Document Summarisation", <b>Supervisor</b>: Amin Beheshti.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Vice-Chancellor’s Commendation for PhD thesis; and Applied AI Centre's 2019 Research and Innovation Award.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/tara-rouhollahi/">Tara Rouhollahi</a>, <b>MRes Student</b>, Graduated 2021, <b>Thesis Title</b>: "Towards Artificial Intelligence Enabled Financial Crime Detection", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/amin-edrisi/">Amin Edrisi</a>, <b>MRes Student</b>, Graduated 2021, <b>Thesis Title</b>: "Towards Dynamic Feature Selection with Attention to Assist Banking Customers in Establishing a New Business", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/nouna-khandan-2046001b2/">Nouna Khandan</a>, <b>MRes Student</b>, Graduated 2021, <b>Thesis Title</b>: "An Intelligent Hybrid Model for Identity Document Classification", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/shahpar-yakhchi-a585b2114/">Dr. Shahpar Yakhchi</a>, <b>Ph.D. Student</b>, Graduated 2021, <b>Thesis Title</b>: "Learning Complex Users' Preferences for Recommender Systems", <b>Supervisor</b>: Amin Beheshti.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Applied AI Centre's 2019 Research and Innovation Award.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/salman-rad/">Salman Mousaeirad</a>, <b>MRes Student</b>, Graduated 2021, <b>Thesis Title</b>: "Intelligent Vector Based Customer Segmentation in the Banking Industry", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/alireza-bordbar-38445464/">Dr. Alireza Bordbar</a>, <b>Ph.D. Student and Research Fellow</b>, 2020, <b>Thesis Title</b>: "<a href="https://arxiv.org/abs/2007.08710" target="_blank">Augmented Understanding and Automated Adaptation of Curation Rules</a>", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/sam-khadivizand-18a16984">Sam Khadivizand</a>, <b>MRes Student</b>, Graduated 2020, <b>Thesis Title</b>: "Towards Intelligent Risk-based Customer Segmentation in Banking", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/mohssen-ghafari-1090587b">Dr. Mohssen Ghafari</a>, <b>Ph.D. Student and Research Fellow</b>, Graduated 2020, <b>Thesis Title</b>: "<a href="https://figshare.mq.edu.au/articles/thesis/Towards_time-aware_context-aware_deep_trust_prediction_in_online_social_networks/19435601" target="_blank">Towards Time-Aware Context-Aware Deep Trust Prediction in Online Social Networks</a>", <b>Supervisor</b>: Amin Beheshti.<br />
+            <span style="color: red; font-size: medium"><b>Awarded:</b></span>
+            Applied AI Centre's 2018 Research and Innovation Award.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/usmanshahbaz">Usman Shahbaz</a>, <b>MRes Student</b>, Graduated 2020, <b>Thesis Title</b>: "<a href="https://figshare.mq.edu.au/articles/thesis/Towards_automating_the_recruitment_process/19435799" target="_blank">Towards Automating the Recruitment Process</a>", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/fred-amouzgar-400418162/">Farhad Amouzgar</a>, <b>MRes Student</b>, Graduated 2020, <b>Thesis Title</b>: "<a href="https://figshare.mq.edu.au/articles/thesis/Deep_reinforcement_learning_as_text_generator_in_image_captioning/19435757" target="_blank">Deep Reinforcement Learning As Text Generator In Image Captioning</a>", <b>Supervisors</b>: Amin Beheshti &amp; Mark Dras.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/frank-schiliro-macs-snr-cp-33433b33/">Frank Schiliro</a>, <b>MRes Student</b>, Graduated 2020, <b>Thesis Title</b>: "<a href="https://figshare.mq.edu.au/articles/thesis/Internet_of_things_enabled_policing_processes/19435850" target="_blank">Internet of Things Enabled Policing Processes</a>", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/vahid-moraveji-baaa3933/">Vahid Moraveji</a>, <b>MRes Student</b>, Graduated 2020, <b>Thesis Title</b>: "<a href="https://figshare.mq.edu.au/articles/thesis/Social_influence_and_radicalization_a_social_data_analytics_study/19432388" target="_blank">Social influence and radicalization: a social data analytics study</a>", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/negin-hesamshariati/">Dr. Negin Hesam-Shariati</a>, <b>Research Fellow</b>, 2019, <b>Project Title</b>: "Linking Cognitive Science and Data Science", <b>Supervisor:&nbsp;</b>Amin Beheshti.
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/samighodratnama/">Dr. Sami Ghodratnama</a>, <b>Research Fellow</b>, 2019, <b>Project Title</b>: "Storytelling with Image Data", <b>Supervisor</b>: Amin Beheshti.
+          </li>
+        </ol>
+        <!-- ADMIN:alumni:end -->
+        <!-- Retired entries below were commented out on the legacy page; preserved verbatim OUTSIDE the admin-managed region (comments render nothing). -->
+        <!--
+ <li>
+	 <a target="_blank" href="https://www.linkedin.com/in/helia-farhood-0473b316a/">Dr. Helia Farhood</a>, <b> Postdoctoral Research Fellow</b>, 2021, <b>Project Title</b>: "<a href="https://researchers.mq.edu.au/en/projects/intelligent-educational-knowledge-lake" target="_blank">Intelligent Educational Knowledge Lake</a>", <b>Supervisor</b>:  Amin Beheshti.
+ </li>
+-->
+
+        <ul>
+          <li>
+            <b>Research Internship Students</b>: <br />
+
+            <a target="_blank" href="https://www.linkedin.com/in/zahra-jamali-669964200/">Zahra Jamali</a>
+            (2025),
+            <a target="_blank">Zahra Jahanandish</a>
+            (2025),
+            <a target="_blank">Arian Kalantari</a>
+            (2025),
+            <a target="_blank" href="https://www.linkedin.com/in/amir-hossein-shahriari-865491234/">Amir H. Shahriari</a>
+            (2025),
+
+			<a target="_blank" href="https://www.linkedin.com/in/zahra-fathollahi-ch/">Zahra Fathollahi</a>
+            (2025),
+            <a target="_blank" href="https://www.linkedin.com/in/sayedali-mohseni-464953152/">Ali Mohseni</a>
+            (2024),
+            <a target="_blank" href="https://www.linkedin.com/in/melika-zare-552b60183/">Melika Zare</a>
+            (2024),
+            <a target="_blank">Shirin Jabbari</a>
+            (2024),
+            <a target="_blank" href="https://www.linkedin.com/in/alishahsvnd/">Ali Shahsavandi</a>
+            (2024),
+            <a target="_blank" href="https://www.linkedin.com/in/parimehr-morassafar-766a04195">Parimehr Morassafar</a>
+            (2024),
+            <a target="_blank" href="https://www.linkedin.com/in/kamyar-taeb-1739051a4/">Kamyar Taeb</a>
+            (2024),
+            <a target="_blank" href="https://www.linkedin.com/in/m-haris-rizwan-077b1671/"
+              >M Haris Rizwan</a
+            >
+            (2023),
+            <a target="_blank" href="https://www.linkedin.com/in/ipouyall/"
+              >Pouya Sadeghi</a
+            >
+            (2023),
+            <a target="_blank" href="https://www.linkedin.com/in/erfanmoshiri"
+              >Erfan Moshiri</a
+            >
+            (2023),
+            <a target="_blank" href="https://www.linkedin.com/in/william-rose-20bba4192/"
+              >William Rose</a
+            >
+            (2023),
+            <a target="_blank" href="https://www.linkedin.com/in/alireza-shammasi-13b72824a/"
+              >Alireza Shammasi</a
+            >
+            (2022),
+            <a target="_blank" href="https://www.linkedin.com/in/fatemeh-tohidian-104372202"
+              >Fatemeh Tohidian</a
+            >
+            (2022),
+            <a target="_blank" href="https://www.linkedin.com/in/gunj-chinbat-40525a1ba/"
+              >Gunj Chinbat</a
+            >
+            (2022),
+            <a target="_blank" href="https://www.linkedin.com/in/egalanis/"
+              >Elizabeth Galanis</a
+            >
+            (2021),
+            <a target="_blank" href="https://www.linkedin.com/in/sahithikodali/"
+              >Sahithi Kodali</a
+            >
+            (2021),
+            <a target="_blank" href="https://www.linkedin.com/in/sonakshisharma1298"
+              >Sonakshi Sharma</a
+            >
+            (2021),
+            <a target="_blank" href="https://www.linkedin.com/in/milad-mosharraf/"
+              >Milad Mosharraf</a
+            >
+            (2020),
+            <a target="_blank" href="https://www.linkedin.com/in/mohammad-shiri-2254a1128"
+              >Mohammad Shiri</a
+            >
+            (2019),
+            <a target="_blank" href="https://www.linkedin.com/in/danhpt"
+              >Dan Phan</a
+            >
+            (2019),
+            <a target="_blank" href="https://www.linkedin.com/in/setareh-pourmostafa-08b6195b"
+              >Setareh Pourmostafa</a
+            >
+            (2019),
+            <a target="_blank" href="https://www.linkedin.com/in/satwik-chodisetti"
+              >Satwik Chodisetti</a
+            >
+            (2019),
+            <a target="_blank" href="https://www.linkedin.com/in/daniel-vuong-mq/"
+              >Daniel Vuong</a
+            >
+            (2019),
+            <a target="_blank" href="https://www.linkedin.com/in/fatemeh-shirbani/"
+              >Fatemeh Shirbani</a
+            >
+            (2018),
+            <a target="_blank" href="https://www.linkedin.com/in/murali-mohan-velpula/"
+              >Murali Mohan Velpula</a
+            >
+            (2018).
+          </li>
+        </ul>
+        <br /><br />
+        <h3>Lab Performance:</h3>
+        <ul>
+          <li>
+            End of Year 2025: Click
+            <a href="https://www.linkedin.com/posts/centre-for-applied-artificial-intelligence_from-to-afr-activity-7397072128497598464-WhJu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAPDYRUBhmWAdrYjmNuDdsrokNtxwc5DUlI" target="_blank"
+              >HERE</a
+            >
+          </li>
+          <li>
+            End of Year 2024: Click
+            <a href="https://www.linkedin.com/posts/prof-amin-beheshti_centre-for-applied-artificial-intelligence-activity-7274160308275822593-3tH0?utm_source=share&utm_medium=member_desktop" target="_blank"
+              >HERE</a
+            >
+          </li>
+          <li>
+            End of Year 2023: Click
+            <a href="https://www.linkedin.com/posts/prof-amin-beheshti_centre-for-applied-artificial-intelligence-activity-7139898309254516736-Bne6?utm_source=share&utm_medium=member_desktop" target="_blank"
+              >HERE</a
+            >
+          </li>
+          <li>
+            End of Year 2022: Click
+            <a href="https://www.linkedin.com/posts/centre-for-applied-artificial-intelligence_on-the-28th-and-29th-of-november2022-the-activity-7004301403590467584-SG4G?utm_source=share&utm_medium=member_desktop" target="_blank"
+              >HERE</a
+            >
+          </li>
+          <li>
+            End of Year 2021: Click
+            <a href="https://www.linkedin.com/posts/prof-amin-beheshti_its-a-wrap-for-2021-end-of-the-year-celebration-activity-6874595209435512833-Ye2H?utm_source=share&utm_medium=member_desktop" target="_blank"
+              >HERE</a
+            >
+          </li>
+          <li>
+            End of Year 2020: Click
+            <a href="https://www.linkedin.com/posts/prof-amin-beheshti_thats-a-wrap-end-of-the-year-celebration-activity-6745246347684913152-DomX?utm_source=share&utm_medium=member_desktop" target="_blank"
+              >HERE</a
+            >
+          </li>
+          <li>
+            End of Year 2019: Click
+            <a href="https://www.linkedin.com/posts/prof-amin-beheshti_ai-datascience-industry4abr0-activity-6613661433047715840-uN39?utm_source=share&utm_medium=member_desktop" target="_blank"
+              >HERE</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">
+          Prospective Students
+        </h2>
+        <div class="row">
+          <div class="col-lg-11 ml-auto">
+            <p class="lead">
+              <br />
+              Here are some values that we would like to see in you:
+              <br />
+              <br />
+              <b>- Skills:</b> You should have either a strong software
+              engineering background or a strong ML/AI background.<br />
+              <b>- Hard work:</b> We expect you to have a strong work ethic.<br />
+              <b>- Flexibility:</b> You should be willing to dive into different
+              facets of a project.
+              <br />
+              <b>- Learning:</b> You should have a strong growth mindset, and
+              want to learn continuously.
+              <br />
+              <b>- Teamwork:</b> You are expected to support and collaborate
+              with others. <br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">
+          Contact Us
+        </h2>
+        <div class="row">
+          <div class="col-lg-12 mx-auto" style="text-align: center">
+            <br /><br />
+            <h3>
+              If you're looking to partner or volunteer with us, contact us at:
+            </h3>
+            <br />
+            <h3><a href="mailto:ai@mq.edu.au">ai@mq.edu.au</a></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-12 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Useful Links</h4>
+            <p>
+              |
+              <a
+                href="https://www.mq.edu.au/research/phd-and-research-degrees/how-to-apply"
+                target="_blank"
+                >How to Apply</a
+              >
+              |
+              <a href="MQ_Assessment_Form.docx" target="_blank"
+                >Assessment Form</a
+              >
+              |
+              <a href="PhdProposalMQ.pdf" target="_blank"
+                >Proposal Template</a
+              >
+              |
+              <a href="https://data-science-group.github.io/weekly-report.doc" target="_blank"
+                >Weekly Report</a
+              >
+              |
+              <a href="https://afroozsheikh.github.io/cs-conferences/" target="_blank"
+                >Target Conferences/Journals</a
+              >
+              |
+              <a href="presentation_template.pptx" target="_blank"
+                >Presentation Template</a
+              >
+              |
+              <a href="https://data-science-group.github.io/overleaf.html" target="_blank"
+                >overleaf</a
+              >
+              |
+              <a href="https://www.core.edu.au/conference-portal" target="_blank"
+                >CORE Ranking</a
+              >
+              |
+              <a href="https://data-science-group.github.io/weekly_presentations.html" target="_blank"
+                >Weekly Presentations</a
+              >
+              |
+            </p>
+
+            <br />
+            <h4 class="text-uppercase mb-4">Location</h4>
+            <p class="lead mb-0">
+              Data Science Research Lab, Becton-Dickinson (BD) Building,<br />
+              4 Research Park Drive, Macquarie University NSW 2109, Sydney,
+              Australia
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; 2018-Present &nbsp; DataScienceLab</small>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed">
+      <a
+        class="js-scroll-trigger d-block text-center text-white rounded"
+        href="#page-top"
+      >
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a
+          class="close-button d-none d-md-block portfolio-modal-dismiss"
+          href="#"
+        >
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary mb-0">iLife</h2>
+              <img
+                style="align-content: center"
+                class="img-fluid mb-5"
+                src="img/icon/life.png"
+                alt=""
+                width="140"
+              />
+              <p class="mb-5">
+                Contact us to learn more about this project!
+                <br />
+                <br />
+                <b>Organizations:</b> We are looking for Indusry Partners!
+                <br />
+                <br />
+                <b>Research Students:</b> We are looking for motivated students!
+                <br />
+                Values that we would like to see in you: have a strong
+                ML/AI/Software-Engineering background, strong work ethic,
+                willing to dive into different facets of a project, learn
+                continuously, and support and collaborate with others.<br />
+                <br />
+                <b>Undergraduate Students:</b> Volunteering with us to work on
+                important Data Science problems.<br />
+                About you: You should have either a strong ML or software
+                engineering background.
+              </p>
+              <a
+                class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
+                href="#"
+              >
+                <i class="fa fa-close"></i>
+                Close Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a
+          class="close-button d-none d-md-block portfolio-modal-dismiss"
+          href="#"
+        >
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary mb-0">iBusiness</h2>
+              <img
+                style="align-content: center"
+                class="img-fluid mb-5"
+                src="img/icon/business.png"
+                alt=""
+                width="140"
+              />
+              <p class="mb-5">
+                Contact us to learn more about this project!
+                <br />
+                <br />
+                <b>Organizations:</b> We are looking for Indusry Partners!
+                <br />
+                <br />
+                <b>Research Students:</b> We are looking for motivated students!
+                <br />
+                Values that we would like to see in you: have a strong
+                ML/AI/Software-Engineering background, strong work ethic,
+                willing to dive into different facets of a project, learn
+                continuously, and support and collaborate with others.<br />
+                <br />
+                <b>Undergraduate Students:</b> Volunteering with us to work on
+                important Data Science problems.<br />
+                About you: You should have either a strong ML or software
+                engineering background.
+              </p>
+              <a
+                class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
+                href="#"
+              >
+                <i class="fa fa-close"></i>
+                Close Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a
+          class="close-button d-none d-md-block portfolio-modal-dismiss"
+          href="#"
+        >
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary mb-0">iStory</h2>
+              <img
+                style="align-content: center"
+                class="img-fluid mb-5"
+                src="img/icon/story.png"
+                alt=""
+                width="140"
+              />
+              <p class="mb-5">
+                Contact us to learn more about this project!
+                <br />
+                <br />
+                <b>Organizations:</b> We are looking for Indusry Partners!
+                <br />
+                <br />
+                <b>Research Students:</b> We are looking for motivated students!
+                <br />
+                Values that we would like to see in you: have a strong
+                ML/AI/Software-Engineering background, strong work ethic,
+                willing to dive into different facets of a project, learn
+                continuously, and support and collaborate with others.<br />
+                <br />
+                <b>Undergraduate Students:</b> Volunteering with us to work on
+                important Data Science problems.<br />
+                About you: You should have either a strong ML or software
+                engineering background.
+              </p>
+              <a
+                class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
+                href="#"
+              >
+                <i class="fa fa-close"></i>
+                Close Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a
+          class="close-button d-none d-md-block portfolio-modal-dismiss"
+          href="#"
+        >
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary mb-0">iHealth</h2>
+              <img
+                style="align-content: center"
+                class="img-fluid mb-5"
+                src="img/icon/mentalhealth.png"
+                alt=""
+                width="140"
+              />
+              <p class="mb-5">
+                Contact us to learn more about this project!
+                <br />
+                <br />
+                <b>Organizations:</b> We are looking for Indusry Partners!
+                <br />
+                <br />
+                <b>Research Students:</b> We are looking for motivated students!
+                <br />
+                Values that we would like to see in you: have a strong
+                ML/AI/Software-Engineering background, strong work ethic,
+                willing to dive into different facets of a project, learn
+                continuously, and support and collaborate with others.<br />
+                <br />
+                <b>Undergraduate Students:</b> Volunteering with us to work on
+                important Data Science problems.<br />
+                About you: You should have either a strong ML or software
+                engineering background.
+              </p>
+              <a
+                class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
+                href="#"
+              >
+                <i class="fa fa-close"></i>
+                Close Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+      <div class="portfolio-modal-dialog bg-white">
+        <a
+          class="close-button d-none d-md-block portfolio-modal-dismiss"
+          href="#"
+        >
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary mb-0">iCOP</h2>
+              <img
+                style="align-content: center"
+                class="img-fluid mb-5"
+                src="img/icon/lawwnforcement.png"
+                alt=""
+                width="150"
+              />
+              <p class="mb-5">
+                Contact us to learn more about this project!
+                <br />
+                <br />
+                <b>Organizations:</b> We are looking for Indusry Partners!
+                <br />
+                <br />
+                <b>Research Students:</b> We are looking for motivated students!
+                <br />
+                Values that we would like to see in you: have a strong
+                ML/AI/Software-Engineering background, strong work ethic,
+                willing to dive into different facets of a project, learn
+                continuously, and support and collaborate with others.<br />
+                <br />
+                <b>Undergraduate Students:</b> Volunteering with us to work on
+                important Data Science problems.<br />
+                About you: You should have either a strong ML or software
+                engineering background.
+              </p>
+              <a
+                class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
+                href="#"
+              >
+                <i class="fa fa-close"></i>
+                Close Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+      <div class="portfolio-modal-dialog bg-white">
+        <a
+          class="close-button d-none d-md-block portfolio-modal-dismiss"
+          href="#"
+        >
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary mb-0">iLearn</h2>
+              <img
+                style="align-content: center"
+                class="img-fluid mb-5"
+                src="img/icon/education.png"
+                alt=""
+                width="150"
+              />
+              <p class="mb-5">
+                Contact us to learn more about this project!
+                <br />
+                <br />
+                <b>Organizations:</b> We are looking for Indusry Partners!
+                <br />
+                <br />
+                <b>Research Students:</b> We are looking for motivated students!
+                <br />
+                Values that we would like to see in you: have a strong
+                ML/AI/Software-Engineering background, strong work ethic,
+                willing to dive into different facets of a project, learn
+                continuously, and support and collaborate with others.<br />
+                <br />
+                <b>Undergraduate Students:</b> Volunteering with us to work on
+                important Data Science problems.<br />
+                About you: You should have either a strong ML or software
+                engineering background.
+              </p>
+              <a
+                class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
+                href="#"
+              >
+                <i class="fa fa-close"></i>
+                Close Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+      <script>
+      // Moving rows: duplicate each track once so the half-width slide
+      // loops seamlessly; speed scales with the number of items.
+      document.querySelectorAll(".dsl-marquee-track").forEach(function (track) {
+        track.style.animationDuration = track.children.length * 6 + "s";
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          track.innerHTML += track.innerHTML;
+        }
+      });
+    </script>
+  </body>
+</html>

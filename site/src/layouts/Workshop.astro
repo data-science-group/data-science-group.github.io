@@ -1,0 +1,57 @@
+---
+// Workshop layout — an INDEPENDENT event page (founder directive): shares the
+// design tokens for visual kinship but carries no lab navbar or footer chrome.
+// The only lab presence is a one-line "Organised by" provenance link.
+import "../styles/base.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const site = Astro.site ?? new URL("https://data-science-group.github.io/");
+const canonical = new URL(Astro.url.pathname, site);
+const base = import.meta.env.BASE_URL;
+const withBase = (p: string) => base.replace(/\/$/, "") + p;
+const isStaging = import.meta.env.PUBLIC_STAGING === "1";
+---
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="generator" content={Astro.generator} />
+    {isStaging && <meta name="robots" content="noindex, nofollow" />}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <main id="main" class="wrap workshop-main">
+      <slot />
+    </main>
+    <footer class="workshop-footer">
+      <div class="wrap">
+        <p>
+          Organised by the&#32;<a href={withBase("/")}>Data Science Research Lab</a>, Macquarie University, Sydney, Australia.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .workshop-main { padding-block: var(--space-5) var(--space-6); }
+  .workshop-footer {
+    border-top: 1px solid var(--line);
+    padding: var(--space-3) 0 var(--space-4);
+    font: var(--text-meta);
+    color: var(--ink-2);
+  }
+  .workshop-footer a { color: inherit; }
+</style>

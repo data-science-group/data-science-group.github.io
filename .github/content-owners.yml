@@ -1,0 +1,56 @@
+# Content ownership — THE authority file for the admin governance model.
+# The founder assigns sections by editing this file; every change to it is
+# itself a reviewed pull request. Enforced by the "Content ownership guard"
+# workflow: a PR may only touch paths inside sections its author owns
+# (admins pass everything; protected paths are admin-only).
+version: 1
+
+admins:
+  - alishahsvnd
+
+sections:
+  around-cards:
+    label: Home — Around the Lab cards
+    owners: []            # founder assigns
+    paths:
+      - site/src/data/around-cards.yml
+      - img/aroundthelab/**
+
+  conferences:
+    label: Target conferences
+    owners:
+      - afroozsheikh      # founder-designated maintainer of the tool
+    paths:
+      - site/src/data/conferences.yml
+
+  lab-news:
+    label: Lab news
+    owners: []            # founder assigns
+    paths:
+      - site/src/content/news/**
+      - site/public/uploads/news/**
+
+  workshops:
+    label: Workshops & events
+    owners: []            # founder assigns per-series later (bds/aipa/biofm)
+    paths:
+      - site/src/content/workshops/**
+      - site/public/uploads/workshops/**
+
+  people-data:
+    label: People & alumni data
+    owners: []            # founder-only until per-person governance lands
+    paths:
+      - site/src/data/people.yml
+      - site/src/data/alumni.yml
+      - img/people/**       # photo uploads land here via the admin form
+
+protected_paths:          # admin-only, always
+  - .github/**
+  - site/public/admin/**
+  - site/src/content.config.ts
+  - site/src/layouts/**
+  - site/src/pages/**
+  - site/src/styles/**
+  - scripts/**
+  - index.html

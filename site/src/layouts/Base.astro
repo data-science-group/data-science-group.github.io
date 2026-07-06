@@ -1,0 +1,88 @@
+---
+import "../styles/base.css";
+
+interface Props {
+  title: string;
+  description: string;
+  /** Canonical path override; defaults to the current pathname (base-aware). */
+  path?: string;
+  /** Full-bleed mode: page manages its own bands/wraps (e.g. the home hero). */
+  bleed?: boolean;
+}
+const { title, description, path, bleed } = Astro.props;
+const site = Astro.site ?? new URL("https://data-science-group.github.io/");
+// Astro.url.pathname already includes the base path at build time, so this
+// stays correct on subpath-hosted staging; the `path` prop is a prod override.
+const canonical = new URL(path ?? Astro.url.pathname, site);
+const base = import.meta.env.BASE_URL; // "/" in production, "/<repo>" on staging
+/** Prefix a root-absolute path with the base, safe for both base shapes. */
+const withBase = (p: string) => base.replace(/\/$/, "") + p;
+const isStaging = import.meta.env.PUBLIC_STAGING === "1";
+
+// Navigation grows as waves land real pages. Never link a page that doesn't
+// exist. Join stays LAST — it is the standing call to action.
+const NAV: { label: string; href: string }[] = [
+  { label: "Publications", href: "/publications/" },
+  { label: "Contact", href: "/contact/" },
+  { label: "Join us", href: "/join/" },
+];
+---
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="generator" content={Astro.generator} />
+    {isStaging && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="sitemap" href={withBase("/sitemap-index.xml")} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={withBase("/")}>Data Science Research Lab</a>
+        <nav class="site-nav" aria-label="Main">
+          <ul>
+            {NAV.map((item) => {
+              const href = withBase(item.href);
+              return (
+                <li>
+                  <a href={href} aria-current={Astro.url.pathname === href ? "page" : undefined}>
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class={bleed ? "bleed" : "wrap"}>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          The Data Science Research Lab is funded by the&#32;<a href="https://www.mq.edu.au/research/research-centres-institutes-and-initiatives/applied-ai">Centre for Applied Artificial Intelligence</a>&#32;at Macquarie University, Sydney, Australia.
+        </p>
+        <p>
+          We acknowledge the Traditional Custodians of the land on which Macquarie
+          University stands &mdash; the Wallumattagal Clan of the Dharug Nation &mdash; whose
+          cultures and customs have nurtured, and continue to nurture, this land since
+          time immemorial. We pay our respects to the Elders, past and present.
+        </p>
+        <p>
+          <a href="mailto:ai@mq.edu.au">ai@mq.edu.au</a>&#32;·&#32;Becton-Dickinson (BD) Building, 4 Research Park Drive, Macquarie University
+          NSW 2109, Sydney, Australia&#32;·&#32;<a href={withBase("/resources/")}>For members</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
