@@ -1,6 +1,6 @@
 cards:
   - badge: Upcoming
-    external: false
+    external: true
     assignee: null
     visible: true
     title: BioFM'26
@@ -11,7 +11,7 @@ cards:
       Bioinnovation — IEEE ICDM 2026, Shenyang, 12–15 November 2026. Call for
       papers open.
   - badge: null
-    external: false
+    external: true
     assignee: null
     visible: true
     title: AI-PA Workshop Series
@@ -22,7 +22,7 @@ cards:
       editions (2020–2025) co-located with ICSOC, with sponsors including
       Google, Microsoft, AWS, Fujitsu and IBM.
   - badge: null
-    external: false
+    external: true
     assignee: null
     visible: true
     title: Big Data Society
@@ -32,7 +32,7 @@ cards:
     description: The student society founded at the lab — hackathons, tutorials and
       industry events since 2018.
   - badge: null
-    external: false
+    external: true
     assignee: null
     visible: true
     title: AI-PLE 2021
@@ -42,7 +42,7 @@ cards:
     description: International Workshop on AI-enabled Policing and Law Enforcement —
       IEEE EDOC 2021, co-chaired with the Australian Federal Police.
   - badge: null
-    external: false
+    external: true
     assignee: null
     visible: true
     title: BioFM'25
@@ -55,9 +55,11 @@ cards:
     external: true
     assignee: null
     visible: true
-    title: AIP Research Centre
-    link: https://aip-research-center.github.io/
+    title: Centre for Applied AI
+    link: https://www.mq.edu.au/research/research-centres-institutes-and-initiatives/applied-ai
     id: aip-research-centre
-    image: img/aroundthelab/sign-aip.png
-    description: The AI-enabled Processes Research Centre — a partner research
-      centre led from Macquarie University.
+    image: img/aroundthelab/picture-1.jpg
+    description: Macquarie University Applied Artificial Intelligence Research
+      Centre connects academic excellence with industry needs for organisations
+      across healthcare, education, finance, law enforcement, sustainability and
+      more.
