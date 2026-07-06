@@ -1,0 +1,158 @@
+---
+import "../styles/base.css";
+
+interface Props {
+  title: string;
+  description: string;
+  /** Canonical path override; defaults to the current pathname (base-aware). */
+  path?: string;
+  /** Full-bleed mode: page manages its own bands/wraps (e.g. the home hero). */
+  bleed?: boolean;
+}
+const { title, description, path, bleed } = Astro.props;
+const site = Astro.site ?? new URL("https://data-science-group.github.io/");
+// Astro.url.pathname already includes the base path at build time, so this
+// stays correct on subpath-hosted staging; the `path` prop is a prod override.
+const canonical = new URL(path ?? Astro.url.pathname, site);
+const base = import.meta.env.BASE_URL; // "/" in production, "/<repo>" on staging
+/** Prefix a root-absolute path with the base, safe for both base shapes. */
+const withBase = (p: string) => base.replace(/\/$/, "") + p;
+const isStaging = import.meta.env.PUBLIC_STAGING === "1";
+
+// THE main-page navbar, mirrored (founder rule 2026-07-06: one navbar
+// everywhere). Section links point at the home page's anchors.
+const NAV: { label: string; href: string }[] = [
+  { label: "Projects", href: "/#Projects" },
+  { label: "Around the Lab", href: "/#AroundTheLab" },
+  { label: "Publications", href: "/publications/" },
+  { label: "People", href: "/#People" },
+  { label: "Alumni", href: "/#PastMembers" },
+  { label: "Prospective Students", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
+];
+
+// The main page's "Useful Links" footer, mirrored (same targets).
+const FOOTER_LINKS: { label: string; href: string; external?: boolean }[] = [
+  { label: "How to Apply", href: "https://www.mq.edu.au/research/phd-and-research-degrees/how-to-apply", external: true },
+  { label: "Assessment Form", href: withBase("/MQ_Assessment_Form.docx") },
+  { label: "Proposal Template", href: withBase("/PhdProposalMQ.pdf") },
+  { label: "Weekly Report", href: withBase("/weekly-report.doc") },
+  { label: "Target Conferences/Journals", href: withBase("/resources/conferences/") },
+  { label: "Presentation Template", href: withBase("/presentation_template.pptx") },
+  { label: "overleaf", href: withBase("/overleaf.html") },
+  { label: "CORE Ranking", href: "https://www.core.edu.au/conference-portal", external: true },
+];
+---
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="generator" content={Astro.generator} />
+    {isStaging && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="sitemap" href={withBase("/sitemap-index.xml")} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={withBase("/")}>Data Science Lab</a>
+        <nav class="site-nav" aria-label="Main">
+          <ul>
+            {NAV.map((item) => {
+              const href = withBase(item.href);
+              return (
+                <li>
+                  <a href={href} aria-current={Astro.url.pathname === href ? "page" : undefined}>
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class={bleed ? "bleed" : "wrap"}>
+      <slot />
+    </main>
+    <footer class="site-footer" style="text-align: center">
+      <div class="wrap">
+        <h4 class="footer-heading">Useful Links</h4>
+        <p>
+          |{FOOTER_LINKS.map((l) => (
+            <>&#32;<a href={l.href} target={l.external ? "_blank" : undefined}>{l.label}</a>&#32;|</>
+          ))}
+        </p>
+        <h4 class="footer-heading">Location</h4>
+        <p class="footer-location">
+          Data Science Research Lab, Becton-Dickinson (BD) Building,<br />
+          4 Research Park Drive, Macquarie University NSW 2109, Sydney,
+          Australia
+        </p>
+      </div>
+    </footer>
+    <div class="site-copyright">
+      <div class="wrap">
+        <small>Copyright &copy; 2018-Present &nbsp; DataScienceLab</small>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  /* 7 nav items + brand must fit one line at desktop widths — same compact
+     sizing as the main page's navbar fix. */
+  .site-nav {
+    flex-shrink: 0;
+  }
+  .site-nav ul {
+    gap: 12px;
+    flex-wrap: nowrap;
+  }
+  .site-nav a {
+    font-size: 0.76rem;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+  .brand {
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .site-nav {
+      flex-shrink: 1;
+    }
+    .site-nav ul {
+      flex-wrap: wrap;
+    }
+  }
+  /* Footer mirrors the main page: slate band with Useful Links + Location,
+     then a darker copyright bar. */
+  .site-footer p {
+    max-width: none; /* base.css measure-clamp would off-centre the block */
+  }
+  .site-footer .footer-heading {
+    font: var(--text-nav);
+    font-size: 1.15rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: var(--space-3) 0;
+  }
+  .site-footer .footer-location {
+    font-size: 1.05rem;
+  }
+  .site-copyright {
+    background: #1a252f;
+    color: #fff;
+    text-align: center;
+    padding: var(--space-3) 0;
+  }
+</style>

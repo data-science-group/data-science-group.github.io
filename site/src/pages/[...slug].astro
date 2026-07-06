@@ -1,0 +1,96 @@
+---
+/**
+ * Standalone pages — renders every entry of the `pages` content collection
+ * (markdown files in src/content/pages) at /<slug>/. Pages are created from
+ * the admin panel and are FOUNDER-ONLY by governance: the ownership guard's
+ * default-deny already blocks non-admins (content-owners.yml deliberately has
+ * no `pages` section).
+ */
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render } from "astro:content";
+import Base from "../layouts/Base.astro";
+
+/**
+ * Route prefixes a page slug may never use or shadow (checked on the FIRST
+ * path segment, case-insensitively). Covers the site's own routes, asset
+ * dirs, and the LEGACY OVERLAY DIRS (AIPA_workshop, AIPLE_Workshop,
+ * BigDataSociety, BioFM, Conference_Journal_files, …) that are copied into
+ * dist after the Astro build — those must NEVER be shadowed by a page, or
+ * the overlay copy and the generated page would fight over the same URL.
+ */
+export const RESERVED_PREFIXES = [
+  "admin",
+  "publications",
+  "join",
+  "contact",
+  "resources",
+  "design",
+  "people",
+  "projects",
+  "img",
+  "css",
+  "js",
+  "vendor",
+  "fonts",
+  "uploads",
+  "AIPA_workshop",
+  "AIPLE_Workshop",
+  "BigDataSociety",
+  "BioFM",
+  "Conference_Journal_files",
+  "_astro",
+] as const;
+
+/** Lowercase alphanumerics, dashes and "/" only; must start alphanumeric. */
+const SLUG_PATTERN = /^[a-z0-9][a-z0-9/-]*$/;
+
+/** Throws at build time when a page slug is malformed or shadows a reserved route. */
+function assertSafeSlug(slug: string): void {
+  if (slug.includes("..")) {
+    throw new Error(
+      `[pages] Unsafe page slug "${slug}": ".." is not allowed. Rename the file in src/content/pages.`,
+    );
+  }
+  if (!SLUG_PATTERN.test(slug)) {
+    throw new Error(
+      `[pages] Invalid page slug "${slug}": use lowercase letters, digits and dashes only, ` +
+        `starting with a letter or digit (e.g. "our-history"). Rename the file in src/content/pages.`,
+    );
+  }
+  if (slug === "index") {
+    throw new Error(
+      `[pages] Page slug "index" would shadow the home page. Pick a different filename in src/content/pages.`,
+    );
+  }
+  const firstSegment = slug.split("/")[0].toLowerCase();
+  const reserved = RESERVED_PREFIXES.find((p) => p.toLowerCase() === firstSegment);
+  if (reserved) {
+    throw new Error(
+      `[pages] Page slug "${slug}" collides with the reserved route "/${reserved}/" ` +
+        `(existing page, asset dir, or legacy overlay). Pick a different filename in src/content/pages.`,
+    );
+  }
+}
+
+// NOTE: getStaticPaths runs in an isolated scope (only imports are visible),
+// so slug safety is enforced below in the per-page frontmatter — which runs
+// for every entry during the static build, so a violation still FAILS the build.
+export async function getStaticPaths() {
+  const entries = await getCollection("pages");
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+interface Props {
+  entry: CollectionEntry<"pages">;
+}
+const { entry } = Astro.props;
+assertSafeSlug(entry.id);
+const { Content } = await render(entry);
+---
+<Base
+  title={`${entry.data.title} — Data Science Research Lab, Macquarie University`}
+  description={entry.data.description}
+>
+  <h1>{entry.data.title}</h1>
+  <Content />
+</Base>

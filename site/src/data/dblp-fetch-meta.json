@@ -1,0 +1,62 @@
+{
+  "fetchedAt": "2026-07-06T00:38:57.449Z",
+  "members": [
+    {
+      "name": "Amin Beheshti",
+      "dblpName": "Amin Beheshti",
+      "pid": "90/10041",
+      "evidence": "DBLP affiliation note \"Macquarie University, Sydney, NSW, Australia\"; person record links data-science-group.github.io/people/aminbeheshti/ and ORCID 0000-0002-5988-5494",
+      "fetched": 271,
+      "firstSeen": 271,
+      "crossFeedDuplicates": 0
+    },
+    {
+      "name": "Xuyun Zhang",
+      "dblpName": "Xuyun Zhang",
+      "pid": "54/8558",
+      "evidence": "sole DBLP author of this name; ORCID 0000-0001-7353-4159 on the DBLP person record matches researchers.mq.edu.au/en/persons/xuyun-zhang",
+      "fetched": 335,
+      "firstSeen": 290,
+      "crossFeedDuplicates": 45
+    },
+    {
+      "name": "Jian Yang",
+      "dblpName": "Jian Yang 0001",
+      "pid": "y/JianYang1",
+      "evidence": "disambiguated homonym \"Jian Yang 0001\"; DBLP affiliation note \"Macquarie University, Sydney, Australia\" (former: Tilburg University); homepage www.ics.mq.edu.au/~jian",
+      "fetched": 339,
+      "firstSeen": 305,
+      "crossFeedDuplicates": 34
+    },
+    {
+      "name": "Jia Wu",
+      "dblpName": "Jia Wu 0001",
+      "pid": "25/5536-1",
+      "evidence": "disambiguated homonym \"Jia Wu 0001\"; DBLP affiliation note \"Macquarie University, Sydney, Australia\" (former: UTS; China University of Geosciences)",
+      "fetched": 489,
+      "firstSeen": 353,
+      "crossFeedDuplicates": 136
+    },
+    {
+      "name": "Emma Xue",
+      "dblpName": "Shan Xue 0001",
+      "pid": "88/10188-1",
+      "evidence": "publishes as \"Shan Xue\"; DBLP affiliation note \"Macquarie University, Sydney, NSW, Australia\"; person record links researchers.mq.edu.au/en/persons/emma-xue; ORCID 0000-0002-9123-5133 matches that MQ profile",
+      "fetched": 81,
+      "firstSeen": 20,
+      "crossFeedDuplicates": 61
+    },
+    {
+      "name": "Yuankai Qi",
+      "dblpName": "Yuankai Qi",
+      "pid": "136/5491",
+      "evidence": "sole DBLP author of this name; ORCID 0000-0003-4312-5682 on the DBLP person record matches researchers.mq.edu.au/en/persons/yuankai-qi",
+      "fetched": 153,
+      "firstSeen": 121,
+      "crossFeedDuplicates": 32
+    }
+  ],
+  "fetchedTotal": 1668,
+  "crossFeedDuplicates": 308,
+  "mergedUnique": 1360
+}

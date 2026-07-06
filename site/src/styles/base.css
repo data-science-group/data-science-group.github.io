@@ -1,0 +1,100 @@
+/* Base styles — consume tokens only; no raw colours or sizes here.
+   Identity: the lab's established teal/slate design, refined. */
+@import "./tokens.css";
+
+/* Self-hosted fonts (no third-party font hosts). */
+@font-face { font-family: "Montserrat"; src: url("../fonts/montserrat-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Montserrat"; src: url("../fonts/montserrat-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Lato"; src: url("../fonts/lato-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Lato"; src: url("../fonts/lato-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { background: var(--ground); }
+body {
+  margin: 0;
+  font: var(--text-body);
+  color: var(--ink);
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 { font: var(--text-display); text-transform: uppercase; margin: 0 0 var(--space-3); text-wrap: balance; }
+h2 { font: var(--text-heading); text-transform: uppercase; margin: var(--space-5) 0 var(--space-3); text-wrap: balance; }
+h3 { font: var(--text-subhead); margin: var(--space-4) 0 var(--space-2); }
+p, ul, ol { max-width: var(--measure); }
+p { margin: 0 0 var(--space-3); }
+
+/* Centered section headings with the site's divider mark. */
+.sec-head { text-align: center; }
+.sec-head h2 { margin-inline: auto; }
+.sec-head::after {
+  content: "";
+  display: block;
+  width: 64px; height: 4px;
+  background: var(--teal);
+  margin: var(--space-3) auto var(--space-4);
+}
+
+a { color: var(--accent); text-underline-offset: 2px; }
+a:hover { color: var(--teal-down); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 2px; }
+
+img { max-width: 100%; height: auto; }
+code { font: var(--text-data); background: var(--surface); padding: 0.1em 0.35em; border-radius: var(--radius); }
+
+.skip-link {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--ground); color: var(--ink);
+  padding: var(--space-2) var(--space-3); z-index: 100;
+}
+.skip-link:focus { left: var(--space-3); }
+
+.wrap { max-width: var(--page-max); margin-inline: auto; padding-inline: var(--space-3); }
+
+/* Navbar: the current site's dark-slate fixed bar, uppercase Montserrat. */
+.site-header {
+  background: var(--slate);
+  padding: var(--space-3) 0;
+}
+.site-header .wrap { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; justify-content: space-between; }
+.brand { font: var(--text-nav); font-size: 1.05rem; letter-spacing: .04em; text-transform: uppercase; color: #fff; text-decoration: none; }
+.brand:hover { color: var(--teal); }
+.site-nav ul { display: flex; flex-wrap: wrap; gap: var(--space-4); list-style: none; margin: 0; padding: 0; }
+.site-nav a { font: var(--text-nav); letter-spacing: .06em; text-transform: uppercase; color: #fff; text-decoration: none; padding-block: var(--space-1); }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--teal); box-shadow: 0 3px 0 var(--teal); }
+
+main.wrap { padding-block: var(--space-5) var(--space-6); }
+main.bleed { padding: 0; }
+
+/* Full-bleed bands in the site's language. */
+.band-teal { background: var(--teal-band); color: #fff; }
+.band-teal a { color: #fff; }
+.band-slate { background: var(--slate); color: #fff; }
+.band-slate a { color: #fff; }
+.band-surface { background: var(--surface); }
+
+.btn {
+  display: inline-block; font: var(--text-nav); letter-spacing: .05em; text-transform: uppercase;
+  background: var(--teal); color: #fff; text-decoration: none;
+  padding: 0.9em 1.8em; border-radius: var(--radius);
+}
+.btn:hover { background: var(--teal-down); color: #fff; }
+.btn.ghost { background: transparent; border: 2px solid currentColor; }
+
+.site-footer {
+  background: var(--slate);
+  color: #D5DBDB;
+  padding: var(--space-5) 0;
+  font: var(--text-meta);
+}
+.site-footer p { margin-bottom: var(--space-2); }
+.site-footer a { color: #fff; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+@media print {
+  .site-header, .site-footer, .skip-link { display: none; }
+  body { color: #000; }
+  a { color: inherit; text-decoration: none; }
+}

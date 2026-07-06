@@ -1,0 +1,42 @@
+# Content ownership guard — required check for admin-panel (and any) PRs.
+# Reads .github/content-owners.yml from the BASE branch and blocks changes
+# outside the PR author's assigned sections. Admins pass; protected paths
+# are admin-only. See scripts/content-guard.mjs for the rule logic.
+name: Content ownership guard
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      # Base branch checkout: the owners file must come from the TARGET, so a
+      # PR cannot grant itself permissions by editing the authority file.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.base_ref }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install guard dependency
+        working-directory: site
+        run: npm install --no-save --no-fund --no-audit js-yaml
+
+      - name: Fetch changed files (handles renames)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files?per_page=100" \
+            --paginate --jq '[.[] | {filename, previous_filename}]' > /tmp/pr-files.json
+          cat /tmp/pr-files.json
+
+      - name: Enforce ownership
+        run: node scripts/content-guard.mjs --author "${{ github.event.pull_request.user.login }}" --files /tmp/pr-files.json

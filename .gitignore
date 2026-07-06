@@ -1,0 +1,5 @@
+node_modules
+.playwright-mcp/
+overhaul-prompt.md
+dist/
+.astro/

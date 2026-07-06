@@ -1,0 +1,148 @@
+"Timestamp","Company Name","Company Website","WAM/GPA Required for this Position","Company Supervisor Name","Company Supervisor Role","Company Supervisor Email","Project 1 - Title","Project 1 - Description","Project 2 - Title","Project 2 - Description","Project 3 - Title","Project 3 - Description"
+"2026/05/13 1:43:25 pm GMT+10","Kolling Institute- Meniere disease Neuroscience Group","https://kollinginstitute.org.au",">8","Jose Antonio Lopez Escamez ","Professor of Meniere disease and Neuroscience","Jose.lopezescamez@sydney.edu.au","Identification of Meniere disease genes with whole genome sequencing data","The project will serve as an introduction to bioinformatic analysis of rare variant in rare diseases. For this, existing FASTQ/BAM files will be used to generate vcf files from cases and control using a trio design. The analysis will include single nucleotide variants and structural variants analysis. The project may lead to a potential publication. Full time (5 days/week) in person required to gain enough skills to perform the analysis independently. This project is likely to research-oriented students willing to start in bioinformatics using human datasets.","","","",""
+"2026/05/13 3:09:42 pm GMT+10","Vertex Cyber Security"," www.vertexcybersecurity.com.au","70+","Martin Boyd","CEO","vertex_internship@vertexcybersecurity.com.au","Penetration Testing","Learn from expert Ethical Hackers (Penetration Testers) with real world attacks and real systems. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.","Cyber Security Consulting","Learn from expert Cyber Security Consultants with real world defenses and real systems. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.","Cyber Security Auditing"," Learn from expert Cyber Security Auditors with real world systems and real Cyber reports. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia."
+"2026/05/15 3:48:52 pm GMT+10","Kolling Institute- Meniere Disease Neuroscience Laboratory","https://kollinginstitute.org.au/research-group/menieres-disease-neuroscience-group/","8","Jose Antonio Lopez Escamez","Professor of Meniere Disease and Neurosciences","Jose.lopezescamez@sydney.edu.au","Database of bi-allelic variation for rare recessive disorders ","The project will generate a multi ancestry population reference database of rare bi-allelic heterozygous variation using existing public databases. This pilot project will start with genes overrepresented in Meniere disease, a rare genetic disorder, and it will be extended to other hearing loss genes. The goal is generate a publication and this resource will be public to facilitate the genetic diagnosis of MD and hearing loss.","","","",""
+"2026/05/18 12:32:05 pm GMT+10","Management Dept, Macquarie Business School","https://www.mq.edu.au/","Applicants should have a strong academic record (e.g., WAM 75+ or GPA 5.5/7+) together with demonstrated skills in mobile and web application development. Practical experience such as app development projects, GitHub portfolios, or experience with Flutter, FlutterFlow, or Firebase, or equivalent is required.","Professor Denise Jepsen","Management Professor","Denise.jepsen@mq.edu.au","Academic Workflows App Development: IOS","The project involves the development of a cross-platform “Research Pipeline/Portfolio” application designed to support academic researchers at different career stages in managing research projects, manuscripts, journal submissions and publication workflows. An initial user interface (UI) prototype has been created using FlutterFlow, and this intern will be responsible for transforming this prototype into functional applications for iOS. The student will work collaboratively with two other intern students working on the equivalent project's Android and website platforms.
+
+The student will contribute to front-end and back-end app development, including database integration, authentication, workflow functionality, responsive design, and testing across platforms. The project will include implementing core productivity and tracking features relevant to academic research management. The student will assist with refinements to the user interface, usability improvements, bug fixes, and feature enhancements based on ongoing feedback from the project team.
+
+The internship provides practical experience in application development, cross-platform deployment, user-centred design, agile collaboration, and software prototyping within an applied university research-commercialisation context.","Academic Workflows App Development: Android","The project involves the development of a cross-platform “Research Pipeline/Portfolio” application designed to support academic researchers at different career stages in managing research projects, manuscripts, journal submissions and publication workflows. An initial user interface (UI) prototype has been created using FlutterFlow, and this intern will be responsible for transforming this prototype into functional applications for eAndroid. The student will work collaboratively with two other intern students working on the equivalent project's iOS and website platforms.
+
+The student will contribute to front-end and back-end app development, including database integration, authentication, workflow functionality, responsive design, and testing across platforms. The project will include implementing core productivity and tracking features relevant to academic research management. The student will assist with refinements to the user interface, usability improvements, bug fixes, and feature enhancements based on ongoing feedback from the project team.
+
+The internship provides practical experience in application development, cross-platform deployment, user-centred design, agile collaboration, and software prototyping within an applied university research-commercialisation context.","Academic Workflows App Development: Website app","The project involves the development of a cross-platform “Research Pipeline/Portfolio” application designed to support academic researchers at different career stages in managing research projects, manuscripts, journal submissions and publication workflows. An initial user interface (UI) prototype has been created using FlutterFlow, and the interns will be responsible for transforming this prototype into functional applications for each of iOS, Android, and web platforms. Students will work collaboratively, each on one of these platforms.
+
+The student will contribute to front-end and back-end app development, including database integration, authentication, workflow functionality, responsive design, and testing across platforms. The project will include implementing core productivity and tracking features relevant to academic research management. The student will assist with refinements to the user interface, usability improvements, bug fixes, and feature enhancements based on ongoing feedback from the project team.
+
+The internship provides practical experience in application development, cross-platform deployment, user-centred design, agile collaboration, and software prototyping within an applied university research-commercialisation context."
+"2026/05/27 10:53:09 am GMT+10","Cochlear","cochlear.com","0.75","Gary Lau","Data Science Manager","glau@cochlear.com","Sales Funnel Forecast and MLOps","Support Data Science Manager to forecast sales from prospect data and create a MLOps pipeline for the model.","","","",""
+"2026/05/29 11:20:23 am GMT+10","Zimble","https://zimble.io","WAM 75+","Andy Fisher","Managing Director","andy@zimble.io","Develop agentic layer for in apllication helpers","We are looking to develop AI delivered in application helpers. These may be sinmple chatbots to provide guidance on using our application but also may entail th development of agents that facilitate the creation of workflows. We are also looking to develop a MCP communicaitons layer in our application.","","","",""
+"2026/05/29 11:26:41 am GMT+10","Thinklab","https://thinklab.com.au","WAM 75+","Andy Fisher","Managing Director","andrew@thinklab.com.au","Develop AI driven business development tools.","We are looking to develop business development related agents to find, research and communincate with potential customers.","Project manager","We have an internship available for a project management graduate. The role will ential project managing internal and external client projects as well as external support contracted clients work.","",""
+"2026/05/29 1:34:07 pm GMT+10","Macquarie University - Information Technology","https://www.mq.edu.au/","3.0-5.0","Mark Yates","Manager, IT Service Management & Disaster Recovery","mark.yates@mq.edu.au","Draft Disaster Recovery Plans for Key Assets","Intern Project Brief: Draft Disaster Recovery Plans for Key Assets
+Project Overview
+•	Title: Draft 25 Disaster Recovery Plans (DRPs) for Key IT Assets
+•	Duration: 10–12 weeks
+•	Goal: Produce draft DRPs for ~25 key assets using existing templates and data, to be reviewed and approved by the IT Service Management & Disaster Recovery Manager. The candidate will also gain practical exposure to ITIL service management and disaster recovery through hands-on work, supported by internal resources such as templates, documentation, and guidance from the team and manager.
+________________________________________
+Objectives
+•	Create first-draft DRPs for ~25 key IT assets that currently lack them.
+•	Use existing DRP templates and available asset data.
+•	Ensure drafts are consistent, structured, and ready for review/validation.
+________________________________________
+Scope
+In scope:
+•	Identify ~25 key assets needing DRPs.
+•	Adapt and standardise a DRP template for the university.
+•	Gather basic asset information (via existing data + simple questionnaires).
+•	Draft a complete DRP for each asset.
+•	Maintain a DRP status register (not started / draft / reviewed / approved).
+•	Create draft test scripts and readiness checklists for each DRP.
+Out of scope:
+•	Setting final RTO/RPO without validation.
+•	Approving DRPs or declaring them “ready for use”.
+•	Running live DR tests or production changes.
+•	Infrastructure, vendor, or policy decisions.
+________________________________________
+Key Deliverables
+1.	DRP Asset List – ~25 assets with owner, criticality, DRP status.
+2.	Standard DRP Template + How-To Guide – university-specific version.
+3.	Asset Fact Sheets – summaries for each asset (service, dependencies, backups, initial RTO/RPO).
+4.	~25 Draft DRP Documents – one per asset, using the standard template.
+5.	DRP Status Register – tracker of progress and links to documents.
+6.	Draft Test Scripts & Checklists – for each asset.
+7.	Final Handover Document – summary of work done and next steps.
+________________________________________
+Intern Responsibilities
+•	Work from templates and data to draft DRPs.
+•	Contact asset owners (as directed) for missing information.
+•	Keep the DRP register up to date.
+•	Produce consistent, well-structured drafts.
+•	Prepare final handover summary (and optional short presentation).
+________________________________________
+Manager Support
+•	Provide:
+•	List of ~25 priority assets.
+•	Existing DRP templates and reference DRPs.
+•	Access to tools (Word, Excel, email, possibly ServiceNow/Confluence).
+•	Contact details for asset owners (if needed).
+•	Review and approve:
+•	DRP template.
+•	All draft DRPs (in batches).
+•	Test scripts and checklists.
+•	Validate RTO/RPO, recovery strategies, and roles.
+•	Hold weekly 30-minute check-ins and provide feedback.
+________________________________________
+Timeline & Milestones
+•	Weeks 1–2: Onboarding, template finalisation, confirm asset list.
+•	Weeks 3–4: Information gathering, asset fact sheets, DRP register set-up.
+•	Weeks 5–8: Draft 6–8 DRPs/week; submit in batches for review.
+•	Week 9: Draft test scripts & checklists; incorporate feedback.
+•	Weeks 10–12: Refine DRPs, finalise register, prepare handover, optional presentation.
+________________________________________
+Success Criteria
+•	All ~25 assets have a complete draft DRP.
+•	DRPs are consistent in structure and quality.
+•	DRP register is accurate and up-to-date.
+•	Drafts require reasonable review effort (minimal rework).
+•	Clear handover with documented next steps.
+________________________________________
+Learning Outcomes
+Intern will gain experience in:
+•	Disaster recovery planning and IT resilience.
+•	IT Service Management & risk management concepts.
+•	Technical writing and documentation.
+•	Stakeholder coordination and project management.
+________________________________________
+Boundaries & Risks
+•	Intern will not:
+•	Make final decisions on RTO/RPO, recovery strategy, or roles.
+•	Approve DRPs or treat them as official.
+•	Run live DR tests or production changes.
+•	All critical decisions and approvals rest with the manager.
+•	DRPs are drafts only until reviewed and approved.
+________________________________________
+Communication & Evaluation
+•	Weekly check-ins (30 mins) for progress and feedback.
+•	Mid-project review around week 5–6 to adjust as needed.
+•	Final review at the end:
+•	Quality and completeness of DRPs.
+•	Independence, organisation, and professionalism.
+","","","",""
+"2026/05/29 1:48:12 pm GMT+10","Macquarie University","mq.edu.au","4 to 5 (out of 5)","Gerard Frez","Solutions Architect","gerard.frez@mq.edu.au","Enterprise Architecture Guidance and AI Knowledge Assistant Repository","This project combines enterprise architecture governance, knowledge management, pattern/standard/blueprint development, and AI-enabled search capabilities into a strategic initiative for the Enterprise Architecture team. The goal is to establish a centralised and governed repository of architecture principles, blueprints, patterns, and standards (ie. Architecure Guidance) while also developing an AI-powered Architecture Knowledge Assistant that improves the discovery, reuse, and ongoing evolution of enterprise architecture guidance across the organisation.","","","",""
+"2026/05/29 3:37:02 pm GMT+10","Macquarie University","mq.edu.au","75","Mark Sim","Cybersecurity Project Manager","mark.sim@mq.edu.au","Macquarie University IT - Cybersecurity Risk Assessment","Introduction
+This internship will identify and assess a small set of faculty-developed applications in Macquarie University. In this role, you will be investigating these app(s) in the faculty to establish application ownership and accountability, PII data, document handling, technical architecture, and evaluate privacy and security risks. There may potentially be, but not confirmed, penetration testing within a controlled environment. Some tools are AI-enabled which require further analysis on the risks of AI. You will work with the cybersecurity team who will demonstrate tools and functions that will aid in your investigation.
+
+Deliverables
+This internship will conclude with a formal report and presentation of the findings, evidence, risk rating, and recommendations for remediation.
+This role will build cyber analysis skills, architecture and GRC experience.
+
+Outcomes
+Ethics and professionalism: identify and manage ethical issues when working with student PII, including authorisation, data minimisation, responsible handling of sensitive information, and appropriate escalation of high-risk findings.
+
+Applied cybersecurity practice: produce an evidence-based assessment using data flow mapping, threat modelling, AI usage, alignment with MQ policy, and if applicable, vulnerability testing.
+
+Stakeholder engagement: locate system owners, run structured interviews, and document accountability (business owner, technical owner)
+
+Communication: produce an executive summary and a detailed report to present findings and recommendations tailored to both technical and non-technical stakeholders.
+
+Critical reflection and career exploration: reflect on skills developed across governance/privacy, architecture, AI, application security, and security operations. Aids in identifying preferred career directions in architecture, cyber analysis, GRC","","","",""
+"2026/06/01 9:36:58 am GMT+10","Edgegenix PTY LTD","www.edgegenix.com","10 - I am not a picky here , need a quick learner who can work independent and deliver results","Sohan Domingo","Founder/CTO/Lead product Engineer","sohan.domingo@edgegenix.com","AI Operational Intelligence Platform for Critical Infrastructure Protection","AerialIQ is an AI-powered operational intelligence platform being developed by Edgegenix to support real-world monitoring, detection, and decision-making across multiple industries. The platform is designed to bring together drone imagery, fixed cameras, thermal sensors, satellite data, weather layers, GIS information, IoT sensors, and field observations into one intelligence interface.
+
+The goal of AerialIQ is to help operators detect, understand, and respond to events faster by turning visual and sensor data into actionable insights. While the platform can support bushfire and environmental monitoring, it is being designed as an industry-agnostic system that can also be applied to agriculture, utilities, infrastructure inspection, land management, oil and gas corridors, mining, water assets, and other operational environments.
+
+For this internship, the student will contribute to the development and testing of AerialIQ’s AI and data intelligence capabilities. The project may involve computer vision, image and video analysis, geospatial data, sensor integration, dashboard design, alerting workflows, and AI-assisted decision support. Example use cases include detecting smoke or hotspots, identifying pest or crop stress zones, monitoring vegetation encroachment near utility assets, detecting infrastructure anomalies, and supporting situational awareness for field operators.
+
+The intern may assist with tasks such as reviewing datasets, testing AI models, analysing detection outputs, improving prototype workflows, documenting technical requirements, supporting dashboard/user interface improvements, preparing evaluation reports, and contributing to system demonstrations.
+
+This project is suitable for students interested in artificial intelligence, computer vision, software engineering, geospatial systems, drones, IoT sensors, operational technology, environmental technology, and applied AI. The internship will provide practical exposure to a startup environment and the development of a real-world AI platform for operational intelligence across multiple industries.","AerialIQ Edge is a rugged, aircraft-agnostic edge AI hardware payload being developed by Edgegenix to bring real-time sensing and intelligence closer to the field. The objective is to design and prototype a compact hardware system that can be mounted on drones, fixed-wing UAVs, vehicles, towers, or other field platforms to collect, process, and transmit operational data from cameras, thermal sensors, environmental sensors, and communications modules.
+
+This hardware project focuses on the physical and embedded systems layer of AerialIQ. The intern will contribute to research, design, prototyping, and testing of an edge device capable of supporting computer vision, sensor integration, local data processing, and resilient connectivity in outdoor operational environments. The device may be used across multiple industries, including bushfire monitoring, agriculture, utilities, infrastructure inspection, land management, mining, oil and gas, water assets, and emergency response.
+
+The intern may assist with hardware component research, sensor selection, edge compute module comparison, power and battery planning, enclosure design, thermal management, mounting considerations, cable and connector layout, network connectivity options, GPS integration, field testing, bill of materials preparation, and technical documentation. The project will also consider practical constraints such as weight, power consumption, heat, vibration, weather resistance, RF connectivity, maintainability, and safe deployment on different platforms.
+
+This project is suitable for students interested in embedded systems, electronics, IoT hardware, robotics, drones, sensor systems, edge computing, mechanical design, and applied AI hardware. The internship will provide practical exposure to the development of a real-world edge intelligence device intended to support operational monitoring and decision-making across multiple industries.","","",""
+"2026/06/01 12:52:41 pm GMT+10","Deloitte Touche Tohmatsu","https://www.deloitte.com/au/en.html","80","Julian Murr, Hemant Kumar","Manager, Senior Consultant","jmurr@deloitte.com.au, hkumar33@deloitte.com.au","Intentionally Vulnerable Web Application (IVWA)","Deloitte's cyber security practice requires a purpose-built, deliberately vulnerable web application to support two use cases:
+1. Technical Training: Enabling consultants to practice identifying and exploiting common web application vulnerabilities in a safe, controlled environment. 
+2. Technical interviews & assessments: Providing a standardised, repeatable platform for evaluating candidates' ability to discover and articulate security flaws. 
+Existing open-source projects (e.g., DVWA, Juice Shop) are widely known, and their solutions are readily available online, reducing their effectiveness as assessment tools. A bespoke application with original scenarios, configurable difficulty levels, and Deloitte-relevant context addresses this gap. ","","","",""
+"2026/06/02 9:34:04 pm GMT+10","Truuth","www.truuth.id","70","Mike Simpson","CEO","mike.simpson@truuth.id","Deepfake document detection","Truuth protects our clients from a wide range of document fraud scenarios including AI-generated images and documents.  This is a rapidly growing source of fraud.  To mitigate this risk we need to update our gen-AI detection models on a monthly basis.  Currently we have 10 deepfake detection models, and your job is to help us to continually improve the accuracy of these models and build new deepfake detection models as new State-of-the-Art techniques are discovered.","Document manipulation detection","In addition to deepfake detection, we also need to protect clients from a wide range of document and image manipulation scenarios that are not generated with AI tools.  These scenarios include text modification and visual manipulation using software editors and other primitive methods.  Your task is to create a range of falsified documents and images and test the accuracy of our current suite of fraud detection checks.  Where accuracy does not meet our target, you are empowered to build new detection checks.","Identity verification","We have a range of identity verification checks that are used by clients across the globe.  We need to continually review new identity spoofing attacks to ensure our checks can adequately mitigate the risk.  Your task is to work with us to build out new ID verification checks that can detect new attack vectors."
