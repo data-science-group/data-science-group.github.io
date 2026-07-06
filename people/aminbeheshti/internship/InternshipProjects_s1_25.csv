@@ -1,0 +1,187 @@
+"Timestamp","Company Name","Company Website","WAM/GPA Required for this Position","Company Supervisor Name","Company Supervisor Role","Company Supervisor Email","Project 1 - Title","Project 1 - Description","Project 2 - Title","Project 2 - Description","Project 3 - Title","Project 3 - Description"
+"2024/12/19 3:58:21 pm GMT+11","Coranton Pty Ltd","https://momentohospitality.com.au/","75","Grant Allsopp","Finance Director","granta@momentohospitality.com.au","Customer Behaviour Analysis and Forecasting","This project focuses on analysing customer behaviour patterns to
+uncover reasons for change in visitation, predict patron trends, and develop
+strategic insights to retain high-value customers. The project will leverage AI in
+the development of forecasting models, such as ARIMA, and survey tools to
+understand why patrons visit, their behaviours across venues, and patterns of
+regular appearance and disappearance.","Marketing Effectiveness Analysis for Strategic Decision-Making","This project aims to evaluate the effectiveness of Momento Hospitality’s
+marketing strategies by analysing their impact on sales, table turnover, and
+venue performance. The analysis will use regression modelling to identify
+relationships between independent variables such as tactical marketing
+strategies, experimental campaigns, social media frequency, seasonality, and
+events, with sales as the dependent variable. Additionally, the project will
+account for potential distraction effects, such as event-related capacity
+limitations, slower table turnover, and changes in customer spending behaviour.
+Opportunity costs of marketing strategies will also be inferred to optimise future
+campaigns.","",""
+"2025/01/21 2:12:17 pm GMT+11","The University of Sydney - The Kolling Institute","https://kollinginstitute.org.au/","85","Professor Jose Antonio Lopez-Escamez","Professor of Meniere disease Neuroscience ","jose.lopezescamez@sydney.edu.au","Genomic and Epigenomic Data Portal","Project Description
+This project focuses on developing a state-of-the-art data portal platform to support researchers in the field of bioinformatics, with an emphasis on genomic and epigenomic datasets. By providing access to this data, along with analytical tools, this platform facilitates the study of genetic and epigenetic mechanisms of Meniere Disease. Our goal is to empower researchers by delivering intuitive, data-driven insights through visualisation and advanced reporting.
+
+We are seeking talented students to join our team, particularly to contribute to the backend development of this platform. Your role will include designing optimised queries and creating interactive visualisations for genomic and epigenomic datasets.
+
+About the Project
+The Genomic and Epigenomic Data Portal integrates two critical datasets:
+
+Genomic Data
+
+Description: Contains genetic variant information mapped to chromosomal positions.
+Use Cases: Helps uncover patterns of genetic mutations and their associations with diseases or traits.
+
+Epigenomic Data
+
+Description: Focuses on DNA methylation, a key epigenetic marker.
+Use Cases: Provides insights into gene regulation and its impact on cell function under different conditions.
+Together, these datasets provide a comprehensive foundation for understanding the interplay between genetic and epigenetic factors.
+
+Analytical Features and Visualisations
+Inspired by platforms like gnomAD (https://gnomad.broadinstitute.org/gene/ENSG00000188162?dataset=gnomad_r4) , this portal will feature dynamic reporting and interactive visualisations:
+
+Genomic Data Report
+
+Visualisation: A chart with the horizontal axis representing Position Numbers (from the CSV file) and the vertical axis representing Variants Count.
+Objective: Extract insights into variant distribution across genomic regions through optimised queries.
+Epigenomic (Methylation) Data Report
+
+Visualisation: A similar chart tailored to represent methylation levels across positions.
+Objective: Analyse methylation patterns across genomic regions, aiding in epigenetic studies.","Transcriptomic Data Portal","Project Description
+This project is dedicated to building a specialised platform for transcriptomic data, supporting researchers in exploring RNA-based datasets. By providing tools for analysing gene expression levels, the platform enables breakthroughs in understanding how genes are regulated in various biological contexts. Our objective is to deliver intuitive visualisations and comprehensive reporting, similar in functionality to gnomAD.
+
+We are seeking talented students to contribute to the backend development of this project, with a focus on optimising queries and designing visual dashboards for transcriptomic data.
+
+About the Project
+The Transcriptomic Data Portal focuses on one essential dataset:
+
+Transcriptomic Data
+Description: Captures RNA sequencing information, enabling the study of gene expression levels and biological pathways.
+Use Cases: Provides insights into which genes are activated or suppressed in specific cell types or experimental conditions.
+This dataset forms the foundation for studying how gene activity changes in health and disease.
+
+Analytical Features and Visualisations
+Drawing inspiration from platforms like gnomAD (https://gnomad.broadinstitute.org/gene/ENSG00000188162?dataset=gnomad_r4), the portal will offer advanced reporting and dynamic visualisation capabilities:
+
+Transcriptomic Data Report
+Visualisation: A chart with the horizontal axis representing Cell Types (from the CSV file) and the vertical axis representing Genes (Log2).
+Objective: Enable researchers to study gene expression trends across various cell types, providing actionable insights.","",""
+"2025/01/24 10:58:38 am GMT+11","Centropy Services & Solutions Pty. Ltd.","www.centropy.com.au","n.a","Vandana Khanna","Delivery Partner","vandana@centropy.com.au","Cyber Security - Management and Compliance for small to medium scale businesses","Work with senior consultants to develop core materials for Cyber security management and compliance related advisory and implementation services.","Cyber aware culture","Work with senior consultants to develop core materials for measuring effectiveness of Cyber culture uplift initiatives.","",""
+"2025/01/27 10:40:05 am GMT+11","NEPA WHOLESALE","https://www.linkedin.com/company/nepawholesale/posts/?feedView=all","Credit","Aayush Adhikari","CTO | Lead Data Scientist | AI Consultant | LLM Specialist | Machine Learning | Computer Vision | IoT | Cloud Solutions | DevOps | MLOps","aceraayush@gmail.com","Customer Segmentation in Mall Using K-Means Algorithm","In this project, I tackled customer segmentation challenge in a mall environment by 
+employing the K-Means unsupervised learning algorithm. Customer segmentation 
+involves dividing the mall's customer base into distinct groups based on their purchasing 
+behavior, preferences, and demographics. This segmentation can help the mall tailor its 
+marketing strategies, optimize product placement, and enhance the overall shopping 
+experience. ","Optimizing-Used-Car-Valuation-using-Data-science: ","I developed a machine learning model to predict used car prices based on features like 
+brand, fuel type, kilometers driven, and city of sale. I performed data preprocessing (feature 
+extraction, cleaning, and encoding), EDA, and built a Random Forest Regressor. Through 
+hyperparameter tuning with GridSearchCV, I achieved an R-squared, with model 
+performance evaluated using Mean Absolute Error (MAE), Mean Squared Error (MSE), 
+and Root Mean Squared Error (RMSE).","Support Vector Machine (SVM) - Based Coronary Heart Disease Prediction:  ","I analyzed the Framingham Heart Study dataset to identify risk factors for coronary heart 
+disease. I performed data preprocessing, exploratory data analysis, and implemented a 
+Support Vector Machine (SVM) model for disease prediction. Developed scripts for 
+preprocessing, model training, and visualization to streamline analysis and improve 
+predictive accuracy"
+"2025/01/28 11:03:20 am GMT+11","Truuth","www.truuth.id","70","Mike Simpson","CEO","mike.simpson@truuth.id","AI models to verify document authenticity","Truuth specialises in protecting our clients from all forms of identity fraud.  This requires Truuth to continually improve our AI-based checks for document authenticity.  Our document authenticity checks include metadata checks, font checks, visual feature checks, and barcode checks.  Interns working on this stream will have the opportunity to apply their AI/ML skills to test new models of document authenticity.","Building a global database for identity documents","A key enabler of Truuth's verification service is the ability to detect, classify, segment, and extract data any global identity document.  We have built the foundation of a global database and we are systematically populating the dataset to cover every identity document from each country.  Interns working on this stream will have the opportunity to learn the process for forensic inspection and cataloging of documents.","Building a fraud graph based on multiple sources of metadata","Truuth collects many sources of metadata which are useful for determining the probability of fraud.  We need to combine the disparate data sources into a single fraud graph which can highlight significant relationships between data elements and flag high-probability fraud connections.  We have built a prototype of the fraud graph but further research is required before we can release the solution in our production environment.  Interns working on this stream will have the opportunity to learn about state-of-the-art approaches using graph databases and graph visualisation solutions. "
+"2025/01/29 1:27:36 pm GMT+11","Vertex Cyber Security","www.vertexcybersecurity.com.au","68+","Martin Boyd","CEO","vertex_internship@vertexcybersecurity.com.au","Penetration Testing","Learn from expert Ethical hackers (Penetration Testers) with real world attacks and real systems. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.
+"," Cyber Security Consulting","Learn from expert Cyber Security Consultants with real world defenses and real systems. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.
+"," Cyber Security Auditing","Learn from expert Cyber Security Auditors with real world systems and real Cyber reports. This internship includes an industry leading learning and hands-on program to fast track your cyber security expertise. To get the most out of the learning program at least a basic level of Programming experience (any language) is required. We are looking for people passionate about Cyber Security, driven to help others and wanting to protect Australia.
+"
+"2025/01/30 5:56:40 pm GMT+11","Ausforming Pty Ltd","ausforming.com","N.A","Sahil Naqvi","Co-Founder","sahil.naqvi@ausforming.com","Supply Chain Optimization","Currently developing a mathematical model to analyze and optimize various aspects of supply chain network, aiming to minimize costs, maximize efficiency, and achieve the best possible balance between supply and demand across production, inventory management, transportation, and distribution stages.","","","",""
+"2025/01/31 8:52:36 am GMT+11","Macquarie University","https://www.mq.edu.au/","Available to all students who have experience using generative AI","Phil Laufenberg","Head of AI","phil.laufenberg@mq.edu.au","Enhancing Academic Productivity with Generative AI: Research & Implementation in Higher Education","This internship offers an exciting opportunity to explore how generative AI can enhance productivity in higher education. The selected intern will be embedded within the MQ AI Team and focus on the education domain, gaining hands-on experience with our generative AI platform and analysing how AI can streamline academic work, particularly in teaching.
+
+The intern will begin by conducting desk research, surveys, and interviews with academics to identify time-consuming tasks that could be automated or enhanced using AI. These insights will form the basis for a structured list of productivity improvements.
+
+Once the opportunities are identified, the intern will work on practical AI-driven solutions, including:
+
+Developing optimised, reusable prompts for Microsoft 365 Copilot Chat to assist academics with common teaching tasks.
+
+Creating AI assistants using Microsoft Copilot Studio to automate workflows and improve efficiency.
+
+This role is ideal for a problem-solver with strong analytical skills, an interest in generative AI, and a desire to make a tangible impact on academic productivity. The intern will leave with hands-on experience in AI research, implementation, and real-world impact within the higher education sector.","Enhancing Researcher Productivity with Generative AI: Research & Implementation in Higher Education","This internship offers an exciting opportunity to explore how generative AI can enhance productivity in higher education. The selected intern will be embedded within the MQ AI Team and focus on the research domain, gaining hands-on experience with our generative AI platform and analysing how AI can streamline academic work, particularly in teaching.
+
+The intern will begin by conducting desk research, surveys, and interviews with academic researchers to identify time-consuming tasks that could be automated or enhanced using AI. These insights will form the basis for a structured list of productivity improvements.
+
+Once the opportunities are identified, the intern will work on practical AI-driven solutions, including:
+
+Developing optimised reusable prompts for Microsoft 365 Copilot Chat to assist researchers with common research tasks.
+
+Creating AI assistants using Microsoft Copilot Studio to automate workflows and improve efficiency.
+
+This role is ideal for a problem-solver with strong analytical skills, an interest in generative AI, and a desire to make a tangible impact on research productivity. The intern will leave with hands-on experience in AI research, implementation, and real-world impact within the higher education sector.","Enhancing Operational efficiency with Generative AI: Research & Implementation in Higher Education","This internship offers an exciting opportunity to explore how generative AI can enhance efficiency in higher education operations. The selected intern will be embedded within the MQ AI Team and focus on the operations domain, gaining hands-on experience with our generative AI platform and analysing how AI can streamline work, particularly in operations and service delivery.
+
+The intern will begin by conducting desk research, surveys, and interviews with university staff to identify tasks that could be automated or enhanced using AI. These insights will form the basis for a structured list of productivity improvements.
+
+Once the opportunities are identified, the intern will work on practical AI-driven solutions, including:
+
+Developing optimised reusable prompts for Microsoft 365 Copilot Chat to assist MQ staff with common tasks.
+
+Creating AI assistants using Microsoft Copilot Studio to automate workflows and improve efficiency.
+
+This role is ideal for a problem-solver with strong analytical skills, an interest in generative AI, and a desire to make a tangible impact on research productivity. The intern will leave with hands-on experience in AI research, implementation, and real-world impact within the higher education sector."
+"2025/01/31 2:07:25 pm GMT+11","ETF Shares","etfshares.com.au","70","Cliff Man","CEO","cliff.man@etfshares.com.au","Web development","We are seeking a motivated intern to assist with a web development project, implementing website using modern web technologies and architecture best practices. This project offers value hands-on experience and the chance to make a meaningful impact in a dynamic stratup enviroment. Candidates should have experience or at least familiar with the following technologies: relational database (e.g. PostgreSQL), modern web frontend framework (e.g. Astro), headless CMS (e.g. Stapi), python for backend and code management tool (e.g. Github).","","","",""
+"2025/01/31 2:58:26 pm GMT+11","Domain.com.au","Domain.com.au","70+","Nima Mohammadpour","Director of AI","nima.mohammadpour@domain.com.au","Market Share Observatory Tool","The project aims to develop an intuitive interface within cutting edge cloud infrastructure in Data team to delivers near real-time market insights to businesses, enabling data-driven decision-making. By consolidating and visualising key metrics like Share of Listing, trends, and competitive intelligence, the platform will empower Domainians to quickly access actionable information, identify opportunities, and adapt strategies in a fast-paced market environment. The goal is to enhance business agility, foster informed planning, and improve overall market responsiveness. You will be working with Snowflake, DBT, Streamlit and gain insights into the world of Data, Commercial analytics and Decision-making.","Anomaly Detection in Event Tracking Using Machine Learning/AI","To develop an anomaly detection system that proactively identifies issues in event tracking within a domain portal, thereby reducing manual oversight and enhancing data quality for business operations.","Article tagging","Processing article text is a natural language task and building an article tagger is a foundational project that makes creating further content related products possible."
+"2025/01/31 4:23:01 pm GMT+11","Australian Institue of Health Innovation","https://www.mq.edu.au/research/research-centres-groups-and-facilities/healthy-people/centres/australian-institute-of-health-innovation","Top half of the class","Magali Goirand","Post-doc ","magali.goirand@mq.edu.au","MyED Waiting Room Screen","The MyED project is a multi-year project aiming to improve the experience of Emergency Department (ED) for vulnerable populations in Western Sydney, including people from culturally and linguistically diverse (CALD) backgrounds. During co-design workshops, several ideas were identified to help with language barriers and health system literacy. One idea involves developing a system, an application that would help manage the expectations of the people in the waiting room. Not knowing how long one might have to wait is a source of anxiety, and being able to understand where one stands in the queue could alleviate this anxiety as well as reassure the patients and carers that they have not been forgotten. The app would communicate estimated waiting time and busyness level of the ED to patients and carers in the waiting room. The system has a data extraction and processing component, as well as a visual component to display the data in an intuitive way on a screen in the ED waiting room. The intuitive part is crucial as it needs to be suitable for people with CALD backgrounds. A storyboard, while still needing to be refined, describes how the application would work from the user’s point of view- available as a picture that this form cannot accomodate.
+ 
+We are seeking two students interested in developing such an application that would be first piloted then implemented in a Western Sydney Hospital ED waiting room. The working hours are flexible. The students would need to come to the AIHI office as needed. The MyED team is part of the Human Factors and Resilience stream at the Australian Institute of Health Innovation in the Faculty of Medicine, Health and Human Sciences. The members of the supervisory team have a multidisciplinary background including engineering. 
+","","","",""
+"2025/02/05 9:29:19 am GMT+11","The University of Sydney","https://kollinginstitute.org.au/","85","Professor Jose Antonio Lopez-Escamez","Professor of Meniere disease Neuroscience ","jose.lopezescamez@sydney.edu.au","Variant Search by cDNA Number, REF, ALT, and SYMBOL","We are looking for a motivated data science student to develop a robust search function for our genetic variant database. The goal is to enable users to query specific genetic variants using the cDNA notation (HGVSc), reference allele (REF), alternative allele (ALT), and gene symbol (SYMBOL).
+This project is suitable for students with a background in bioinformatics, computational biology, or data science. You will be working with structured genomic data and designing efficient queries to retrieve meaningful results.
+What You Will Work On:
+•	Developing an efficient search function that allows users to query variants based on the following input format:
+SYMBOL/cDNA/REF/ALT (Example: BRCA1/c.123A>T/A/T)
+Skills Required:
+•	MongoDB for database management
+•	Data retrieval and processing
+•	Experience with genomic databases is a plus
+•	Python (Pandas, NumPy, BioPython, or similar libraries)
+•	Understanding of variant annotation and genomic data
+"," Data Query and Website Visualization","Description:
+We are seeking a data science student who can develop an interactive visualization tool for our genomic database. This project involves writing queries to extract key genetic data and creating a visualization similar to the one on the gnomAD website (https://gnomad.broadinstitute.org/gene/ENSG00000188162?dataset=gnomad_r4).
+What You Will Work On:
+•	Writing optimized queries to extract key data points from our dataset
+•	Creating data visualizations for variant frequencies, gene impact, and population statistics
+•	Ensuring the visualization interface is user-friendly and intuitive
+Skills Required:
+•	MongoDB for database management
+•	Data visualization using libraries such as D3.js, Plotly, Matplotlib, or Seaborn
+•	Understanding of genomic data visualization is a bonus
+","Data Portal Development using WordPress","Description:
+We are looking for an experienced WordPress developer to help us build a web portal for our genetic database. This portal will serve as the central hub for researchers, clinicians, and users to access genetic data and insights.
+What You Will Work On:
+•	Designing and implementing a WordPress-based web portal
+•	Ensuring the website is responsive, fast, and user-friendly
+•	Integrating dynamic content and search functionality
+•	Implementing a secure login and user authentication system
+
+Technology Stack:
+•	CMS: WordPress
+•	Backend: PHP & JavaScript
+•	Database: MongoDB
+
+Skills Required:
+•	Proficiency in WordPress development (themes, plugins, and customization)
+•	Experience with PHP, HTML, CSS, and JavaScript
+•	Knowledge of database integration
+•	Experience with security best practices for web applications
+"
+"2025/02/05 12:52:46 pm GMT+11","Macquarie University","https://www.mq.edu.au/","NA","Connie Iong","IT Enterprise Architect","connie.iong@mq.edu.au","Enterprise Architecture Reference Framework Update","•	Review and assist with architecture artefacts updates
+•	Alignment of application artefacts in ServiceNow to iServer
+•	Mapping applications to CAUDIT capabilities
+•	Artifact creation and generation depending on project requirements
+•	Analysis, research, problem solving and recommendation on architecture assignments
+•	Tool utilisation and optimisation (iServer, Visio, Confluence)
+","","","",""
+"2025/02/08 8:51:07 pm GMT+11","Dryad Networks","https://www.dryad.net/","75","Sohan Domingo","Vice President of Sales Technology and Operations","sohan@dryad.net","Development of a LoRaWAN IoT Gateway","This project aims to develop a LoRaWAN IoT gateway using the ESP32 microcontroller, integrate various sensors for data collection, and connect the system to the Dryad Gateway for advanced data processing and visualization.","Site Planning and QoS Implementation for LoRaWAN IoT Gateway and Critical Alert Management","The project focuses on optimizing the performance and reliability of a LoRaWAN IoT network by developing site planning guidelines and implementing Quality of Service (QoS) mechanisms to prioritize critical sensor data, such as fire alerts.","",""
+"2025/02/12 5:14:52 pm GMT+11","Macquarie University","www.mq.edu.au","65","Johnson Chan","Vulnerability and Threat Manager","johnson.chan@mq.edu.au","Prometheus - Macquarie Security uplift and enhancement","Cyber Playbook development and enhancement, Security Assessment, Improve Automation/Orchestration, Security Awareness, Attack Surface Management","Valkyrie - Cyber Security Assessment / Penetration Testing - Macquarie University Environment","Cyber Security Assessment / Penetration Testing and reporting, Attack Surface Management","",""
+"2025/02/14 2:38:18 pm GMT+11","Securoak Pty Ltd","www.securoak.com","75 WAM","Sriharinath KALA JAGANNATHAN","Project Manager","sriharinath@securoak.com","IGA Implementation","Securoak Pty Ltd has entered into a multi-year partnership with Bunnings Group to implement an Identity Governance and Administration (IGA) solution. This project aims to enhance security, streamline user onboarding, and establish a robust governance framework for managing access controls. By integrating IGA, Bunnings will improve operational efficiency, reduce security risks, and ensure compliance with industry standards. The project includes onboarding critical applications, automating provisioning and de-provisioning processes, and strengthening identity lifecycle management across the organization.","","","",""
+"2025/02/17 10:04:03 pm GMT+11","Center for Applied Ai","https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/centre-for-applied-artificial-intelligence","85","Yuankai Qi","Director of Vision-Language-Action","yuankai.qi@mq.edu.au","Teaching Robots with Video Demonstration","We humans have a natural ability to learn new skills by watching videos. However, this becomes challenging for robots. This project aims to build a prototpye pipeline based on existing foundation models to enable robots to learn from non-expert video demonstrations.","Text-guided Medical Image Segmentation","Text-guided medical image segmentation combines natural language processing (NLP) and deep learning to enhance medical imaging workflows. Instead of relying solely on predefined labels or manual annotations, this approach enables segmentation based on textual descriptions. This project aims to evaluate existing AI models to find unrevealed drawbacks with the potential to improve their performance.","",""
+"2025/02/25 10:35:42 am GMT+11","Center for Applied Artificial Intelligence","https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/centre-for-applied-artificial-intelligence","85","Yuankai Qi","Director of Vision-Language-Action","yuankai.qi@mq.edu.au","Language understanding - Grammatical metaphor","Grammatical metaphor is when concepts that are usually expressed in one grammatical form are expressed in another, mainly by using a noun to express a concept normally expressed by a verb. This type of language phenomena recognition has posed a significantly challenge to existing large language models (LLMs). In this project, you will explore several LLM enhancement techniques to improve the accuracy of LLMs.","","","",""
+"2025/02/26 9:23:11 am GMT+11","FOS Medical","https://fosmedical.com/","Minimum of 3.0/4.0","Arash Atashnama","CTO","arash.atashnama@fosmedical.com","AI/ML Applications in Drug Discovery","Project Overview:
+FOS Medical is developing AI-driven solutions to accelerate innovation in drug discovery and precision medicine. This project focuses on leveraging machine learning to analyze biomedical data and support the development of novel therapeutic strategies.
+
+Internship Scope:
+Selected students will work on AI/ML models applied to healthcare and biotechnology challenges, including:
+A) Data analysis and pattern recognition in biomedical datasets
+B) Application of machine learning techniques to optimize drug discovery workflows
+C) Integration of diverse data sources to improve model predictions
+
+Ideal Candidate:
+We seek Master’s students with strong AI/ML expertise, ideally with experience in computational biology, bioinformatics, or related fields. Familiarity with deep learning, biomedical data processing, or AI applications in healthcare is beneficial. 
+Knowledge of cancer biology or oncology research is a bonus.","","","",""

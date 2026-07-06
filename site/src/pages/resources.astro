@@ -1,0 +1,52 @@
+---
+// For members — operational materials for current lab members. Reached from
+// the footer ("For members"), not primary navigation.
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+const withBase = (p: string) => base.replace(/\/$/, "") + p;
+---
+<Base
+  title="Member resources — Data Science Research Lab"
+  description="Templates, conventions and process pages for current members of the Data Science Research Lab at Macquarie University."
+>
+  <h1>Member resources</h1>
+  <p class="lede">Working materials for current lab members and students.</p>
+
+  <section aria-labelledby="reporting">
+    <h2 id="reporting">Reporting and presentations</h2>
+    <ul>
+      <li><a href={withBase("/weekly-report.html")}>Weekly report guidance</a> — what to include and how to submit, with the <a href={withBase("/weekly-report.doc")}>report template</a> (Word, ~31&nbsp;KB).</li>
+      <li><a href={withBase("/presentation_template.pptx")}>Presentation template</a> (PowerPoint, ~4.8&nbsp;MB, MQ-branded — updated June 2026).</li>
+      <li><a href={withBase("/overleaf.html")}>Overleaf conventions</a> — document naming and shared-project practice.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="applications">
+    <h2 id="applications">Application materials</h2>
+    <ul>
+      <li><a href={withBase("/MQ_Assessment_Form.docx")}>PhD applicant self-assessment form</a> (Word, ~23&nbsp;KB).</li>
+      <li><a href={withBase("/PhdProposalMQ.pdf")}>Research proposal template</a> (PDF, ~0.6&nbsp;MB).</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="programs">
+    <h2 id="programs">Program pages</h2>
+    <ul>
+      <li><a href={withBase("/people/aminbeheshti/internship/MQ-MIT-Internship.html")}>Master's internship program</a> — current intake, projects, enrolment.</li>
+      <li><a href={withBase("/people/aminbeheshti/DataScienceProject/MQ-DS-Project.html")}>Data science capstone (ITEC877)</a> — structure and assessment.</li>
+    </ul>
+  </section>
+
+  {/* /resources/conferences/ lands here when the cs-conferences app is ported */}
+  <section aria-labelledby="venues">
+    <h2 id="venues">Target venues</h2>
+    <ul>
+      <li><a href={withBase("/resources/conferences/")}>Target conferences</a> — deadline tracker with CORE ranks, maintained by Afrooz Sheikholeslami.</li>
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .lede { font-size: 1.08rem; }
+  ul li { margin: 0.45em 0; max-width: var(--measure); }
+</style>

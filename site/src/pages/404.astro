@@ -1,0 +1,13 @@
+---
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+---
+<Base
+  title="Page not found — Data Science Research Lab"
+  description="The page you were looking for could not be found."
+
+>
+  <h1>Page not found</h1>
+  <p>The page you were looking for doesn't exist or has moved.</p>
+  <p><a href={base}>Go to the Data Science Research Lab home page</a></p>
+</Base>

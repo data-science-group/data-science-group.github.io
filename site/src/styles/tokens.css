@@ -1,0 +1,47 @@
+/* ============================================================================
+   DSRL design tokens — THE dial file.
+   Identity: the lab's OWN established design (founder decision 2026-07-04) —
+   teal + slate, Montserrat display, Lato body — refined, not replaced.
+   Changing the site's look means editing THIS file and nothing else.
+   ========================================================================== */
+
+:root {
+  /* --- colour: the current site's palette, tuned for AA contrast ---------- */
+  --ground:      #FFFFFF;  /* page background */
+  --surface:     #F4F6F6;  /* alternating section bands, cards */
+  --ink:         #2C3E50;  /* slate — headings & body text (current site's secondary) */
+  --ink-2:       #5D6D7E;  /* muted slate for captions (4.5:1 on ground) */
+  --teal:        #1ABC9C;  /* the lab's signature teal (current site's primary) */
+  --teal-down:   #128F76;  /* hover/active; also AA-safe on white for links */
+  --teal-band:   #1ABC9C;  /* full-bleed hero/CTA bands (white text at 3:1+ for large type) */
+  --slate:       #2C3E50;  /* navbar, footer, dark bands */
+  --slate-down:  #1A252F;
+  --accent:      #128F76;  /* link colour — AA-safe teal */
+  --flag:        #A6192E;  /* reserved: date flags / alerts (MQ red) */
+  --line:        #D5DBDB;
+  --sand:        #EAEDED;  /* neutral chip/pill background (also used by the workshop layout) */
+  --focus:       #1A4FA0;
+
+  /* --- type roles: Montserrat (display, uppercase) + Lato (body) ---------- */
+  --font-display: "Montserrat", "Work Sans", system-ui, sans-serif;
+  --font-sans: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", Consolas, Menlo, monospace;
+
+  --text-display: 700 clamp(2.2rem, 5vw, 3.4rem)/1.1 var(--font-display);   /* hero h1, uppercase */
+  --text-heading: 700 clamp(1.5rem, 3vw, 2.1rem)/1.2 var(--font-display);   /* h2, uppercase, centered */
+  --text-subhead: 700 1.15rem/1.3 var(--font-display);
+  --text-body:    400 1.06rem/1.6 var(--font-sans);
+  --text-meta:    400 0.88rem/1.5 var(--font-sans);
+  --text-nav:     700 0.85rem/1 var(--font-display);                        /* uppercase nav */
+  --text-data:    400 0.86rem/1.5 var(--font-mono);
+
+  /* --- space & shape ------------------------------------------------------ */
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 1rem;
+  --space-4: 1.5rem;  --space-5: 2.75rem; --space-6: 4.5rem;
+  --radius: 4px;
+  --measure: 72ch;
+  --page-max: 1140px;
+}
+
+/* NO dark scheme — founder decision 2026-07-05: every page stays light to
+   match the main page. Do not reintroduce prefers-color-scheme variants. */

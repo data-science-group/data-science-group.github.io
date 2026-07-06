@@ -1,0 +1,21 @@
+series: BioFM
+edition: BioFM'26
+title: The 2nd International Workshop on Foundation Models for Biology and Bioinnovation
+year: 2026
+status: upcoming
+dates: 12–15 November 2026 (workshop tentatively 12 November)
+startDate: 2026-11-12
+endDate: 2026-11-15
+timezone: Asia/Shanghai
+venue: Shenyang, China
+colocated: IEEE International Conference on Data Mining (ICDM'26)
+chairs:
+  - Amin Beheshti
+  - Jian Yang
+  - Michael Sheng
+  - Jose Antonio Lopez Escamez
+sponsors:
+  - Centre for Applied AI at Macquarie University
+  - Collective Learning AI
+cfpDeadline: 2026-08-20
+url: /BioFM/2026/
