@@ -72,10 +72,10 @@ const news = defineCollection({
     date: z.coerce.date(),
     teaser: z.string().max(280),
     featured: z.boolean().default(false),
-    badge: z.string().optional(),
-    kind: z
-      .enum(["lab-news", "tech-news", "linkedin-mirror", "event", "award", "publication", "keynote"])
-      .default("lab-news"),
+    // Optional event type shown as a badge (e.g. event, keynote, workshop).
+    // Free text, no default — an entry with no type shows no type badge. The
+    // "Upcoming" badge is computed automatically from the date, never stored.
+    kind: z.string().optional(),
     program: z.enum(["dsrl", "bds", "aipa", "aiple", "biofm"]).default("dsrl"),
     author: z.string().optional(), // people.yml id where possible
     contributors: z.array(z.string()).default([]),

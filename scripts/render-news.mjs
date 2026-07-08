@@ -125,7 +125,7 @@ const badgeSpan = (text, red) =>
 // arrows + drag and honours prefers-reduced-motion.
 export function renderNewsStrip() {
   const { mode, items, today } = collectStrip();
-  const kindLabel = (k) => (k || "news").replace(/-/g, " ");
+  const kindLabel = (k) => String(k).replace(/-/g, " ");
   const card = (e) => {
     // alt defaults to the title (admin never types alt); a stored alt still wins
     const img = e.cover && e.cover.image
@@ -135,13 +135,15 @@ export function renderNewsStrip() {
     const link = e.link || (e.source && e.source.url);
     const external = Boolean(link);
     const href = external ? String(link) : `news/#y${e.date.slice(0, 4)}`;
-    // red badge: the admin's custom badge wins; otherwise automatic "Upcoming"
-    const red = e.badge ? String(e.badge) : e.date >= today ? "Upcoming" : "";
-    const badges = badgeSpan(kindLabel(e.kind), false) + (red ? " " + badgeSpan(red, true) : "");
+    // Type badge only when the admin set a type; "Upcoming" is automatic for
+    // any future-dated entry — never a stored/manual badge.
+    const typeBadge = e.kind ? badgeSpan(kindLabel(e.kind), false) : "";
+    const upBadge = e.date >= today ? badgeSpan("Upcoming", true) : "";
+    const badges = [typeBadge, upBadge].filter(Boolean).join(" ");
+    const badgeP = badges ? `<p class="mt-3 mb-0">${badges}</p>\n              ` : "";
     return `          <div class="col-lg-4 col-md-6 mb-4">
             <a href="${esc(href)}"${external ? ' target="_blank"' : ""} style="text-decoration: none; color: inherit">
-              ${img}<p class="mt-3 mb-0">${badges}</p>
-              <h4 class="dsl-news-title mt-2 mb-1">${esc(e.title)}</h4>
+              ${img}${badgeP}<h4 class="dsl-news-title mt-2 mb-1">${esc(e.title)}</h4>
               <p class="text-muted mb-0">${esc(humanDate(e.date))}</p>
             </a>
           </div>`;

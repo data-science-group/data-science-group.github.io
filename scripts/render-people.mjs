@@ -60,11 +60,10 @@ const ALT_OVERRIDE = {
   "seyedali-mohseni": "Ali Mohseni",
 };
 
-// Armin Lari's card reads (<b>MRes Y2 + PhD)</b>) on the legacy page — a
-// stray ')' inside the bold. people.yml keeps the clean role; the quirk is
-// reproduced here so the rendered page does not change. Founder to confirm
-// the typo can be dropped.
-const ROLE_SUFFIX = { "armin-lari": ")" };
+// No per-id role suffixes. Armin Lari's legacy card had a stray ')' inside the
+// bold — (<b>MRes Y2 + PhD)</b>) — dropped 2026-07-08 at the founder's request.
+// people.yml holds the clean role, so his card now reads (MRes Y2 + PhD).
+const ROLE_SUFFIX = {};
 
 const personAlt = (p) =>
   ALT_OVERRIDE[p.id] ?? p.name.replace(/^(?:A\/)?(?:Prof|Dr)\.\s+/, "");

@@ -168,8 +168,8 @@ collections:
       - { name: title, label: Title, widget: string }
       - { name: teaser, label: Teaser, widget: text, hint: "One or two sentences shown in lists (max 280 characters)", pattern: ['^[\s\S]{1,280}$', "Must be 1-280 characters"] }
       - { name: link, label: "Link (optional)", widget: string, required: false, hint: "Where clicking the news card goes — a full https:// link. Leave empty to point at the news page." }
-      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMM YYYY", time_format: false, picker_utc: true, hint: "Day only — no time needed" }
-      - { name: badge, label: "Badge (optional)", widget: string, required: false, hint: "Small label on the home page, e.g. Upcoming, New, Award" }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMM YYYY", time_format: false, picker_utc: true, hint: "Day only — no time needed. A future date shows an 'Upcoming' badge automatically." }
+      - { name: kind, label: "Type (optional)", widget: string, required: false, hint: "Shown as a badge, e.g. event, keynote, workshop. Leave empty for no type badge." }
       - name: cover
         label: Cover image (optional)
         widget: object

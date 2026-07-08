@@ -1,5 +1,4 @@
 ---
-badge: Upcoming
 program: dsrl
 featured: true
 title: "From Coders to Orchestrators: Educating Software Engineers for the

@@ -47,7 +47,7 @@ const KIND_LABEL: Record<string, string> = {
           <li class="news-item">
             <div class="meta">
               <time datetime={e.data.date.toISOString().slice(0, 10)}>{fmt.format(e.data.date)}</time>
-              <span class={`badge badge-${e.data.kind}`}>{KIND_LABEL[e.data.kind] ?? e.data.kind}</span>
+              {e.data.kind && <span class={`badge badge-${e.data.kind}`}>{KIND_LABEL[e.data.kind] ?? e.data.kind}</span>}
             </div>
             <div class="title">{e.data.title}</div>
             {/* covers intentionally not rendered here — founder decision

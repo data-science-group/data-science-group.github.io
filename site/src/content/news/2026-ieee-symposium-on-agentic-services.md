@@ -1,5 +1,4 @@
 ---
-badge: Upcoming
 program: dsrl
 featured: true
 title: IEEE Symposium on Agentic Services
