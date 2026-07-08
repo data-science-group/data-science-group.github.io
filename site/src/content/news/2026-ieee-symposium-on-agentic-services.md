@@ -1,8 +1,8 @@
 ---
 title: IEEE Symposium on Agentic Services
-date: 2026-08-13T00:00:00.000+10:00
 teaser: |
   2026 IEEE World Congress on SERVICES (SERVICES 2026)
+date: 2026-07-13
 kind: event
 program: dsrl
 featured: true
