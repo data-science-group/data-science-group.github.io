@@ -140,7 +140,10 @@ export function renderNewsStrip() {
     const typeBadge = e.kind ? badgeSpan(kindLabel(e.kind), false) : "";
     const upBadge = e.date >= today ? badgeSpan("Upcoming", true) : "";
     const badges = [typeBadge, upBadge].filter(Boolean).join(" ");
-    const badgeP = badges ? `<p class="mt-3 mb-0">${badges}</p>\n              ` : "";
+    // Always render the badge line (non-breaking space when there are no
+    // badges) so every card's title starts at the same height — an empty line
+    // would collapse and pull the title up on badge-less cards.
+    const badgeP = `<p class="mt-3 mb-0">${badges || "&nbsp;"}</p>\n              `;
     return `          <div class="col-lg-4 col-md-6 mb-4">
             <a href="${esc(href)}"${external ? ' target="_blank"' : ""} style="text-decoration: none; color: inherit">
               ${img}${badgeP}<h4 class="dsl-news-title mt-2 mb-1">${esc(e.title)}</h4>
