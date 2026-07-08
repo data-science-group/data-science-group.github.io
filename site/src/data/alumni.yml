@@ -1,492 +1,527 @@
-# GENERATED from legacy index.html by scripts/extract-people.py on 2026-07-04 — founder review pending. Do not hand-edit while migration is in progress.
 alumni:
-  - id: "ali-shahsavandi"
-    name: "Ali Shahsavandi"
-    degree: "MRes Student"
+  - id: kiana-bagheri-lotfabad
+    name: Kiana Bagheri-Lotfabad
+    degree: MRes Student
     graduated: 2026
-    thesis: "Parameter-Efficient Spectral Test-Time Adaptation for Time-Series Forecasting"
+    thesis: Scalable Claim Verification with Weak Supervision and Controlled
+      Language Model Reasoning
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/alishahsvnd/"
-  - id: "marjan-baghgolshani"
-    name: "Marjan BaghGolshani"
-    degree: "MRes Student"
+      - Guanfeng Liu
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/kianabagheri/
+  - id: marjan-baghgolshani
+    name: Marjan BaghGolshani
+    degree: MRes Student
     graduated: 2026
-    thesis: "A Virtual Cell Framework for Predicting Gene Perturbations through Regulatory Network Inference"
+    thesis: A Virtual Cell Framework for Predicting Gene Perturbations through
+      Regulatory Network Inference
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/marjan-baghgolshani-0462a2125/"
-  - id: "kamyar-taeb"
-    name: "Kamyar Taeb"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/marjan-baghgolshani-0462a2125/
+  - id: parimehr-morassa-far
+    name: Parimehr Morassa Far
+    degree: MRes Student
     graduated: 2026
-    thesis: "Bridging Capacity Gaps in Knowledge Distillation through a Complementary Dual-Teacher Architecture"
+    thesis: Reliable Knowledge Graph Reasoning through Calibrated Trust Aggregation
+      and Selective Prediction
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/kamyar-taeb-1739051a4/"
-  - id: "parimehr-morassa-far"
-    name: "Parimehr Morassa Far"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/parimehr-morassafar-766a04195
+  - id: kamyar-taeb
+    name: Kamyar Taeb
+    degree: MRes Student
     graduated: 2026
-    thesis: "Reliable Knowledge Graph Reasoning through Calibrated Trust Aggregation and Selective Prediction"
+    thesis: Bridging Capacity Gaps in Knowledge Distillation through a Complementary
+      Dual-Teacher Architecture
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/parimehr-morassafar-766a04195"
-  - id: "kiana-bagheri-lotfabad"
-    name: "Kiana Bagheri-Lotfabad"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/kamyar-taeb-1739051a4/
+  - id: ali-shahsavandi
+    name: Ali Shahsavandi
+    degree: MRes Student
     graduated: 2026
-    thesis: "Scalable Claim Verification with Weak Supervision and Controlled Language Model Reasoning"
+    thesis: Parameter-Efficient Spectral Test-Time Adaptation for Time-Series
+      Forecasting
     supervisors:
-      - "Guanfeng Liu"
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/kianabagheri/"
-  - id: "meiyan-teng"
-    name: "Dr. Meiyan Teng"
-    degree: "Visiting PhD Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/alishahsvnd/
+  - id: meiyan-teng
+    name: Dr. Meiyan Teng
+    degree: Visiting PhD Student
     graduated: 2026
-    thesis: "Resource Allocation for Sequential Task Offloading in Edge Computing"
+    thesis: Resource Allocation for Sequential Task Offloading in Edge Computing
     supervisors:
-      - "Xuyun Zhang"
-    link: "https://www.linkedin.com/in/meiyan-teng-10b5b32b9"
-  - id: "junyan-li"
-    name: "Junyan Li"
-    degree: "MRes Student"
+      - Xuyun Zhang
+    link: https://www.linkedin.com/in/meiyan-teng-10b5b32b9
+  - id: junyan-li
+    name: Junyan Li
+    degree: MRes Student
     graduated: 2026
-    thesis: "Federated Anomaly Detection with Isolation Forest in the IoT Network"
+    thesis: Federated Anomaly Detection with Isolation Forest in the IoT Network
     supervisors:
-      - "Xuyun Zhang"
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/junyan-li-4992a1255"
-  - id: "adeem-ali-anwar"
-    name: "Dr. Adeem Ali Anwar"
-    degree: "PhD Student"
+      - Xuyun Zhang
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/junyan-li-4992a1255
+  - id: adeem-ali-anwar
+    name: Dr. Adeem Ali Anwar
+    degree: PhD Student
     graduated: 2026
-    thesis: "Selection Hyper-Heuristics Based Optimization for Many-Objective Problems"
+    thesis: Selection Hyper-Heuristics Based Optimization for Many-Objective Problems
     supervisors:
-      - "Xuyun Zhang"
-      - "Guanfeng Liu"
-  - id: "saleh-afzoon"
-    name: "Dr. Saleh Afzoon"
-    degree: "PhD Student"
+      - Xuyun Zhang
+      - Guanfeng Liu
+  - id: saleh-afzoon
+    name: Dr. Saleh Afzoon
+    degree: PhD Student
     graduated: 2026
-    thesis: "Benchmarking and Optimising Deep Learning Models for Personalised Response Classification and Generation"
+    thesis: Benchmarking and Optimising Deep Learning Models for Personalised
+      Response Classification and Generation
     supervisors:
-      - "Amin Beheshti"
-    award: "Applied AI Centre's 2025 Applied AI Impact Award"
-    link: "https://www.linkedin.com/in/saleh-afzoon-88452721a/"
-  - id: "masoud-safilian"
-    name: "Dr. Masoud Safilian"
-    degree: "PhD Student"
+      - Amin Beheshti
+    award: Applied AI Centre's 2025 Applied AI Impact Award
+    link: https://www.linkedin.com/in/saleh-afzoon-88452721a/
+  - id: masoud-safilian
+    name: Dr. Masoud Safilian
+    degree: PhD Student
     graduated: 2026
-    thesis: "Explainable and Scalable Rubric-Based Automated Scoring for Variable-Length Responses"
+    thesis: Explainable and Scalable Rubric-Based Automated Scoring for
+      Variable-Length Responses
     supervisors:
-      - "Amin Beheshti"
-    award: "Applied AI Centre's 2025 Excellence in Research and Innovation"
-    link: "https://www.linkedin.com/in/masoud-safilian-85384b48/"
-  - id: "maryam-shahabikargar-phd-student"
-    name: "Dr. Maryam Shahabikargar"
-    degree: "PhD Student"
+      - Amin Beheshti
+    award: Applied AI Centre's 2025 Excellence in Research and Innovation
+    link: https://www.linkedin.com/in/masoud-safilian-85384b48/
+  - id: maryam-shahabikargar-phd-student
+    name: Dr. Maryam Shahabikargar
+    degree: PhD Student
     graduated: 2025
-    thesis: "Learning Complex Customer Behaviours for Intelligent Recommendation and Customer Churn Prediction"
+    thesis: Learning Complex Customer Behaviours for Intelligent Recommendation and
+      Customer Churn Prediction
     supervisors:
-      - "Amin Beheshti"
-    award: "Applied AI Centre's 2025 Excellence in Dedication & Perseverance Award"
-    link: "https://www.linkedin.com/in/maryam-shahabikargar-206a4265/"
-  - id: "kexuan-xin"
-    name: "Dr. Kexuan Xin"
-    degree: "Postdoctoral Research Fellow"
+      - Amin Beheshti
+    award: Applied AI Centre's 2025 Excellence in Dedication & Perseverance Award
+    link: https://www.linkedin.com/in/maryam-shahabikargar-206a4265/
+  - id: kexuan-xin
+    name: Dr. Kexuan Xin
+    degree: Postdoctoral Research Fellow
     graduated: 2025
-    thesis: "Enhancing Human Reasoning with Generative AI: Personalized Digital Coach for Effective Feedback:"
+    thesis: "Enhancing Human Reasoning with Generative AI: Personalized Digital
+      Coach for Effective Feedback:"
     supervisors:
-      - "Shlomo Berkovsky"
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/kexuan-xin-27130215a/"
-  - id: "usman-shahbaz-phd-student"
-    name: "Dr. Usman Shahbaz"
-    degree: "PhD Student"
+      - Shlomo Berkovsky
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/kexuan-xin-27130215a/
+  - id: usman-shahbaz-phd-student
+    name: Dr. Usman Shahbaz
+    degree: PhD Student
     graduated: 2025
-    thesis: "Transparency Through Tensions: An Integrated Multi-Method Framework for Advanced Interpretations and Robust Auditing of Artificial Intelligence Systems"
+    thesis: "Transparency Through Tensions: An Integrated Multi-Method Framework for
+      Advanced Interpretations and Robust Auditing of Artificial Intelligence
+      Systems"
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/usmanshahbaz/"
-  - id: "aaron-gaskell"
-    name: "Aaron Gaskell"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/usmanshahbaz/
+  - id: aaron-gaskell
+    name: Aaron Gaskell
+    degree: MRes Student
     graduated: 2025
-    thesis: "Towards Understanding the Ethical and Operational Implications of Large Language Models in a Law Enforcement Environment"
+    thesis: Towards Understanding the Ethical and Operational Implications of Large
+      Language Models in a Law Enforcement Environment
     supervisors:
-      - "Amin Beheshti"
-  - id: "nasrin-shabani-phd-student"
-    name: "Dr. Nasrin Shabani"
-    degree: "PhD Student"
+      - Amin Beheshti
+  - id: nasrin-shabani-phd-student
+    name: Dr. Nasrin Shabani
+    degree: PhD Student
     graduated: 2025
-    thesis: "Deep Generative Models for Graph Summarization"
+    thesis: Deep Generative Models for Graph Summarization
     supervisors:
-      - "Amin Beheshti"
-      - "Jia Wu"
-    award: "Vice-Chancellor’s Commendation for PhD thesis (2025); Applied AI Centre's 2024 Excellence in Research and Innovation; Applied AI Centre's 2022 and 2024 Excelence in Service/Leadership."
-    link: "https://www.linkedin.com/in/nasrin-shabani-b5961b16a/"
-  - id: "majid-namazi"
-    name: "Dr. Majid Namazi"
-    degree: "Postdoctoral Research Fellow"
+      - Amin Beheshti
+      - Jia Wu
+    award: Vice-Chancellor’s Commendation for PhD thesis (2025); Applied AI Centre's
+      2024 Excellence in Research and Innovation; Applied AI Centre's 2022 and
+      2024 Excelence in Service/Leadership.
+    link: https://www.linkedin.com/in/nasrin-shabani-b5961b16a/
+  - id: majid-namazi
+    name: Dr. Majid Namazi
+    degree: Postdoctoral Research Fellow
     graduated: 2025
     thesis: "Dynamic Price Optimization Using Generative AI:"
     supervisors:
-      - "Amin Beheshti"
-  - id: "graeme-thomas"
-    name: "Graeme Thomas"
-    degree: "MPhil Student"
+      - Amin Beheshti
+  - id: graeme-thomas
+    name: Graeme Thomas
+    degree: MPhil Student
     graduated: 2025
-    thesis: "Privacy-Preserving Natural Language Processing Techniques in Healthcare Chatbots"
+    thesis: Privacy-Preserving Natural Language Processing Techniques in Healthcare
+      Chatbots
     supervisors:
-      - "Alireza Jolfaei"
-      - "Amin Beheshti"
-  - id: "afrooz-sheikholeslami"
-    name: "Afrooz Sheikholeslami"
-    degree: "Student"
+      - Alireza Jolfaei
+      - Amin Beheshti
+  - id: afrooz-sheikholeslami
+    name: Afrooz Sheikholeslami
+    degree: Student
     graduated: 2024
-    thesis: "Towards Unifying Knowledge Graphs and Large Language Models for Context-Aware Embeddings to Enhance Real Estate Analytics"
+    thesis: Towards Unifying Knowledge Graphs and Large Language Models for
+      Context-Aware Embeddings to Enhance Real Estate Analytics
     supervisors:
-      - "Amin Beheshti"
-  - id: "mehrdad-mansouri"
-    name: "Dr. Mehrdad Mansouri"
-    degree: "Postdoctoral Research Fellow"
+      - Amin Beheshti
+  - id: mehrdad-mansouri
+    name: Dr. Mehrdad Mansouri
+    degree: Postdoctoral Research Fellow
     graduated: 2025
-    thesis: "Causal Discovery for Predicting Severe Adverse Drug Reactions in Cancer Therapy:"
+    thesis: "Causal Discovery for Predicting Severe Adverse Drug Reactions in Cancer
+      Therapy:"
     supervisors:
-      - "Amin Beheshti"
-  - id: "jin-foo"
-    name: "Jin Foo"
-    degree: "MRes Student"
+      - Amin Beheshti
+  - id: jin-foo
+    name: Jin Foo
+    degree: MRes Student
     graduated: 2024
     thesis: "iTransact: Isolation Kernel-based Transaction Classification"
     supervisors:
-      - "Xuyun Xhang"
-      - "Amin Beheshti"
-    award: "Applied AI Centre's 2023 MRes Rising Star Award."
-    link: "https://www.linkedin.com/in/eu-jin-foo/"
-  - id: "enoch-chan"
-    name: "Enoch Chan"
-    degree: "MRes Student"
+      - Xuyun Xhang
+      - Amin Beheshti
+    award: Applied AI Centre's 2023 MRes Rising Star Award.
+    link: https://www.linkedin.com/in/eu-jin-foo/
+  - id: enoch-chan
+    name: Enoch Chan
+    degree: MRes Student
     graduated: 2024
-    thesis: "Towards Benchmarking Automated Machine Learning Frameworks in the Age of Generative AI"
+    thesis: Towards Benchmarking Automated Machine Learning Frameworks in the Age of
+      Generative AI
     supervisors:
-      - "Yuankai Qi"
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/enoch-chan-9090401b9/"
-  - id: "erfan-moshiri"
-    name: "Erfan Moshiri"
-    degree: "MRes Student"
+      - Yuankai Qi
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/enoch-chan-9090401b9/
+  - id: erfan-moshiri
+    name: Erfan Moshiri
+    degree: MRes Student
     graduated: 2024
-    thesis: "Towards Enhancing Data Imputation Techniques Through Graph Attention Autoencoder Models"
+    thesis: Towards Enhancing Data Imputation Techniques Through Graph Attention
+      Autoencoder Models
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/erfanmoshiri"
-  - id: "ambreen-hanif-phd-student"
-    name: "Dr. Ambreen Hanif"
-    degree: "PhD Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/erfanmoshiri
+  - id: ambreen-hanif-phd-student
+    name: Dr. Ambreen Hanif
+    degree: PhD Student
     graduated: 2024
-    thesis: "Towards Linking Storytelling and Explainable Artificial Intelligence for Enhanced Interpretation, Explanation, and Visualization of Deep Learning"
+    thesis: Towards Linking Storytelling and Explainable Artificial Intelligence for
+      Enhanced Interpretation, Explanation, and Visualization of Deep Learning
     supervisors:
-      - "Amin Beheshti"
-    award: "Applied AI Centre's 2023 and 2024 Excelence in Leadership."
-    link: "https://www.linkedin.com/in/ambreen16"
-  - id: "stephen-elbourn"
-    name: "Stephen Elbourn"
-    degree: "MRes Student"
+      - Amin Beheshti
+    award: Applied AI Centre's 2023 and 2024 Excelence in Leadership.
+    link: https://www.linkedin.com/in/ambreen16
+  - id: stephen-elbourn
+    name: Stephen Elbourn
+    degree: MRes Student
     graduated: 2024
-    thesis: "The Impact of Generative AI on Student Churn and the Future of Formal Education"
+    thesis: The Impact of Generative AI on Student Churn and the Future of Formal
+      Education
     supervisors:
-      - "Amin Beheshti"
-      - "Michael Sheng"
-    link: "https://www.linkedin.com/in/stephenelbourn"
-  - id: "nabi-rezvani"
-    name: "Dr. Nabi Rezvani"
-    degree: "PhD Student"
+      - Amin Beheshti
+      - Michael Sheng
+    link: https://www.linkedin.com/in/stephenelbourn
+  - id: nabi-rezvani
+    name: Dr. Nabi Rezvani
+    degree: PhD Student
     graduated: 2024
-    thesis: "Towards Contextualised Deep Learning Based Cyberbullying Detection"
+    thesis: Towards Contextualised Deep Learning Based Cyberbullying Detection
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/nabi-rezvani"
-  - id: "fariba-lotfi"
-    name: "Dr. Fariba Lotfi"
-    degree: "PhD Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/nabi-rezvani
+  - id: fariba-lotfi
+    name: Dr. Fariba Lotfi
+    degree: PhD Student
     graduated: 2024
-    thesis: "Enhancing Image Annotation Through Data Storytelling and Contextualization"
+    thesis: Enhancing Image Annotation Through Data Storytelling and Contextualization
     supervisors:
-      - "Amin Beheshti"
-      - "Mansour Jamzad"
-      - "Hamid Beigy"
-    award: "Vice-Chancellor’s Commendation for PhD thesis (2024), and Applied AI Centre's 2023 Excelence in Industry-Engaged Research."
-    link: "https://www.linkedin.com/in/fariba-lotfi-20960056/"
-  - id: "mahdieh-labani"
-    name: "Dr. Mahdieh Labani"
-    degree: "PhD Student"
+      - Amin Beheshti
+      - Mansour Jamzad
+      - Hamid Beigy
+    award: Vice-Chancellor’s Commendation for PhD thesis (2024), and Applied AI
+      Centre's 2023 Excelence in Industry-Engaged Research.
+    link: https://www.linkedin.com/in/fariba-lotfi-20960056/
+  - id: mahdieh-labani
+    name: Dr. Mahdieh Labani
+    degree: PhD Student
     graduated: 2024
-    thesis: "Linking Artificial Intelligence and Medical Data to Revolutionize Targeted Therapy"
+    thesis: Linking Artificial Intelligence and Medical Data to Revolutionize
+      Targeted Therapy
     supervisors:
-      - "Amin Beheshti"
-      - "Tracey O'Brien"
-    award: "Google PhD Fellowahip 2023; Applied AI Centre's 2023 PhD Rising Star Award; School of Computing's 2023 PhD Rising Star Award; Applied AI Centre's 2022 Excellence in Research and Innovation; and Vice-Chancellor’s Commendation for PhD thesis (2024)."
-    link: "https://www.linkedin.com/in/heidi-labani/"
-  - id: "helia-farhood"
-    name: "Dr. Helia Farhood"
-    degree: "Postdoctoral Research Fellow"
+      - Amin Beheshti
+      - Tracey O'Brien
+    award: Google PhD Fellowahip 2023; Applied AI Centre's 2023 PhD Rising Star
+      Award; School of Computing's 2023 PhD Rising Star Award; Applied AI
+      Centre's 2022 Excellence in Research and Innovation; and Vice-Chancellor’s
+      Commendation for PhD thesis (2024).
+    link: https://www.linkedin.com/in/heidi-labani/
+  - id: helia-farhood
+    name: Dr. Helia Farhood
+    degree: Postdoctoral Research Fellow
     graduated: 2023
-    thesis: "Intelligent Educational Knowledge Lake"
+    thesis: Intelligent Educational Knowledge Lake
     supervisors:
-      - "Amin Beheshti"
-    award: "Applied AI Centre's 2023 Excellence in Postgraduate Research Supervision."
-    link: "https://www.linkedin.com/in/helia-farhood-0473b316a/"
-  - id: "alireza-shammasi"
-    name: "Alireza Shammasi"
-    degree: "MRes Student"
+      - Amin Beheshti
+    award: Applied AI Centre's 2023 Excellence in Postgraduate Research Supervision.
+    link: https://www.linkedin.com/in/helia-farhood-0473b316a/
+  - id: alireza-shammasi
+    name: Alireza Shammasi
+    degree: MRes Student
     graduated: 2023
-    thesis: "Enhancing Data Imputation with Generative AI: Transforming Time Series through Image Processing"
+    thesis: "Enhancing Data Imputation with Generative AI: Transforming Time Series
+      through Image Processing"
     supervisors:
-      - "Amin Beheshti"
-    award: "Executive Dean's Commendation for Academic Excellence 2023, Applied AI Centre's 2023 MRes Rising Star Award."
-    link: "https://www.linkedin.com/in/alireza-shammasi-13b72824a/"
-  - id: "haolong-xiang"
-    name: "Dr. Haolong Xiang"
-    degree: "PhD Student"
+      - Amin Beheshti
+    award: Executive Dean's Commendation for Academic Excellence 2023, Applied AI
+      Centre's 2023 MRes Rising Star Award.
+    link: https://www.linkedin.com/in/alireza-shammasi-13b72824a/
+  - id: haolong-xiang
+    name: Dr. Haolong Xiang
+    degree: PhD Student
     graduated: 2023
-    thesis: "Isolation Forest Based Anomaly Detection with Learning to Hash"
+    thesis: Isolation Forest Based Anomaly Detection with Learning to Hash
     supervisors:
-      - "Xuyun Zhang"
-    award: "Applied AI Centre's 2023 Excellence in Research and Innovation."
-    link: "https://www.linkedin.com/in/haolong-xiang-a256b118b/"
-  - id: "anthony-shaw"
-    name: "Anthony Shaw"
-    degree: "MRes Student"
+      - Xuyun Zhang
+    award: Applied AI Centre's 2023 Excellence in Research and Innovation.
+    link: https://www.linkedin.com/in/haolong-xiang-a256b118b/
+  - id: anthony-shaw
+    name: Anthony Shaw
+    degree: MRes Student
     graduated: 2023
-    thesis: "Towards Evaluating Python as a Suitable Data Science Programming Language for Modern Computing Architecture"
+    thesis: Towards Evaluating Python as a Suitable Data Science Programming
+      Language for Modern Computing Architecture
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/anthonypshaw/"
-  - id: "kelley-yohe"
-    name: "Kelley Yohe"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/anthonypshaw/
+  - id: kelley-yohe
+    name: Kelley Yohe
+    degree: MRes Student
     graduated: 2023
-    thesis: "Towards Global, Socio-economic and Culturally Aware Recommender Systems"
+    thesis: Towards Global, Socio-economic and Culturally Aware Recommender Systems
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/kyohe"
-  - id: "francesco-schiliro"
-    name: "Dr. Francesco Schiliro"
-    degree: "PhD Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/kyohe
+  - id: francesco-schiliro
+    name: Dr. Francesco Schiliro
+    degree: PhD Student
     graduated: 2023
-    thesis: "Privacy and Security of Cognitive Augmentation in Policing"
+    thesis: Privacy and Security of Cognitive Augmentation in Policing
     supervisors:
-      - "Amin Beheshti"
-      - "Nour Mustafa"
-      - "Michael Sheng"
-    award: "Applied AI Centre's 2019 Research and Innovation Award."
-    link: "https://www.linkedin.com/in/frank-schiliro-macs-snr-cp-33433b33/"
-  - id: "matine-poushide"
-    name: "Matine Poushide"
-    degree: "MRes Student"
+      - Amin Beheshti
+      - Nour Mustafa
+      - Michael Sheng
+    award: Applied AI Centre's 2019 Research and Innovation Award.
+    link: https://www.linkedin.com/in/frank-schiliro-macs-snr-cp-33433b33/
+  - id: matine-poushide
+    name: Matine Poushide
+    degree: MRes Student
     graduated: 2023
-    thesis: "A Novel Active Solution for Two Dimensional Face Presentation Attack Detection"
+    thesis: A Novel Active Solution for Two Dimensional Face Presentation Attack
+      Detection
     supervisors:
-      - "Amin Beheshti"
-      - "?Helia Farhood"
-    award: "Applied AI Centre's 2022 Excellence in Industry-Engaged Research."
-    link: "https://www.linkedin.com/in/matinepoushide"
-  - id: "sahar-zeyveh"
-    name: "Sahar Zeyveh"
-    degree: "MRes Student"
+      - Amin Beheshti
+      - ?Helia Farhood
+    award: Applied AI Centre's 2022 Excellence in Industry-Engaged Research.
+    link: https://www.linkedin.com/in/matinepoushide
+  - id: sahar-zeyveh
+    name: Sahar Zeyveh
+    degree: MRes Student
     graduated: 2022
-    thesis: "Intent Recognition in Conversational Recommender Systems"
+    thesis: Intent Recognition in Conversational Recommender Systems
     supervisors:
-      - "Amin Beheshti"
-      - "Mehrdad Zakershahrak"
-  - id: "ivan-bakhshayeshi"
-    name: "Ivan Bakhshayeshi"
-    degree: "MRes Student"
+      - Amin Beheshti
+      - Mehrdad Zakershahrak
+  - id: ivan-bakhshayeshi
+    name: Ivan Bakhshayeshi
+    degree: MRes Student
     graduated: 2022
-    thesis: "Artificial Intelligence-enabled Livestock Recognition in Transport"
+    thesis: Artificial Intelligence-enabled Livestock Recognition in Transport
     supervisors:
-      - "Mohsen Asadnia"
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/iman-bakhshayeshi/"
-  - id: "maryam-shahabikargar-mres-student"
-    name: "Maryam Shahabikargar"
-    degree: "MRes Student"
+      - Mohsen Asadnia
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/iman-bakhshayeshi/
+  - id: maryam-shahabikargar-mres-student
+    name: Maryam Shahabikargar
+    degree: MRes Student
     graduated: 2022
-    thesis: "Towards Knowledge-based Mining of Mental Disorder Patterns from Textual Data"
+    thesis: Towards Knowledge-based Mining of Mental Disorder Patterns from Textual
+      Data
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/maryam-shahabikargar-206a4265/"
-  - id: "cathy-he"
-    name: "Cathy HE"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/maryam-shahabikargar-206a4265/
+  - id: cathy-he
+    name: Cathy HE
+    degree: MRes Student
     graduated: 2022
-    thesis: "Protecting Vehicular and Ad Hoc Networks from Advanced Persistent Threats"
+    thesis: Protecting Vehicular and Ad Hoc Networks from Advanced Persistent Threats
     supervisors:
-      - "Alireza Jolfaei"
-    link: "http://www.linkedin.com/in/cathyyihe"
-  - id: "alireza-jolfaei"
-    name: "Dr. Alireza Jolfaei"
-    degree: "Academic"
+      - Alireza Jolfaei
+    link: http://www.linkedin.com/in/cathyyihe
+  - id: alireza-jolfaei
+    name: Dr. Alireza Jolfaei
+    degree: Academic
     graduated: 2022
-    link: "https://www.linkedin.com/in/alireza-jolfaei-aa5851120/"
-  - id: "nasrin-shabani-mres-student"
-    name: "Nasrin Shabani"
-    degree: "MRes Student"
+    link: https://www.linkedin.com/in/alireza-jolfaei-aa5851120/
+  - id: nasrin-shabani-mres-student
+    name: Nasrin Shabani
+    degree: MRes Student
     graduated: 2022
-    thesis: "Towards Mining Creative Thinking Patterns from Educational Data"
+    thesis: Towards Mining Creative Thinking Patterns from Educational Data
     supervisors:
-      - "Amin Beheshti"
-      - "Helia Farhood"
-    link: "https://www.linkedin.com/in/nasrin-shabani-b5961b16a"
-  - id: "ambreen-hanif-mres-student"
-    name: "Ambreen Hanif"
-    degree: "MRes Student"
+      - Amin Beheshti
+      - Helia Farhood
+    link: https://www.linkedin.com/in/nasrin-shabani-b5961b16a
+  - id: ambreen-hanif-mres-student
+    name: Ambreen Hanif
+    degree: MRes Student
     graduated: 2022
-    thesis: "Towards Explainable Artificial Intelligence in Banking and Financial Services"
+    thesis: Towards Explainable Artificial Intelligence in Banking and Financial
+      Services
     supervisors:
-      - "Amin Beheshti"
-      - "Xuyun Zhang"
-    link: "https://www.linkedin.com/in/ambreen16"
-  - id: "fariborz-sobnmanesh"
-    name: "Dr. Fariborz Sobnmanesh"
-    degree: "Research Data Scientist"
+      - Amin Beheshti
+      - Xuyun Zhang
+    link: https://www.linkedin.com/in/ambreen16
+  - id: fariborz-sobnmanesh
+    name: Dr. Fariborz Sobnmanesh
+    degree: Research Data Scientist
     graduated: 2021
     thesis: "AI-enabled Industry: Challenges and Opportunity Study"
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/fsobhanmanesh/"
-  - id: "shuang-wang"
-    name: "Dr. Shuang Wang"
-    degree: "Postdoctoral Research Fellow"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/fsobhanmanesh/
+  - id: shuang-wang
+    name: Dr. Shuang Wang
+    degree: Postdoctoral Research Fellow
     graduated: 2021
-    thesis: "Linking Cognitive Technology and Sensory Systems to Support Personalized Learning"
+    thesis: Linking Cognitive Technology and Sensory Systems to Support Personalized
+      Learning
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/shuang-wang-643535200/"
-  - id: "samira-ghodratnama"
-    name: "Dr. Samira Ghodratnama"
-    degree: "Ph.D. Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/shuang-wang-643535200/
+  - id: samira-ghodratnama
+    name: Dr. Samira Ghodratnama
+    degree: Ph.D. Student
     graduated: 2021
-    thesis: "Towards Personalised and Human-in-the-Loop Document Summarisation"
+    thesis: Towards Personalised and Human-in-the-Loop Document Summarisation
     supervisors:
-      - "Amin Beheshti"
-    award: "Vice-Chancellor’s Commendation for PhD thesis; and Applied AI Centre's 2019 Research and Innovation Award."
-    link: "https://www.linkedin.com/in/samira-ghodratnama-46698977/"
-  - id: "tara-rouhollahi"
-    name: "Tara Rouhollahi"
-    degree: "MRes Student"
+      - Amin Beheshti
+    award: Vice-Chancellor’s Commendation for PhD thesis; and Applied AI Centre's
+      2019 Research and Innovation Award.
+    link: https://www.linkedin.com/in/samira-ghodratnama-46698977/
+  - id: tara-rouhollahi
+    name: Tara Rouhollahi
+    degree: MRes Student
     graduated: 2021
-    thesis: "Towards Artificial Intelligence Enabled Financial Crime Detection"
+    thesis: Towards Artificial Intelligence Enabled Financial Crime Detection
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/tara-rouhollahi/"
-  - id: "amin-edrisi"
-    name: "Amin Edrisi"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/tara-rouhollahi/
+  - id: amin-edrisi
+    name: Amin Edrisi
+    degree: MRes Student
     graduated: 2021
-    thesis: "Towards Dynamic Feature Selection with Attention to Assist Banking Customers in Establishing a New Business"
+    thesis: Towards Dynamic Feature Selection with Attention to Assist Banking
+      Customers in Establishing a New Business
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/amin-edrisi/"
-  - id: "nouna-khandan"
-    name: "Nouna Khandan"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/amin-edrisi/
+  - id: nouna-khandan
+    name: Nouna Khandan
+    degree: MRes Student
     graduated: 2021
-    thesis: "An Intelligent Hybrid Model for Identity Document Classification"
+    thesis: An Intelligent Hybrid Model for Identity Document Classification
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/nouna-khandan-2046001b2/"
-  - id: "shahpar-yakhchi"
-    name: "Dr. Shahpar Yakhchi"
-    degree: "Ph.D. Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/nouna-khandan-2046001b2/
+  - id: shahpar-yakhchi
+    name: Dr. Shahpar Yakhchi
+    degree: Ph.D. Student
     graduated: 2021
-    thesis: "Learning Complex Users' Preferences for Recommender Systems"
+    thesis: Learning Complex Users' Preferences for Recommender Systems
     supervisors:
-      - "Amin Beheshti"
-    award: "Applied AI Centre's 2019 Research and Innovation Award."
-    link: "https://www.linkedin.com/in/shahpar-yakhchi-a585b2114/"
-  - id: "salman-mousaeirad"
-    name: "Salman Mousaeirad"
-    degree: "MRes Student"
+      - Amin Beheshti
+    award: Applied AI Centre's 2019 Research and Innovation Award.
+    link: https://www.linkedin.com/in/shahpar-yakhchi-a585b2114/
+  - id: salman-mousaeirad
+    name: Salman Mousaeirad
+    degree: MRes Student
     graduated: 2021
-    thesis: "Intelligent Vector Based Customer Segmentation in the Banking Industry"
+    thesis: Intelligent Vector Based Customer Segmentation in the Banking Industry
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/salman-rad/"
-  - id: "alireza-bordbar"
-    name: "Dr. Alireza Bordbar"
-    degree: "Ph.D. Student and Research Fellow"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/salman-rad/
+  - id: alireza-bordbar
+    name: Dr. Alireza Bordbar
+    degree: Ph.D. Student and Research Fellow
     graduated: 2020
-    thesis: "Augmented Understanding and Automated Adaptation of Curation Rules"
+    thesis: Augmented Understanding and Automated Adaptation of Curation Rules
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/alireza-bordbar-38445464/"
-  - id: "sam-khadivizand"
-    name: "Sam Khadivizand"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/alireza-bordbar-38445464/
+  - id: sam-khadivizand
+    name: Sam Khadivizand
+    degree: MRes Student
     graduated: 2020
-    thesis: "Towards Intelligent Risk-based Customer Segmentation in Banking"
+    thesis: Towards Intelligent Risk-based Customer Segmentation in Banking
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/sam-khadivizand-18a16984"
-  - id: "mohssen-ghafari"
-    name: "Dr. Mohssen Ghafari"
-    degree: "Ph.D. Student and Research Fellow"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/sam-khadivizand-18a16984
+  - id: mohssen-ghafari
+    name: Dr. Mohssen Ghafari
+    degree: Ph.D. Student and Research Fellow
     graduated: 2020
-    thesis: "Towards Time-Aware Context-Aware Deep Trust Prediction in Online Social Networks"
+    thesis: Towards Time-Aware Context-Aware Deep Trust Prediction in Online Social
+      Networks
     supervisors:
-      - "Amin Beheshti"
-    award: "Applied AI Centre's 2018 Research and Innovation Award."
-    link: "https://www.linkedin.com/in/mohssen-ghafari-1090587b"
-  - id: "usman-shahbaz-mres-student"
-    name: "Usman Shahbaz"
-    degree: "MRes Student"
+      - Amin Beheshti
+    award: Applied AI Centre's 2018 Research and Innovation Award.
+    link: https://www.linkedin.com/in/mohssen-ghafari-1090587b
+  - id: usman-shahbaz-mres-student
+    name: Usman Shahbaz
+    degree: MRes Student
     graduated: 2020
-    thesis: "Towards Automating the Recruitment Process"
+    thesis: Towards Automating the Recruitment Process
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/usmanshahbaz"
-  - id: "farhad-amouzgar"
-    name: "Farhad Amouzgar"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/usmanshahbaz
+  - id: farhad-amouzgar
+    name: Farhad Amouzgar
+    degree: MRes Student
     graduated: 2020
-    thesis: "Deep Reinforcement Learning As Text Generator In Image Captioning"
+    thesis: Deep Reinforcement Learning As Text Generator In Image Captioning
     supervisors:
-      - "Amin Beheshti"
-      - "Mark Dras"
-    link: "https://www.linkedin.com/in/fred-amouzgar-400418162/"
-  - id: "frank-schiliro"
-    name: "Frank Schiliro"
-    degree: "MRes Student"
+      - Amin Beheshti
+      - Mark Dras
+    link: https://www.linkedin.com/in/fred-amouzgar-400418162/
+  - id: frank-schiliro
+    name: Frank Schiliro
+    degree: MRes Student
     graduated: 2020
-    thesis: "Internet of Things Enabled Policing Processes"
+    thesis: Internet of Things Enabled Policing Processes
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/frank-schiliro-macs-snr-cp-33433b33/"
-  - id: "vahid-moraveji"
-    name: "Vahid Moraveji"
-    degree: "MRes Student"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/frank-schiliro-macs-snr-cp-33433b33/
+  - id: vahid-moraveji
+    name: Vahid Moraveji
+    degree: MRes Student
     graduated: 2020
     thesis: "Social influence and radicalization: a social data analytics study"
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/vahid-moraveji-baaa3933/"
-  - id: "negin-hesam-shariati"
-    name: "Dr. Negin Hesam-Shariati"
-    degree: "Research Fellow"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/vahid-moraveji-baaa3933/
+  - id: negin-hesam-shariati
+    name: Dr. Negin Hesam-Shariati
+    degree: Research Fellow
     graduated: 2019
-    thesis: "Linking Cognitive Science and Data Science"
+    thesis: Linking Cognitive Science and Data Science
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/negin-hesamshariati/"
-  - id: "sami-ghodratnama"
-    name: "Dr. Sami Ghodratnama"
-    degree: "Research Fellow"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/negin-hesamshariati/
+  - id: sami-ghodratnama
+    name: Dr. Sami Ghodratnama
+    degree: Research Fellow
     graduated: 2019
-    thesis: "Storytelling with Image Data"
+    thesis: Storytelling with Image Data
     supervisors:
-      - "Amin Beheshti"
-    link: "https://www.linkedin.com/in/samighodratnama/"
+      - Amin Beheshti
+    link: https://www.linkedin.com/in/samighodratnama/
