@@ -9,9 +9,6 @@ program: dsrl
 featured: true
 badge: Upcoming
 cover:
-  image: https://services.conferences.computer.org/2026/elementor-1032/
+  image: /uploads/1781833156387.jpeg
   alt: IEEE SERVICES
-source:
-  label: LinkedIn post
-  canonical: false
 ---

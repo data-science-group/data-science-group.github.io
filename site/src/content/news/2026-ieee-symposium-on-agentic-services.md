@@ -10,7 +10,4 @@ badge: Upcoming
 cover:
   image: /uploads/1781833156387.jpeg
   alt: IEEE World Congress on SERVICES
-source:
-  label: LinkedIn post
-  canonical: false
 ---

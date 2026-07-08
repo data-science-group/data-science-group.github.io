@@ -161,43 +161,23 @@ collections:
     create: true
     slug: "{{year}}-{{slug}}"
     summary: "{{title}} ({{date | date('DD MMM YYYY')}})"
+    # Deliberately minimal (founder 2026-07-08): just the essentials. The home
+    # page picks what to show automatically by date, the image's alt text is the
+    # title, and the type/program/etc. are handled by sensible schema defaults.
     fields:
       - { name: title, label: Title, widget: string }
-      - { name: date, label: Date, widget: datetime }
       - { name: teaser, label: Teaser, widget: text, hint: "One or two sentences shown in lists (max 280 characters)", pattern: ['^[\s\S]{1,280}$', "Must be 1-280 characters"] }
-      - name: kind
-        label: Kind
-        widget: select
-        options: ["lab-news", "tech-news", "linkedin-mirror", "event", "award", "publication", "keynote"]
-        default: "lab-news"
-      - name: program
-        label: Program
-        widget: select
-        options: ["dsrl", "bds", "aipa", "aiple", "biofm"]
-        default: "dsrl"
-      - { name: featured, label: "Show on the main page", widget: boolean, default: false, required: false, hint: "Featured entries replace the automatic upcoming selection on the home page" }
-      - { name: badge, label: "Main-page badge (optional)", widget: string, required: false, hint: "e.g. Upcoming, New, Award — red badge shown next to the type on the home page" }
-      - { name: author, label: Author (optional), widget: string, required: false }
-      - { name: tags, label: Tags (optional), widget: list, required: false, max: 5 }
+      - { name: link, label: "Link (optional)", widget: string, required: false, hint: "Where clicking the news card goes — a full https:// link. Leave empty to point at the news page." }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMM YYYY", time_format: false, picker_utc: true, hint: "Day only — no time needed" }
+      - { name: badge, label: "Badge (optional)", widget: string, required: false, hint: "Small label on the home page, e.g. Upcoming, New, Award" }
       - name: cover
         label: Cover image (optional)
         widget: object
         required: false
         collapsed: true
+        hint: "Shown on the moving news row on the home page. Its alt text is set to the title automatically."
         fields:
-          - { name: image, label: Image, widget: image }
-          - { name: alt, label: What the image shows (required with an image), widget: string }
-      - name: source
-        label: Source attribution (optional)
-        widget: object
-        required: false
-        collapsed: true
-        hint: "For manual reposts of the lab's own LinkedIn posts — never scraped content"
-        fields:
-          - { name: label, label: Label, widget: string, default: "LinkedIn post", required: false }
-          - { name: url, label: URL, widget: string, required: false }
-          - { name: canonical, label: Canonical source, widget: boolean, default: false, required: false }
-      - { name: body, label: Body (optional), widget: markdown, required: false }
+          - { name: image, label: Image, widget: image, required: false }
 
   - name: workshops
     label: "Workshops & events"

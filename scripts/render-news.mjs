@@ -52,7 +52,7 @@ const yaml = createRequire(path.join(ROOT, "site", "package.json"))("js-yaml");
 const NEWS_DIR = path.join(ROOT, "site", "src", "content", "news");
 const START = "<!-- ADMIN:news-strip:start -->";
 const END = "<!-- ADMIN:news-strip:end -->";
-const FALLBACK_COUNT = 3;
+const STRIP_MAX = 9; // most cards the moving home strip shows before looping
 
 const esc = (s) =>
   String(s)
@@ -94,26 +94,23 @@ const humanDate = (iso) => {
   }).format(new Date(Date.UTC(y, m - 1, d)));
 };
 
-/** Pick the strip's items: admin-featured entries ("Show on the main page")
- *  when any exist; otherwise upcoming events/keynotes; otherwise 3 most recent. */
+/** Pick the strip's items automatically from dates (founder decision
+ *  2026-07-08: no manual curation — the admin just adds news):
+ *    upcoming entries (future date) soonest-first, then the most recent past
+ *    entries newest-first, capped at STRIP_MAX. */
 function collectStrip() {
   const entries = readEntries();
   const today = todaySydney();
   const isFuture = (e) => e.date >= today;
-  const featured = entries.filter((e) => e.featured === true);
-  if (featured.length > 0) {
-    const future = featured.filter(isFuture).sort((a, b) => a.date.localeCompare(b.date));
-    const past = featured.filter((e) => !isFuture(e)).sort((a, b) => b.date.localeCompare(a.date));
-    return { mode: "featured", items: [...future, ...past], today };
-  }
+  const byTitle = (a, b) => String(a.title).localeCompare(String(b.title));
   const upcoming = entries
-    .filter((e) => (e.kind === "event" || e.kind === "keynote") && isFuture(e))
-    .sort((a, b) => a.date.localeCompare(b.date) || String(a.title).localeCompare(String(b.title)));
-  if (upcoming.length > 0) return { mode: "upcoming", items: upcoming, today };
+    .filter(isFuture)
+    .sort((a, b) => a.date.localeCompare(b.date) || byTitle(a, b));
   const recent = entries
-    .sort((a, b) => b.date.localeCompare(a.date) || String(a.title).localeCompare(String(b.title)))
-    .slice(0, FALLBACK_COUNT);
-  return { mode: "fallback", items: recent, today };
+    .filter((e) => !isFuture(e))
+    .sort((a, b) => b.date.localeCompare(a.date) || byTitle(a, b));
+  const items = [...upcoming, ...recent].slice(0, STRIP_MAX);
+  return { mode: upcoming.length ? "upcoming" : "recent", items, today };
 }
 
 const badgeSpan = (text, red) =>
@@ -121,18 +118,23 @@ const badgeSpan = (text, red) =>
 
 // Uniform card: image, TYPE badge first (founder: the event type must open the
 // sentence), title clamped to a fixed block, date always at the same level.
-// Cards link to the EVENT page (source.url) when the entry has one — the
-// lab news page is reachable via the "All news" button (founder decision).
+// Cards link to the entry's `link` (falling back to a legacy `source.url`) when
+// present — the lab news page is reachable via the "All news" button.
+// The cards live inside a moving row (.dsl-marquee) so News auto-glides just
+// like Projects and Around-the-Lab; the marquee controller in index.html adds
+// arrows + drag and honours prefers-reduced-motion.
 export function renderNewsStrip() {
   const { mode, items, today } = collectStrip();
   const kindLabel = (k) => (k || "news").replace(/-/g, " ");
   const card = (e) => {
+    // alt defaults to the title (admin never types alt); a stored alt still wins
     const img = e.cover && e.cover.image
-      ? `<img class="img-fluid" src="${esc(String(e.cover.image).replace(/^\//, ""))}" alt="" style="width: 100%; height: 170px; object-fit: contain; background: #fff; padding: 10px" />
+      ? `<img class="img-fluid" src="${esc(String(e.cover.image).replace(/^\//, ""))}" alt="${esc((e.cover && e.cover.alt) || e.title)}" style="width: 100%; height: 170px; object-fit: contain; background: #fff; padding: 10px" />
               `
       : "";
-    const external = e.source && e.source.url;
-    const href = external ? String(e.source.url) : `news/#y${e.date.slice(0, 4)}`;
+    const link = e.link || (e.source && e.source.url);
+    const external = Boolean(link);
+    const href = external ? String(link) : `news/#y${e.date.slice(0, 4)}`;
     // red badge: the admin's custom badge wins; otherwise automatic "Upcoming"
     const red = e.badge ? String(e.badge) : e.date >= today ? "Upcoming" : "";
     const badges = badgeSpan(kindLabel(e.kind), false) + (red ? " " + badgeSpan(red, true) : "");
@@ -144,8 +146,10 @@ export function renderNewsStrip() {
             </a>
           </div>`;
   };
-  return `        <div class="row justify-content-center">
+  return `        <div class="dsl-marquee" data-direction="right">
+          <div class="dsl-marquee-track">
 ${items.map(card).join("\n")}
+          </div>
         </div>
         <div class="text-center mt-2">
           <a class="btn btn-outline-secondary rounded-pill" href="news/">All news</a>

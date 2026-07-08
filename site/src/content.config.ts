@@ -80,10 +80,14 @@ const news = defineCollection({
     author: z.string().optional(), // people.yml id where possible
     contributors: z.array(z.string()).default([]),
     tags: z.array(z.string()).max(5).default([]),
+    link: z.string().optional(), // where the home-page card points; lenient by
+    // design — a malformed paste must never fail the build (empty → news page)
     cover: z
       .object({
-        image: z.string(),
-        alt: z.string(), // specific, factual alt text — required with any image
+        // both optional: an empty cover object from the CMS is harmless, and
+        // the alt text defaults to the title at render time (admin never types it)
+        image: z.string().optional(),
+        alt: z.string().optional(),
       })
       .optional(),
     source: z

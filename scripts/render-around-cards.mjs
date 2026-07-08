@@ -46,7 +46,7 @@ export function renderCards() {
               <p class="text-muted mb-0">${esc(c.description)}</p>
             </a>
           </div>`;
-  return `        <div class="dsl-marquee">
+  return `        <div class="dsl-marquee" data-direction="right">
           <div class="dsl-marquee-track">
 ${cards.map(card).join("\n")}
           </div>

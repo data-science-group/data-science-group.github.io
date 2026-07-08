@@ -1,5 +1,46 @@
 # GENERATED from legacy index.html by scripts/extract-people.py on 2026-07-04 — founder review pending. Do not hand-edit while migration is in progress.
 alumni:
+  - id: "ali-shahsavandi"
+    name: "Ali Shahsavandi"
+    degree: "MRes Student"
+    graduated: 2026
+    thesis: "Parameter-Efficient Spectral Test-Time Adaptation for Time-Series Forecasting"
+    supervisors:
+      - "Amin Beheshti"
+    link: "https://www.linkedin.com/in/alishahsvnd/"
+  - id: "marjan-baghgolshani"
+    name: "Marjan BaghGolshani"
+    degree: "MRes Student"
+    graduated: 2026
+    thesis: "A Virtual Cell Framework for Predicting Gene Perturbations through Regulatory Network Inference"
+    supervisors:
+      - "Amin Beheshti"
+    link: "https://www.linkedin.com/in/marjan-baghgolshani-0462a2125/"
+  - id: "kamyar-taeb"
+    name: "Kamyar Taeb"
+    degree: "MRes Student"
+    graduated: 2026
+    thesis: "Bridging Capacity Gaps in Knowledge Distillation through a Complementary Dual-Teacher Architecture"
+    supervisors:
+      - "Amin Beheshti"
+    link: "https://www.linkedin.com/in/kamyar-taeb-1739051a4/"
+  - id: "parimehr-morassa-far"
+    name: "Parimehr Morassa Far"
+    degree: "MRes Student"
+    graduated: 2026
+    thesis: "Reliable Knowledge Graph Reasoning through Calibrated Trust Aggregation and Selective Prediction"
+    supervisors:
+      - "Amin Beheshti"
+    link: "https://www.linkedin.com/in/parimehr-morassafar-766a04195"
+  - id: "kiana-bagheri-lotfabad"
+    name: "Kiana Bagheri-Lotfabad"
+    degree: "MRes Student"
+    graduated: 2026
+    thesis: "Scalable Claim Verification with Weak Supervision and Controlled Language Model Reasoning"
+    supervisors:
+      - "Guanfeng Liu"
+      - "Amin Beheshti"
+    link: "https://www.linkedin.com/in/kianabagheri/"
   - id: "meiyan-teng"
     name: "Dr. Meiyan Teng"
     degree: "Visiting PhD Student"
