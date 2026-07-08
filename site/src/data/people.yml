@@ -62,35 +62,35 @@ people:
       linkedin: https://www.linkedin.com/in/habibah/
   - id: kiana-bagheri
     name: Kiana Bagheri
-    role: PhD
+    role: PhD Student
     group: phd
     photo: img/people/KianaB.jpg
     links:
       linkedin: https://www.linkedin.com/in/kianabagheri/
   - id: marjan-baghgolshani
     name: Marjan BaghGolshani
-    role: PhD
+    role: PhD Student
     group: phd
     photo: img/people/MarjanB.jpg
     links:
       linkedin: https://www.linkedin.com/in/marjan-baghgolshani-0462a2125/
   - id: parimehr-morassafar
     name: Parimehr Morassafar
-    role: PhD
+    role: PhD Student
     group: phd
     photo: img/people/parimehr.jpg
     links:
       linkedin: https://www.linkedin.com/in/parimehr-morassafar-766a04195
   - id: kamyar-taeb
     name: Kamyar Taeb
-    role: PhD
+    role: PhD Student
     group: phd
     photo: img/people/kamyarT.JPG
     links:
       linkedin: https://www.linkedin.com/in/kamyar-taeb-1739051a4/
   - id: ali-shahsavandi
     name: Ali Shahsavandi
-    role: PhD
+    role: PhD Student
     group: phd
     photo: img/people/AliS.jpg
     links:
