@@ -135,16 +135,15 @@ export function renderNewsStrip() {
     const link = e.link || (e.source && e.source.url);
     const external = Boolean(link);
     const href = external ? String(link) : `news/#y${e.date.slice(0, 4)}`;
-    // Type badge only when the admin set a type; "Upcoming" is automatic for
-    // any future-dated entry — never a stored/manual badge.
+    // Type badge is static (it never changes). "Upcoming" is intentionally NOT
+    // baked in here — it is added in the browser from data-news-date (see the
+    // news-upcoming script in index.html) so it reflects the real date at view
+    // time and can never go stale between the weekly rebuilds. The badge line is
+    // always rendered (non-breaking space when empty) so every card's title
+    // starts at the same height regardless of which badges it ends up with.
     const typeBadge = e.kind ? badgeSpan(kindLabel(e.kind), false) : "";
-    const upBadge = e.date >= today ? badgeSpan("Upcoming", true) : "";
-    const badges = [typeBadge, upBadge].filter(Boolean).join(" ");
-    // Always render the badge line (non-breaking space when there are no
-    // badges) so every card's title starts at the same height — an empty line
-    // would collapse and pull the title up on badge-less cards.
-    const badgeP = `<p class="mt-3 mb-0">${badges || "&nbsp;"}</p>\n              `;
-    return `          <div class="col-lg-4 col-md-6 mb-4">
+    const badgeP = `<p class="mt-3 mb-0 dsl-news-badges">${typeBadge || "&nbsp;"}</p>\n              `;
+    return `          <div class="col-lg-4 col-md-6 mb-4" data-news-date="${esc(e.date)}">
             <a href="${esc(href)}"${external ? ' target="_blank"' : ""} style="text-decoration: none; color: inherit">
               ${img}${badgeP}<h4 class="dsl-news-title mt-2 mb-1">${esc(e.title)}</h4>
               <p class="text-muted mb-0">${esc(humanDate(e.date))}</p>
