@@ -150,7 +150,7 @@ export function renderNewsStrip() {
             </a>
           </div>`;
   };
-  return `        <div class="dsl-marquee" data-direction="right">
+  return `        <div class="dsl-marquee" data-direction="left">
           <div class="dsl-marquee-track">
 ${items.map(card).join("\n")}
           </div>

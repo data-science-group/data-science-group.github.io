@@ -413,20 +413,6 @@ people:
     photo: img/people/GhazalK.jpg
     links:
       linkedin: https://www.linkedin.com/in/ghazalkalhori/
-  - id: mobin-roohi
-    name: Mobin Roohi
-    role: Research Internship
-    group: interns
-    photo: img/people/MobinR.jpg
-    links:
-      linkedin: https://www.linkedin.com/in/mobin-roohi-0a91b8216/
-  - id: omid-tarabavar
-    name: Omid Tarabavar
-    role: Research Internship
-    group: interns
-    photo: img/people/Tarabavar.jpg
-    links:
-      linkedin: https://www.linkedin.com/in/omidtarabavar/
   - id: sobhan-salarian
     name: Sobhan Salarian
     role: Research Internship
@@ -434,13 +420,6 @@ people:
     photo: img/people/SobhanS.jpg
     links:
       linkedin: https://www.linkedin.com/in/sobhansalarian/
-  - id: mohammadali-pashanj
-    name: MohammadAli Pashanj
-    role: Research Internship
-    group: interns
-    photo: img/people/MohammadPas.jpg
-    links:
-      linkedin: https://www.linkedin.com/in/mohammad-ali-pashanj/
   - id: alireza-bahrololoom
     name: Alireza Bahrololoom
     role: Research Internship
