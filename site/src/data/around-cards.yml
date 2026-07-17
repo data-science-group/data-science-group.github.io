@@ -1,26 +1,27 @@
 cards:
-  - badge: Upcoming
-    external: true
-    assignee: null
-    visible: true
-    title: BioFM'26
-    link: BioFM/2026/
-    id: biofm-2026
-    image: img/aroundthelab/sign-biofm26.png
-    description: 2nd International Workshop on Foundation Models for Biology and
-      Bioinnovation — IEEE ICDM 2026, Shenyang, 12–15 November 2026. Call for
-      papers open.
   - badge: null
     external: true
     assignee: null
     visible: true
     title: AI-PA Workshop Series
-    link: AIPA_workshop/2025/
+    link: AIPA_workshop/2026/
     id: aipa-series
     image: img/aroundthelab/sign-aipa.png
-    description: International Workshop on AI-enabled Process Automation — six
-      editions (2020–2025) co-located with ICSOC, with sponsors including
+    description: International Workshop on AI-enabled Process Automation — seven
+      editions (2020–2026) co-located with ICSOC, with sponsors including
       Google, Microsoft, AWS, Fujitsu and IBM.
+  - badge: null
+    external: true
+    assignee: null
+    visible: true
+    title: BioFM Workshop Series
+    link: BioFM/2026/
+    id: biofm-series
+    image: img/aroundthelab/sign-biofm26.png
+    description: International Workshop on Foundation Models for Biology and
+      Bioinnovation — co-located with IEEE ICDM (BioFM'25 in Washington DC 2025,
+      BioFM'26 in Shenyang 2026), sponsored by the Centre for Applied AI and
+      Collective Learning AI.
   - badge: null
     external: true
     assignee: null
@@ -31,26 +32,6 @@ cards:
     image: img/aroundthelab/sign-bds.png
     description: The student society founded at the lab — hackathons, tutorials and
       industry events since 2018.
-  - badge: null
-    external: true
-    assignee: null
-    visible: true
-    title: AI-PLE 2021
-    link: AIPLE_Workshop/2021/
-    id: aiple-2021
-    image: img/aroundthelab/sign-aiple.png
-    description: International Workshop on AI-enabled Policing and Law Enforcement —
-      IEEE EDOC 2021, co-chaired with the Australian Federal Police.
-  - badge: null
-    external: true
-    assignee: null
-    visible: true
-    title: BioFM'25
-    link: BioFM/2025/
-    id: biofm-2025
-    image: img/aroundthelab/sign-biofm25.png
-    description: 1st International Workshop on Foundation Models for Biology and
-      Bioinnovation — IEEE ICDM 2025, Washington DC.
   - badge: null
     external: true
     assignee: null
