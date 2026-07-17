@@ -369,7 +369,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4" data-news-date="2026-12-01">
             <a href="https://data-science-group.github.io/AIPA_workshop/2026/" target="_blank" style="text-decoration: none; color: inherit">
-              <img class="img-fluid" src="img/aroundthelab/sign-aipa.png" alt="AI-PA 2026 workshop" style="width: 100%; height: 170px; object-fit: contain; background: #fff; padding: 10px" />
+              <img class="img-fluid" src="img/aroundthelab/sign-aipa26.png" alt="AI-PA 2026 workshop" style="width: 100%; height: 170px; object-fit: contain; background: #fff; padding: 10px" />
               <p class="mt-3 mb-0 dsl-news-badges"><span style="background: #2c3e50; color: #fff; font-size: 0.7rem; padding: 3px 10px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.04em">workshop</span></p>
               <h4 class="dsl-news-title mt-2 mb-1">AI-PA 2026 &mdash; 7th International Workshop on AI-enabled Process Automation</h4>
               <p class="text-muted mb-0">1 December 2026</p>
@@ -707,7 +707,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <a href="BioFM/2026/" target="_blank" style="text-decoration: none; color: inherit">
-              <img class="img-fluid" src="img/aroundthelab/sign-biofm26.png" alt="" style="width: 100%; height: 170px; object-fit: cover" />
+              <img class="img-fluid" src="img/aroundthelab/sign-biofm.png" alt="" style="width: 100%; height: 170px; object-fit: cover" />
               <h4 class="mt-3 mb-1">BioFM Workshop Series</h4>
               <p class="text-muted mb-0">International Workshop on Foundation Models for Biology and Bioinnovation &mdash; co-located with IEEE ICDM (BioFM'25 in Washington DC 2025, BioFM'26 in Shenyang 2026), sponsored by the Centre for Applied AI and Collective Learning AI.</p>
             </a>
@@ -2521,15 +2521,27 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
       <script>
-      // "Upcoming" news badge — computed in the browser from each card's
-      // data-news-date, so it reflects the real date on every page load and
-      // never goes stale between the weekly rebuilds. Runs BEFORE the marquee
-      // controller so the duplicated track inherits the badges.
+      // News ordering + "Upcoming" badge — both computed in the browser from
+      // each card's data-news-date, so they reflect the real date on every page
+      // load and never go stale between the weekly rebuilds. Runs BEFORE the
+      // marquee controller so the duplicated track inherits the order + badges.
       (function () {
         var today = new Intl.DateTimeFormat("en-CA", { timeZone: "Australia/Sydney" }).format(new Date());
-        document.querySelectorAll(".News [data-news-date]").forEach(function (card) {
+        var track = document.querySelector(".News .dsl-marquee-track");
+        if (!track) return;
+        var cards = [].slice.call(track.children);
+        // Order: upcoming (future) first, soonest-first; then past, newest-first.
+        cards.sort(function (a, b) {
+          var da = a.getAttribute("data-news-date") || "", db = b.getAttribute("data-news-date") || "";
+          var fa = da >= today, fb = db >= today;
+          if (fa !== fb) return fa ? -1 : 1;
+          return fa ? da.localeCompare(db) : db.localeCompare(da);
+        });
+        cards.forEach(function (c) { track.appendChild(c); });
+        // "Upcoming" badge for any future-dated card.
+        cards.forEach(function (card) {
           var d = card.getAttribute("data-news-date");
-          if (!d || d < today) return; // past event → no "Upcoming" badge
+          if (!d || d < today) return;
           var line = card.querySelector(".dsl-news-badges");
           if (!line || line.querySelector(".dsl-upcoming")) return;
           var b = document.createElement("span");
