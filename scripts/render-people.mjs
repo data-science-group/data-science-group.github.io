@@ -65,6 +65,11 @@ const ALT_OVERRIDE = {
 // people.yml holds the clean role, so his card now reads (MRes Y2 + PhD).
 const ROLE_SUFFIX = {};
 
+// Per-person name font size, keyed by people.yml id. The card is a fixed 180px
+// wide, so a long name wraps awkwardly at the inherited 16px — nudging it down
+// a point keeps the card tidy. Everyone else renders at the default size.
+const NAME_FONT_SIZE = { "niranjana-mangaleswaran": "15px" };
+
 const personAlt = (p) =>
   ALT_OVERRIDE[p.id] ?? p.name.replace(/^(?:A\/)?(?:Prof|Dr)\.\s+/, "");
 
@@ -77,13 +82,16 @@ export function renderPeople() {
     const role = SPAN_ROLE.has(p.id)
       ? `<span class="auto-style1">${esc(p.role)}</span>`
       : `<b>${esc(p.role)}${ROLE_SUFFIX[p.id] ?? ""}</b>`;
+    const name = NAME_FONT_SIZE[p.id]
+      ? `<span style="font-size: ${NAME_FONT_SIZE[p.id]}">${esc(p.name)}</span>`
+      : esc(p.name);
     return `          <div class="col-md-4 col-lg-2">
             <div class="gallery">
               ${open}
                 <img src="${esc(p.photo)}" alt="${esc(personAlt(p))}" width="50" />
               </a>
               <div class="desc">
-                ${esc(p.name)}<br />
+                ${name}<br />
                 (${role})
               </div>
             </div>
