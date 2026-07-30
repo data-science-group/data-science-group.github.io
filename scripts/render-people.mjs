@@ -49,7 +49,7 @@ const esc = (s) =>
 // the usual (<b>…</b>) — exactly as on the legacy page.
 const SPAN_ROLE = new Set([
   "xuyun-zhang", "jian-yang", "jia-wu", "emma-xue", "yuankai-qi",
-  "jing-du", "habiba-habiba",
+  "jing-du", "habiba-habiba", "congbo-ma",
 ]);
 
 // img alt text on the legacy page where it does NOT equal the person's name

@@ -60,6 +60,13 @@ people:
     photo: img/people/Habiba.jpg
     links:
       linkedin: https://www.linkedin.com/in/habibah/
+  - id: niranjana-mangaleswaran
+    name: Niranjana Mangaleswaran
+    role: PhD Student
+    group: phd
+    photo: img/people/Niranjana.jpeg
+    links:
+      linkedin: https://www.linkedin.com/in/niranjanam/
   - id: kiana-bagheri
     name: Kiana Bagheri
     role: PhD Student
