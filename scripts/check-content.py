@@ -28,7 +28,7 @@ TEXT_EXT = {".html", ".htm", ".md", ".yml", ".yaml", ".json", ".js", ".mjs", ".t
 DOC_EXT = {".docx", ".doc", ".dotx", ".potx", ".xlsx"}
 DOC_ALLOW = {  # repo-relative paths of legitimately published student resources (inventory: KEEP)
     "MQ_Assessment_Form.docx",
-    "weekly-report.doc",
+    "weekly-report.docx",
     "people/aminbeheshti/internship/MQ_Assessment_Form.docx",
     "people/aminbeheshti/DataScienceProject/mid-report-structure.docx",
     "people/aminbeheshti/DataScienceProject/midreport-structure.docx",

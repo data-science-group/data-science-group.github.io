@@ -48,7 +48,7 @@ const LEGACY_FILES = [
   "index.html", // founder decision 2026-07-05: the legacy main page IS the home page
   "Conference_Journal.htm",
   "weekly-report.html",
-  "weekly-report.doc",
+  "weekly-report.docx",
   "weekly_presentations.html",
   "overleaf.html",
   "PhD-Advice.pdf",
