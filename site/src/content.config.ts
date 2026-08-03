@@ -1,6 +1,7 @@
 /**
- * Content collections — the data contract for the whole site AND for the
- * Decap CMS admin (its config mirrors these schemas 1:1).
+ * Content collections — the data contract for the whole site. Entries are
+ * edited by hand in src/data/*.yml and src/content/** (the Decap CMS admin was
+ * removed on 2026-07-30).
  * Structured data only; HTML pages are generated, never hand-edited.
  */
 import { defineCollection, z } from "astro:content";
@@ -84,8 +85,8 @@ const news = defineCollection({
     // design — a malformed paste must never fail the build (empty → news page)
     cover: z
       .object({
-        // both optional: an empty cover object from the CMS is harmless, and
-        // the alt text defaults to the title at render time (admin never types it)
+        // both optional: an empty cover object is harmless, and the alt text
+        // defaults to the title at render time (never typed by hand)
         image: z.string().optional(),
         alt: z.string().optional(),
       })
@@ -123,9 +124,8 @@ const workshops = defineCollection({
   }),
 });
 
-/** Standalone pages — FOUNDER-ONLY (governance: content-owners.yml default-deny;
- *  deliberately not listed as an editable section). Each markdown file becomes
- *  /<filename>/ via src/pages/[...slug].astro, which enforces slug safety.
+/** Standalone pages. Each markdown file becomes /<filename>/ via
+ *  src/pages/[...slug].astro, which enforces slug safety.
  *  No nav field on purpose: navigation is founder-managed in Base.astro. */
 const pages = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/pages" }),

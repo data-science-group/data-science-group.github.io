@@ -12,14 +12,13 @@
  *
  * What it does, in order:
  *   1. snapshot the tree (same exclusions as staging: docs/, node_modules, .wmv)
- *   2. rewrite site/public/admin/config.yml: admin backend staging -> production
- *   3. back up the CURRENT production master to ../dsrl-prod-backup-<date>.bundle
- *   4. git init + single commit with your message + force-push master
+ *   2. back up the CURRENT production master to ../dsrl-prod-backup-<date>.bundle
+ *   3. git init + single commit with your message + force-push master
  *
  * Run AFTER flipping Pages source to "GitHub Actions" (see docs/cutover-runbook.md);
  * the live site keeps serving the old deployment until the new build succeeds.
  */
-import { cpSync, mkdtempSync, rmSync, readFileSync, writeFileSync, existsSync } from "node:fs";
+import { cpSync, mkdtempSync, rmSync, existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import os from "node:os";
 import path from "node:path";
@@ -27,7 +26,6 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PRODUCTION = "data-science-group/data-science-group.github.io";
-const STAGING = "data-science-group/dsrl-site-staging";
 
 const argv = process.argv.slice(2);
 const flag = (name) => argv.includes(`--${name}`);
@@ -67,27 +65,12 @@ cpSync(ROOT, tmp, {
   },
 });
 
-// 2. admin panel backend: staging repo -> production repo
-const cfgPath = path.join(tmp, "site", "public", "admin", "config.yml");
-let cfg = readFileSync(cfgPath, "utf8");
-const swaps = [
-  [`repo: ${STAGING}`, `repo: ${PRODUCTION}`],
-  ["site_url: https://data-science-group.github.io/dsrl-site-staging", "site_url: https://data-science-group.github.io"],
-  ["display_url: https://data-science-group.github.io/dsrl-site-staging", "display_url: https://data-science-group.github.io"],
-];
-for (const [from, to] of swaps) {
-  if (!cfg.includes(from)) {
-    console.error(`FATAL: admin config swap failed — expected "${from}" in site/public/admin/config.yml`);
-    process.exit(1);
-  }
-  cfg = cfg.replace(from, to);
-}
-writeFileSync(cfgPath, cfg);
-console.log("[production] admin backend rewritten: staging -> production repo");
+// (The admin-panel backend rewrite used to live here. The Decap CMS was removed
+// on 2026-07-30, so there is no admin config to repoint at the production repo.)
 
 const git = (args, opts = {}) => execFileSync("git", args, { cwd: tmp, stdio: "inherit", ...opts });
 
-// 3. backup the current production master before replacing it
+// 2. backup the current production master before replacing it
 const stamp = new Date().toISOString().slice(0, 10);
 const bundle = path.join(ROOT, "..", `dsrl-prod-backup-${stamp}.bundle`);
 git(["init", "-b", "master"]);
@@ -101,7 +84,7 @@ if (!flag("no-backup")) {
   }
 }
 
-// 4. one clean commit as the LAB account (founder rule: no personal identity
+// 3. one clean commit as the LAB account (founder rule: no personal identity
 //    on production), force-push
 const IDENT = [
   "-c", "user.name=data-science-group",

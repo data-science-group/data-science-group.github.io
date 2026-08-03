@@ -1,10 +1,8 @@
 ---
 /**
  * Standalone pages — renders every entry of the `pages` content collection
- * (markdown files in src/content/pages) at /<slug>/. Pages are created from
- * the admin panel and are FOUNDER-ONLY by governance: the ownership guard's
- * default-deny already blocks non-admins (content-owners.yml deliberately has
- * no `pages` section).
+ * (markdown files in src/content/pages) at /<slug>/. Pages are added by
+ * committing a markdown file to that directory.
  */
 import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
