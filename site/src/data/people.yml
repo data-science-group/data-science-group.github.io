@@ -60,6 +60,13 @@ people:
     photo: img/people/Habiba.jpg
     links:
       linkedin: https://www.linkedin.com/in/habibah/
+  - id: maedeh-ramezanzade
+    name: Maedeh-Ramezanzade
+    role: MRes Student
+    group: mres
+    photo: img/people/maede-rz.png
+    links:
+      linkedin: https://www.linkedin.com/in/alireza-yegane
   - id: niranjana-mangaleswaran
     name: Niranjana Mangaleswaran
     role: PhD Student
