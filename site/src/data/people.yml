@@ -41,6 +41,13 @@ people:
     photo: img/people/yuankaiqi.jpg
     links:
       linkedin: https://www.linkedin.com/in/yuankai-qi-b97951155/
+  - id: venus-haghighi
+    name: Dr. Venus Haghighi
+    role: Academic
+    group: academics
+    photo: img/people/Venus.JPG
+    links:
+      linkedin: https://www.linkedin.com/in/venus-haghighi-391500115/
   - id: congbo-ma
     name: Congbo Ma
     role: Research Fellow
