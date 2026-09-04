@@ -47,10 +47,7 @@ const esc = (s) =>
 
 // Cards whose role renders as (<span class="auto-style1">…</span>) instead of
 // the usual (<b>…</b>) — exactly as on the legacy page.
-const SPAN_ROLE = new Set([
-  "xuyun-zhang", "jian-yang", "jia-wu", "emma-xue", "yuankai-qi",
-  "jing-du", "habiba-habiba", "congbo-ma",
-]);
+const SPAN_ROLE = new Set([]);
 
 // img alt text on the legacy page where it does NOT equal the person's name
 // minus the honorific — preserved verbatim (this generator reproduces the
