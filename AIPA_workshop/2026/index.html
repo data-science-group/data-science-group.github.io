@@ -10,7 +10,33 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <style>
+    /* Workshop Program table (#Program1). Each row is <tr><td>Time</td><td>Session</td><td>Title</td><td>Presenter</td></tr>;
+       add class="break" to a <tr> to highlight it (e.g. the coffee break). */
+    .program-table { margin: 0 40px; }
+    .program-table .table { border-color: #c8cdd6; }
+    .program-table .table > thead > tr > th { background-color: #1f3864; border-color: #1f3864; color: #ffffff; vertical-align: middle; }
+    .program-table .table > tbody > tr > td { border-color: #c8cdd6; vertical-align: middle; }
+    .program-table .table tr > :first-child { text-align: center; }
+    .program-table .table tr > :first-child,
+    .program-table .table tr > :nth-child(2) { white-space: nowrap; }
+    .program-table .table > tbody > tr.break { background-color: #dae3f3; font-weight: bold; }
 
+    /* Phones and tablets: stack each session (time and session on one line, then title, then presenter) */
+    @media (max-width: 991px) {
+      .program-table .table > thead { display: none; }
+      .program-table .table,
+      .program-table .table > tbody,
+      .program-table .table > tbody > tr,
+      .program-table .table > tbody > tr > td { display: block; }
+      .program-table .table > tbody > tr { padding: 8px 10px; border-bottom: 1px solid #c8cdd6; }
+      .program-table .table > tbody > tr:last-child { border-bottom: 0; }
+      .program-table .table > tbody > tr > td { padding: 0; border: 0; text-align: left; }
+      .program-table .table > tbody > tr > td:first-child,
+      .program-table .table > tbody > tr > td:nth-child(2) { display: inline-block; margin-right: 6px; color: #1f3864; font-weight: bold; }
+      .program-table .table > tbody > tr > td:last-child { color: #666666; }
+    }
+  </style>
 
 </head>
 
@@ -226,7 +252,68 @@
 
 				<h3 align="center" id="Program1">Workshop Program</h3>
 
-				<h3 align="center">TBC</h3>
+				<div class="program-table">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">Time</th>
+								<th scope="col">Session / Item</th>
+								<th scope="col">Title</th>
+								<th scope="col">Presenter</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>08:45 – 09:00</td>
+								<td>Opening</td>
+								<td>Opening Remarks</td>
+								<td>Prof. Amin Beheshti &amp; Prof. Boualem Benatallah</td>
+							</tr>
+							<tr>
+								<td>09:00 – 09:30</td>
+								<td>Keynote</td>
+								<td>Keynote Talk <i>(TBC)</i></td>
+								<td>TBC</td>
+							</tr>
+							<tr>
+								<td>09:30 – 10:00</td>
+								<td>Paper 1</td>
+								<td>Ways to Teach a Little-brain Language Model to Recommend Attractive Domain Names to Register</td>
+								<td>Mariusz Kamola, Michał Wiszenko</td>
+							</tr>
+							<tr>
+								<td>10:00 – 10:30</td>
+								<td>Paper 2</td>
+								<td>Does the Data Source Matter? Effects of Qualitative Data Selection on Process Mining</td>
+								<td>Jessica Van Suetendael, Benoît Depaire, Mieke Jans, Niels Martin, Francesca Zerbato</td>
+							</tr>
+							<tr class="break">
+								<td>10:30 – 11:00</td>
+								<td>Coffee Break</td>
+								<td>Networking &amp; Refreshments</td>
+								<td>–</td>
+							</tr>
+							<tr>
+								<td>11:00 – 11:30</td>
+								<td>Paper 3</td>
+								<td>Beyond Permission: Behavioral Admission of Agent-Generated Process Changes</td>
+								<td>Ahang Zuo</td>
+							</tr>
+							<tr>
+								<td>11:30 – 12:00</td>
+								<td>Paper 4</td>
+								<td>Beyond Associations: Causal Analysis in Process Mining</td>
+								<td>Eline Schouteden, Benoît Depaire, Niels Martin</td>
+							</tr>
+							<tr>
+								<td>12:00 – 12:15</td>
+								<td>Closing</td>
+								<td>Closing Remarks</td>
+								<td>Prof. Amin Beheshti &amp; Prof. Boualem Benatallah</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
 				<hr />
 				<h3 align="center"  id="program">Program Committee</h3>
