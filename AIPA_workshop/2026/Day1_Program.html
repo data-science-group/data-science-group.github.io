@@ -27,6 +27,22 @@
   .tbc { color: #777777; font-style: italic; }
   ul, ol { margin: 6px 0 6px 0; padding-left: 22px; }
   ol li { margin: 4px 0; }
+  .photos { max-width: 1100px; margin: 0 auto; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px; }
+  .gallery a { display: block; border: 1px solid #cccccc; background: #eeeeee; line-height: 0; }
+  .gallery a:hover { border-color: #777777; }
+  .gallery img { width: 100%; height: 170px; object-fit: cover; }
+  .lb { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; }
+  .lb.open { display: flex; }
+  .lb img { max-width: 94vw; max-height: 90vh; }
+  .lb button { position: absolute; background: none; border: 0; color: #ffffff; font-size: 40px; cursor: pointer; padding: 12px 18px; }
+  .lb .x { top: 4px; right: 8px; } .lb .p { left: 4px; top: 45%; } .lb .n { right: 4px; top: 45%; }
+  .mainphotos { max-width: 1100px; margin: 0 auto 8px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .mainphotos a { display: block; line-height: 0; }
+  .mainphotos img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  @media (max-width: 640px) { .mainphotos { grid-template-columns: repeat(2, 1fr); } }
+  .morephotos { margin: 6px 0 0; font-size: 1.1em; }
+  html { scroll-behavior: smooth; }
 </style>
 </head>
 <body>
@@ -55,12 +71,22 @@
       Address: 1 Darling Island Rd., Pyrmont NSW 2009
     </h2>
 
-    <h2 class="red">Registration: <s>CLICK HERE</s></h2>
-    <p style="margin: 14px 0;"><b>The event is fully booked, and registration is now closed.</b> Stay tuned for future updates.</p>
     (<span class="red"><b>Contact</b>: AI@mq.edu.au</span>)
   </div>
 
   <hr>
+
+  <!-- MAIN START -->
+  <div class="mainphotos">
+    <a href="Photos/full/008.jpg" target="_blank" rel="noopener"><img src="Photos/main/008.jpg" alt="Workshop audience 1"></a>
+    <a href="Photos/full/019.jpg" target="_blank" rel="noopener"><img src="Photos/main/019.jpg" alt="Workshop audience 2"></a>
+    <a href="Photos/full/020.jpg" target="_blank" rel="noopener"><img src="Photos/main/020.jpg" alt="Workshop audience 3"></a>
+    <a href="Photos/full/037.jpg" target="_blank" rel="noopener"><img src="Photos/main/037.jpg" alt="Workshop audience 4"></a>
+    <a href="Photos/full/058.jpg" target="_blank" rel="noopener"><img src="Photos/main/058.jpg" alt="Workshop audience 5"></a>
+    <a href="Photos/full/094.jpg" target="_blank" rel="noopener"><img src="Photos/main/094.jpg" alt="Workshop audience 6"></a>
+  </div>
+  <p class="center morephotos"><a href="#photos"><b>See all workshop photos below &#8595;</b></a></p>
+  <!-- MAIN END -->
 
   <div class="program">
     <h3>PROGRAM</h3>
@@ -176,6 +202,143 @@
     <span class="break">16:00-17:00 - Coffee - Networking - <b>Poster Presentation</b> (PhD Students)</span>
     <hr>
   </div>
+
+  <!-- GALLERY START -->
+  <hr>
+  <div class="photos" id="photos">
+    <h3>PHOTOS</h3>
+    <div class="gallery" id="gallery">
+    <a href="Photos/full/001.jpg"><img src="Photos/thumbs/001.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 1"></a>
+    <a href="Photos/full/002.jpg"><img src="Photos/thumbs/002.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 2"></a>
+    <a href="Photos/full/003.jpg"><img src="Photos/thumbs/003.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 3"></a>
+    <a href="Photos/full/004.jpg"><img src="Photos/thumbs/004.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 4"></a>
+    <a href="Photos/full/005.jpg"><img src="Photos/thumbs/005.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 5"></a>
+    <a href="Photos/full/006.jpg"><img src="Photos/thumbs/006.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 6"></a>
+    <a href="Photos/full/007.jpg"><img src="Photos/thumbs/007.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 7"></a>
+    <a href="Photos/full/008.jpg"><img src="Photos/thumbs/008.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 8"></a>
+    <a href="Photos/full/009.jpg"><img src="Photos/thumbs/009.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 9"></a>
+    <a href="Photos/full/010.jpg"><img src="Photos/thumbs/010.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 10"></a>
+    <a href="Photos/full/011.jpg"><img src="Photos/thumbs/011.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 11"></a>
+    <a href="Photos/full/012.jpg"><img src="Photos/thumbs/012.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 12"></a>
+    <a href="Photos/full/013.jpg"><img src="Photos/thumbs/013.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 13"></a>
+    <a href="Photos/full/014.jpg"><img src="Photos/thumbs/014.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 14"></a>
+    <a href="Photos/full/015.jpg"><img src="Photos/thumbs/015.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 15"></a>
+    <a href="Photos/full/016.jpg"><img src="Photos/thumbs/016.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 16"></a>
+    <a href="Photos/full/017.jpg"><img src="Photos/thumbs/017.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 17"></a>
+    <a href="Photos/full/018.jpg"><img src="Photos/thumbs/018.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 18"></a>
+    <a href="Photos/full/019.jpg"><img src="Photos/thumbs/019.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 19"></a>
+    <a href="Photos/full/020.jpg"><img src="Photos/thumbs/020.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 20"></a>
+    <a href="Photos/full/021.jpg"><img src="Photos/thumbs/021.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 21"></a>
+    <a href="Photos/full/022.jpg"><img src="Photos/thumbs/022.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 22"></a>
+    <a href="Photos/full/023.jpg"><img src="Photos/thumbs/023.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 23"></a>
+    <a href="Photos/full/024.jpg"><img src="Photos/thumbs/024.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 24"></a>
+    <a href="Photos/full/025.jpg"><img src="Photos/thumbs/025.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 25"></a>
+    <a href="Photos/full/026.jpg"><img src="Photos/thumbs/026.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 26"></a>
+    <a href="Photos/full/027.jpg"><img src="Photos/thumbs/027.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 27"></a>
+    <a href="Photos/full/028.jpg"><img src="Photos/thumbs/028.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 28"></a>
+    <a href="Photos/full/029.jpg"><img src="Photos/thumbs/029.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 29"></a>
+    <a href="Photos/full/030.jpg"><img src="Photos/thumbs/030.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 30"></a>
+    <a href="Photos/full/031.jpg"><img src="Photos/thumbs/031.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 31"></a>
+    <a href="Photos/full/032.jpg"><img src="Photos/thumbs/032.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 32"></a>
+    <a href="Photos/full/033.jpg"><img src="Photos/thumbs/033.jpg" width="400" height="320" loading="lazy" alt="Workshop photo 33"></a>
+    <a href="Photos/full/034.jpg"><img src="Photos/thumbs/034.jpg" width="400" height="320" loading="lazy" alt="Workshop photo 34"></a>
+    <a href="Photos/full/035.jpg"><img src="Photos/thumbs/035.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 35"></a>
+    <a href="Photos/full/036.jpg"><img src="Photos/thumbs/036.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 36"></a>
+    <a href="Photos/full/037.jpg"><img src="Photos/thumbs/037.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 37"></a>
+    <a href="Photos/full/038.jpg"><img src="Photos/thumbs/038.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 38"></a>
+    <a href="Photos/full/039.jpg"><img src="Photos/thumbs/039.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 39"></a>
+    <a href="Photos/full/040.jpg"><img src="Photos/thumbs/040.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 40"></a>
+    <a href="Photos/full/041.jpg"><img src="Photos/thumbs/041.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 41"></a>
+    <a href="Photos/full/042.jpg"><img src="Photos/thumbs/042.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 42"></a>
+    <a href="Photos/full/043.jpg"><img src="Photos/thumbs/043.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 43"></a>
+    <a href="Photos/full/044.jpg"><img src="Photos/thumbs/044.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 44"></a>
+    <a href="Photos/full/045.jpg"><img src="Photos/thumbs/045.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 45"></a>
+    <a href="Photos/full/046.jpg"><img src="Photos/thumbs/046.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 46"></a>
+    <a href="Photos/full/047.jpg"><img src="Photos/thumbs/047.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 47"></a>
+    <a href="Photos/full/048.jpg"><img src="Photos/thumbs/048.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 48"></a>
+    <a href="Photos/full/049.jpg"><img src="Photos/thumbs/049.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 49"></a>
+    <a href="Photos/full/050.jpg"><img src="Photos/thumbs/050.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 50"></a>
+    <a href="Photos/full/051.jpg"><img src="Photos/thumbs/051.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 51"></a>
+    <a href="Photos/full/052.jpg"><img src="Photos/thumbs/052.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 52"></a>
+    <a href="Photos/full/053.jpg"><img src="Photos/thumbs/053.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 53"></a>
+    <a href="Photos/full/054.jpg"><img src="Photos/thumbs/054.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 54"></a>
+    <a href="Photos/full/055.jpg"><img src="Photos/thumbs/055.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 55"></a>
+    <a href="Photos/full/056.jpg"><img src="Photos/thumbs/056.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 56"></a>
+    <a href="Photos/full/057.jpg"><img src="Photos/thumbs/057.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 57"></a>
+    <a href="Photos/full/058.jpg"><img src="Photos/thumbs/058.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 58"></a>
+    <a href="Photos/full/059.jpg"><img src="Photos/thumbs/059.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 59"></a>
+    <a href="Photos/full/060.jpg"><img src="Photos/thumbs/060.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 60"></a>
+    <a href="Photos/full/061.jpg"><img src="Photos/thumbs/061.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 61"></a>
+    <a href="Photos/full/062.jpg"><img src="Photos/thumbs/062.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 62"></a>
+    <a href="Photos/full/063.jpg"><img src="Photos/thumbs/063.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 63"></a>
+    <a href="Photos/full/064.jpg"><img src="Photos/thumbs/064.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 64"></a>
+    <a href="Photos/full/065.jpg"><img src="Photos/thumbs/065.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 65"></a>
+    <a href="Photos/full/066.jpg"><img src="Photos/thumbs/066.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 66"></a>
+    <a href="Photos/full/067.jpg"><img src="Photos/thumbs/067.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 67"></a>
+    <a href="Photos/full/068.jpg"><img src="Photos/thumbs/068.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 68"></a>
+    <a href="Photos/full/069.jpg"><img src="Photos/thumbs/069.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 69"></a>
+    <a href="Photos/full/070.jpg"><img src="Photos/thumbs/070.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 70"></a>
+    <a href="Photos/full/071.jpg"><img src="Photos/thumbs/071.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 71"></a>
+    <a href="Photos/full/072.jpg"><img src="Photos/thumbs/072.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 72"></a>
+    <a href="Photos/full/073.jpg"><img src="Photos/thumbs/073.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 73"></a>
+    <a href="Photos/full/074.jpg"><img src="Photos/thumbs/074.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 74"></a>
+    <a href="Photos/full/075.jpg"><img src="Photos/thumbs/075.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 75"></a>
+    <a href="Photos/full/076.jpg"><img src="Photos/thumbs/076.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 76"></a>
+    <a href="Photos/full/077.jpg"><img src="Photos/thumbs/077.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 77"></a>
+    <a href="Photos/full/078.jpg"><img src="Photos/thumbs/078.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 78"></a>
+    <a href="Photos/full/079.jpg"><img src="Photos/thumbs/079.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 79"></a>
+    <a href="Photos/full/080.jpg"><img src="Photos/thumbs/080.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 80"></a>
+    <a href="Photos/full/081.jpg"><img src="Photos/thumbs/081.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 81"></a>
+    <a href="Photos/full/082.jpg"><img src="Photos/thumbs/082.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 82"></a>
+    <a href="Photos/full/083.jpg"><img src="Photos/thumbs/083.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 83"></a>
+    <a href="Photos/full/084.jpg"><img src="Photos/thumbs/084.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 84"></a>
+    <a href="Photos/full/085.jpg"><img src="Photos/thumbs/085.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 85"></a>
+    <a href="Photos/full/086.jpg"><img src="Photos/thumbs/086.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 86"></a>
+    <a href="Photos/full/087.jpg"><img src="Photos/thumbs/087.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 87"></a>
+    <a href="Photos/full/088.jpg"><img src="Photos/thumbs/088.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 88"></a>
+    <a href="Photos/full/089.jpg"><img src="Photos/thumbs/089.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 89"></a>
+    <a href="Photos/full/090.jpg"><img src="Photos/thumbs/090.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 90"></a>
+    <a href="Photos/full/091.jpg"><img src="Photos/thumbs/091.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 91"></a>
+    <a href="Photos/full/092.jpg"><img src="Photos/thumbs/092.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 92"></a>
+    <a href="Photos/full/093.jpg"><img src="Photos/thumbs/093.jpg" width="400" height="225" loading="lazy" alt="Workshop photo 93"></a>
+    <a href="Photos/full/094.jpg"><img src="Photos/thumbs/094.jpg" width="400" height="225" loading="lazy" alt="Workshop photo 94"></a>
+    <a href="Photos/full/095.jpg"><img src="Photos/thumbs/095.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 95"></a>
+    <a href="Photos/full/096.jpg"><img src="Photos/thumbs/096.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 96"></a>
+    <a href="Photos/full/097.jpg"><img src="Photos/thumbs/097.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 97"></a>
+    <a href="Photos/full/098.jpg"><img src="Photos/thumbs/098.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 98"></a>
+    <a href="Photos/full/099.jpg"><img src="Photos/thumbs/099.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 99"></a>
+    <a href="Photos/full/100.jpg"><img src="Photos/thumbs/100.jpg" width="400" height="266" loading="lazy" alt="Workshop photo 100"></a>
+    <a href="Photos/full/101.jpg"><img src="Photos/thumbs/101.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 101"></a>
+    <a href="Photos/full/102.jpg"><img src="Photos/thumbs/102.jpg" width="266" height="400" loading="lazy" alt="Workshop photo 102"></a>
+    </div>
+  </div>
+  <!-- GALLERY END -->
+
+  <div class="lb" id="lb" aria-hidden="true">
+    <button class="x" aria-label="Close">&times;</button>
+    <button class="p" aria-label="Previous">&#8249;</button>
+    <img id="lbimg" alt="">
+    <button class="n" aria-label="Next">&#8250;</button>
+  </div>
+  <script>
+  (function () {
+    var g = document.getElementById("gallery");
+    if (!g) return;
+    var links = Array.prototype.slice.call(g.querySelectorAll("a")), cur = 0;
+    var lb = document.getElementById("lb"), im = document.getElementById("lbimg");
+    function show(i) { cur = (i + links.length) % links.length; im.src = links[cur].href; lb.classList.add("open"); lb.setAttribute("aria-hidden", "false"); }
+    function hide() { lb.classList.remove("open"); lb.setAttribute("aria-hidden", "true"); im.removeAttribute("src"); }
+    links.forEach(function (a, i) { a.addEventListener("click", function (e) { e.preventDefault(); show(i); }); });
+    lb.querySelector(".x").onclick = hide;
+    lb.querySelector(".p").onclick = function () { show(cur - 1); };
+    lb.querySelector(".n").onclick = function () { show(cur + 1); };
+    lb.addEventListener("click", function (e) { if (e.target === lb) hide(); });
+    document.addEventListener("keydown", function (e) {
+      if (!lb.classList.contains("open")) return;
+      if (e.key === "Escape") hide(); else if (e.key === "ArrowLeft") show(cur - 1); else if (e.key === "ArrowRight") show(cur + 1);
+    });
+  })();
+  </script>
 
   <p class="center" style="margin: 24px 0 32px;">
     Applied AI Research Centre, Macquarie University, Sydney, Australia
